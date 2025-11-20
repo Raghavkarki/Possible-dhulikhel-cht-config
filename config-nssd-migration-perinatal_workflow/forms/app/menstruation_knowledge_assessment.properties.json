@@ -1,0 +1,18 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "Menstruation Knowledge Assessment"
+      },
+      {
+        "locale": "ne",
+        "content": "Menstruation Knowledge Assessment"
+      }
+    ],
+    "context": {
+      "place": false,
+      "person": true,
+      "expression": "summary.active && contact.contact_type === 'c82_person' && contact.sex === 'female'"
+    }
+}
+  

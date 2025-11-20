@@ -1,0 +1,9 @@
+{
+  "c10_center": "Center",
+  "c20_province": "Province",
+  "c30_district": "District",
+  "c40_municipality": "Municipality",
+  "c50_ward": "Ward",
+  "c80_household": "Household",
+  "c81_family":"Family"
+}

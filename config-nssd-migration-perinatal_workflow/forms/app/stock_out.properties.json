@@ -1,0 +1,17 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "Stock Out"
+    },
+    {
+      "locale": "ne",
+      "content": "गएको स्टक"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": true,
+    "expression": "contact.contact_type === 'c52_ward_contact'"
+  }
+}

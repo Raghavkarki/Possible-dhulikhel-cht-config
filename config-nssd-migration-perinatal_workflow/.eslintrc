@@ -1,0 +1,41 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "extends": [
+        "@medic"
+    ],
+    "plugins": [
+        "json"
+    ],
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "max-len": "off",
+        "no-console": "off",
+        "no-var": "off",
+        "no-unused-vars": "off",
+        "no-debugger": "off",
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true,
+                "avoidEscape": true
+            }
+        ],
+        "indent": "off",
+        "prefer-const": "off",
+        "eol-last": "off"
+    },
+    "globals": {
+        "Utils": true,
+        "user": true,
+        "contact": true,
+        "lineage": true,
+        "reports": true,
+        "targetDoc": true
+    }
+}

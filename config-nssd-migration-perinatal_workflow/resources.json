@@ -1,0 +1,26 @@
+{
+  "icon-household-education": "icon-household-education@2x.png",
+  "icon-people-children": "icon-people-children@2x.png",
+  "icon-people-woman": "icon-people-woman@2x.png",
+  "icon-healthcare-assessment": "icon-healthcare-assessment@2x.png",
+  "icon-pregnancy": "icon-people-woman-pregnant@2x.png",
+  "icon-pregnancy-danger": "icon-ANC-danger-sign@2x.png",
+  "icon-government": "icon-places-MOH.svg",
+  "icon-healthcare": "icon-healthcare-generic",
+  "icon-hospital": "icon-places-hospital.svg",
+  "icon-clinic": "icon-places-clinic.svg",
+  "icon-nurse-area": "hierarchies-nurse-area.svg",
+  "icon-chw-area": "hierarchies-chw-area.svg",
+  "icon-community": "icon-community.svg",
+  "icon-family": "icon-places-household.svg",
+  "icon-person": "medic-person.svg",
+  "icon-staff": "icon-people-staff.svg",
+  "icon-chn": "icon-people-nurse.svg",
+  "icon-delivery": "icon-delivery.svg",
+  "icon-pncmom": "icon-PNC-danger-sign.svg",
+  "icon-pncbaby": "icon-PNC-baby-danger-sign.svg",
+  "icon-fchv": "icon-people-FCHV.svg",
+  "icon-perinatal-screening": "icon-people-pregnant-clinic.svg",
+  "icon-perinatal-module": "icon-people-pregnant-ltf.svg"
+
+}

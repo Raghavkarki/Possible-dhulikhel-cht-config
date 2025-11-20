@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "EPDS Module 1"
+    },
+    {
+      "locale": "ne",
+      "content": "EPDS मोड्युल १"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": false
+  },
+  "icon": "icon-perinatal-screening",
+  "hidden_fields": []
+}

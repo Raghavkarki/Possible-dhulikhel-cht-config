@@ -1,0 +1,18 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "MI Form"
+      },
+      {
+        "locale": "ne",
+        "content": "MI Form"
+      }
+    ],
+    "context": {
+      "place": false,
+      "person": true,
+      "expression": "summary.active && contact.contact_type === 'c82_person'"
+    }
+}
+  

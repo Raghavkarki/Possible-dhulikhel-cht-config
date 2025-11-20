@@ -1,0 +1,16 @@
+{
+    "post_delivery_form": {
+        "delivery_date_pdf": "post_delivery_assessment.delivery_date_pdf",
+        "maternal_complication": "post_delivery_assessment.maternal_complication",
+        "pregnancy_outcome": "post_delivery_assessment.pregnancy_outcome",
+        "number_of_births": "post_delivery_assessment.number_of_births",
+        "child_status1": "child_one.child_one_child_status1",
+        "birth_outcome1": "child_one.child_one_birth_outcome1",
+        "child_status2": "child_two.child_two_child_status2",
+        "birth_outcome2": "child_two.child_two_birth_outcome2",
+        "child_status3": "child_three.child_three_child_status3",
+        "birth_outcome3": "child_three.child_three_birth_outcome3",
+        "child_status4": "child_four.child_four_child_status4",
+        "birth_outcome4": "child_four.child_four_birth_outcome4"
+    }
+}

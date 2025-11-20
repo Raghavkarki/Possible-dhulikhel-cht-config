@@ -1,0 +1,17 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "Family Audio"
+      },
+      {
+        "locale": "ne",
+        "content": "पारिवारिक अडियो"
+      }
+    ],
+    "context": {
+      "place": true,
+      "person": false,
+      "expression": "contact.contact_type === 'c81_family'"
+    }
+}

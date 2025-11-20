@@ -1,0 +1,42 @@
+{
+    "pregnancy_screening_form": {
+        "visit_pss_month": "reporting_pss_visit_group_visit_pss_month",
+        "screening_month": "reporting_screening_group_screening_month",
+        "upt_month": "reporting_upt_group_upt_month",
+        "fp_steralization_month": "reporting_sterilization_fp_sterilization_month",
+        "contraceptive_usage_month": "reporting_contraceptive_usage_contraceptive_usage_month",
+        "birth_spacing_month": "reporting_birth_spacing_group_birth_spacing_month",
+        "dangersign_referral_month": "reporting_pp_dangersign_referral_group_dangersign_referral_month",
+        "dangersign_referral_followup_month": "reporting_pp_dangersign_referral_followup_group_dangersign_referral_followup_month",
+        "bcs_provided_month": "reporting_balanced_counselling_provided_bcs_provided_month",
+        "return_menses": "continue_pss.continue_pss_return_menses",
+        "lmp_days_calc": "continue_pss.continue_pss_lmp_group.continue_pss_lmp_group_lmp_days_calc",
+        "implant_years_calc": "continue_pss.continue_pss_contraceptive_related.continue_pss_contraceptive_related_procedure_dates.continue_pss_contraceptive_related_procedure_dates_implant_years_calc",
+        "implant_second_questions": "continue_pss.continue_pss_contraceptive_related.continue_pss_contraceptive_related_implant_more_than_5_year.continue_pss_contraceptive_related_implant_more_than_5_year_implant_second_questions",
+        "upt_counter": "continue_pss.continue_pss_test.continue_pss_test_upt_counter",
+        "method_change": "balanced_counseling.balanced_counseling_bcs_form.balanced_counseling_bcs_form_method_change",
+        "close_form_1": "year_after_delivery.year_after_delivery_close_form_1",
+        "method_chosen1": "balanced_counseling.balanced_counseling_bcs_form.group_assessment_bcscounselling.balanced_counseling_bcs_form_counseling_method_chosen1",
+        "pregnancy_status_update_prev": "pregnancy_status_update",
+        "suspected_pregnancy_prev": "suspected_pregnancy"
+    },
+    "post_delivery_form": {
+        "delivery_date_pdf": "post_delivery_assessment.delivery_date_pdf",
+        "maternal_complication": "post_delivery_assessment.maternal_complication",
+        "number_of_births": "post_delivery_assessment.number_of_births",
+        "child_status1": "child_one.child_one_child_status1",
+        "birth_outcome1": "child_one.child_one_birth_outcome1",
+        "child_status2": "child_two.child_two_child_status2",
+        "birth_outcome2": "child_two.child_two_birth_outcome2",
+        "child_status3": "child_three.child_three_child_status3",
+        "birth_outcome3": "child_three.child_three_birth_outcome3",
+        "child_status4": "child_four.child_four_child_status4",
+        "birth_outcome4": "child_four.child_four_birth_outcome4",
+        "pp_month1": "postpartum_months_pp_month1_pp_month1",
+        "pp_month2": "postpartum_months_pp_month2_pp_month2",
+        "pp_month3": "postpartum_months_pp_month3_pp_month3",
+        "pp_month6": "postpartum_months_pp_month6_pp_month6",
+        "pp_month9": "postpartum_months_pp_month9_pp_month9",
+        "pp_month12": "postpartum_months_pp_month12_pp_month12"
+    }
+}

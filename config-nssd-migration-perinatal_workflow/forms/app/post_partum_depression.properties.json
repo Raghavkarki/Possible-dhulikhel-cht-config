@@ -1,0 +1,18 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "Post Partum Depression"
+      },
+      {
+        "locale": "ne",
+        "content": "Post Partum Depression"
+      }
+    ],
+    "context": {
+      "place": false,
+      "person": true,
+      "expression": "summary.active && contact.contact_type === 'c82_person' && contact.sex === 'female'"
+    }
+}
+  

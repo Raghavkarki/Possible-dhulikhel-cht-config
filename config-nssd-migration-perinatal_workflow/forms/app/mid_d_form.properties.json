@@ -1,0 +1,18 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "MID-D"
+      },
+      {
+        "locale": "ne",
+        "content": "MID-D"
+      }
+    ],
+    "context": {
+      "place": false,
+      "person": true,
+      "expression": "summary.active && contact.contact_type === 'c82_person'"
+    }
+}
+  

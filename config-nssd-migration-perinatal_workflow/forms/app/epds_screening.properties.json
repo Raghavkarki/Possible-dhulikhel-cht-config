@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "EPDS Screening"
+    },
+    {
+      "locale": "ne",
+      "content": "EPDS स्क्रीनिङ"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": false
+  },
+  "icon": "icon-perinatal-screening",
+  "hidden_fields": []
+}

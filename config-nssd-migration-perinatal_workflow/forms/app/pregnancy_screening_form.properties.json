@@ -1,0 +1,17 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "Pregnancy Screening"
+      },
+      {
+        "locale": "ne",
+        "content": "Pregnancy Screening"
+      }
+    ],
+    "context": {
+      "place": false,
+      "person": true,
+      "expression": "summary.active && contact.contact_type === 'c82_person' && contact.sex === 'female' && contact.marital_status === 'married' && contact.age > 10 && contact.age < 49 && !summary.anc_active && (summary.pp_days === undefined || summary.pp_days > 60)"
+    }
+}

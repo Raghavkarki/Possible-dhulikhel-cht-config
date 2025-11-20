@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "EPDS Assessment"
+    },
+    {
+      "locale": "ne",
+      "content": "EPDS मूल्याङ्कन"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": false
+  },
+  "icon": "icon-perinatal-screening",
+  "hidden_fields": []
+}

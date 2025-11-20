@@ -1,0 +1,18 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "Chronic Disease"
+      },
+      {
+        "locale": "ne",
+        "content": "Chronic Disease"
+      }
+    ],
+    "context": {
+      "place": false,
+      "person": true,
+      "expression": "summary.active && contact.contact_type === 'c82_person'"
+    }
+}
+  

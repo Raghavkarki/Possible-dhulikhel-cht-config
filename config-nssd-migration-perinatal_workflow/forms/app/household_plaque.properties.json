@@ -1,0 +1,17 @@
+{
+    "title": [
+      {
+        "locale": "en",
+        "content": "Household Plaque"
+      },
+      {
+        "locale": "ne",
+        "content": "घरेलु पट्टिका"
+      }
+    ],
+    "context": {
+      "place": true,
+      "person": false,
+      "expression": "contact.contact_type === 'c80_household'"
+    }
+}

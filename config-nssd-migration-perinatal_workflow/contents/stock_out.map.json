@@ -1,0 +1,18 @@
+{
+  "stock_in": {
+    "initial_zinc10mg": "initial_stock.initial_stock_zinc10mg",  
+    "initial_zinc20mg": "initial_stock.initial_stock_zinc20mg",
+    "initial_ors": "initial_stock.initial_stock_ors",
+    "initial_condoms_hp": "initial_stock.initial_stock_condoms_hp",
+    "initial_condoms_phc": "initial_stock.initial_stock_condoms_phc",
+    "initial_total_condoms": "initial_stock.initial_stock_total_condoms",
+    "initial_upt_kits": "initial_stock.initial_stock_UPT_kits"
+  },
+  "stock_out": {
+    "available_zinc_10mg": "remaining_zinc_10mg",
+    "available_zinc_20mg": "remaining_zinc_20mg",
+    "available_ors": "remaining_ors",
+    "available_condom": "remaining_condom",
+    "available_upt_kit": "remaining_upt_kit"
+  }
+}
