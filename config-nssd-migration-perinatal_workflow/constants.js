@@ -18,6 +18,7 @@ const PREGNANCY_HISTORY = 'pregnancy_history_form';
 const PREGNANCY_SCREENING = 'pregnancy_screening_form';
 const SURGICAL_FOLLOWUP = 'surgical_followup';
 const U2_REGISTRY = 'u2_registry';
+const PSSUP = 'psupp_form';
 
 // Stock Reports
 const STOCK_IN = 'stock_in';
