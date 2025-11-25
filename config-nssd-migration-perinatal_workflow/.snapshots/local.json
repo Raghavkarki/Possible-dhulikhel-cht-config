@@ -1,0 +1,197 @@
+{
+  "form:anc_monitoring_form": {
+    "localhost/medic": "P078PMWR0MPJBJ02UxBvOg=="
+  },
+  "form:chronic_disease": {
+    "localhost/medic": "PNOPoMTD0cekowuKDWQk3w=="
+  },
+  "form:covid_19": {
+    "localhost/medic": "R+4SaEqpcuDbRTtqL072Rw=="
+  },
+  "form:death_and_migration_form": {
+    "localhost/medic": "EraUdXM43WPOPi3rzyiXkw=="
+  },
+  "form:epds_assessment": {
+    "localhost/medic": "RaGFyOWXZGw0xDpy8DBP2w=="
+  },
+  "form:epds_module_1": {
+    "localhost/medic": "GW6jTGQ0S+1NaYUH0yCUlw=="
+  },
+  "form:epds_module_2": {
+    "localhost/medic": "en5nRsEnR6JEXmtEL4pdTQ=="
+  },
+  "form:epds_module_3": {
+    "localhost/medic": "ro6UcHT7JguOCrtFcF5yqg=="
+  },
+  "form:epds_module_4": {
+    "localhost/medic": "VjsSrq2IJkwXaX/p/ZcSiQ=="
+  },
+  "form:epds_module_5": {
+    "localhost/medic": "+t6Z4l+olwsXOrUeQA97xw=="
+  },
+  "form:epds_screening": {
+    "localhost/medic": "9OqznNmBk7ZHyWGFkqcqkQ=="
+  },
+  "form:family_audio": {
+    "localhost/medic": "S2myx8SNkRGe3j8oWqRQMA=="
+  },
+  "form:household_plaque": {
+    "localhost/medic": "P89qmB7oyddUZhDrUhWIVw=="
+  },
+  "form:hypertension_screening_first_visit_form": {
+    "localhost/medic": "gah9rdcE7wqqC8FXcq+x/g=="
+  },
+  "form:hypertension_screening_followup_visit": {
+    "localhost/medic": "9KnzSeB4gP2f5b1GLp8iag=="
+  },
+  "form:imamform": {
+    "localhost/medic": "rY0Wcj5++MMG9ZBbNZN8pg=="
+  },
+  "form:menstruation_knowledge_assessment": {
+    "localhost/medic": "ql94fZgm9JYoJ1bkarXjOA=="
+  },
+  "form:mi_form": {
+    "localhost/medic": "zREAoIby6UV8G73r3pA22A=="
+  },
+  "form:mid_d_form": {
+    "localhost/medic": "ZfnVQOXCc5j7r1eVITepAw=="
+  },
+  "form:pnc_2_months": {
+    "localhost/medic": "TaT/Urm72o2sQvgGwLI6aw=="
+  },
+  "form:post_delivery_form": {
+    "localhost/medic": "1A08TtbMiqrkCNvtg1FZ7Q=="
+  },
+  "form:post_natal_care_form": {
+    "localhost/medic": "ALTUFrrary90u887uWyckw=="
+  },
+  "form:post_partum_depression": {
+    "localhost/medic": "HHHv6kq6lW/iTyOLrq71Wg=="
+  },
+  "form:pregnancy_history_form": {
+    "localhost/medic": "9FiVFOWx0nRVddiM+42u0g=="
+  },
+  "form:pregnancy_screening_form": {
+    "localhost/medic": "cZeD2pCnYKA/HM4RnMV0pw=="
+  },
+  "form:pssup_form": {
+    "localhost/medic": "p7XjgIKLakqFd/+I4i8MLQ=="
+  },
+  "form:pssup_session_1": {
+    "localhost/medic": "irCdS96lSk+gGJVXZWudFg=="
+  },
+  "form:pssup_session_2": {
+    "localhost/medic": "VvCnLuw+FPI436odjjk0GQ=="
+  },
+  "form:pssup_session_3": {
+    "localhost/medic": "e+Rosn2vg4zTygQxp4pUFQ=="
+  },
+  "form:pssup_session_4": {
+    "localhost/medic": "xYos2t6MoNqQHdXkT/RZbQ=="
+  },
+  "form:pssup_session_5": {
+    "localhost/medic": "+p2M0CsybnBiUByYgVkIYA=="
+  },
+  "form:stock_in": {
+    "localhost/medic": "K+/Vc0BnWPkX8DPVA2ZHNQ=="
+  },
+  "form:stock_out": {
+    "localhost/medic": "MGHS6nyjQUiISvWvTowAiA=="
+  },
+  "form:surgical_followup": {
+    "localhost/medic": "Zlzv7tRVOi1Zc8sC6XWROw=="
+  },
+  "form:u2_registry": {
+    "localhost/medic": "r9Aed538BpQ/PFraooTE2w=="
+  },
+  "form:contact:c10_center:create": {
+    "localhost/medic": "n8d2nL+05xbEx+lVttTSXQ=="
+  },
+  "form:contact:c10_center:edit": {
+    "localhost/medic": "wgJPZcdLo+6b+p3ibWdQVw=="
+  },
+  "form:contact:c12_center_contact:create": {
+    "localhost/medic": "H6g7FR3/J+ftxh1XMGSkIA=="
+  },
+  "form:contact:c12_center_contact:edit": {
+    "localhost/medic": "hmWWh5wqfCfFjq8zvo6H6Q=="
+  },
+  "form:contact:c20_province:create": {
+    "localhost/medic": "2QIZTr2pLdH81N7DdguVYQ=="
+  },
+  "form:contact:c20_province:edit": {
+    "localhost/medic": "CITzK+v2+74t8pqmP3a2cQ=="
+  },
+  "form:contact:c22_province_contact:create": {
+    "localhost/medic": "xziQLJ8tlbrXcV0+ROMNjg=="
+  },
+  "form:contact:c22_province_contact:edit": {
+    "localhost/medic": "802/zu8x+N6FZ1pqUcA7xw=="
+  },
+  "form:contact:c30_district:create": {
+    "localhost/medic": "Ky9Mh/Kr+21mTCNQ/R5y8Q=="
+  },
+  "form:contact:c30_district:edit": {
+    "localhost/medic": "Vfr+KPv2yBxb7zbMZva4Fg=="
+  },
+  "form:contact:c32_district_contact:create": {
+    "localhost/medic": "ntUNcUllpNwr/GtaI4UfXw=="
+  },
+  "form:contact:c32_district_contact:edit": {
+    "localhost/medic": "hOhN/sTBM20chfWBvOEZCQ=="
+  },
+  "form:contact:c40_municipality:create": {
+    "localhost/medic": "YoJc9/ghGclKE53x6u8knQ=="
+  },
+  "form:contact:c40_municipality:edit": {
+    "localhost/medic": "Sj3W1CdgZFBoizbbPvCi4g=="
+  },
+  "form:contact:c42_municipality_contact:create": {
+    "localhost/medic": "DSpx8AVTeVpFEvqnstw8Ig=="
+  },
+  "form:contact:c42_municipality_contact:edit": {
+    "localhost/medic": "5XTJ2CMzEESP5BU1abnNEw=="
+  },
+  "form:contact:c50_ward:create": {
+    "localhost/medic": "Ny1aH5w5pp5S+jWLsUMuuQ=="
+  },
+  "form:contact:c50_ward:edit": {
+    "localhost/medic": "g0iDwcozkXxcVzQLxu3E3Q=="
+  },
+  "form:contact:c52_ward_contact:create": {
+    "localhost/medic": "NCJFL5YjNynAzfk6f2iEPQ=="
+  },
+  "form:contact:c52_ward_contact:edit": {
+    "localhost/medic": "xXNHbq/I0wG5lK7q+NIgaA=="
+  },
+  "form:contact:c80_household:create": {
+    "localhost/medic": "u3gE/f++gGQNuhypAskRgw=="
+  },
+  "form:contact:c80_household:edit": {
+    "localhost/medic": "frH1+YyOe37utfs1U4vXeA=="
+  },
+  "form:contact:c81_family:create": {
+    "localhost/medic": "VmsRLj9gtDfR6koHZclidQ=="
+  },
+  "form:contact:c81_family:edit": {
+    "localhost/medic": "CD+iN4sUm3+PbbYfQ3L1rg=="
+  },
+  "form:contact:c82_person:create": {
+    "localhost/medic": "dUPy6RMbQJCOsBak2jayPw=="
+  },
+  "form:contact:c82_person:edit": {
+    "localhost/medic": "gbQ13L1v6hqmRedm00HFgA=="
+  },
+  "resources": {
+    "localhost/medic": "GqZc1y2If2bMb0SzZFR/rw=="
+  },
+  "branding": {
+    "localhost/medic": "J7IBob/Xjr2vnMdxiqd2TQ=="
+  },
+  "messages-en": {
+    "localhost/medic": "q9WoPwqIovPUq10Cg6jC5w=="
+  },
+  "messages-ne": {
+    "localhost/medic": "oDNu2sJbZPl4HxpNdaSAIg=="
+  }
+}

@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Update House Casedata</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c80_household/ask_chhaupadi/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c80_household/ask_chhaupadi/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c80_household/ask_chhaupadi:label">
+            <value>Do you want to ask Chhaupadi related question?</value>
+          </text>
+          <text id="/data/c80_household/family_units:label">
+            <value>How many family units are in this house?</value>
+          </text>
+          <text id="/data/c80_household/generated_note_name_15:label">
+            <value>**Name of household: <output value=" /data/c80_household/hhID "/>**</value>
+          </text>
+          <text id="/data/c80_household/house_no:label">
+            <value>House number</value>
+          </text>
+          <text id="/data/c80_household/house_no_suffix:label">
+            <value>House number</value>
+          </text>
+          <text id="/data/c80_household/house_owner/house_owner_family_name:label">
+            <value>Family Name</value>
+          </text>
+          <text id="/data/c80_household/house_owner/house_owner_given_name:label">
+            <value>Given Name</value>
+          </text>
+          <text id="/data/c80_household/house_owner/house_owner_middle_name:label">
+            <value>Middle Name</value>
+          </text>
+          <text id="/data/c80_household/house_owner:label">
+            <value>Whose house is this? (If this is an institution owned building, please enter the name of the institution)</value>
+          </text>
+          <text id="/data/c80_household/observation_shed/no_there_is_no_shed_in_this_household:label">
+            <value>No, there is no shed in this household.</value>
+          </text>
+          <text id="/data/c80_household/observation_shed/yes_attached:label">
+            <value>Yes, there is one attached to the house.</value>
+          </text>
+          <text id="/data/c80_household/observation_shed/yes_outside:label">
+            <value>Yes, there is one outside / further away from the house.</value>
+          </text>
+          <text id="/data/c80_household/observation_shed:label">
+            <value>Fill on the basis of CHW's observation
+
+Is there a shed in this household or not?</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/business:label">
+            <value>Business</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/education_institution:label">
+            <value>Education Institution</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/government_office:label">
+            <value>Government office</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/hospital_health_center_clinic:label">
+            <value>Hospital/ Health Center/ Clinic</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/religious:label">
+            <value>Religious</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/residence:label">
+            <value>Residence</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose:label">
+            <value>What is the primary purpose of this building?</value>
+          </text>
+          <text id="/data/c80_household/purpose_specify:label">
+            <value>Please specify the purpose of this building</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate/inside:label">
+            <value>Inside the house</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate/shed_attached:label">
+            <value>In a shed attached to house</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate/shed_outside:label">
+            <value>In a shed outside of the house</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate:label">
+            <value>Where do women of the household stay when they menstruate in this house?</value>
+          </text>
+          <text id="/data/c80_household/survey_complete_note:label">
+            <value>You have completed the enrollment process for this house. Please proceed to enroll all the families that reside in this house.</value>
+          </text>
+          <text id="/data/c80_household/survey_incomplete_note:label">
+            <value>The enrollment process is not complete. Please return to this house at another time to complete the enrollment process. The process is not complete until you get consent from the house resident and post a number plate.
+For now, please press on the green bar to close the form.</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate/everyone_in_shed:label">
+            <value>Everyone stays in a shed</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate/everyone_inside:label">
+            <value>Everyone stays inside the house</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate/some_stay_shed:label">
+            <value>Some stay inside the house, some stay in the shed</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate:label">
+            <value>Where do all the women in the household stay when they menstruate?</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Place ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/data/c80_household/ask_chhaupadi/no:label">
+            <value>चाहन्न</value>
+          </text>
+          <text id="/data/c80_household/ask_chhaupadi/yes:label">
+            <value>चाहन्छु</value>
+          </text>
+          <text id="/data/c80_household/ask_chhaupadi:label">
+            <value>के तपाई छाउपडी सम्बन्धि प्रस्न सोध्न चाहनुहुन्छ?</value>
+          </text>
+          <text id="/data/c80_household/contact_type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c80_household/family_units:label">
+            <value>यस घरमा कतिवटा चुलोहरु छ?</value>
+          </text>
+          <text id="/data/c80_household/generated_note_name_15:label">
+            <value>**घरधुरी को नाम: <output value=" /data/c80_household/hhID "/>**</value>
+          </text>
+          <text id="/data/c80_household/house_no:label">
+            <value>घर नम्बर</value>
+          </text>
+          <text id="/data/c80_household/house_no_suffix:label">
+            <value>घर नम्बर</value>
+          </text>
+          <text id="/data/c80_household/house_owner/house_owner_family_name:label">
+            <value>थर</value>
+          </text>
+          <text id="/data/c80_household/house_owner/house_owner_given_name:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/c80_household/house_owner/house_owner_middle_name:label">
+            <value>बिचको नाम</value>
+          </text>
+          <text id="/data/c80_household/house_owner:label">
+            <value>यो घर कसको हो ? (यदि कुनै सरकारी, निजि संस्थाको घर हो भने संस्थाको नाम राख्नुहोस)</value>
+          </text>
+          <text id="/data/c80_household/observation_shed/no_there_is_no_shed_in_this_household:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c80_household/observation_shed/yes_attached:label">
+            <value>घर संगै जोडिएको छ .</value>
+          </text>
+          <text id="/data/c80_household/observation_shed/yes_outside:label">
+            <value>घर भन्दा बाहिर / टाढा छ.</value>
+          </text>
+          <text id="/data/c80_household/observation_shed:label">
+            <value>यस प्रश्नमा CHW ले गोठ को अबलोकन गर्ने वा छिमेकिबाट/ अरु कसै बाट सोधेर भर्ने
+
+यो घरमा छाउगोठ छ कि छैन ?</value>
+          </text>
+          <text id="/data/c80_household/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/business:label">
+            <value>ब्यापारिक प्रयोजन/ पसल/ होटेल</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/education_institution:label">
+            <value>शैक्षिक संस्था को लागि</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/government_office:label">
+            <value>सरकारी/ गैरसरकारी कार्यालय</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/hospital_health_center_clinic:label">
+            <value>अस्पताल/ स्वास्थ्य केन्द्र/ मेडिकल</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/other:label">
+            <value>अन्य केहि</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/religious:label">
+            <value>धार्मिक प्रयोजन/ मठ मन्दिर</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose/residence:label">
+            <value>बसोबास गर्न</value>
+          </text>
+          <text id="/data/c80_household/primary_purpose:label">
+            <value>यो भवन के का लागि प्रयोग भैरहेको छ ?</value>
+          </text>
+          <text id="/data/c80_household/purpose_specify:label">
+            <value>कृपया यस भवन के को लागि प्रयोग हुन्छ लेख्नुहोस</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate/inside:label">
+            <value>घर भित्र बस्छन</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate/shed_attached:label">
+            <value>घर संगै जोडिएको गोठ</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate/shed_outside:label">
+            <value>घर भन्दा बाहिरको गोठ</value>
+          </text>
+          <text id="/data/c80_household/stay_menstruate:label">
+            <value>यो घर मा महिनाबारी हुदा कहाँ बस्छन ?</value>
+          </text>
+          <text id="/data/c80_household/survey_complete_note:label">
+            <value>तपाईंले यस घरको दर्ता पुरा गर्नु भएको छ . कृपया यस घरमा बस्ने सबै परिवारलाई पनि दर्ता गर्नुहोस .</value>
+          </text>
+          <text id="/data/c80_household/survey_incomplete_note:label">
+            <value>दर्ता प्रक्रिया पुरा भएको छैन . कृपया अरु कुनै समयमा फेरी आएर दर्ता पुरा गर्नु होला . यस घरका व्यक्ति संग सहमति लिएर घरमा नम्बर प्लेट टाँस्ने काम गरे पछि मात्र घर दर्ता पुरा हुनेछ .
+अहिलेलाई फारम बन्द गर्नको लागि माथि हरियोमा थिच्नुहोस .</value>
+          </text>
+          <text id="/data/c80_household/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate/everyone_in_shed:label">
+            <value>हो, सबै गोठमा बस्छन</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate/everyone_inside:label">
+            <value>होइन, सबै घरमा बस्छन</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate/some_stay_shed:label">
+            <value>होइन, कोहि घरमा र कोहि गोठमा बस्छन</value>
+          </text>
+          <text id="/data/c80_household/woman_stay_menstruate:label">
+            <value>के यो घरका सबै महिला महिनाबारी हुदा गोठमा बस्छन ?</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>लग इन गरेको प्रयोगकर्ताको सम्पर्क ID</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>लग इन गरेको प्रयोगकर्ताको स्थानको ID</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>लग इन गरेको प्रयोगकर्ताको नाम</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="c80_household-edit" prefix="J1!c80_household-edit!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c80_household>
+            <parent/>
+            <type/>
+            <contact_type/>
+            <hhID/>
+            <name/>
+            <generated_note_name_15/>
+            <household_type/>
+            <house_no_suffix/>
+            <house_no/>
+            <parent_place_code/>
+            <street_name/>
+            <hh_no_prefix_edited/>
+            <hhID_edited/>
+            <today/>
+            <primary_purpose/>
+            <purpose_specify/>
+            <house_owner>
+              <house_owner_given_name/>
+              <house_owner_middle_name/>
+              <house_owner_family_name/>
+            </house_owner>
+            <house_owner_house_name/>
+            <family_units/>
+            <ask_chhaupadi/>
+            <stay_menstruate/>
+            <woman_stay_menstruate/>
+            <observation_shed/>
+            <survey_complete/>
+            <survey_incomplete_note/>
+            <survey_complete_note/>
+            <reporting_today/>
+            <reporting_report_survey_complete/>
+          </c80_household>
+          <c80_household_count/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs/user" relevant="0"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/c80_household_count" type="string" readonly="true()" calculate="जरुरी"/>
+      <bind nodeset="/data/c80_household/parent" type="string" required="true()"/>
+      <bind nodeset="/data/c80_household/type" type="string" required="true()"/>
+      <bind nodeset="/data/c80_household/contact_type" type="string" required="true()"/>
+      <bind nodeset="/data/c80_household/hhID" type="string" calculate=" /data/c80_household/hhID_edited "/>
+      <bind nodeset="/data/c80_household/name" type="string" calculate="concat( /data/c80_household/hhID_edited , ' - ', concat( /data/c80_household/house_owner/house_owner_given_name , &quot; &quot;,  /data/c80_household/house_owner/house_owner_middle_name , &quot; &quot;,  /data/c80_household/house_owner/house_owner_family_name ))"/>
+      <bind nodeset="/data/c80_household/generated_note_name_15" readonly="true()" type="string"/>
+      <bind nodeset="/data/c80_household/household_type" type="string"/>
+      <bind nodeset="/data/c80_household/house_no_suffix" type="string" relevant=" /data/c80_household/household_type  = 'metric_system'"/>
+      <bind nodeset="/data/c80_household/house_no" type="string" relevant=" /data/c80_household/household_type  = 'non_metric_system'"/>
+      <bind nodeset="/data/c80_household/parent_place_code" type="string"/>
+      <bind nodeset="/data/c80_household/street_name" type="string"/>
+      <bind nodeset="/data/c80_household/hh_no_prefix_edited" type="string" calculate="if( /data/c80_household/house_no  &lt; 10, &quot;000&quot;, if( /data/c80_household/house_no  &lt; 100, &quot;00&quot;, if( /data/c80_household/house_no  &lt; 1000, &quot;0&quot;, &quot;&quot;)))"/>
+      <bind nodeset="/data/c80_household/hhID_edited" type="string" calculate="if( /data/c80_household/household_type  = 'non_metric_system', concat( /data/c80_household/parent_place_code ,  /data/c80_household/hh_no_prefix_edited ,  /data/c80_household/house_no ), concat( /data/c80_household/parent_place_code , &quot;-&quot;,  /data/c80_household/street_name , &quot;-&quot;,  /data/c80_household/house_no_suffix ))"/>
+      <bind nodeset="/data/c80_household/today" type="string" calculate="format-date(date(today()), &quot;%d-%m-%Y&quot;)"/>
+      <bind nodeset="/data/c80_household/primary_purpose" type="select"/>
+      <bind nodeset="/data/c80_household/purpose_specify" type="string" relevant="selected( /data/c80_household/primary_purpose , 'other')"/>
+      <bind nodeset="/data/c80_household/house_owner" relevant="selected( /data/c80_household/primary_purpose , 'residence')"/>
+      <bind nodeset="/data/c80_household/house_owner/house_owner_given_name" type="string"/>
+      <bind nodeset="/data/c80_household/house_owner/house_owner_middle_name" type="string"/>
+      <bind nodeset="/data/c80_household/house_owner/house_owner_family_name" type="string"/>
+      <bind nodeset="/data/c80_household/house_owner_house_name" type="string" calculate="concat( /data/c80_household/house_owner/house_owner_given_name , &quot; &quot;,  /data/c80_household/house_owner/house_owner_middle_name , &quot; &quot;,  /data/c80_household/house_owner/house_owner_family_name )"/>
+      <bind nodeset="/data/c80_household/family_units" type="int" relevant="selected( /data/c80_household/primary_purpose , 'residence')" jr:constraintMsg="Must be less than or equal to 20" constraint=". &lt;= 20 and . &gt;= 1"/>
+      <bind nodeset="/data/c80_household/ask_chhaupadi" type="select1"/>
+      <bind nodeset="/data/c80_household/stay_menstruate" type="select1" relevant=" /data/c80_household/ask_chhaupadi  = 'yes'"/>
+      <bind nodeset="/data/c80_household/woman_stay_menstruate" type="select1" relevant="( /data/c80_household/stay_menstruate  = 'shed_attached' or  /data/c80_household/stay_menstruate  = 'shed_outside') and  /data/c80_household/ask_chhaupadi  = 'yes'"/>
+      <bind nodeset="/data/c80_household/observation_shed" type="select1" relevant=" /data/c80_household/ask_chhaupadi  = 'yes'"/>
+      <bind nodeset="/data/c80_household/survey_complete" type="string" calculate="if( /data/c80_household/family_units  != '', 'yes', 'no')"/>
+      <bind nodeset="/data/c80_household/survey_incomplete_note" readonly="true()" type="string" relevant=" /data/c80_household/survey_complete  != 'yes'"/>
+      <bind nodeset="/data/c80_household/survey_complete_note" readonly="true()" type="string" relevant=" /data/c80_household/survey_complete  = 'yes'"/>
+      <bind nodeset="/data/c80_household/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/data/c80_household/reporting_report_survey_complete" type="string" calculate="if( /data/c80_household/survey_complete  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <group jr:count=" /data/c80_household_count " appearance="field-list" ref="/data/c80_household">
+      <input ref="/data/c80_household/generated_note_name_15">
+        <label ref="jr:itext('/data/c80_household/generated_note_name_15:label')"/>
+      </input>
+      <input ref="/data/c80_household/house_no_suffix">
+        <label ref="jr:itext('/data/c80_household/house_no_suffix:label')"/>
+      </input>
+      <input ref="/data/c80_household/house_no">
+        <label ref="jr:itext('/data/c80_household/house_no:label')"/>
+      </input>
+      <select ref="/data/c80_household/primary_purpose">
+        <label ref="jr:itext('/data/c80_household/primary_purpose:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c80_household/primary_purpose/residence:label')"/>
+          <value>residence</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/primary_purpose/business:label')"/>
+          <value>business</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/primary_purpose/government_office:label')"/>
+          <value>government_office</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/primary_purpose/hospital_health_center_clinic:label')"/>
+          <value>hospital_health_center_clinic</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/primary_purpose/religious:label')"/>
+          <value>religious</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/primary_purpose/education_institution:label')"/>
+          <value>education_institution</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/primary_purpose/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/data/c80_household/purpose_specify">
+        <label ref="jr:itext('/data/c80_household/purpose_specify:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/c80_household/house_owner">
+        <label ref="jr:itext('/data/c80_household/house_owner:label')"/>
+        <input ref="/data/c80_household/house_owner/house_owner_given_name">
+          <label ref="jr:itext('/data/c80_household/house_owner/house_owner_given_name:label')"/>
+        </input>
+        <input ref="/data/c80_household/house_owner/house_owner_middle_name">
+          <label ref="jr:itext('/data/c80_household/house_owner/house_owner_middle_name:label')"/>
+        </input>
+        <input ref="/data/c80_household/house_owner/house_owner_family_name">
+          <label ref="jr:itext('/data/c80_household/house_owner/house_owner_family_name:label')"/>
+        </input>
+      </group>
+      <input ref="/data/c80_household/family_units">
+        <label ref="jr:itext('/data/c80_household/family_units:label')"/>
+      </input>
+      <select1 ref="/data/c80_household/ask_chhaupadi">
+        <label ref="jr:itext('/data/c80_household/ask_chhaupadi:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c80_household/ask_chhaupadi/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/ask_chhaupadi/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c80_household/stay_menstruate">
+        <label ref="jr:itext('/data/c80_household/stay_menstruate:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c80_household/stay_menstruate/inside:label')"/>
+          <value>inside</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/stay_menstruate/shed_attached:label')"/>
+          <value>shed_attached</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/stay_menstruate/shed_outside:label')"/>
+          <value>shed_outside</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c80_household/woman_stay_menstruate">
+        <label ref="jr:itext('/data/c80_household/woman_stay_menstruate:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c80_household/woman_stay_menstruate/everyone_in_shed:label')"/>
+          <value>everyone_in_shed</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/woman_stay_menstruate/some_stay_shed:label')"/>
+          <value>some_stay_shed</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/woman_stay_menstruate/everyone_inside:label')"/>
+          <value>everyone_inside</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c80_household/observation_shed">
+        <label ref="jr:itext('/data/c80_household/observation_shed:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c80_household/observation_shed/yes_attached:label')"/>
+          <value>yes_attached</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/observation_shed/yes_outside:label')"/>
+          <value>yes_outside</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c80_household/observation_shed/no_there_is_no_shed_in_this_household:label')"/>
+          <value>no_there_is_no_shed_in_this_household</value>
+        </item>
+      </select1>
+      <input ref="/data/c80_household/survey_incomplete_note">
+        <label ref="jr:itext('/data/c80_household/survey_incomplete_note:label')"/>
+      </input>
+      <input ref="/data/c80_household/survey_complete_note">
+        <label ref="jr:itext('/data/c80_household/survey_complete_note:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

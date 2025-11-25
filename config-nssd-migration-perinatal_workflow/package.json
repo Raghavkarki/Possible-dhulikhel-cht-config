@@ -13,13 +13,13 @@
     "chai": "^4.3.4",
     "chai-like": "^1.1.1",
     "chai-things": "^0.2.0",
-    "eslint": "^7.21.0",
-    "eslint-plugin-json": "^2.0.1",
     "cht-conf": "^3.9.1",
     "cht-conf-test-harness": "^2.2.4",
+    "eslint": "^7.21.0",
+    "eslint-plugin-json": "^2.0.1",
     "mocha": "^9.1.3"
   },
   "dependencies": {
-    "moment": "^2.29.1"
+    "moment": "^2.30.1"
   }
 }
