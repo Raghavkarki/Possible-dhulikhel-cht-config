@@ -28,7 +28,9 @@
         ],
         "indent": "off",
         "prefer-const": "off",
-        "eol-last": "off"
+        "eol-last": "off",
+
+        "brace-style": "off"
     },
     "globals": {
         "Utils": true,
