@@ -702,24 +702,24 @@ Please carry out the following actions using the discussion points mentioned in 
       <bind nodeset="/epds_assessment/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/epds_assessment/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
       <bind nodeset="/epds_assessment/patient_id" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/epds_assessment/epds/reprtd_date" type="string" readonly="true()" calculate="date(today())"/>
+      <bind nodeset="/epds_assessment/epds/reprtd_date" type="string" calculate="date(today())" readonly="true()"/>
       <bind nodeset="/epds_assessment/epds/followup_asses" type="select1" required="true()"/>
       <bind nodeset="/epds_assessment/epds/advrs_evnt" type="select1" required="true()"/>
-      <bind nodeset="/epds_assessment/epds/spcfy_advrs_evnt" type="string" required="true()" relevant=" /epds_assessment/epds/advrs_evnt = 'yes'"/>
+      <bind nodeset="/epds_assessment/epds/spcfy_advrs_evnt" type="string" relevant=" /epds_assessment/epds/advrs_evnt = 'yes'" required="true()"/>
       <bind nodeset="/epds_assessment/epds/cons_followup" type="select1" required="true()"/>
-      <bind nodeset="/epds_assessment/epds/no_cons_followup" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'no'"/>
-      <bind nodeset="/epds_assessment/epds/specify_reason" type="string" required="true()" relevant=" /epds_assessment/epds/no_cons_followup = 'other'"/>
+      <bind nodeset="/epds_assessment/epds/no_cons_followup" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'no'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/specify_reason" type="string" relevant=" /epds_assessment/epds/no_cons_followup = 'other'" required="true()"/>
       <bind nodeset="/epds_assessment/epds/epds_inst" readonly="true()" type="string" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_1" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_2" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_3" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_4" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_5" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_6" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_7" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_8" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_9" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
-      <bind nodeset="/epds_assessment/epds/epds_10" type="select1" required="true()" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
+      <bind nodeset="/epds_assessment/epds/epds_1" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_2" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_3" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_4" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_5" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_6" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_7" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_8" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_9" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_10" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
       <bind nodeset="/epds_assessment/epds/epds_score" type="string" calculate="int( /epds_assessment/epds/epds_1 ) + int( /epds_assessment/epds/epds_2 ) + int( /epds_assessment/epds/epds_3 ) + int( /epds_assessment/epds/epds_4 ) + int( /epds_assessment/epds/epds_5 ) + int( /epds_assessment/epds/epds_6 ) + int( /epds_assessment/epds/epds_7 ) + int( /epds_assessment/epds/epds_8 ) + int( /epds_assessment/epds/epds_9 ) + int( /epds_assessment/epds/epds_10 )"/>
       <bind nodeset="/epds_assessment/epds/ness" relevant=" /epds_assessment/epds/epds_10 = '3' or  /epds_assessment/epds/epds_10 = '2' or  /epds_assessment/epds/epds_10 = '1'"/>
       <bind nodeset="/epds_assessment/epds/ness/ness_inst" readonly="true()" type="string"/>
@@ -729,7 +729,7 @@ Please carry out the following actions using the discussion points mentioned in 
       <bind nodeset="/epds_assessment/epds/ness/ness_score" type="string" calculate="if( /epds_assessment/epds/ness/ness2  = 'yes' or  /epds_assessment/epds/ness/ness3  = 'yes', 'high', if( /epds_assessment/epds/ness/ness1  = 'yes' and  /epds_assessment/epds/ness/ness2  = 'no', 'moderate', 'low'))" relevant=" /epds_assessment/epds/ness/ness1  != ''"/>
       <bind nodeset="/epds_assessment/epds/ness/nesslow_mod" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/ness_score  = 'moderate' or  /epds_assessment/epds/ness/ness_score  = 'low'"/>
       <bind nodeset="/epds_assessment/epds/ness/ness_high" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/ness_score  = 'high'"/>
-      <bind nodeset="/epds_assessment/epds/ness/risk_suicide" type="select1" required="true()" relevant=" /epds_assessment/epds/ness/ness2 ='yes' or  /epds_assessment/epds/ness/ness3 ='yes'"/>
+      <bind nodeset="/epds_assessment/epds/ness/risk_suicide" type="select1" relevant=" /epds_assessment/epds/ness/ness2 ='yes' or  /epds_assessment/epds/ness/ness3 ='yes'" required="true()"/>
       <bind nodeset="/epds_assessment/epds/ness/no_imm_risk" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/risk_suicide ='yes'"/>
       <bind nodeset="/epds_assessment/epds/ness/imm_risk" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/risk_suicide ='no'"/>
       <bind nodeset="/epds_assessment/epds/time" readonly="true()" type="string" relevant=" /epds_assessment/epds/cons_followup = 'no' or  /epds_assessment/epds/cons_followup = 'yes'"/>

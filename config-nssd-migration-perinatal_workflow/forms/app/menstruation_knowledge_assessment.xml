@@ -512,7 +512,7 @@
       <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/woman_name" type="string"/>
       <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/menstruation_form_counter" type="string" calculate="0"/>
       <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment" type="select1" required="true()"/>
-      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/no_service_reason" type="select1" required="true()" relevant=" /menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment  = 'no'"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/no_service_reason" type="select1" relevant=" /menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment  = 'no'" required="true()"/>
       <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent" relevant=" /menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment  = 'yes'"/>
       <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses" type="select1" required="true()"/>
       <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are" type="select1" required="true()"/>
