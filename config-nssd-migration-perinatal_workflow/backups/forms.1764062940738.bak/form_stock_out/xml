@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Stock Out</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/stock_out/beginning_stock_summary:label">
+            <value>**Stocks Available with you :**
+
+**Zinc 10 mg:** <output value=" /stock_out/available_zinc_10mg "/> 
+
+**Zinc 20 mg:** <output value=" /stock_out/available_zinc_20mg "/>
+
+**ORS:** <output value=" /stock_out/available_ors "/>
+
+**Condoms:** <output value=" /stock_out/available_condom "/>
+
+**UPT Kit:** <output value=" /stock_out/available_upt_kit "/></value></text>
+          <text id="/stock_out/condom_used:label">
+            <value>Total Number of Condoms Distributed</value>
+          </text>
+          <text id="/stock_out/initial_stock_summary:label">
+            <value>**Initial stocks Received by you:**
+
+**Zinc 10 mg:** <output value=" /stock_out/initial_zinc10mg "/>
+
+**Zinc 20 mg:** <output value=" /stock_out/initial_zinc20mg "/>
+
+**ORS:** <output value=" /stock_out/initial_ors "/>
+
+**Condoms received from HP:** <output value=" /stock_out/initial_condoms_hp "/>
+
+**Condoms received from PHC:** <output value=" /stock_out/initial_condoms_phc "/>
+
+**Total Condoms:** <output value=" /stock_out/initial_total_condoms "/>
+
+**UPT Kits:** <output value=" /stock_out/initial_upt_kits "/></value></text>
+          <text id="/stock_out/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/stock_out/inputs/contact/name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/stock_out/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/stock_out/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/stock_out/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/stock_out/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/stock_out/item_out/condom:label">
+            <value>Condom</value>
+          </text>
+          <text id="/stock_out/item_out/ors:label">
+            <value>ORS</value>
+          </text>
+          <text id="/stock_out/item_out/utp_kit:label">
+            <value>UPT Kit</value>
+          </text>
+          <text id="/stock_out/item_out/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/stock_out/item_out:hint">
+            <value>-</value>
+          </text>
+          <text id="/stock_out/item_out:label">
+            <value>Tick the item which you have distributed(Stock out)</value>
+          </text>
+          <text id="/stock_out/ors_distritibution_u2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/stock_out/ors_distritibution_u2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/stock_out/ors_distritibution_u2:label">
+            <value>Is this ORS distribution for U2</value>
+          </text>
+          <text id="/stock_out/remaining_stock_summary:label">
+            <value>**You have following remaining items:**
+
+**Zinc 10 mg:** <output value=" /stock_out/remaining_zinc_10mg "/> 
+
+**Zinc 20 mg.:** <output value=" /stock_out/remaining_zinc_20mg "/> 
+
+**ORS:** <output value=" /stock_out/remaining_ors "/> 
+
+**Condoms :** <output value=" /stock_out/remaining_condom "/>
+
+**UPT Kits:** <output value=" /stock_out/remaining_upt_kit "/></value></text>
+          <text id="/stock_out/u2_ors:label">
+            <value>Total number of ORS Distributed (U2)</value>
+          </text>
+          <text id="/stock_out/upt_kit:label">
+            <value>Total number of UPT kit used (eligible women):</value>
+          </text>
+          <text id="/stock_out/zinc10_distritibution_u2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/stock_out/zinc10_distritibution_u2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/stock_out/zinc10_distritibution_u2:label">
+            <value>Is this ZINC 10 mg distribution for U2</value>
+          </text>
+          <text id="/stock_out/zinc20_distritibution_u2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/stock_out/zinc20_distritibution_u2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/stock_out/zinc20_distritibution_u2:label">
+            <value>Is this ZINC (20 mg) distribution for U2</value>
+          </text>
+          <text id="/stock_out/zinc_10mg:label">
+            <value>Total number of ZINC (10 mg) distributed</value>
+          </text>
+          <text id="/stock_out/zinc_20mg:label">
+            <value>Total number of ZINC (20 mg) distributed</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/stock_out/beginning_stock_summary:label">
+            <value>**तपाइँसंग अहिले भएको मौज्दात :**
+
+**जिंक १० मि.ग्रा:** <output value=" /stock_out/available_zinc_10mg "/> 
+
+**जिंक २० मि.ग्रा:** <output value=" /stock_out/available_zinc_20mg "/>
+
+**जीवनजल:** <output value=" /stock_out/available_ors "/>
+
+**जम्मा कण्डम:** <output value=" /stock_out/available_condom "/>
+
+**गर्भवती जांच किट:** <output value=" /stock_out/available_upt_kit "/></value></text>
+          <text id="/stock_out/condom_used:label">
+            <value>जम्मा वितरण गरिएको कण्डम संख्या</value>
+          </text>
+          <text id="/stock_out/initial_stock_summary:label">
+            <value>**तपाईंले प्राप्त गर्नु भएको मौज्दात:**
+
+**जिंक १० मि.ग्रा.:** <output value=" /stock_out/initial_zinc10mg "/>
+
+**जिंक २० मि.ग्रा.:** <output value=" /stock_out/initial_zinc20mg "/>
+
+**जीवनजल :** <output value=" /stock_out/initial_ors "/>
+
+**हेल्थपोस्ट बाट प्राप्त कण्डम :** <output value=" /stock_out/initial_condoms_hp "/>
+
+**न्याय हेल्थ बाट प्राप्त कण्डम:** <output value=" /stock_out/initial_condoms_phc "/>
+
+**जम्मा कण्डम :** <output value=" /stock_out/initial_total_condoms "/>
+
+**गर्भवती जांच किट :** <output value=" /stock_out/initial_upt_kits "/></value></text>
+          <text id="/stock_out/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/stock_out/item_out/condom:label">
+            <value>कण्डम</value>
+          </text>
+          <text id="/stock_out/item_out/ors:label">
+            <value>जीवनजल</value>
+          </text>
+          <text id="/stock_out/item_out/utp_kit:label">
+            <value>गर्भवती जांच किट</value>
+          </text>
+          <text id="/stock_out/item_out/zinc:label">
+            <value>जिंक चक्की</value>
+          </text>
+          <text id="/stock_out/item_out:hint">
+            <value>सबै जानकारी अपडेट गर्न चाहनुहुन्छ भने सबै मा लगाउनुहोस</value>
+          </text>
+          <text id="/stock_out/item_out:label">
+            <value>तपाइँ ले खर्च गरेको सामान मा मात्र √ लगाउनुहोस</value>
+          </text>
+          <text id="/stock_out/ors_distritibution_u2/no:label">
+            <value>हैन</value>
+          </text>
+          <text id="/stock_out/ors_distritibution_u2/yes:label">
+            <value>हो</value>
+          </text>
+          <text id="/stock_out/ors_distritibution_u2:label">
+            <value>के यो जिवनजल को प्याकेट दुई बर्ष मुनिको बच्चा कोलागी दिनु भएको हो?</value>
+          </text>
+          <text id="/stock_out/remaining_stock_summary:label">
+            <value>**तपाईंसंग बाँकी मौज्दात:**
+
+**जिंक १० मि.ग्रा.:** <output value=" /stock_out/remaining_zinc_10mg "/> 
+
+**जिंक २० मि.ग्रा.:** <output value=" /stock_out/remaining_zinc_20mg "/> 
+
+**जीवनजल :** <output value=" /stock_out/remaining_ors "/> 
+
+**कण्डम:** <output value=" /stock_out/remaining_condom "/>
+
+**गर्भवती जांच किट :** <output value=" /stock_out/remaining_upt_kit "/></value></text>
+          <text id="/stock_out/u2_ors:label">
+            <value>जीवनजल खर्च भएको (प्याकेट मा )</value>
+          </text>
+          <text id="/stock_out/upt_kit:label">
+            <value>गर्भवती जांच किट खर्च भएको मात्र</value>
+          </text>
+          <text id="/stock_out/zinc10_distritibution_u2/no:label">
+            <value>हैन</value>
+          </text>
+          <text id="/stock_out/zinc10_distritibution_u2/yes:label">
+            <value>हो</value>
+          </text>
+          <text id="/stock_out/zinc10_distritibution_u2:label">
+            <value>के यो ZINC 10 mg को ट्यावलेट दुई बर्ष मुनिको बच्चा कोलागी दिनु भएको हो?</value>
+          </text>
+          <text id="/stock_out/zinc20_distritibution_u2/no:label">
+            <value>हैन</value>
+          </text>
+          <text id="/stock_out/zinc20_distritibution_u2/yes:label">
+            <value>हो</value>
+          </text>
+          <text id="/stock_out/zinc20_distritibution_u2:label">
+            <value>के यो ZINC ( 20 mg) को प्याकेट दुई बर्ष मुनिको बच्चा कोलागी दिनु भएको हो?</value>
+          </text>
+          <text id="/stock_out/zinc_10mg:label">
+            <value>१० मि.ग्रा. जिंक खर्च भएको मात्र (ट्याब्लेट मा)</value>
+          </text>
+          <text id="/stock_out/zinc_20mg:label">
+            <value>२० मि.ग्रा. जिंक खर्च भएको मात्र (ट्याब्लेट मा )</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <stock_out id="stock_out" prefix="J1!stock_out!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <chw_uuid/>
+          <chw_name/>
+          <chw_id/>
+          <initial_zinc10mg/>
+          <initial_zinc20mg/>
+          <initial_ors/>
+          <initial_condoms_hp/>
+          <initial_condoms_phc/>
+          <initial_total_condoms/>
+          <initial_upt_kits/>
+          <available_zinc_10mg/>
+          <available_zinc_20mg/>
+          <available_ors/>
+          <available_condom/>
+          <available_upt_kit/>
+          <date_of_distribution/>
+          <date_of_distribution_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <initial_stock_summary/>
+          <beginning_stock_summary/>
+          <item_out/>
+          <zinc_10mg/>
+          <zinc10_distritibution_u2/>
+          <zinc_20mg/>
+          <zinc20_distritibution_u2/>
+          <u2_ors/>
+          <ors_distritibution_u2/>
+          <upt_kit/>
+          <condom_used/>
+          <remaining_zinc_10mg/>
+          <remaining_zinc_20mg/>
+          <remaining_ors/>
+          <remaining_condom/>
+          <remaining_upt_kit/>
+          <remaining_stock_summary/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </stock_out>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/stock_out/inputs" required="field-list"/>
+      <bind nodeset="/stock_out/inputs/source" type="string"/>
+      <bind nodeset="/stock_out/inputs/source_id" type="string"/>
+      <bind nodeset="/stock_out/inputs/contact/_id" type="db:person" required="db-object"/>
+      <bind nodeset="/stock_out/inputs/contact/name" type="string"/>
+      <bind nodeset="/stock_out/chw_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/stock_out/chw_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/stock_out/chw_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/stock_out/initial_zinc10mg" type="string" calculate="if(instance('contact-summary')/context/initial_zinc10mg, instance('contact-summary')/context/initial_zinc10mg, .)"/>
+      <bind nodeset="/stock_out/initial_zinc20mg" type="string" calculate="if(instance('contact-summary')/context/initial_zinc20mg, instance('contact-summary')/context/initial_zinc20mg, .)"/>
+      <bind nodeset="/stock_out/initial_ors" type="string" calculate="if(instance('contact-summary')/context/initial_ors, instance('contact-summary')/context/initial_ors, .)"/>
+      <bind nodeset="/stock_out/initial_condoms_hp" type="string" calculate="if(instance('contact-summary')/context/initial_condoms_hp, instance('contact-summary')/context/initial_condoms_hp, .)"/>
+      <bind nodeset="/stock_out/initial_condoms_phc" type="string" calculate="if(instance('contact-summary')/context/initial_condoms_phc, instance('contact-summary')/context/initial_condoms_phc, .)"/>
+      <bind nodeset="/stock_out/initial_total_condoms" type="string" calculate="if(instance('contact-summary')/context/initial_total_condoms, instance('contact-summary')/context/initial_total_condoms, .)"/>
+      <bind nodeset="/stock_out/initial_upt_kits" type="string" calculate="if(instance('contact-summary')/context/initial_upt_kits, instance('contact-summary')/context/initial_upt_kits, .)"/>
+      <bind nodeset="/stock_out/available_zinc_10mg" type="string" calculate="if(instance('contact-summary')/context/available_zinc_10mg, instance('contact-summary')/context/available_zinc_10mg, .)"/>
+      <bind nodeset="/stock_out/available_zinc_20mg" type="string" calculate="if(instance('contact-summary')/context/available_zinc_20mg, instance('contact-summary')/context/available_zinc_20mg, .)"/>
+      <bind nodeset="/stock_out/available_ors" type="string" calculate="if(instance('contact-summary')/context/available_ors, instance('contact-summary')/context/available_ors, .)"/>
+      <bind nodeset="/stock_out/available_condom" type="string" calculate="if(instance('contact-summary')/context/available_condom, instance('contact-summary')/context/available_condom, .)"/>
+      <bind nodeset="/stock_out/available_upt_kit" type="string" calculate="if(instance('contact-summary')/context/available_upt_kit, instance('contact-summary')/context/available_upt_kit, .)"/>
+      <bind nodeset="/stock_out/date_of_distribution" type="string" calculate="date(today())"/>
+      <bind nodeset="/stock_out/date_of_distribution_nepali" type="string" calculate="to-bikram-sambat( /stock_out/date_of_distribution )"/>
+      <bind nodeset="/stock_out/reporting_nepali_short" type="string" calculate="substring-after( /stock_out/date_of_distribution_nepali , &quot; &quot;)"/>
+      <bind nodeset="/stock_out/reporting_nepali_month" type="string" calculate="substring-before( /stock_out/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/stock_out/reporting_nepali_year" type="string" calculate="substring-after( /stock_out/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/stock_out/reporting_month_today" type="string" calculate="if( /stock_out/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /stock_out/reporting_nepali_month  = 'जेठ', 'Jestha', if( /stock_out/reporting_nepali_month  = 'असार', 'Ashadh', if( /stock_out/reporting_nepali_month  = 'साउन', 'Shrawan', if( /stock_out/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /stock_out/reporting_nepali_month  = 'असोज', 'Ashwin', if( /stock_out/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /stock_out/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /stock_out/reporting_nepali_month  = 'पौष', 'Poush', if( /stock_out/reporting_nepali_month  = 'माघ', 'Magh', if( /stock_out/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /stock_out/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/stock_out/reporting_year_today" type="string" calculate="concat(if(substr( /stock_out/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /stock_out/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /stock_out/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /stock_out/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /stock_out/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /stock_out/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /stock_out/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /stock_out/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/stock_out/reporting_today_short" type="string" calculate="concat( /stock_out/reporting_month_today , ' ',  /stock_out/reporting_year_today )"/>
+      <bind nodeset="/stock_out/initial_stock_summary" readonly="true()" type="string"/>
+      <bind nodeset="/stock_out/beginning_stock_summary" readonly="true()" type="string"/>
+      <bind nodeset="/stock_out/item_out" type="select" required="true()"/>
+      <bind nodeset="/stock_out/zinc_10mg" type="int" required="true()" jr:constraintMsg="You do not have that many Zinc 10 mg." relevant="selected( /stock_out/item_out , 'zinc')" constraint=". &lt;= int( /stock_out/available_zinc_10mg )"/>
+      <bind nodeset="/stock_out/zinc10_distritibution_u2" type="select1" required="true()" relevant="selected( /stock_out/item_out , 'zinc')"/>
+      <bind nodeset="/stock_out/zinc_20mg" type="int" required="true()" jr:constraintMsg="You do not have that many Zinc 20 mg" relevant="selected( /stock_out/item_out , 'zinc')" constraint=". &lt;= int( /stock_out/available_zinc_20mg )"/>
+      <bind nodeset="/stock_out/zinc20_distritibution_u2" type="select1" required="true()" relevant="selected( /stock_out/item_out , 'zinc')"/>
+      <bind nodeset="/stock_out/u2_ors" type="int" required="true()" jr:constraintMsg="You do not have that many ORS packets" relevant="selected( /stock_out/item_out , 'ors')" constraint=". &lt;= int( /stock_out/available_ors )"/>
+      <bind nodeset="/stock_out/ors_distritibution_u2" type="select1" required="true()" relevant="selected( /stock_out/item_out , 'ors')"/>
+      <bind nodeset="/stock_out/upt_kit" type="int" required="true()" jr:constraintMsg="You do not have that many UPT kits." relevant="selected( /stock_out/item_out , 'upt_kit')" constraint=". &lt;= int( /stock_out/available_upt_kit )"/>
+      <bind nodeset="/stock_out/condom_used" type="int" required="true()" jr:constraintMsg="You do not have that many Condoms." relevant="selected( /stock_out/item_out , 'condom')" constraint=". &lt;= int( /stock_out/available_condom )"/>
+      <bind nodeset="/stock_out/remaining_zinc_10mg" type="string" calculate="if( /stock_out/zinc_10mg  = '',  /stock_out/available_zinc_10mg , int( /stock_out/available_zinc_10mg ) - int( /stock_out/zinc_10mg ))"/>
+      <bind nodeset="/stock_out/remaining_zinc_20mg" type="string" calculate="if( /stock_out/zinc_20mg  = '',  /stock_out/available_zinc_20mg , int( /stock_out/available_zinc_20mg ) - int( /stock_out/zinc_20mg ))"/>
+      <bind nodeset="/stock_out/remaining_ors" type="string" calculate="if( /stock_out/u2_ors  = '',  /stock_out/available_ors , int( /stock_out/available_ors ) - int( /stock_out/u2_ors ))"/>
+      <bind nodeset="/stock_out/remaining_condom" type="string" calculate="if( /stock_out/condom_used  = '',  /stock_out/available_condom , int( /stock_out/available_condom ) - int( /stock_out/condom_used ))"/>
+      <bind nodeset="/stock_out/remaining_upt_kit" type="string" calculate="if( /stock_out/upt_kit  = '',  /stock_out/available_upt_kit , int( /stock_out/available_upt_kit ) - int( /stock_out/upt_kit ))"/>
+      <bind nodeset="/stock_out/remaining_stock_summary" readonly="true()" type="string"/>
+      <bind nodeset="/stock_out/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="./source = 'user'" ref="/stock_out/inputs">
+      <label ref="jr:itext('/stock_out/inputs:label')"/>
+      <group ref="/stock_out/inputs/contact">
+        <label ref="jr:itext('/stock_out/inputs/contact:label')"/>
+        <input ref="/stock_out/inputs/contact/_id">
+          <label ref="jr:itext('/stock_out/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/stock_out/inputs/contact/name">
+          <label ref="jr:itext('/stock_out/inputs/contact/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <input ref="/stock_out/initial_stock_summary">
+      <label ref="jr:itext('/stock_out/initial_stock_summary:label')"/>
+    </input>
+    <input ref="/stock_out/beginning_stock_summary">
+      <label ref="jr:itext('/stock_out/beginning_stock_summary:label')"/>
+    </input>
+    <select ref="/stock_out/item_out">
+      <label ref="jr:itext('/stock_out/item_out:label')"/>
+      <hint ref="jr:itext('/stock_out/item_out:hint')"/>
+      <item>
+        <label ref="jr:itext('/stock_out/item_out/zinc:label')"/>
+        <value>zinc</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_out/item_out/ors:label')"/>
+        <value>ors</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_out/item_out/utp_kit:label')"/>
+        <value>utp_kit</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_out/item_out/condom:label')"/>
+        <value>condom</value>
+      </item>
+    </select>
+    <input ref="/stock_out/zinc_10mg">
+      <label ref="jr:itext('/stock_out/zinc_10mg:label')"/>
+    </input>
+    <select1 ref="/stock_out/zinc10_distritibution_u2">
+      <label ref="jr:itext('/stock_out/zinc10_distritibution_u2:label')"/>
+      <item>
+        <label ref="jr:itext('/stock_out/zinc10_distritibution_u2/yes:label')"/>
+        <value>yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_out/zinc10_distritibution_u2/no:label')"/>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/stock_out/zinc_20mg">
+      <label ref="jr:itext('/stock_out/zinc_20mg:label')"/>
+    </input>
+    <select1 ref="/stock_out/zinc20_distritibution_u2">
+      <label ref="jr:itext('/stock_out/zinc20_distritibution_u2:label')"/>
+      <item>
+        <label ref="jr:itext('/stock_out/zinc20_distritibution_u2/yes:label')"/>
+        <value>yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_out/zinc20_distritibution_u2/no:label')"/>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/stock_out/u2_ors">
+      <label ref="jr:itext('/stock_out/u2_ors:label')"/>
+    </input>
+    <select1 ref="/stock_out/ors_distritibution_u2">
+      <label ref="jr:itext('/stock_out/ors_distritibution_u2:label')"/>
+      <item>
+        <label ref="jr:itext('/stock_out/ors_distritibution_u2/yes:label')"/>
+        <value>yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_out/ors_distritibution_u2/no:label')"/>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/stock_out/upt_kit">
+      <label ref="jr:itext('/stock_out/upt_kit:label')"/>
+    </input>
+    <input ref="/stock_out/condom_used">
+      <label ref="jr:itext('/stock_out/condom_used:label')"/>
+    </input>
+    <input ref="/stock_out/remaining_stock_summary">
+      <label ref="jr:itext('/stock_out/remaining_stock_summary:label')"/>
+    </input>
+  </h:body>
+</h:html>

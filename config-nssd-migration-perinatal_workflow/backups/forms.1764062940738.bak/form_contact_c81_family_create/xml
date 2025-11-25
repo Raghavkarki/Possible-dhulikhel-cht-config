@@ -1,0 +1,1437 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Add Family Casedata</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c81_family/dolakha_other_residence_vdc/bg:label">
+            <value>Bigu Gaun Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/bm:label">
+            <value>Bhimeshwor Nagar Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/bt:label">
+            <value>Baiteshwor Gaun Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/gs:label">
+            <value>Gaurishankar Gaun Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/jr:label">
+            <value>Jiri Nagar Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/kc:label">
+            <value>Kalinchowk Gaun Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/ml:label">
+            <value>Melung Gaun Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/outside:label">
+            <value>Outside Dolakha</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/sl:label">
+            <value>Sailung Gaun Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/tm:label">
+            <value>Tamakoshi Gaun Palika</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc:label">
+            <value>Where is your family's other residence?</value>
+          </text>
+          <text id="/data/c81_family/familyID_display:label">
+            <value>The following questions are related to family <output value=" /data/c81_family/familyID_suffix "/> only.
+This family's ID is: <output value=" /data/c81_family/familyID "/></value></text>
+          <text id="/data/c81_family/familyID_suffix:label">
+            <value>Enter the family's ID</value>
+          </text>
+          <text id="/data/c81_family/family_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/family_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/family_home:label">
+            <value>Is any adult in this family home?</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/long:label">
+            <value>In 3-6 months</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/months:label">
+            <value>In 1-3 months</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/next:label">
+            <value>Next week</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/return_other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/week:label">
+            <value>This week</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/work:label">
+            <value>At work/in the field</value>
+          </text>
+          <text id="/data/c81_family/family_not_home:label">
+            <value>If no, please indicate when they will return</value>
+          </text>
+          <text id="/data/c81_family/generated_note_name_41:label">
+            <value>You have collected info for family <output value=" /data/c81_family/familyID_suffix "/>. Please proceed.</value>
+          </text>
+          <text id="/data/c81_family/head_of_family/head_of_family_family_name:label">
+            <value>Family Name</value>
+          </text>
+          <text id="/data/c81_family/head_of_family/head_of_family_given_name:label">
+            <value>Given Name</value>
+          </text>
+          <text id="/data/c81_family/head_of_family/head_of_family_middle_name:label">
+            <value>Middle Name</value>
+          </text>
+          <text id="/data/c81_family/head_of_family:label">
+            <value>Head of Family Unit</value>
+          </text>
+          <text id="/data/c81_family/residence_type/no_primary:label">
+            <value>No, primary residence</value>
+          </text>
+          <text id="/data/c81_family/residence_type/no_secondary:label">
+            <value>No, secondary residence</value>
+          </text>
+          <text id="/data/c81_family/residence_type/yes_single:label">
+            <value>Yes, single residence</value>
+          </text>
+          <text id="/data/c81_family/residence_type:label">
+            <value>Is this your family's only residence?</value>
+          </text>
+          <text id="/data/c81_family/return_specify:label">
+            <value>Please specify when the family will return</value>
+          </text>
+          <text id="/data/c81_family/ses/end_of_form:label">
+            <value>Please submit the form to complete registration.</value>
+          </text>
+          <text id="/data/c81_family/ses/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/c81_family/ses/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_pathi:label">
+            <value>How many pathi of agricultural land do members of this household own?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_ropani:label">
+            <value>How many ropanis of agricultural land do members of this household own?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_chickens_poultry:label">
+            <value>Chickens or other poultry?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_cows_bulls_buffaloes:label">
+            <value>Milk Cows, Bulls or Buffaloes?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_goats:label">
+            <value>Goats?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_horses_donkeys_mules:label">
+            <value>Horses, Donkeys, or Mules?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_other_cattle:label">
+            <value>Other Cattle?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_sheep:label">
+            <value>Sheep?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned:label">
+            <value>How many of the following animals does this household own?
+* If None, record '0'
+* If 95 or more, record '95'</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/brahmin:label">
+            <value>Brahmin/Chhetri</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/dalit:label">
+            <value>Dalit</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/janajati:label">
+            <value>Janajati</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/muslim:label">
+            <value>Muslim</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste:label">
+            <value>Caste</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop:label">
+            <value>A computer ? (includes Laptop)</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label:label">
+            <value>Does you household have ...</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone:label">
+            <value>A Landline phone?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio:label">
+            <value>A Radio?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv:label">
+            <value>A Television?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator:label">
+            <value>A Refrigerator?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices:label">
+            <value>Electronic Devices</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_expenses:label">
+            <value>What are your expenses every month?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_female_non_residents:label">
+            <value>How many female members of this family reside outside of this house?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_female_residents:label">
+            <value>How many female members of this family reside in this house on a permanent basis?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_male_non_residents:label">
+            <value>How many male members of this family reside outside of this house?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_male_residents:label">
+            <value>How many male members of this family reside in this house on a permanent basis?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_members_over40:label">
+            <value>How many members (both male and female) in this family are over 40 years in age?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_female_members_display:label">
+            <value>Total female members of this family: <output value=" /data/c81_family/ses/ses_total_female_members "/>
+
+Please make sure this is correct. If not, go back and change it.</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle:label">
+            <value>A bicycle?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck:label">
+            <value>A car or truck?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label:label">
+            <value>Does any member of this household own...</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone:label">
+            <value>A Mobile Phone?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter:label">
+            <value>A motorcycle or motor scooter?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch:label">
+            <value>A Watch?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account:label">
+            <value>Does any member of this household have a bank account?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets:label">
+            <value>Fixed Assets</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/biogas:label">
+            <value>Biogas</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/electricity:label">
+            <value>Electricity</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/firewood:label">
+            <value>Firewood</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/kerosene:label">
+            <value>Kerosene</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/lpg_gas:label">
+            <value>LPG Gas</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/sawdust:label">
+            <value>Sawdust</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type:label">
+            <value>What type of fuel does your household mainly use for cooking?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_male_members_display:label">
+            <value>Total Male members of this family :
+<output value=" /data/c81_family/ses/ses_total_male_members "/>
+
+Please make sure this is correct. If not, go back and change it.</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_total_family_members_display:label">
+            <value>Total members of this family: <output value=" /data/c81_family/ses/ses_total_family_members "/> 
+
+Please make sure this is correct. If not, go back and change it.</value>
+          </text>
+          <text id="/data/c81_family/ses:label">
+            <value>SES</value>
+          </text>
+          <text id="/data/c81_family/ward1/10:label">
+            <value>10</value>
+          </text>
+          <text id="/data/c81_family/ward1/11:label">
+            <value>11</value>
+          </text>
+          <text id="/data/c81_family/ward1/12:label">
+            <value>12</value>
+          </text>
+          <text id="/data/c81_family/ward1/13:label">
+            <value>13</value>
+          </text>
+          <text id="/data/c81_family/ward1/14:label">
+            <value>14</value>
+          </text>
+          <text id="/data/c81_family/ward1/1:label">
+            <value>1</value>
+          </text>
+          <text id="/data/c81_family/ward1/2:label">
+            <value>2</value>
+          </text>
+          <text id="/data/c81_family/ward1/3:label">
+            <value>3</value>
+          </text>
+          <text id="/data/c81_family/ward1/4:label">
+            <value>4</value>
+          </text>
+          <text id="/data/c81_family/ward1/5:label">
+            <value>5</value>
+          </text>
+          <text id="/data/c81_family/ward1/6:label">
+            <value>6</value>
+          </text>
+          <text id="/data/c81_family/ward1/7:label">
+            <value>7</value>
+          </text>
+          <text id="/data/c81_family/ward1/8:label">
+            <value>8</value>
+          </text>
+          <text id="/data/c81_family/ward1/9:label">
+            <value>9</value>
+          </text>
+          <text id="/data/c81_family/ward1:label">
+            <value>Which ward?</value>
+          </text>
+          <text id="/data/c81_family:label">
+            <value>Family details</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/data/c81_family/dolakha_other_residence_vdc/bg:label">
+            <value>बिगु गाउँपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/bm:label">
+            <value>भिमेश्वर नगरपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/bt:label">
+            <value>बैत्येश्वोर गाउँपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/gs:label">
+            <value>गौरीशंकर गाउँपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/jr:label">
+            <value>जिरी नगरपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/kc:label">
+            <value>कालिन्चोक गाउँपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/ml:label">
+            <value>मेलुंग गाउँपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/outside:label">
+            <value>दोलखा जिल्ला बाहिर</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/sl:label">
+            <value>शैलुंग गाउँपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc/tm:label">
+            <value>तामाकोशी गाउँपालिका</value>
+          </text>
+          <text id="/data/c81_family/dolakha_other_residence_vdc:label">
+            <value>यो परिवारको अर्को घर कता छ?</value>
+          </text>
+          <text id="/data/c81_family/familyID_display:label">
+            <value>**अबका प्रश्नहरु परिवार <output value=" /data/c81_family/familyID_suffix "/> र यसका सदस्यहरुसंग मात्र सम्बन्धित छन् |**
+
+याद गर्नुहोस:
+
+* एकै भान्छामा खाना खाने व्यक्तिहरुलाई हामी एक परिवारका सदस्य मान्ने छौं |
+* छुट्टा छुट्टै भान्छामा खाने व्यक्तिहरुलाई सोहि अनुसार छुट्टा छुट्टै परिवारमा दर्ता गर्नुहोस |
+
+यो परिवारको परिचय संख्या यस प्रकार छ: <output value=" /data/c81_family/familyID "/></value></text>
+          <text id="/data/c81_family/familyID_suffix:label">
+            <value>यस परिवारको ID उल्लेख गर्नुहोस</value>
+          </text>
+          <text id="/data/c81_family/family_home/no:label">
+            <value>हुनुहुन्न</value>
+          </text>
+          <text id="/data/c81_family/family_home/yes:label">
+            <value>हुनुहुन्छ</value>
+          </text>
+          <text id="/data/c81_family/family_home:label">
+            <value>यस परिवारका कोही व्यक्ति अहिले घरमा हुनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/long:label">
+            <value>३ देखि ६ महिना भित्र</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/months:label">
+            <value>१ देखि ३ महिना भित्र</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/next:label">
+            <value>अर्को हप्ता</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/return_other:label">
+            <value>अरु केहि कारण</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/week:label">
+            <value>यहि हप्ता भित्र</value>
+          </text>
+          <text id="/data/c81_family/family_not_home/work:label">
+            <value>अहिले काममा/खेतमा, तर पछी फर्कन्छन</value>
+          </text>
+          <text id="/data/c81_family/family_not_home:label">
+            <value>घरमा हुनुहुन्न भने यौटा कारण छान्नुहोस् |</value>
+          </text>
+          <text id="/data/c81_family/generated_note_name_41:label">
+            <value>तपाईंले परिवार <output value=" /data/c81_family/familyID_suffix "/> को जानकारी लिनु भएको छ | अगाढी जानुहोस |</value>
+          </text>
+          <text id="/data/c81_family/head_of_family/head_of_family_family_name:label">
+            <value>थर</value>
+          </text>
+          <text id="/data/c81_family/head_of_family/head_of_family_given_name:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/c81_family/head_of_family/head_of_family_middle_name:label">
+            <value>बिचको नाम</value>
+          </text>
+          <text id="/data/c81_family/head_of_family:label">
+            <value>परिवारको मूल व्यक्तिको नाम</value>
+          </text>
+          <text id="/data/c81_family/residence_type/no_primary:label">
+            <value>छ, तर हामी ६ महिना भन्दा बढी यसै घरमा बस्छौं</value>
+          </text>
+          <text id="/data/c81_family/residence_type/no_secondary:label">
+            <value>छ, हामी धेरैजसो अर्कै घरमा बस्छौं, यहाँ कहिलेकाहीं मात्रै बस्छौं</value>
+          </text>
+          <text id="/data/c81_family/residence_type/yes_single:label">
+            <value>छैन, यै यौटा घर हो</value>
+          </text>
+          <text id="/data/c81_family/residence_type:label">
+            <value>तपाइंको परिवारको अरु पनि कुनै बस्ने ठाउँ/घर छ?</value>
+          </text>
+          <text id="/data/c81_family/return_specify:label">
+            <value>कृपया कारण खुलाउनुहोस्</value>
+          </text>
+          <text id="/data/c81_family/ses/end_of_form:label">
+            <value>दर्ता पुरा गर्न फारम संचित गर्नुहोस</value>
+          </text>
+          <text id="/data/c81_family/ses/external_id:label">
+            <value>बाहिरी आईडी</value>
+          </text>
+          <text id="/data/c81_family/ses/notes:label">
+            <value>नोट</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_pathi:label">
+            <value>यस परिवारका सदस्यहरुसंग कति पाथी जति खेतीपाती योग्य जमिन छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_ropani:label">
+            <value>यस परिवारका सदस्यहरुसंग कति रोपनी जति खेतीपाती योग्य जमिन छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_chickens_poultry:label">
+            <value>कुखुरा, हाँस वा अन्य पन्छी</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_cows_bulls_buffaloes:label">
+            <value>गाई, गोरु वा भैंसी ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_goats:label">
+            <value>खसी बोका बाख्रा</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_horses_donkeys_mules:label">
+            <value>घोडा, गधा वा खच्चड</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_other_cattle:label">
+            <value>अन्य जन्तु</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_sheep:label">
+            <value>भेडा च्यांग्रा</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_animals_owned:label">
+            <value>यस परिवारसंग तल उल्लेखित कुन जनावर कति वटा जति छन्?
+* यौटा पनि नभए 0 लेख्नुहोस
+* ९५ भन्दा बढी भए ९५ नै लेख्नुहोस</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/brahmin:label">
+            <value>ब्राह्मण / क्षेत्री</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/dalit:label">
+            <value>दलित</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/janajati:label">
+            <value>जनजाती</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/muslim:label">
+            <value>मुस्लिम</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_caste:label">
+            <value>जात/जाती</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop:label">
+            <value>कम्प्युटर वा ल्यापटप छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label:label">
+            <value>के यस परिवारमा ...</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone:label">
+            <value>ल्याण्ड लाइन फोन छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio:label">
+            <value>रेडियो छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv:label">
+            <value>टिभी छ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator:label">
+            <value>फ्रिज छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_electronic_devices:label">
+            <value>विधुतीय उपकरणहरु</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_expenses:label">
+            <value>तपाईको परिवारको मासिक खर्च कति जति हुन्छ होला?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_female_non_residents:label">
+            <value>यस परिवारमा घर भन्दा बाहिर बस्ने महिलाहरु कति जना हुनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_female_residents:label">
+            <value>यस परिवारमा सधै जसो यसै घरमा बस्ने महिलाहरु कति जना हुनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_male_non_residents:label">
+            <value>यस परिवारमा घर भन्दा बाहिर बस्ने पुरुषहरु कति जना हुनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_male_residents:label">
+            <value>यस परिवारमा सधै जसो यसै घरमा बस्ने पुरुषहरु कति जना हुनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_family_members_over40:label">
+            <value>यस परिवारमा चालिस वर्ष भन्दा बढी उमेर भएका सदस्यहरु ( पुरुष र महिला दुवै गरेर) कति जना हुनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_female_members_display:label">
+            <value>परिवारमा जम्मा महिला संख्या: <output value=" /data/c81_family/ses/ses_total_female_members "/>
+
+सहि नभए पछाडी गएर सच्च्याउनुहोस् |</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle:label">
+            <value>साइकल छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck:label">
+            <value>कार, जिप, ट्रक छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label:label">
+            <value>यस परिवारका कुनै पनि सदस्यसंग ...</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone:label">
+            <value>मोबाइल फोन छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter:label">
+            <value>मोटरसाइकल वा स्कुटर छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch:label">
+            <value>घडी छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account:label">
+            <value>यस परिवारका कुनै पनि सदस्यको बैंकमा खाता छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_fixed_assets:label">
+            <value>अचल सम्पति</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/biogas:label">
+            <value>गोबर ग्याँस</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/electricity:label">
+            <value>बिजुली</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/firewood:label">
+            <value>दाउरा</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/kerosene:label">
+            <value>मट्टीतेल</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/lpg_gas:label">
+            <value>ग्यास सिलिन्डर</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type/sawdust:label">
+            <value>भुसे चुलो</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_household_fuel_type:label">
+            <value>तपाईंको परिवारमा खाना पकाउनको लागि धेरैजसो कुन इन्धनको प्रयोग हुन्छ ?</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_male_members_display:label">
+            <value>परिवारका जम्मा पुरुष संख्या :
+<output value=" /data/c81_family/ses/ses_total_male_members "/>
+
+सहि नभए पछाडी गएर सच्च्याउनुहोस्</value>
+          </text>
+          <text id="/data/c81_family/ses/ses_total_family_members_display:label">
+            <value>जम्मा परिवार सदस्य संख्या: <output value=" /data/c81_family/ses/ses_total_family_members "/>
+
+सहि नभए पछाडी गएर सच्च्याउनुहोस् |</value>
+          </text>
+          <text id="/data/c81_family/ses:label">
+            <value>सामाजिक आर्थिक अवस्था</value>
+          </text>
+          <text id="/data/c81_family/ward1/10:label">
+            <value>१०</value>
+          </text>
+          <text id="/data/c81_family/ward1/11:label">
+            <value>११</value>
+          </text>
+          <text id="/data/c81_family/ward1/12:label">
+            <value>१२</value>
+          </text>
+          <text id="/data/c81_family/ward1/13:label">
+            <value>१३</value>
+          </text>
+          <text id="/data/c81_family/ward1/14:label">
+            <value>१४</value>
+          </text>
+          <text id="/data/c81_family/ward1/1:label">
+            <value>१</value>
+          </text>
+          <text id="/data/c81_family/ward1/2:label">
+            <value>२</value>
+          </text>
+          <text id="/data/c81_family/ward1/3:label">
+            <value>३</value>
+          </text>
+          <text id="/data/c81_family/ward1/4:label">
+            <value>४</value>
+          </text>
+          <text id="/data/c81_family/ward1/5:label">
+            <value>५</value>
+          </text>
+          <text id="/data/c81_family/ward1/6:label">
+            <value>६</value>
+          </text>
+          <text id="/data/c81_family/ward1/7:label">
+            <value>७</value>
+          </text>
+          <text id="/data/c81_family/ward1/8:label">
+            <value>८</value>
+          </text>
+          <text id="/data/c81_family/ward1/9:label">
+            <value>९</value>
+          </text>
+          <text id="/data/c81_family/ward1:label">
+            <value>अर्को घर कुन वडामा छ ?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="c81_family-create" prefix="J1!c81_family-create!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c81_family>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type>c82_person</contact_type>
+            <name/>
+            <today/>
+            <familyID_suffix/>
+            <familyID/>
+            <familyID_display/>
+            <family_home/>
+            <family_not_home/>
+            <return_specify/>
+            <head_of_family>
+              <head_of_family_given_name/>
+              <head_of_family_middle_name/>
+              <head_of_family_family_name/>
+            </head_of_family>
+            <head_of_family_hoh_name_text/>
+            <generated_note_name_41/>
+            <residence_type/>
+            <dolakha_other_residence_vdc/>
+            <ward1/>
+            <ses>
+              <ses_caste/>
+              <ses_family_male_residents/>
+              <ses_family_male_non_residents/>
+              <ses_total_male_members/>
+              <ses_male_members_display/>
+              <ses_family_female_residents/>
+              <ses_family_female_non_residents/>
+              <ses_total_female_members/>
+              <ses_female_members_display/>
+              <ses_total_family_members/>
+              <ses_total_family_members_display/>
+              <ses_family_members_over40/>
+              <ses_expenses/>
+              <ses_household_fuel_type/>
+              <ses_animals_owned>
+                <ses_animals_owned_cows_bulls_buffaloes/>
+                <ses_animals_owned_chickens_poultry/>
+                <ses_animals_owned_goats/>
+                <ses_animals_owned_sheep/>
+                <ses_animals_owned_horses_donkeys_mules/>
+                <ses_animals_owned_other_cattle/>
+                <ses_agricultural_land_ropani/>
+                <ses_agricultural_land_pathi/>
+              </ses_animals_owned>
+              <ses_electronic_devices>
+                <ses_electronic_devices_label/>
+                <ses_electronic_devices_owns_radio/>
+                <ses_electronic_devices_owns_tv/>
+                <ses_electronic_devices_landline_phone/>
+                <ses_electronic_devices_computer_laptop/>
+                <ses_electronic_devices_refrigerator/>
+              </ses_electronic_devices>
+              <ses_fixed_assets>
+                <ses_fixed_assets_label/>
+                <ses_fixed_assets_watch/>
+                <ses_fixed_assets_mobile_phone/>
+                <ses_fixed_assets_bicycle/>
+                <ses_fixed_assets_motorcycle_scooter/>
+                <ses_fixed_assets_car_truck/>
+                <ses_have_bank_account/>
+              </ses_fixed_assets>
+              <end_of_form/>
+              <date_of_registration/>
+              <enrollment_complete/>
+              <health_expenditure/>
+              <reporting_today/>
+              <reporting_report_families_registered/>
+              <reporting_report_enrollment_complete/>
+              <external_id/>
+              <notes/>
+            </ses>
+          </c81_family>
+          <init>
+            <parent_id/>
+            <hhID/>
+            <family_units/>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="0"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/parent_id" type="string" calculate=" /data/c81_family/parent "/>
+      <bind nodeset="/data/init/hhID" type="string"/>
+      <bind nodeset="/data/init/family_units" type="string"/>
+      <bind nodeset="/data/c81_family/parent" type="string"/>
+      <bind nodeset="/data/c81_family/type" type="string"/>
+      <bind nodeset="/data/c81_family/contact_type" type="string"/>
+      <bind nodeset="/data/c81_family/name" type="string" calculate="concat( /data/c81_family/familyID , ' - ',  /data/c81_family/head_of_family_hoh_name_text )"/>
+      <bind nodeset="/data/c81_family/today" type="string" calculate="format-date(date(today()), &quot;%d-%m-%Y&quot;)"/>
+      <bind nodeset="/data/c81_family/familyID_suffix" type="string" constraint="regex(., '^[A-Z]{1}$')"/>
+      <bind nodeset="/data/c81_family/familyID" type="string" calculate="concat( /data/init/hhID , '-',  /data/c81_family/familyID_suffix )"/>
+      <bind nodeset="/data/c81_family/familyID_display" readonly="true()" type="string"/>
+      <bind nodeset="/data/c81_family/family_home" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/family_not_home" type="select1" required="true()" relevant=" /data/c81_family/family_home  = 'no'"/>
+      <bind nodeset="/data/c81_family/return_specify" type="string" required="true()" relevant=" /data/c81_family/family_not_home  = 'return_other'"/>
+      <bind nodeset="/data/c81_family/head_of_family/head_of_family_given_name" type="string" required="true()"/>
+      <bind nodeset="/data/c81_family/head_of_family/head_of_family_middle_name" type="string"/>
+      <bind nodeset="/data/c81_family/head_of_family/head_of_family_family_name" type="string" required="true()"/>
+      <bind nodeset="/data/c81_family/head_of_family_hoh_name_text" type="string" calculate="concat( /data/c81_family/head_of_family/head_of_family_given_name , &quot; &quot;,  /data/c81_family/head_of_family/head_of_family_middle_name , &quot; &quot;,  /data/c81_family/head_of_family/head_of_family_family_name )"/>
+      <bind nodeset="/data/c81_family/generated_note_name_41" readonly="true()" type="string" relevant=" /data/c81_family/family_home  = 'no'"/>
+      <bind nodeset="/data/c81_family/residence_type" type="select1" required="true()" relevant=" /data/c81_family/family_home  = 'yes'"/>
+      <bind nodeset="/data/c81_family/dolakha_other_residence_vdc" type="select1" required="true()" relevant=" /data/c81_family/residence_type  = 'no_primary' or  /data/c81_family/residence_type  = 'no_secondary'"/>
+      <bind nodeset="/data/c81_family/ward1" type="select1" required="true()" relevant="selected( /data/c81_family/dolakha_other_residence_vdc , 'bt') or selected( /data/c81_family/dolakha_other_residence_vdc , 'bg') or selected( /data/c81_family/dolakha_other_residence_vdc , 'bm') or selected( /data/c81_family/dolakha_other_residence_vdc , 'gs') or selected( /data/c81_family/dolakha_other_residence_vdc , 'jr') or selected( /data/c81_family/dolakha_other_residence_vdc , 'kc') or selected( /data/c81_family/dolakha_other_residence_vdc , 'ml') or selected( /data/c81_family/dolakha_other_residence_vdc , 'sl') or selected( /data/c81_family/dolakha_other_residence_vdc , 'tm')"/>
+      <bind nodeset="/data/c81_family/ses" relevant=" /data/c81_family/family_home  = 'yes'"/>
+      <bind nodeset="/data/c81_family/ses/ses_caste" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_male_residents" type="int" jr:constraintMsg="Number of males cannot exceed 15" required="true()" constraint=". &lt;= 15 and . &gt;= 0"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_male_non_residents" type="int" jr:constraintMsg="Number of males cannot exceed 15" required="true()" constraint=". &lt;= 15 and . &gt;= 0"/>
+      <bind nodeset="/data/c81_family/ses/ses_total_male_members" type="string" calculate="number( /data/c81_family/ses/ses_family_male_residents ) + number( /data/c81_family/ses/ses_family_male_non_residents )"/>
+      <bind nodeset="/data/c81_family/ses/ses_male_members_display" readonly="true()" type="string"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_female_residents" type="int" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_female_non_residents" type="int" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_total_female_members" type="string" calculate="number( /data/c81_family/ses/ses_family_female_residents ) + number( /data/c81_family/ses/ses_family_female_non_residents )"/>
+      <bind nodeset="/data/c81_family/ses/ses_female_members_display" readonly="true()" type="string"/>
+      <bind nodeset="/data/c81_family/ses/ses_total_family_members" type="string" calculate="number( /data/c81_family/ses/ses_family_female_residents ) + number( /data/c81_family/ses/ses_family_female_non_residents ) + number( /data/c81_family/ses/ses_family_male_residents ) + number( /data/c81_family/ses/ses_family_male_non_residents )"/>
+      <bind nodeset="/data/c81_family/ses/ses_total_family_members_display" readonly="true()" type="string"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_members_over40" type="int" jr:constraintMsg="Cannot exceed the total members of this family" required="true()" constraint=". &lt;= ( /data/c81_family/ses/ses_total_female_members  +  /data/c81_family/ses/ses_total_male_members )"/>
+      <bind nodeset="/data/c81_family/ses/ses_expenses" type="int" jr:constraintMsg="If this is your primary residence, expenditure cannot be less than 100 or cannot be less than 0" required="true()" constraint="if( /data/c81_family/residence_type  = 'yes_single' or  /data/c81_family/residence_type  = 'no_primary', . &gt;= 100, . &gt;= 0)"/>
+      <bind nodeset="/data/c81_family/ses/ses_household_fuel_type" type="select1" required="true()" relevant="false()"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned" relevant="false()"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_cows_bulls_buffaloes" type="int" jr:constraintMsg="This answer cannot exceed 95" required="true()" constraint=". &lt;= 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_chickens_poultry" type="int" jr:constraintMsg="This answer cannot exceed 95" required="true()" constraint=". &lt;= 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_goats" type="int" jr:constraintMsg="This answer cannot exceed 95" required="true()" constraint=". &lt;= 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_sheep" type="int" jr:constraintMsg="This answer cannot exceed 95" required="true()" constraint=". &lt;= 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_horses_donkeys_mules" type="int" jr:constraintMsg="This answer cannot exceed 95" required="true()" constraint=". &lt;= 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_other_cattle" type="int" jr:constraintMsg="This answer cannot exceed 95" required="true()" constraint=". &lt;= 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_ropani" type="int" jr:constraintMsg="Cannot be less than 0 or greater than 998" required="true()" constraint=". &gt;= 0 and . &lt;= 998"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_pathi" type="int" jr:constraintMsg="Cannot be less than 0 or greater than 998" required="true()" constraint=". &gt;= 0 and . &lt;= 998"/>
+      <bind nodeset="/data/c81_family/ses/ses_electronic_devices" relevant="false()"/>
+      <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label" type="select1"/>
+      <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets" relevant="false()"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label" type="select1"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account" type="select1" required="true()"/>
+      <bind nodeset="/data/c81_family/ses/end_of_form" readonly="true()" type="string"/>
+      <bind nodeset="/data/c81_family/ses/date_of_registration" type="string" calculate="today()"/>
+      <bind nodeset="/data/c81_family/ses/enrollment_complete" type="string" calculate="if( /data/c81_family/family_home  = 'yes', 'yes', 'no')"/>
+      <bind nodeset="/data/c81_family/ses/health_expenditure" type="string" calculate="if( /data/c81_family/family_home  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/c81_family/ses/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/data/c81_family/ses/reporting_report_families_registered" type="string" calculate="if( /data/c81_family/family_home  != '', 1, 0)"/>
+      <bind nodeset="/data/c81_family/ses/reporting_report_enrollment_complete" type="string" calculate="if( /data/c81_family/ses/enrollment_complete  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/c81_family/ses/external_id" type="string"/>
+      <bind nodeset="/data/c81_family/ses/notes" type="string"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <input appearance="db-object" ref="/data/init/parent_id"/>
+      <input appearance="hidden" ref="/data/init/hhID"/>
+    </group>
+    <group appearance="field-list" ref="/data/c81_family">
+      <label ref="jr:itext('/data/c81_family:label')"/>
+      <input ref="/data/c81_family/familyID_suffix">
+        <label ref="jr:itext('/data/c81_family/familyID_suffix:label')"/>
+        <hint>Specifies the family letter for the family ID</hint>
+      </input>
+      <input ref="/data/c81_family/familyID_display">
+        <label ref="jr:itext('/data/c81_family/familyID_display:label')"/>
+      </input>
+      <select1 ref="/data/c81_family/family_home">
+        <label ref="jr:itext('/data/c81_family/family_home:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_home/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_home/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c81_family/family_not_home">
+        <label ref="jr:itext('/data/c81_family/family_not_home:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_not_home/work:label')"/>
+          <value>work</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_not_home/week:label')"/>
+          <value>week</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_not_home/next:label')"/>
+          <value>next</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_not_home/months:label')"/>
+          <value>months</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_not_home/long:label')"/>
+          <value>long</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/family_not_home/return_other:label')"/>
+          <value>return_other</value>
+        </item>
+      </select1>
+      <input ref="/data/c81_family/return_specify">
+        <label ref="jr:itext('/data/c81_family/return_specify:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/c81_family/head_of_family">
+        <label ref="jr:itext('/data/c81_family/head_of_family:label')"/>
+        <input ref="/data/c81_family/head_of_family/head_of_family_given_name">
+          <label ref="jr:itext('/data/c81_family/head_of_family/head_of_family_given_name:label')"/>
+        </input>
+        <input ref="/data/c81_family/head_of_family/head_of_family_middle_name">
+          <label ref="jr:itext('/data/c81_family/head_of_family/head_of_family_middle_name:label')"/>
+        </input>
+        <input ref="/data/c81_family/head_of_family/head_of_family_family_name">
+          <label ref="jr:itext('/data/c81_family/head_of_family/head_of_family_family_name:label')"/>
+        </input>
+      </group>
+      <input ref="/data/c81_family/generated_note_name_41">
+        <label ref="jr:itext('/data/c81_family/generated_note_name_41:label')"/>
+      </input>
+      <select1 ref="/data/c81_family/residence_type">
+        <label ref="jr:itext('/data/c81_family/residence_type:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c81_family/residence_type/yes_single:label')"/>
+          <value>yes_single</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/residence_type/no_primary:label')"/>
+          <value>no_primary</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/residence_type/no_secondary:label')"/>
+          <value>no_secondary</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c81_family/dolakha_other_residence_vdc">
+        <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/bt:label')"/>
+          <value>bt</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/bg:label')"/>
+          <value>bg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/bm:label')"/>
+          <value>bm</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/gs:label')"/>
+          <value>gs</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/jr:label')"/>
+          <value>jr</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/kc:label')"/>
+          <value>kc</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/ml:label')"/>
+          <value>ml</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/sl:label')"/>
+          <value>sl</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/tm:label')"/>
+          <value>tm</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/dolakha_other_residence_vdc/outside:label')"/>
+          <value>outside</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c81_family/ward1">
+        <label ref="jr:itext('/data/c81_family/ward1:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/6:label')"/>
+          <value>6</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/7:label')"/>
+          <value>7</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/8:label')"/>
+          <value>8</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/9:label')"/>
+          <value>9</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/10:label')"/>
+          <value>10</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/11:label')"/>
+          <value>11</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/12:label')"/>
+          <value>12</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/13:label')"/>
+          <value>13</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c81_family/ward1/14:label')"/>
+          <value>14</value>
+        </item>
+      </select1>
+      <group ref="/data/c81_family/ses">
+        <label ref="jr:itext('/data/c81_family/ses:label')"/>
+        <select1 ref="/data/c81_family/ses/ses_caste">
+          <label ref="jr:itext('/data/c81_family/ses/ses_caste:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_caste/dalit:label')"/>
+            <value>dalit</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_caste/brahmin:label')"/>
+            <value>brahmin</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_caste/janajati:label')"/>
+            <value>janajati</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_caste/muslim:label')"/>
+            <value>muslim</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_caste/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/data/c81_family/ses/ses_family_male_residents">
+          <label ref="jr:itext('/data/c81_family/ses/ses_family_male_residents:label')"/>
+          <hint>This means male members, both children and adults, who reside in this house at least 6 months out of the year.</hint>
+        </input>
+        <input ref="/data/c81_family/ses/ses_family_male_non_residents">
+          <label ref="jr:itext('/data/c81_family/ses/ses_family_male_non_residents:label')"/>
+          <hint>This means male members, both children and adults, who reside somewhere else due to work, education, or some other commitment and come home for brief periods of time. Please do not include members who have permanently migrated.</hint>
+        </input>
+        <input ref="/data/c81_family/ses/ses_male_members_display">
+          <label ref="jr:itext('/data/c81_family/ses/ses_male_members_display:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/ses_family_female_residents">
+          <label ref="jr:itext('/data/c81_family/ses/ses_family_female_residents:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/ses_family_female_non_residents">
+          <label ref="jr:itext('/data/c81_family/ses/ses_family_female_non_residents:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/ses_female_members_display">
+          <label ref="jr:itext('/data/c81_family/ses/ses_female_members_display:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/ses_total_family_members_display">
+          <label ref="jr:itext('/data/c81_family/ses/ses_total_family_members_display:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/ses_family_members_over40">
+          <label ref="jr:itext('/data/c81_family/ses/ses_family_members_over40:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/ses_expenses">
+          <label ref="jr:itext('/data/c81_family/ses/ses_expenses:label')"/>
+          <hint>Estimate: including expenses for child's education, food, clothes etc.</hint>
+        </input>
+        <select1 ref="/data/c81_family/ses/ses_household_fuel_type">
+          <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type/firewood:label')"/>
+            <value>firewood</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type/electricity:label')"/>
+            <value>electricity</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type/lpg_gas:label')"/>
+            <value>lpg_gas</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type/biogas:label')"/>
+            <value>biogas</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type/sawdust:label')"/>
+            <value>sawdust</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type/kerosene:label')"/>
+            <value>kerosene</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c81_family/ses/ses_household_fuel_type/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <group ref="/data/c81_family/ses/ses_animals_owned">
+          <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned:label')"/>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_cows_bulls_buffaloes">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_animals_owned_cows_bulls_buffaloes:label')"/>
+          </input>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_chickens_poultry">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_animals_owned_chickens_poultry:label')"/>
+          </input>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_goats">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_animals_owned_goats:label')"/>
+          </input>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_sheep">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_animals_owned_sheep:label')"/>
+          </input>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_horses_donkeys_mules">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_animals_owned_horses_donkeys_mules:label')"/>
+          </input>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_other_cattle">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_animals_owned_other_cattle:label')"/>
+          </input>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_ropani">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_ropani:label')"/>
+            <hint>If Unknown, enter '998'</hint>
+          </input>
+          <input ref="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_pathi">
+            <label ref="jr:itext('/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_pathi:label')"/>
+          </input>
+        </group>
+        <group ref="/data/c81_family/ses/ses_electronic_devices">
+          <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices:label')"/>
+          <select1 appearance="label" ref="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label">
+            <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio">
+            <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv">
+            <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_tv/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone">
+            <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_landline_phone/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop">
+            <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_computer_laptop/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator">
+            <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_refrigerator/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+        </group>
+        <group ref="/data/c81_family/ses/ses_fixed_assets">
+          <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets:label')"/>
+          <select1 appearance="label" ref="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label">
+            <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_label/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch">
+            <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_watch/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone">
+            <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_mobile_phone/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle">
+            <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_bicycle/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter">
+            <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_motorcycle_scooter/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 appearance="list-nolabel" ref="/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck">
+            <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_fixed_assets_car_truck/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account">
+            <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account:label')"/>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/c81_family/ses/ses_fixed_assets/ses_have_bank_account/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+        </group>
+        <input ref="/data/c81_family/ses/end_of_form">
+          <label ref="jr:itext('/data/c81_family/ses/end_of_form:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/external_id">
+          <label ref="jr:itext('/data/c81_family/ses/external_id:label')"/>
+        </input>
+        <input ref="/data/c81_family/ses/notes">
+          <label ref="jr:itext('/data/c81_family/ses/notes:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

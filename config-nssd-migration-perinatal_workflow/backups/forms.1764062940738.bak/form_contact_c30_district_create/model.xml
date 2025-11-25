@@ -1,0 +1,387 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c30_district:create" prefix="J1!contact:c30_district:create!" delimiter="#" version="2022-01-04 19-33">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c30_district>
+            <parent>PARENT</parent>
+            <type/>
+            <is_name_generated>false</is_name_generated>
+            <name/>
+            <external_id/>
+            <notes/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </c30_district>
+          <init>
+            <create_new_person/>
+            <name/>
+            <contact_name/>
+            <custom_place_name_label_translator/>
+            <custom_place_name_label/>
+            <custom_place_name/>
+            <place_type>c30_district</place_type>
+            <place_type_prefix/>
+            <place_type_translation/>
+            <generated_name>c30_district</generated_name>
+            <generated_name_translation/>
+            <person_type>c30_district</person_type>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type/>
+            <role/>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <age/>
+            <gender>female</gender>
+            <caste_code/>
+            <phone>+977</phone>
+            <fchv_id_number/>
+            <start_date_as_fchv/>
+            <start_date_as_fchv_ad/>
+            <basic_training/>
+            <post/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="yes_no_unknown">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-yes_no_unknown-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no_unknown-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no_unknown-2</itextId>
+            <name>unknown</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="male_female_other">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-male_female_other-0</itextId>
+            <name>female</name>
+          </item>
+          <item>
+            <itextId>static_instance-male_female_other-1</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>static_instance-male_female_other-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="contact">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-contact-0</itextId>
+            <name>new_person</name>
+          </item>
+          <item>
+            <itextId>static_instance-contact-1</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="roles">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-roles-0</itextId>
+            <name>patient</name>
+          </item>
+          <item>
+            <itextId>static_instance-roles-1</itextId>
+            <name>app_user</name>
+          </item>
+          <item>
+            <itextId>static_instance-roles-2</itextId>
+            <name>chw</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="yes_no_generated_name">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-yes_no_generated_name-0</itextId>
+            <name>true</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no_generated_name-1</itextId>
+            <name>false</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="place_type">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-place_type-0</itextId>
+            <name>c10_center</name>
+          </item>
+          <item>
+            <itextId>static_instance-place_type-1</itextId>
+            <name>c20_province</name>
+          </item>
+          <item>
+            <itextId>static_instance-place_type-2</itextId>
+            <name>c30_district</name>
+          </item>
+          <item>
+            <itextId>static_instance-place_type-3</itextId>
+            <name>c40_municipality</name>
+          </item>
+          <item>
+            <itextId>static_instance-place_type-4</itextId>
+            <name>c50_ward</name>
+          </item>
+          <item>
+            <itextId>static_instance-place_type-5</itextId>
+            <name>c60_chn_area</name>
+          </item>
+          <item>
+            <itextId>static_instance-place_type-6</itextId>
+            <name>c70_fchv_area</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="caste_code">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-caste_code-0</itextId>
+            <name>dalit</name>
+          </item>
+          <item>
+            <itextId>static_instance-caste_code-1</itextId>
+            <name>janajati</name>
+          </item>
+          <item>
+            <itextId>static_instance-caste_code-2</itextId>
+            <name>madhesi</name>
+          </item>
+          <item>
+            <itextId>static_instance-caste_code-3</itextId>
+            <name>muslim</name>
+          </item>
+          <item>
+            <itextId>static_instance-caste_code-4</itextId>
+            <name>brahmin_chhetri</name>
+          </item>
+          <item>
+            <itextId>static_instance-caste_code-5</itextId>
+            <name>other</name>
+          </item>
+          <item>
+            <itextId>static_instance-caste_code-6</itextId>
+            <name>unknown</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="level_of_education">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-level_of_education-0</itextId>
+            <name>iliterate</name>
+          </item>
+          <item>
+            <itextId>static_instance-level_of_education-1</itextId>
+            <name>literate</name>
+          </item>
+          <item>
+            <itextId>static_instance-level_of_education-2</itextId>
+            <name>basic</name>
+          </item>
+          <item>
+            <itextId>static_instance-level_of_education-3</itextId>
+            <name>secondary</name>
+          </item>
+          <item>
+            <itextId>static_instance-level_of_education-4</itextId>
+            <name>secondary_level_high</name>
+          </item>
+          <item>
+            <itextId>static_instance-level_of_education-5</itextId>
+            <name>undergard_or_high</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="received_or_not">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-received_or_not-0</itextId>
+            <name>true</name>
+          </item>
+          <item>
+            <itextId>static_instance-received_or_not-1</itextId>
+            <name>false</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="generated_name">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-generated_name-0</itextId>
+            <name>c60_chn_area</name>
+          </item>
+          <item>
+            <itextId>static_instance-generated_name-1</itextId>
+            <name>c70_fchv_area</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="translate_name_label">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-translate_name_label-0</itextId>
+            <name>name</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="post">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-post-0</itextId>
+            <places>c40</places>
+            <name>ahw</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-1</itextId>
+            <places>c30 c40</places>
+            <name>anm</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-2</itextId>
+            <places>c40 c50 c60</places>
+            <name>ha</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-3</itextId>
+            <places>c30 c40 c50</places>
+            <name>sn</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-4</itextId>
+            <places>c40 c60</places>
+            <name>chn</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-5</itextId>
+            <places>c40</places>
+            <name>cho</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-6</itextId>
+            <places>c30 c40 c50</places>
+            <name>phi</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-7</itextId>
+            <places>c40</places>
+            <name>hc</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-8</itextId>
+            <places>c30 c40 c50</places>
+            <name>mo</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-9</itextId>
+            <places>c20 c30</places>
+            <name>pho</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-10</itextId>
+            <places>c20 c30</places>
+            <name>pha</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-11</itextId>
+            <places>c10</places>
+            <name>director</name>
+          </item>
+          <item>
+            <itextId>static_instance-post-12</itextId>
+            <places>all</places>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="person_type">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>static_instance-person_type-0</itextId>
+            <name>c10_center</name>
+          </item>
+          <item>
+            <itextId>static_instance-person_type-1</itextId>
+            <name>c20_province</name>
+          </item>
+          <item>
+            <itextId>static_instance-person_type-2</itextId>
+            <name>c30_district</name>
+          </item>
+          <item>
+            <itextId>static_instance-person_type-3</itextId>
+            <name>c40_municipality</name>
+          </item>
+          <item>
+            <itextId>static_instance-person_type-4</itextId>
+            <name>c50_ward</name>
+          </item>
+          <item>
+            <itextId>static_instance-person_type-5</itextId>
+            <name>c60_chn_area</name>
+          </item>
+          <item>
+            <itextId>static_instance-person_type-6</itextId>
+            <name>c70_fchv_area</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

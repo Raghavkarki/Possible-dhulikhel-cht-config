@@ -1,0 +1,625 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>hypertension_screening_first_visit</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/hypertension_screening_first_visit_form/group_assessment_end/generated_note_name_73:label">
+            <value>You are at the end of this screening form. Press finish to submit. Please visit this person on: &lt;output value="#form/visit_date/next_visit_due_htn_screen" /&gt; Thank you!!!</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_36:label">
+            <value>If this patient has died or permanently migrated, his/her case will be closed and name removed from care delivery.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_37:label">
+            <value>If this patient has permanently migrated, then she will be removed from care delivery forms</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/doesn_want_service:label">
+            <value>This person does not want counseling service</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/family_refused_service:label">
+            <value>Family members refused service</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/patient_busy:label">
+            <value>This person was busy.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason:label">
+            <value>If no, please select a reason</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/person_at_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/person_at_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/person_at_home:label">
+            <value>Is this person available at home?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/back_6_month:label">
+            <value>Will be back anytime withing 6 months.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/back_in_1_year:label">
+            <value>Temporary Migration Gone for more than 6 months but less than a year</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/died:label">
+            <value>Patient has died</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/gone_for_work:label">
+            <value>Gone to Work</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/location_unknown:label">
+            <value>Don't know where this person has gone to.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/migrated:label">
+            <value>Permanent Migration(gone for more than 1 year)</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence:label">
+            <value>Please provide a reason for his/her absence.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling/no:label">
+            <value>No</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling:label">
+            <value>Does this person agree to receive counseling?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment:label">
+            <value>Individual Assessment</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_enter_bahmni_id:label">
+            <value>Enter Bahmni ID.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id/no:label">
+            <value>No</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id:label">
+            <value>Does this person has Bahmni ID?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_63:label">
+            <value>"This person's BP is normal. Please counsel on risk factors of counselling and healthy lifestyle (ABCDE) to prevent hypertension
+You will F/U this person after one year"</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_64:label">
+            <value>"The person's BP is at pre-hypertension level. Please counsel this person on healthy lifestyle and ask to measure BP time to time.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_65:label">
+            <value>"The person's BP is at pre-hypertension level. Please counsel this person on healthy lifestyle and ask to measure BP time to time.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_66:label">
+            <value>"The person's BP is at hypertension Stage 1 level, ask the person to visit nearest health center within 1-2 weeks for confirmatory diagnosis
+You will F/U this person in a month"</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_67:label">
+            <value>"The person's BP is at hypertension Stage 2 level, ask the person to visit nearest health center within 1-2 days for confirmatory diagnosis
+You will F/U this person in a month"</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_68:label">
+            <value>The person is enrolled as Hypertensive, please fill out the form for HTN.</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/no:label">
+            <value>No</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive:label">
+            <value>Are you currently hypertensive?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp:label">
+            <value>Diastolic Blood Pressure(DBP)</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp:label">
+            <value>Systolic Blood Pressure(SBP)</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp:label">
+            <value>Measure BP, and record value (on left arm, position BP cuff at the level of heart)</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/no_means_of_verification:label">
+            <value>No means of verification</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/verified_by_medicines:label">
+            <value>Verified By Medicines</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/verified_by_opd_card:label">
+            <value>Verified by OPD Card</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine:label">
+            <value>Can you please show me the OPD card or medicines?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening:label">
+            <value>Proceed Screening</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/hypertension_screening_first_visit_form/group_assessment_end/generated_note_name_73:label">
+            <value>तपाइँ यो फारम को अन्तिम मा हुनुहुन्छ फारम बन्द गर्न Submit बटन मा थिच्नुहोस : &lt;output value="#form/visit_date/next_visit_due_nepali_htn_screen" /&gt; 
+धन्यबाद!!!</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_36:label">
+            <value>मृत्यु भएको वा बसाइ सरेर गएको भए यी बिरामीको नाम स्याहार सेवाबाट आफै हटेर जाने छ |</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_37:label">
+            <value>यदि १ बर्ष भन्दा बढीको लागि स्थाई बसाइ सरेर गएको भए यी बिरामीलाई स्याहार फारमबाट हटाइने छ</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/doesn_want_service:label">
+            <value>उहांलाई हाम्रो सेवा लिन मन छैन</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/family_refused_service:label">
+            <value>परिवारका सदस्यले मानेनन्</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/patient_busy:label">
+            <value>उहां ब्यस्त हुनुहुन्छ</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason:label">
+            <value>किन चाहनु हुन्न, कारण दिनुहोस</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/person_at_home/no:label">
+            <value>हुनुहुन्न</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/person_at_home/yes:label">
+            <value>हुनुहुन्छ</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/person_at_home:label">
+            <value>व्यक्ति घरमा हुनुहुन्छ ?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/back_6_month:label">
+            <value>६ महिना भित्र कुनैपनि बेला फर्कने</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/back_in_1_year:label">
+            <value>६ महिना भन्दाबढी तर १ वर्ष भन्दा कामको लागि अस्थाई बसाई सरेर गएको</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/died:label">
+            <value>मृत्यु भैसकेको</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/gone_for_work:label">
+            <value>काममा गएको</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/location_unknown:label">
+            <value>बिरामी कहाँ गएको थाहा छैन</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence/migrated:label">
+            <value>स्थाई बसाई सरेर गएको (१ बर्ष भन्दा बढी को लागी)</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/reason_absence:label">
+            <value>घरमा नहुनुको उपयुक्त कारण छनौट गर्नुहोस</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling/no:label">
+            <value>हुनुहुन्न</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling/yes:label">
+            <value>हुनुहुन्छ</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling:label">
+            <value>के यी व्यक्ति परामर्श सेवा लिन इच्छुक हुनुहुन्छ</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/individual_assessment:label">
+            <value>Individual Assessment</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_enter_bahmni_id:label">
+            <value>बाम्नी नम्बर राख्नुहोस</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id:label">
+            <value>के यी व्यक्ति संग बाम्नी आइडी/नम्बर छ ?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_63:label">
+            <value>यी व्यक्ति को रक्तचाप सामान्य छ | कृपया उच्च जोखिम र स्वस्थ जीवनशैली को बारेमा परामर्श गर्नुहोस यी व्यक्ति लाइ १ वर्ष पछी भेट्नुहो</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_64:label">
+            <value>यी व्यक्तिलाई सुरुवाती अवस्थाको उच्च रक्तचाप छ | यी ब्यक्तीलाई स्वस्थकर जीवन शैली को बारेमा जानकारी दिनुहोस र समय समय मा रक्तचाप जांच गरी रहन सल्लाह दिनुहोस।</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_65:label">
+            <value>यी व्यक्तिलाई सुरुवाती अवस्थाको उच्च रक्तचाप छ | यी ब्यक्तीलाई स्वस्थकर जीवन शैली को बारेमा जानकारी दिनुहोस र समय समय मा रक्तचाप जांच गरी रहन सल्लाह दिनुहोस।</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_66:label">
+            <value>यी व्यक्तिलाई उच्च रक्तचाप (प्रथम चरण) छ | यी व्यक्तिलाई १-२ हप्ता भित्र नजिकको स्वास्थ संस्थामा जान सल्लाह दिनुहोस | यी व्यक्तिलाई एक महिनापछि पूनःभेट गर्नुहोस |</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_67:label">
+            <value>यी व्यक्तिलाई उच्च रक्तचाप (दोश्रो चरण) छ | यी व्यक्तिलाई १-२ दिन भित्र नजिकको स्वास्थ संस्था मा जान सल्लाह दिनुहोस | यी व्यक्ति लाइ एक महिना पछि पूनःभेट गर्नुहोस |</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_68:label">
+            <value>यी व्यक्ति उच्च रक्तचाप को बिरामी हुनु हुन्छ। उहांको दिर्घरोगी घरभेट फारम आजै भर्नुहोस।</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/unknown:label">
+            <value>थाहा छैन</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/yes:label">
+            <value>छु</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive:label">
+            <value>के तपाई अहिले उच्च रक्तचापको बिरामी हुनुहुन्छ ?</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp:label">
+            <value>डायस्टोलिक(DBP)</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp:label">
+            <value>सिस्टोलिक(SBP)</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp:label">
+            <value>बाँया पाखुरा बाट रक्तचाप मापन गर्नुहोस</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/no_means_of_verification:label">
+            <value>कुनै माध्यम बाट पनि प्रमाणित भएन</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/verified_by_medicines:label">
+            <value>औसधि बाट प्रमाणित</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/verified_by_opd_card:label">
+            <value>बिरामी दर्ता पुर्जी बाट प्रमाणित</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine:label">
+            <value>कृपया तपाइँ ले आफ्नो बिरामी दर्ता पुर्जी अथवा औषधिहरु मलाई देखाउनु सक्नुहुन्छ</value>
+          </text>
+          <text id="/hypertension_screening_first_visit_form/proceed_screening:label">
+            <value>जाच अगाडी बढाउनुहोस</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <hypertension_screening_first_visit_form id="hypertension_screening_first_visit_form" prefix="J1!hypertension_screening_first_visit_form!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <individual_assessment>
+            <datas_person_id/>
+            <datas_datetoday/>
+            <datas_patient_name/>
+            <district/>
+            <family_id/>
+            <person_at_home/>
+            <reason_absence/>
+            <generated_note_name_36/>
+            <generated_note_name_37/>
+            <receive_counselling/>
+            <no_service_reason/>
+          </individual_assessment>
+          <proceed_screening>
+            <proceed_screening_currently_hypertensive/>
+            <proceed_screening_show_opd_card_or_medicine/>
+            <group_assessment_bahmniid>
+              <proceed_screening_has_bahmni_id/>
+              <proceed_screening_enter_bahmni_id/>
+            </group_assessment_bahmniid>
+            <proceed_screening_bahmniID/>
+            <proceed_screening_measure_bp>
+              <proceed_screening_measure_bp_sbp/>
+              <proceed_screening_measure_bp_dbp/>
+            </proceed_screening_measure_bp>
+            <proceed_screening_sbp_value/>
+            <proceed_screening_dbp_value/>
+            <proceed_screening_display_ht_stage/>
+            <group_assessment_bpnotes>
+              <generated_note_name_63/>
+              <generated_note_name_64/>
+              <generated_note_name_65/>
+              <generated_note_name_66/>
+              <generated_note_name_67/>
+              <generated_note_name_68/>
+            </group_assessment_bpnotes>
+          </proceed_screening>
+          <group_assessment_end>
+            <generated_note_name_73/>
+          </group_assessment_end>
+          <hypertension_screening/>
+          <cd_patient/>
+          <hypertension_screening_second_visit/>
+          <remove_person/>
+          <remove_care_delivery/>
+          <visit_date_last_visit/>
+          <visit_date_next_visit_due/>
+          <visit_date_next_visit_due_htn_screen/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </hypertension_screening_first_visit_form>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/inputs/source" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/inputs/source_id" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /hypertension_screening_first_visit_form/reporting_today )"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_nepali_short" type="string" calculate="substring-after( /hypertension_screening_first_visit_form/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_nepali_month" type="string" calculate="substring-before( /hypertension_screening_first_visit_form/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_nepali_year" type="string" calculate="substring-after( /hypertension_screening_first_visit_form/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_month_today" type="string" calculate="if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'जेठ', 'Jestha', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'असार', 'Ashadh', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'साउन', 'Shrawan', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'असोज', 'Ashwin', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'पौष', 'Poush', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'माघ', 'Magh', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /hypertension_screening_first_visit_form/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_year_today" type="string" calculate="concat(if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /hypertension_screening_first_visit_form/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/reporting_today_short" type="string" calculate="concat( /hypertension_screening_first_visit_form/reporting_month_today , ' ',  /hypertension_screening_first_visit_form/reporting_year_today )"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/datas_person_id" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/datas_datetoday" type="string" calculate="today()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/datas_patient_name" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/district" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/family_id" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/person_at_home" type="select1" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/reason_absence" type="select1" relevant=" /hypertension_screening_first_visit_form/individual_assessment/person_at_home  = 'no'" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_36" readonly="true()" type="string" relevant=" /hypertension_screening_first_visit_form/individual_assessment/reason_absence  = 'died'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_37" readonly="true()" type="string" relevant=" /hypertension_screening_first_visit_form/individual_assessment/reason_absence  = 'migrated'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling" type="select1" relevant=" /hypertension_screening_first_visit_form/individual_assessment/person_at_home  = 'yes'" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason" type="select1" relevant=" /hypertension_screening_first_visit_form/individual_assessment/receive_counselling  = 'no'" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening" relevant=" /hypertension_screening_first_visit_form/individual_assessment/receive_counselling  = 'yes'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive" type="select1" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine" type="select1" relevant=" /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive  = 'yes'" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id" type="select1" relevant=" /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine  = 'verified_by_opd_card' or  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine  = 'verified_by_medicines'" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_enter_bahmni_id" type="string" constraint=". &gt; 0" jr:constraintMsg="Can not be less than zero." relevant=" /hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id  = 'yes'" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_bahmniID" type="string" relevant=" /hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id  = 'yes'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp" relevant=" /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive  = 'no' or  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive  = 'unknown' or  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine  = 'no_means_of_verification'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp" type="int" constraint=". &gt; 9" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp" type="int" constraint=". &gt; 9" required="true()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_sbp_value" type="string" calculate="if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &lt; 120, 1, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  = 120, 0, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &gt; 120 and  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &lt;= 139, 2, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &gt;= 140 and  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &lt;= 159, 3, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &gt;= 160, 4, '')))))"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_dbp_value" type="string" calculate="if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &lt; 80, 1, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  = 80, 0, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &gt; 80 and  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &lt;= 89, 2, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &gt;= 90 and  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &lt;= 99, 3, if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &gt;= 100, 4, '')))))"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_display_ht_stage" type="string" calculate="if( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_sbp_value  &gt;  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_dbp_value ,  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_sbp_value ,  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_dbp_value )"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_63" readonly="true()" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_64" readonly="true()" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_65" readonly="true()" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_66" readonly="true()" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_67" readonly="true()" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_68" readonly="true()" type="string" relevant=" /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine  = 'verified_by_opd_card' or  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine  = 'verified_by_medicines'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/group_assessment_end" relevant=" /hypertension_screening_first_visit_form/individual_assessment/receive_counselling  = 'yes'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/group_assessment_end/generated_note_name_73" readonly="true()" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/hypertension_screening" type="string" calculate="if(( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &lt;= 120 and  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &lt;= 80), 1, 0)"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/cd_patient" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/hypertension_screening_second_visit" type="string" calculate="if(( /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp  &gt; 120 and  /hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp  &gt; 80), 1, 0)"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/remove_person" type="string" calculate="if( /hypertension_screening_first_visit_form/individual_assessment/reason_absence  = 'died' or  /hypertension_screening_first_visit_form/individual_assessment/reason_absence  = 'migrated', 1, 0)"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/remove_care_delivery" type="string" relevant=" /hypertension_screening_first_visit_form/individual_assessment/reason_absence  = 'migrated'"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/visit_date_last_visit" type="string" calculate="today()"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/visit_date_next_visit_due" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/visit_date_next_visit_due_htn_screen" type="string"/>
+      <bind nodeset="/hypertension_screening_first_visit_form/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/hypertension_screening_first_visit_form/inputs">
+      <label ref="jr:itext('/hypertension_screening_first_visit_form/inputs:label')"/>
+      <group ref="/hypertension_screening_first_visit_form/inputs/contact">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/hypertension_screening_first_visit_form/inputs/contact/_id">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/inputs/contact/nepali_full_name">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/inputs/contact/nepali_full_name:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/inputs/contact/patient_id">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/inputs/contact/patient_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/hypertension_screening_first_visit_form/individual_assessment">
+      <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment:label')"/>
+      <select1 ref="/hypertension_screening_first_visit_form/individual_assessment/person_at_home">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/person_at_home:label')"/>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/person_at_home/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/person_at_home/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/hypertension_screening_first_visit_form/individual_assessment/reason_absence">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/reason_absence:label')"/>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/reason_absence/gone_for_work:label')"/>
+          <value>gone_for_work</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/reason_absence/back_6_month:label')"/>
+          <value>back_6_month</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/reason_absence/back_in_1_year:label')"/>
+          <value>back_in_1_year</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/reason_absence/migrated:label')"/>
+          <value>migrated</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/reason_absence/died:label')"/>
+          <value>died</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/reason_absence/location_unknown:label')"/>
+          <value>location_unknown</value>
+        </item>
+      </select1>
+      <input ref="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_36">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_36:label')"/>
+      </input>
+      <input ref="/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_37">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/generated_note_name_37:label')"/>
+      </input>
+      <select1 ref="/hypertension_screening_first_visit_form/individual_assessment/receive_counselling">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/receive_counselling:label')"/>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/receive_counselling/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/receive_counselling/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/hypertension_screening_first_visit_form/individual_assessment/no_service_reason">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/no_service_reason:label')"/>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/doesn_want_service:label')"/>
+          <value>doesn_want_service</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/patient_busy:label')"/>
+          <value>patient_busy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/family_refused_service:label')"/>
+          <value>family_refused_service</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/individual_assessment/no_service_reason/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/hypertension_screening_first_visit_form/proceed_screening">
+      <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening:label')"/>
+      <select1 ref="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive:label')"/>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_currently_hypertensive/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <select1 ref="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine:label')"/>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/verified_by_opd_card:label')"/>
+          <value>verified_by_opd_card</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/verified_by_medicines:label')"/>
+          <value>verified_by_medicines</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_show_opd_card_or_medicine/no_means_of_verification:label')"/>
+          <value>no_means_of_verification</value>
+        </item>
+      </select1>
+      <group appearance="field-list" ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid">
+        <select1 ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id:label')"/>
+          <item>
+            <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_has_bahmni_id/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_enter_bahmni_id">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bahmniid/proceed_screening_enter_bahmni_id:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp:label')"/>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_sbp:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/proceed_screening_measure_bp/proceed_screening_measure_bp_dbp:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes">
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_63">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_63:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_64">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_64:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_65">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_65:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_66">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_66:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_67">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_67:label')"/>
+        </input>
+        <input ref="/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_68">
+          <label ref="jr:itext('/hypertension_screening_first_visit_form/proceed_screening/group_assessment_bpnotes/generated_note_name_68:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/hypertension_screening_first_visit_form/group_assessment_end">
+      <input ref="/hypertension_screening_first_visit_form/group_assessment_end/generated_note_name_73">
+        <label ref="jr:itext('/hypertension_screening_first_visit_form/group_assessment_end/generated_note_name_73:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

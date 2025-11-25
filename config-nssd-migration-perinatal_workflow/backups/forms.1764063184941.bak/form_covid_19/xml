@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Covid-19</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/covid_19/counseling_method/group:label">
+            <value>Group</value>
+          </text>
+          <text id="/covid_19/counseling_method/individual:label">
+            <value>Individual</value>
+          </text>
+          <text id="/covid_19/counseling_method:label">
+            <value>Counseling method</value>
+          </text>
+          <text id="/covid_19/generated_note_name_30:label">
+            <value>I would like to share some information on COVID-19 which is already Pandemic; if we do not take appropriate measures on time, there could be an outbreak in Nepal too.</value>
+          </text>
+          <text id="/covid_19/generated_note_name_31:label">
+            <value>Play audio Message on COVID-19 from government Nepal</value>
+          </text>
+          <text id="/covid_19/generated_note_name_32:label">
+            <value>Show image of the symptoms of COVID-19 and preventive measures</value>
+          </text>
+          <text id="/covid_19/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/covid_19/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/covid_19/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/covid_19/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/covid_19/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/covid_19/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_19/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/covid_19/participants_no:label">
+            <value>Total no. of paticipants in group counseling</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_34:label">
+            <value>**1.** Wash your hands with soap water regularly for 20 seconds. You can use hand sanitizer if soap water is not available.</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_35:label">
+            <value>**2.** Avoid touching your eyes, nose and mouth</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_36:label">
+            <value>**3.** Cover your face with your bent elbow or tissue while coughing or sneezing.</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_37:label">
+            <value>**4.** If you have fever, cough and difficulty breathing seek medical care immediately</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_38:label">
+            <value>**5.** Avoid close contact with other people if you or them are showing symptoms of cough, fever and runny nose.</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_39:label">
+            <value>**6.** Avoid close contact with wild and pet animals.</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_40:label">
+            <value>**7.** Eat properly cooked meat and eggs.</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_41:label">
+            <value>**8.** Use mask while going out if possible</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_42:label">
+            <value>**9.** Wash your hands before entering into the house from outdoors; 
+
+Also suggest your guests wash their hand before getting into the house.</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_43:label">
+            <value>**10.** Avoid crowd places like parties, cinema halls, large meetings, prayers/temples, etc as much as possible</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_44:label">
+            <value>**11.** Avoid shaking hands, instead do " Namaste"</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_45:label">
+            <value>**Hand Washing Station:**
+
+ Put soap nearby your water taps or water buckets used as hand washing station</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_46:label">
+            <value>If you or your family members have recently visited foreign country, 
+
+**Please use precaution**</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_47:label">
+            <value>If our beneficiaries or their family members are showing ALL of the following symptoms, suggest them to visit to nearest health facility for medical help:
+
+**1.** Dry cough and sneezing
+ 
+**2.** Fever of 100.4 degree Fahrenheit or above
+ 
+**3.** Sore throat/ Headache
+
+**4.** Difficulty breathing</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_48:label">
+            <value>You are about to complete Corona Information, please click on Green Color bottom and submit the Information</value>
+          </text>
+          <text id="/covid_19/question3:label">
+            <value>Please provide following information to our beneficiaries during the counseling to prevent them from getting COVID-19)</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/covid_19/counseling_method/group:label">
+            <value>सामुहिक</value>
+          </text>
+          <text id="/covid_19/counseling_method/individual:label">
+            <value>ब्यक्तिगत</value>
+          </text>
+          <text id="/covid_19/counseling_method:label">
+            <value>परामर्श को बिधि/तरिका</value>
+          </text>
+          <text id="/covid_19/generated_note_name_30:label">
+            <value>म तपाईंलाई विश्वव्यापी फैलिरहेको र सतर्कता नपनाए छिट्टै नेपालमा पनि फैलिन सक्ने कोविड- १९ बारेमा केहि जानकारीहरु दिन चाहन्छु</value>
+          </text>
+          <text id="/covid_19/generated_note_name_31:label">
+            <value>नेपाल सरकार को कोभिड-१९ सम्बन्धि श्रब्य संदेश सुनाउनुहोस</value>
+          </text>
+          <text id="/covid_19/generated_note_name_32:label">
+            <value>रोगको लक्षणहरु र बच्ने उपायहरुको चित्र देखाउने</value>
+          </text>
+          <text id="/covid_19/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/covid_19/participants_no:label">
+            <value>सामुहिक परामर्श मा सहभागी व्यक्तिहरु को संख्या</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_34:label">
+            <value>**१.** नियमित रुपमा साबुन पानीले मिचिमिची २० सेकेन्ड सम्म हात धुने । साबुन पानी उपलब्ध नभएमा वा हात धेरै फोहोर नभएमा अल्कोहल भएको स्यानिटाइजर पनि प्रयोग गर्न सकिन्छ ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_35:label">
+            <value>**२.** हातले आफ्नो आँखा, नाक वा मुख नछुने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_36:label">
+            <value>**३.** खोक्दा र हाछ्युं गर्दा कुहिनो वा tissue ले नाक र मुख छोप्ने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_37:label">
+            <value>**४.** फ्लु जस्तो लक्षण देखिएमा चिकित्सकसँग परामर्श लिने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_38:label">
+            <value>**५**. फ्लू जस्तो लक्षण देखाउने जो कोहीको सम्पर्कबाट टाढा रहने । आफुमा त्यस्तो लक्षण देखिएमा छुट्टै बस्ने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_39:label">
+            <value>**६.** जंगली तथा घरपालुवा पशुपन्छी सँगको असुरक्षित सम्पर्कबाट टाढा रहने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_40:label">
+            <value>**७.** पशुजन्य मासु तथा अण्डा राम्रोसँग पकाएर मात्र खाने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_41:label">
+            <value>**८.** घर बाहिर जाँदा सकेसम्म मास्कको प्रयोग गर्ने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_42:label">
+            <value>**९** बाहिर बाट आएर घर भित्र पस्दा साबुन पानीले हात धोएर मात्र पस्नु होला 
+
+घरमा अरु कोहि आए पनि त्यसै गर्न लगाउनु होला</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_43:label">
+            <value>**१०** अत्यावश्यक अवस्था बाहेक भिडभाड, पार्टी जस्ता धेरै व्यक्ति एकै ठाउँ जम्मा हुने स्थानहरूमा सहभागी नहुने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_44:label">
+            <value>**११.** अभिवादन गर्दा नमस्ते गर्ने, हात नमिलाउने ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_45:label">
+            <value>**हात धुने ठाउँको व्यवस्था:** 
+
+ घर बाहिर धारा नजिक हात धुने साबुन राख्नु होला / धारा नभएको घर मा धारा भएको बाल्टिनमा पानी र संगै साबुन राख्नु होला</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_46:label">
+            <value>घरमा कोही बाहिरी देशबाट आएको छ भने **सतर्कता अपनाउनु** पर्ने कुराहरुमा काउन्सेलिंग गर्ने</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_47:label">
+            <value>यदि सेवा ग्राही अथवा सेवा ग्राहिको परिवारमा कसैलाई निम्न लक्षणहरु सबै देखा परेमा स्वास्थ्यसंस्स्थामा जानको लागि सल्लाह दिने :
+
+**१.** सुक्खा रुघाखोकी लाग्नु
+
+**२.** १००.४° ज्वरो आउनु
+
+**३.** घाँटी /टाउको दुख्नु
+
+**४.** श्वासप्रश्वासमा अत्यधिक समस्या हुनु ।</value>
+          </text>
+          <text id="/covid_19/question3/generated_note_name_48:label">
+            <value>तपाइँ यो सन्देशको अन्तिममा हुनुहुन्छ ,कृपया हरियो सकियोमा थिचेर फाराम Submit गर्नुहोस</value>
+          </text>
+          <text id="/covid_19/question3:label">
+            <value>कोविड- १९ बाट आफु कसरी बच्ने र अरुलाई कसरी बचाउने जानकारी तलको बुँदामा रहेर दिने</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <covid_19 id="covid_19" prefix="J1!covid_19!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_date/>
+          <reporting_date_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <counseling_method/>
+          <participants_no/>
+          <generated_note_name_30/>
+          <generated_note_name_31/>
+          <generated_note_name_32/>
+          <question3>
+            <generated_note_name_34/>
+            <generated_note_name_35/>
+            <generated_note_name_36/>
+            <generated_note_name_37/>
+            <generated_note_name_38/>
+            <generated_note_name_39/>
+            <generated_note_name_40/>
+            <generated_note_name_41/>
+            <generated_note_name_42/>
+            <generated_note_name_43/>
+            <generated_note_name_44/>
+            <generated_note_name_45/>
+            <generated_note_name_46/>
+            <generated_note_name_47/>
+            <generated_note_name_48/>
+          </question3>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_19>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/covid_19/inputs" required="field-list"/>
+      <bind nodeset="/covid_19/inputs/source" type="string"/>
+      <bind nodeset="/covid_19/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_19/inputs/contact/_id" type="db:person" required="db-object"/>
+      <bind nodeset="/covid_19/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/covid_19/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/covid_19/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/covid_19/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/covid_19/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/covid_19/reporting_date" type="string" calculate="date(today())"/>
+      <bind nodeset="/covid_19/reporting_date_nepali" type="string" calculate="to-bikram-sambat( /covid_19/reporting_date )"/>
+      <bind nodeset="/covid_19/reporting_nepali_short" type="string" calculate="substring-after( /covid_19/reporting_date_nepali , &quot; &quot;)"/>
+      <bind nodeset="/covid_19/reporting_nepali_month" type="string" calculate="substring-before( /covid_19/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/covid_19/reporting_nepali_year" type="string" calculate="substring-after( /covid_19/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/covid_19/reporting_month_today" type="string" calculate="if( /covid_19/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /covid_19/reporting_nepali_month  = 'जेठ', 'Jestha', if( /covid_19/reporting_nepali_month  = 'असार', 'Ashadh', if( /covid_19/reporting_nepali_month  = 'साउन', 'Shrawan', if( /covid_19/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /covid_19/reporting_nepali_month  = 'असोज', 'Ashwin', if( /covid_19/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /covid_19/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /covid_19/reporting_nepali_month  = 'पौष', 'Poush', if( /covid_19/reporting_nepali_month  = 'माघ', 'Magh', if( /covid_19/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /covid_19/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/covid_19/reporting_year_today" type="string" calculate="concat(if(substr( /covid_19/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /covid_19/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /covid_19/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /covid_19/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /covid_19/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /covid_19/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /covid_19/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /covid_19/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/covid_19/reporting_today_short" type="string" calculate="concat( /covid_19/reporting_month_today , ' ',  /covid_19/reporting_year_today )"/>
+      <bind nodeset="/covid_19/counseling_method" type="select1"/>
+      <bind nodeset="/covid_19/participants_no" type="int" relevant=" /covid_19/counseling_method  = 'group'"/>
+      <bind nodeset="/covid_19/generated_note_name_30" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/generated_note_name_31" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/generated_note_name_32" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_34" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_35" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_36" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_37" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_38" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_39" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_40" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_41" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_42" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_43" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_44" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_45" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_46" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_47" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/question3/generated_note_name_48" readonly="true()" type="string"/>
+      <bind nodeset="/covid_19/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="./source = 'user'" ref="/covid_19/inputs">
+      <label ref="jr:itext('/covid_19/inputs:label')"/>
+      <group ref="/covid_19/inputs/contact">
+        <label ref="jr:itext('/covid_19/inputs/contact:label')"/>
+        <input ref="/covid_19/inputs/contact/_id">
+          <label ref="jr:itext('/covid_19/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/covid_19/inputs/contact/nepali_full_name">
+          <label ref="jr:itext('/covid_19/inputs/contact/nepali_full_name:label')"/>
+        </input>
+        <input ref="/covid_19/inputs/contact/patient_id">
+          <label ref="jr:itext('/covid_19/inputs/contact/patient_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <select1 ref="/covid_19/counseling_method">
+      <label ref="jr:itext('/covid_19/counseling_method:label')"/>
+      <item>
+        <label ref="jr:itext('/covid_19/counseling_method/individual:label')"/>
+        <value>individual</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/covid_19/counseling_method/group:label')"/>
+        <value>group</value>
+      </item>
+    </select1>
+    <input ref="/covid_19/participants_no">
+      <label ref="jr:itext('/covid_19/participants_no:label')"/>
+    </input>
+    <input ref="/covid_19/generated_note_name_30">
+      <label ref="jr:itext('/covid_19/generated_note_name_30:label')"/>
+    </input>
+    <input ref="/covid_19/generated_note_name_31">
+      <label ref="jr:itext('/covid_19/generated_note_name_31:label')"/>
+    </input>
+    <input ref="/covid_19/generated_note_name_32">
+      <label ref="jr:itext('/covid_19/generated_note_name_32:label')"/>
+    </input>
+    <group ref="/covid_19/question3">
+      <label ref="jr:itext('/covid_19/question3:label')"/>
+      <input ref="/covid_19/question3/generated_note_name_34">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_34:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_35">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_35:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_36">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_36:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_37">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_37:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_38">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_38:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_39">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_39:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_40">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_40:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_41">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_41:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_42">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_42:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_43">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_43:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_44">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_44:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_45">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_45:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_46">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_46:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_47">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_47:label')"/>
+      </input>
+      <input ref="/covid_19/question3/generated_note_name_48">
+        <label ref="jr:itext('/covid_19/question3/generated_note_name_48:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

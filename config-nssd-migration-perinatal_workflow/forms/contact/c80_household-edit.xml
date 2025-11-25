@@ -329,7 +329,7 @@ For now, please press on the green bar to close the form.</value>
       <bind nodeset="/data/c80_household/house_owner/house_owner_middle_name" type="string"/>
       <bind nodeset="/data/c80_household/house_owner/house_owner_family_name" type="string"/>
       <bind nodeset="/data/c80_household/house_owner_house_name" type="string" calculate="concat( /data/c80_household/house_owner/house_owner_given_name , &quot; &quot;,  /data/c80_household/house_owner/house_owner_middle_name , &quot; &quot;,  /data/c80_household/house_owner/house_owner_family_name )"/>
-      <bind nodeset="/data/c80_household/family_units" type="int" relevant="selected( /data/c80_household/primary_purpose , 'residence')" jr:constraintMsg="Must be less than or equal to 20" constraint=". &lt;= 20 and . &gt;= 1"/>
+      <bind nodeset="/data/c80_household/family_units" type="int" relevant="selected( /data/c80_household/primary_purpose , 'residence')" constraint=". &lt;= 20 and . &gt;= 1" jr:constraintMsg="Must be less than or equal to 20"/>
       <bind nodeset="/data/c80_household/ask_chhaupadi" type="select1"/>
       <bind nodeset="/data/c80_household/stay_menstruate" type="select1" relevant=" /data/c80_household/ask_chhaupadi  = 'yes'"/>
       <bind nodeset="/data/c80_household/woman_stay_menstruate" type="select1" relevant="( /data/c80_household/stay_menstruate  = 'shed_attached' or  /data/c80_household/stay_menstruate  = 'shed_outside') and  /data/c80_household/ask_chhaupadi  = 'yes'"/>

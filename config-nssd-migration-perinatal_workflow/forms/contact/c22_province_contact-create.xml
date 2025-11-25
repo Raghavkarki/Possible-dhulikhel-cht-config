@@ -154,12 +154,12 @@
         </data>
       </instance>
       <bind nodeset="/data/c22_province_contact/parent" type="string"/>
-      <bind nodeset="/data/c22_province_contact/first_name" type="string" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c22_province_contact/first_name:jr:constraintMsg')" required="true()"/>
-      <bind nodeset="/data/c22_province_contact/last_name" type="string" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c22_province_contact/last_name:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/c22_province_contact/first_name" type="string" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c22_province_contact/first_name:jr:constraintMsg')"/>
+      <bind nodeset="/data/c22_province_contact/last_name" type="string" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c22_province_contact/last_name:jr:constraintMsg')"/>
       <bind nodeset="/data/c22_province_contact/name" type="string" calculate="concat( /data/c22_province_contact/first_name , ' ',  /data/c22_province_contact/last_name )"/>
       <bind nodeset="/data/c22_province_contact/gender" type="select1" required="true()"/>
-      <bind nodeset="/data/c22_province_contact/age" type="int" constraint=".&lt;=100" jr:constraintMsg="jr:itext('/data/c22_province_contact/age:jr:constraintMsg')" required="true()"/>
-      <bind nodeset="/data/c22_province_contact/phone" type="tel" jr:constraintMsg="jr:itext('/data/c22_province_contact/phone:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/c22_province_contact/age" type="int" required="true()" constraint=".&lt;=100" jr:constraintMsg="jr:itext('/data/c22_province_contact/age:jr:constraintMsg')"/>
+      <bind nodeset="/data/c22_province_contact/phone" type="tel" required="true()" jr:constraintMsg="jr:itext('/data/c22_province_contact/phone:jr:constraintMsg')"/>
       <bind nodeset="/data/c22_province_contact/post" type="select1" required="true()"/>
       <bind nodeset="/data/c22_province_contact/post_other" type="string" relevant=" /data/c22_province_contact/post  = 'other'"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>

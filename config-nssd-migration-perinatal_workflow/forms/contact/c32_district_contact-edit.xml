@@ -159,11 +159,11 @@
       </instance>
       <bind nodeset="/data/c32_district_contact/type" type="string"/>
       <bind nodeset="/data/c32_district_contact/contact_type" type="string"/>
-      <bind nodeset="/data/c32_district_contact/first_name" type="string" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c32_district_contact/first_name:jr:constraintMsg')"/>
-      <bind nodeset="/data/c32_district_contact/last_name" type="string" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c32_district_contact/last_name:jr:constraintMsg')"/>
+      <bind nodeset="/data/c32_district_contact/first_name" type="string" required="true()" jr:constraintMsg="jr:itext('/data/c32_district_contact/first_name:jr:constraintMsg')" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')"/>
+      <bind nodeset="/data/c32_district_contact/last_name" type="string" required="true()" jr:constraintMsg="jr:itext('/data/c32_district_contact/last_name:jr:constraintMsg')" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')"/>
       <bind nodeset="/data/c32_district_contact/name" type="string" calculate="concat( /data/c32_district_contact/first_name , ' ',  /data/c32_district_contact/last_name )"/>
       <bind nodeset="/data/c32_district_contact/gender" type="select1" required="true()"/>
-      <bind nodeset="/data/c32_district_contact/age" type="int" required="true()" constraint=".&lt;=100" jr:constraintMsg="jr:itext('/data/c32_district_contact/age:jr:constraintMsg')"/>
+      <bind nodeset="/data/c32_district_contact/age" type="int" required="true()" jr:constraintMsg="jr:itext('/data/c32_district_contact/age:jr:constraintMsg')" constraint=".&lt;=100"/>
       <bind nodeset="/data/c32_district_contact/phone" type="tel" required="true()" jr:constraintMsg="jr:itext('/data/c32_district_contact/phone:jr:constraintMsg')"/>
       <bind nodeset="/data/c32_district_contact/post" type="select1" required="true()"/>
       <bind nodeset="/data/c32_district_contact/post_other" type="string" relevant=" /data/c32_district_contact/post  = 'other'"/>

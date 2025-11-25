@@ -814,11 +814,11 @@ Enter(000-000-0000)</value>
       <bind nodeset="/data/c82_person/additional_info_ward_no" type="string"/>
       <bind nodeset="/data/c82_person/person_suffix" type="int" required="true()"/>
       <bind nodeset="/data/c82_person/person_at_home" type="select1" required="true()"/>
-      <bind nodeset="/data/c82_person/person_not_home" type="select1" required="true()" relevant=" /data/c82_person/person_at_home  = 'no'"/>
-      <bind nodeset="/data/c82_person/return_specify" type="string" required="true()" relevant=" /data/c82_person/person_not_home  = 'return_other'"/>
-      <bind nodeset="/data/c82_person/person_consent" type="select1" required="true()" relevant=" /data/c82_person/person_at_home  = 'yes'"/>
+      <bind nodeset="/data/c82_person/person_not_home" type="select1" relevant=" /data/c82_person/person_at_home  = 'no'" required="true()"/>
+      <bind nodeset="/data/c82_person/return_specify" type="string" relevant=" /data/c82_person/person_not_home  = 'return_other'" required="true()"/>
+      <bind nodeset="/data/c82_person/person_consent" type="select1" relevant=" /data/c82_person/person_at_home  = 'yes'" required="true()"/>
       <bind nodeset="/data/c82_person/enrolled" type="string" calculate="if( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only', 1, if( /data/c82_person/person_at_home  = 'no', 0, ''))"/>
-      <bind nodeset="/data/c82_person/no_consent_text" type="string" required="true()" relevant=" /data/c82_person/person_consent  = 'no'"/>
+      <bind nodeset="/data/c82_person/no_consent_text" type="string" relevant=" /data/c82_person/person_consent  = 'no'" required="true()"/>
       <bind nodeset="/data/c82_person/generated_note_name_53" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'no'"/>
       <bind nodeset="/data/c82_person/person_number" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_at_home  = 'no' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
       <bind nodeset="/data/c82_person/name_nepali" relevant=" /data/c82_person/person_at_home  = 'no' or  /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
@@ -836,11 +836,11 @@ Enter(000-000-0000)</value>
       <bind nodeset="/data/c82_person/name_english/name_english_family_name_english" type="string"/>
       <bind nodeset="/data/c82_person/name_english/name_english_full_name_english" type="string" calculate="if( /data/c82_person/name_english/name_english_middle_name_english  != '', concat( /data/c82_person/name_english/name_english_given_name_english , &quot; &quot;,  /data/c82_person/name_english/name_english_middle_name_english , &quot; &quot;,  /data/c82_person/name_english/name_english_family_name_english ), concat( /data/c82_person/name_english/name_english_given_name_english , &quot; &quot;,  /data/c82_person/name_english/name_english_family_name_english ))"/>
       <bind nodeset="/data/c82_person/english_full_name" type="string" calculate=" /data/c82_person/name_english/name_english_full_name_english "/>
-      <bind nodeset="/data/c82_person/telephone_number" type="string" jr:constraintMsg="Mobile Number has to be 10 digits." required="true()" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" constraint="string-length(.) = 10"/>
-      <bind nodeset="/data/c82_person/sex" type="select1" required="true()" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
-      <bind nodeset="/data/c82_person/age_dob/estimate_dob" type="select1" required="true()" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
-      <bind nodeset="/data/c82_person/age_dob/age_entry" type="int" required="true()" relevant=" /data/c82_person/age_dob/estimate_dob  = 'yes'"/>
-      <bind nodeset="/data/c82_person/age_dob/dob_entry" type="date" jr:constraintMsg="This date cannot be in the future." required="true()" relevant=" /data/c82_person/age_dob/estimate_dob  = 'no'" constraint=". &lt;= today()"/>
+      <bind nodeset="/data/c82_person/telephone_number" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" jr:constraintMsg="Mobile Number has to be 10 digits." constraint="string-length(.) = 10" required="true()"/>
+      <bind nodeset="/data/c82_person/sex" type="select1" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" required="true()"/>
+      <bind nodeset="/data/c82_person/age_dob/estimate_dob" type="select1" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" required="true()"/>
+      <bind nodeset="/data/c82_person/age_dob/age_entry" type="int" relevant=" /data/c82_person/age_dob/estimate_dob  = 'yes'" required="true()"/>
+      <bind nodeset="/data/c82_person/age_dob/dob_entry" type="date" relevant=" /data/c82_person/age_dob/estimate_dob  = 'no'" jr:constraintMsg="This date cannot be in the future." constraint=". &lt;= today()" required="true()"/>
       <bind nodeset="/data/c82_person/age_calculation/age_calculate" type="string" calculate="floor( difference-in-months( /data/c82_person/age_dob/dob_entry , today() ) div 12)"/>
       <bind nodeset="/data/c82_person/age_calculation/dob_calculate" type="string" calculate="format-date(today() -  /data/c82_person/age_dob/age_entry  * 365.25, '%Y-%m-%d')"/>
       <bind nodeset="/data/c82_person/age_calculation/person_age" type="string" calculate="../age_calculate"/>
@@ -848,11 +848,11 @@ Enter(000-000-0000)</value>
       <bind nodeset="/data/c82_person/dob" type="string" calculate="if( /data/c82_person/age_dob/estimate_dob  = 'no',  /data/c82_person/age_dob/dob_entry ,  /data/c82_person/age_calculation/dob_calculate )"/>
       <bind nodeset="/data/c82_person/dob_display" type="string" calculate="if( /data/c82_person/age_dob/estimate_dob  = 'no',  /data/c82_person/age_dob/dob_entry ,  /data/c82_person/age_calculation/dob_calculate )"/>
       <bind nodeset="/data/c82_person/dob_display_nepali" type="string" calculate="to-bikram-sambat( /data/c82_person/dob_display )"/>
-      <bind nodeset="/data/c82_person/born_today" type="select1" jr:constraintMsg="Please go back to the Date of Birth question to correct the date." required="true()" relevant=" /data/c82_person/person_at_home  = 'yes' and  /data/c82_person/dob_display  = format-date(today(), '%Y-%m-%d')" constraint="not(selected(., 'no') and count-selected(.) = 1)"/>
+      <bind nodeset="/data/c82_person/born_today" type="select1" relevant=" /data/c82_person/person_at_home  = 'yes' and  /data/c82_person/dob_display  = format-date(today(), '%Y-%m-%d')" jr:constraintMsg="Please go back to the Date of Birth question to correct the date." constraint="not(selected(., 'no') and count-selected(.) = 1)" required="true()"/>
       <bind nodeset="/data/c82_person/generated_note_name_105" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
-      <bind nodeset="/data/c82_person/marital_status" type="select1" required="true()" relevant="( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only') and  /data/c82_person/age  &gt;= 11"/>
-      <bind nodeset="/data/c82_person/child_mother_alive" type="select1" required="true()" relevant=" /data/c82_person/age  &lt;= 2"/>
-      <bind nodeset="/data/c82_person/mothers_name" type="string" required="true()" relevant=" /data/c82_person/child_mother_alive  = 'no'"/>
+      <bind nodeset="/data/c82_person/marital_status" type="select1" relevant="( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only') and  /data/c82_person/age  &gt;= 11" required="true()"/>
+      <bind nodeset="/data/c82_person/child_mother_alive" type="select1" relevant=" /data/c82_person/age  &lt;= 2" required="true()"/>
+      <bind nodeset="/data/c82_person/mothers_name" type="string" relevant=" /data/c82_person/child_mother_alive  = 'no'" required="true()"/>
       <bind nodeset="/data/c82_person/caretakers_name" type="string" relevant=" /data/c82_person/child_mother_alive  = 'no'"/>
       <bind nodeset="/data/c82_person/mother" relevant=" /data/c82_person/child_mother_alive  = 'yes'"/>
       <bind nodeset="/data/c82_person/mother/mother_case_id" type="string" relevant=" /data/c82_person/age  &lt;= 2 and  /data/c82_person/child_mother_alive  = 'yes'"/>
@@ -867,7 +867,7 @@ Enter(000-000-0000)</value>
       <bind nodeset="/data/c82_person/healthpost_name" type="string" relevant=" /data/c82_person/delivery_location  = 'health_post'"/>
       <bind nodeset="/data/c82_person/relationship_to_hh" type="select1" relevant="( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only') and  /data/c82_person/age  &gt;2"/>
       <bind nodeset="/data/c82_person/relationship_specify" type="string" relevant=" /data/c82_person/relationship_to_hh  = 'relationship_other'"/>
-      <bind nodeset="/data/c82_person/communityID" type="string" calculate="concat( /data/init/familyID , '-',  /data/c82_person/person_suffix )" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only' or  /data/c82_person/person_at_home  = 'no'"/>
+      <bind nodeset="/data/c82_person/communityID" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only' or  /data/c82_person/person_at_home  = 'no'" calculate="concat( /data/init/familyID , '-',  /data/c82_person/person_suffix )"/>
       <bind nodeset="/data/c82_person/generated_note_name_133" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only' or  /data/c82_person/person_at_home  = 'no'"/>
       <bind nodeset="/data/c82_person/generated_note_name_134" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
       <bind nodeset="/data/c82_person/has_bahmni_id" type="select1" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
@@ -875,7 +875,7 @@ Enter(000-000-0000)</value>
       <bind nodeset="/data/c82_person/generated_note_name_139" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
       <bind nodeset="/data/c82_person/bahmniid" type="string" relevant=" /data/c82_person/has_bahmni_id  = 'yes'"/>
       <bind nodeset="/data/c82_person/does_not_have_bahmni_id" type="string"/>
-      <bind nodeset="/data/c82_person/service_type" type="select" jr:constraintMsg="You cannot select 'Not Applicable' with other options." relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" constraint="not(selected(., 'not_applicable') and count-selected(.) &gt; 1)"/>
+      <bind nodeset="/data/c82_person/service_type" type="select" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" jr:constraintMsg="You cannot select 'Not Applicable' with other options." constraint="not(selected(., 'not_applicable') and count-selected(.) &gt; 1)"/>
       <bind nodeset="/data/c82_person/services" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
       <bind nodeset="/data/c82_person/services/services_pregnancy_history" type="string" calculate="if( /data/c82_person/services/services_eligible_woman  = 1 or ( /data/c82_person/marital_status  = 'widow' and  /data/c82_person/sex  = 'female' and  /data/c82_person/age  &gt;= 11 and  /data/c82_person/age  &lt;= 49), 1, 0)"/>
       <bind nodeset="/data/c82_person/services/services_eligible_woman" type="string" calculate="if( /data/c82_person/age  &gt;= 11 and  /data/c82_person/age  &lt;= 49 and  /data/c82_person/sex  = 'female' and  /data/c82_person/marital_status  = 'single', 1, if( /data/c82_person/age  &gt;= 11 and  /data/c82_person/age  &lt;= 49 and  /data/c82_person/sex  = 'female' and  /data/c82_person/marital_status  = 'married', 1, 0))"/>
@@ -890,7 +890,7 @@ Enter(000-000-0000)</value>
       <bind nodeset="/data/c82_person/services/generated_note_name_168" readonly="true()" type="string" relevant=" /data/c82_person/services/services_cd_patient  = 1"/>
       <bind nodeset="/data/c82_person/services/services_hypertension_screening" type="string" calculate="if( /data/c82_person/age  &gt;= 40 or  /data/c82_person/service_type  = 'htn_less_than_40yrs', 1, 0)"/>
       <bind nodeset="/data/c82_person/services/generated_note_name_172" readonly="true()" type="string" relevant=" /data/c82_person/age  &gt;= 40 or  /data/c82_person/service_type  = 'htn_less_than_40yrs'"/>
-      <bind nodeset="/data/c82_person/services/services_next_visit_due" type="string" calculate="today()" relevant=" /data/c82_person/services/services_pregnancy_history  = 1 or  /data/c82_person/services/services_cd_patient  = 1 or  /data/c82_person/services/services_eligible_woman  = 1 or  /data/c82_person/services/services_child_under_2  = 1 or  /data/c82_person/services/services_imam_patient  = 1 or  /data/c82_person/services/services_surgery_patient  = 1 or  /data/c82_person/services/services_hypertension_screening  = 1"/>
+      <bind nodeset="/data/c82_person/services/services_next_visit_due" type="string" relevant=" /data/c82_person/services/services_pregnancy_history  = 1 or  /data/c82_person/services/services_cd_patient  = 1 or  /data/c82_person/services/services_eligible_woman  = 1 or  /data/c82_person/services/services_child_under_2  = 1 or  /data/c82_person/services/services_imam_patient  = 1 or  /data/c82_person/services/services_surgery_patient  = 1 or  /data/c82_person/services/services_hypertension_screening  = 1" calculate="today()"/>
       <bind nodeset="/data/c82_person/generated_note_name_177" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
       <bind nodeset="/data/c82_person/generated_note_name_178" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'no'"/>
       <bind nodeset="/data/c82_person/date_of_registration" type="string" calculate="today()"/>

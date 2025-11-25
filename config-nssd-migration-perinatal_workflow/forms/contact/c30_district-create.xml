@@ -1063,68 +1063,68 @@
         <root>
           <item>
             <itextId>static_instance-post-0</itextId>
-            <places>c40</places>
             <name>ahw</name>
+            <places>c40</places>
           </item>
           <item>
             <itextId>static_instance-post-1</itextId>
-            <places>c30 c40</places>
             <name>anm</name>
+            <places>c30 c40</places>
           </item>
           <item>
             <itextId>static_instance-post-2</itextId>
-            <places>c40 c50 c60</places>
             <name>ha</name>
+            <places>c40 c50 c60</places>
           </item>
           <item>
             <itextId>static_instance-post-3</itextId>
-            <places>c30 c40 c50</places>
             <name>sn</name>
+            <places>c30 c40 c50</places>
           </item>
           <item>
             <itextId>static_instance-post-4</itextId>
-            <places>c40 c60</places>
             <name>chn</name>
+            <places>c40 c60</places>
           </item>
           <item>
             <itextId>static_instance-post-5</itextId>
-            <places>c40</places>
             <name>cho</name>
+            <places>c40</places>
           </item>
           <item>
             <itextId>static_instance-post-6</itextId>
-            <places>c30 c40 c50</places>
             <name>phi</name>
+            <places>c30 c40 c50</places>
           </item>
           <item>
             <itextId>static_instance-post-7</itextId>
-            <places>c40</places>
             <name>hc</name>
+            <places>c40</places>
           </item>
           <item>
             <itextId>static_instance-post-8</itextId>
-            <places>c30 c40 c50</places>
             <name>mo</name>
+            <places>c30 c40 c50</places>
           </item>
           <item>
             <itextId>static_instance-post-9</itextId>
-            <places>c20 c30</places>
             <name>pho</name>
+            <places>c20 c30</places>
           </item>
           <item>
             <itextId>static_instance-post-10</itextId>
-            <places>c20 c30</places>
             <name>pha</name>
+            <places>c20 c30</places>
           </item>
           <item>
             <itextId>static_instance-post-11</itextId>
-            <places>c10</places>
             <name>director</name>
+            <places>c10</places>
           </item>
           <item>
             <itextId>static_instance-post-12</itextId>
-            <places>all</places>
             <name>other</name>
+            <places>all</places>
           </item>
         </root>
       </instance>
@@ -1167,7 +1167,7 @@
       <bind nodeset="/data/init/create_new_person" type="select1" required="true()"/>
       <bind nodeset="/data/init/name" type="string"/>
       <bind nodeset="/data/init/contact_name" type="string" calculate="coalesce(../name, ../../contact/name)"/>
-      <bind nodeset="/data/init/custom_place_name_label_translator" type="select1" relevant="selected( /data/init/create_new_person ,'none')" calculate="&quot;name&quot;"/>
+      <bind nodeset="/data/init/custom_place_name_label_translator" type="select1" calculate="&quot;name&quot;" relevant="selected( /data/init/create_new_person ,'none')"/>
       <bind nodeset="/data/init/custom_place_name_label" type="string" calculate="jr:choice-name( /data/init/custom_place_name_label_translator ,' /data/init/custom_place_name_label_translator ')"/>
       <bind nodeset="/data/init/custom_place_name" type="string" relevant="not( /data/init/place_type  = 'c60_chn_area' or  /data/init/place_type  = 'c70_fchv_area') or selected( /data/c30_district/is_name_generated , 'false') or selected( /data/init/create_new_person ,'none')" required="true()"/>
       <bind nodeset="/data/init/place_type" type="select1"/>
@@ -1186,11 +1186,11 @@
       <bind nodeset="/data/contact/name" type="string" calculate="concat( /data/contact/first_name , ' ',  /data/contact/last_name )"/>
       <bind nodeset="/data/contact/age" type="int"/>
       <bind nodeset="/data/contact/gender" type="select1" required="true()"/>
-      <bind nodeset="/data/contact/caste_code" type="select" relevant=" /data/contact/role  = 'chw'" jr:constraintMsg="jr:itext('/data/contact/caste_code:jr:constraintMsg')" constraint="not(selected(., 'unknown') and (selected(., 'dalit') or selected(., 'janajati') or selected(., 'madhesi')or selected(., 'muslim')or selected(., 'brahmin_chettri') or selected(., 'other') ))" required="true()"/>
+      <bind nodeset="/data/contact/caste_code" type="select" jr:constraintMsg="jr:itext('/data/contact/caste_code:jr:constraintMsg')" constraint="not(selected(., 'unknown') and (selected(., 'dalit') or selected(., 'janajati') or selected(., 'madhesi')or selected(., 'muslim')or selected(., 'brahmin_chettri') or selected(., 'other') ))" relevant=" /data/contact/role  = 'chw'" required="true()"/>
       <bind nodeset="/data/contact/phone" type="tel" jr:constraintMsg="jr:itext('/data/contact/phone:jr:constraintMsg')" constraint="true()" required="true()"/>
-      <bind nodeset="/data/contact/fchv_id_number" type="string" relevant=" /data/contact/role  = 'chw'" jr:constraintMsg="jr:itext('/data/contact/fchv_id_number:jr:constraintMsg')" constraint="regex(.,'^[0-9]*$')"/>
-      <bind nodeset="/data/contact/start_date_as_fchv" type="string" relevant=" /data/contact/role  = 'chw'" jr:constraintMsg="jr:itext('/data/contact/start_date_as_fchv:jr:constraintMsg')" constraint="regex(.,'^[0-9]{4}$') and int(.)&gt;= 2044 and int(format-date(today(),'%Y')) + 57 &gt;= int(.)" required="true()"/>
-      <bind nodeset="/data/contact/start_date_as_fchv_ad" type="string" relevant=" /data/contact/role  = 'chw'" calculate="int( /data/contact/start_date_as_fchv ) - 57"/>
+      <bind nodeset="/data/contact/fchv_id_number" type="string" jr:constraintMsg="jr:itext('/data/contact/fchv_id_number:jr:constraintMsg')" constraint="regex(.,'^[0-9]*$')" relevant=" /data/contact/role  = 'chw'"/>
+      <bind nodeset="/data/contact/start_date_as_fchv" type="string" jr:constraintMsg="jr:itext('/data/contact/start_date_as_fchv:jr:constraintMsg')" constraint="regex(.,'^[0-9]{4}$') and int(.)&gt;= 2044 and int(format-date(today(),'%Y')) + 57 &gt;= int(.)" relevant=" /data/contact/role  = 'chw'" required="true()"/>
+      <bind nodeset="/data/contact/start_date_as_fchv_ad" type="string" calculate="int( /data/contact/start_date_as_fchv ) - 57" relevant=" /data/contact/role  = 'chw'"/>
       <bind nodeset="/data/contact/basic_training" type="select1" relevant=" /data/contact/role  = 'chw'" required="true()"/>
       <bind nodeset="/data/contact/post" type="select1" relevant=" /data/contact/role  = 'app_user'"/>
       <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>

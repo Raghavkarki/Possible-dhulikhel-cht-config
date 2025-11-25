@@ -367,7 +367,7 @@
       <bind nodeset="/death_and_migration_form/age_of_the_dead/cause_of_death" type="string" constraint="string-length(.) &lt;= 200" required="true()"/>
       <bind nodeset="/death_and_migration_form/migration" relevant=" /death_and_migration_form/reason  = 'permanent_migration'"/>
       <bind nodeset="/death_and_migration_form/migration/reason_for_migration" type="select1" required="true()"/>
-      <bind nodeset="/death_and_migration_form/migration/reason_for_migration_other" type="string" constraint="string-length(.) &lt;= 150" required="true()" relevant=" /death_and_migration_form/migration/reason_for_migration  = 'others'"/>
+      <bind nodeset="/death_and_migration_form/migration/reason_for_migration_other" type="string" relevant=" /death_and_migration_form/migration/reason_for_migration  = 'others'" constraint="string-length(.) &lt;= 150" required="true()"/>
       <bind nodeset="/death_and_migration_form/migration/person_return" type="select1" required="true()"/>
       <bind nodeset="/death_and_migration_form/migration/generated_note_name_54" readonly="true()" type="string" relevant=" /death_and_migration_form/migration/person_return  = 'yes'"/>
       <bind nodeset="/death_and_migration_form/migration/reactivate_profile" type="select1" relevant=" /death_and_migration_form/migration/person_return  = 'yes'" required="true()"/>

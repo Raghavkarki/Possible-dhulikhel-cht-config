@@ -572,6 +572,33 @@ function validateANCisLatestAndNoEPDS(contact) {
 //   return 'not_active';
 // }
 
+// const totalSessionPsupp = (contact) => {
+
+//   const latestPsuppForm = getMostRecentReport(contact.report, ['psupp_form']);
+//   if (!latestPsuppForm) return null;
+
+//   const sessionFrom = contact.reports.findIndex (report => report._id === latestPsuppForm._id);
+//   const count = contact.reports.slice(sessionFrom + 1).filter(report => report.form === 'pssup_session_1').length;
+//   return count +1;
+// }
+// console.log("get the most recent psupp formdata " , totalSessionPsupp);
+
+const totalSessionPsupp = (contact) => {
+  const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
+  if (!latestPsuppForm){
+    return null;
+  }
+  const sessionFrom = contact.reports.findIndex(report => report._id === latestPsuppForm._id);
+  const count = contact.reports
+    .slice(sessionFrom + 1)
+    .filter(report => report.form === 'psupp_session_1').length;
+
+  return count + 1;
+};
+
+// Example usage
+console.log('get the most recent psupp formdata', totalSessionPsupp);
+
 
 
 

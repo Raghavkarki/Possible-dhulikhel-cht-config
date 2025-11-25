@@ -159,11 +159,11 @@
       </instance>
       <bind nodeset="/data/c42_municipality_contact/type" type="string"/>
       <bind nodeset="/data/c42_municipality_contact/contact_type" type="string"/>
-      <bind nodeset="/data/c42_municipality_contact/first_name" type="string" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/first_name:jr:constraintMsg')"/>
-      <bind nodeset="/data/c42_municipality_contact/last_name" type="string" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/last_name:jr:constraintMsg')"/>
+      <bind nodeset="/data/c42_municipality_contact/first_name" type="string" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/first_name:jr:constraintMsg')"/>
+      <bind nodeset="/data/c42_municipality_contact/last_name" type="string" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/last_name:jr:constraintMsg')"/>
       <bind nodeset="/data/c42_municipality_contact/name" type="string" calculate="concat( /data/c42_municipality_contact/first_name , ' ',  /data/c42_municipality_contact/last_name )"/>
       <bind nodeset="/data/c42_municipality_contact/gender" type="select1" required="true()"/>
-      <bind nodeset="/data/c42_municipality_contact/age" type="int" required="true()" constraint=".&lt;=100" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/age:jr:constraintMsg')"/>
+      <bind nodeset="/data/c42_municipality_contact/age" type="int" constraint=".&lt;=100" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/age:jr:constraintMsg')"/>
       <bind nodeset="/data/c42_municipality_contact/phone" type="tel" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/phone:jr:constraintMsg')"/>
       <bind nodeset="/data/c42_municipality_contact/post" type="select1" required="true()"/>
       <bind nodeset="/data/c42_municipality_contact/post_other" type="string" relevant=" /data/c42_municipality_contact/post  = 'other'"/>

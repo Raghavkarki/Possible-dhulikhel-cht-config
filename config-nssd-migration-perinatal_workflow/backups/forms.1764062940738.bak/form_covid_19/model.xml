@@ -1,0 +1,63 @@
+
+  <model>
+    <instance>
+        <covid_19 xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="covid_19" prefix="J1!covid_19!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_date/>
+          <reporting_date_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <counseling_method/>
+          <participants_no/>
+          <generated_note_name_30/>
+          <generated_note_name_31/>
+          <generated_note_name_32/>
+          <question3>
+            <generated_note_name_34/>
+            <generated_note_name_35/>
+            <generated_note_name_36/>
+            <generated_note_name_37/>
+            <generated_note_name_38/>
+            <generated_note_name_39/>
+            <generated_note_name_40/>
+            <generated_note_name_41/>
+            <generated_note_name_42/>
+            <generated_note_name_43/>
+            <generated_note_name_44/>
+            <generated_note_name_45/>
+            <generated_note_name_46/>
+            <generated_note_name_47/>
+            <generated_note_name_48/>
+          </question3>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_19>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+

@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Death and Migration Form</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/death_and_migration_form/age_of_the_dead/age_day:label">
+            <value>Day</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/age_hour:label">
+            <value>Hour</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/age_month:label">
+            <value>Month</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/age_year:label">
+            <value>Year</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/cause_of_death:hint">
+            <value>Please insert the cause of death from death certificate if the family has registered the death and are are willing to share it with you.</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/cause_of_death:label">
+            <value>Please provide the immediate cause of death</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/death_register/no:label">
+            <value>No</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/death_register/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/death_register:label">
+            <value>Has the death of this person been registered at ward office?</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/generated_note_name_32:label">
+            <value>**What was the age (completed) of the person at the time of death (including any neonates immediately after birth)?**</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/generated_note_name_43:label">
+            <value>**Please remind the family to register at office**</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/health_facility:label">
+            <value>Health Facility</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/home:label">
+            <value>Home</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/on_the_way:label">
+            <value>On the way of Health Facility</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death:label">
+            <value>Where did the person died?</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death_other:label">
+            <value>Specify Others</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/time_of_death:hint">
+            <value>(YYYY-MM-DD)</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/time_of_death:label">
+            <value>When did the person died?</value>
+          </text>
+          <text id="/death_and_migration_form/complete_care_form/no:label">
+            <value>No</value>
+          </text>
+          <text id="/death_and_migration_form/complete_care_form/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/death_and_migration_form/complete_care_form:label">
+            <value>Did you complete the care delivery form?</value>
+          </text>
+          <text id="/death_and_migration_form/generated_note_name_29:label">
+            <value>**Please complete the care delivery form first**</value>
+          </text>
+          <text id="/death_and_migration_form/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/death_and_migration_form/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/death_and_migration_form/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/death_and_migration_form/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/death_and_migration_form/migration/generated_note_name_54:label">
+            <value>You are about to re-activate this person's profile. Please confirm if you want to proceed forward</value>
+          </text>
+          <text id="/death_and_migration_form/migration/person_return/no:label">
+            <value>No</value>
+          </text>
+          <text id="/death_and_migration_form/migration/person_return/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/death_and_migration_form/migration/person_return:label">
+            <value>Has the person returned back ?</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reactivate_profile/no:label">
+            <value>No</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reactivate_profile/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reactivate_profile:label">
+            <value>Would you like to re-activate this person's profile?</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/couldnt_identify:label">
+            <value>Couldn't identify</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/job_placement:label">
+            <value>Job placement</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/marriage:label">
+            <value>Marriage</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/others:label">
+            <value>Others</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/went_abroad:label">
+            <value>Went abroad</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration:label">
+            <value>Please provide the reason for migration</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration_other:label">
+            <value>Specify Others</value>
+          </text>
+          <text id="/death_and_migration_form/reason/maternal_death:label">
+            <value>Maternal death</value>
+          </text>
+          <text id="/death_and_migration_form/reason/neonatal_death:label">
+            <value>Neonatal death</value>
+          </text>
+          <text id="/death_and_migration_form/reason/permanent_migration:label">
+            <value>The person has permanently migrated (migrated for 12 months or more)</value>
+          </text>
+          <text id="/death_and_migration_form/reason/person_death:label">
+            <value>The person is dead</value>
+          </text>
+          <text id="/death_and_migration_form/reason:label">
+            <value>You are filling up this form because</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/death_and_migration_form/age_of_the_dead/age_day:label">
+            <value>दिन</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/age_hour:label">
+            <value>घण्टा</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/age_month:label">
+            <value>महिना</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/age_year:label">
+            <value>वर्ष</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/cause_of_death:hint">
+            <value>यदि परिवारले मृत्यु दर्ता गरेको छ र तपाईसँग पुष्टि गर्न इच्छुक हुनुहुन्छ भने, कृपया मृत्यु प्रमाणपत्रबाट मृत्युको कारण उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/cause_of_death:label">
+            <value>मृत्यु हुनाको तत्काल कारण लेख्नुहोस्।</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/death_register/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/death_register/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/death_register:label">
+            <value>के यि व्यक्तिको वार्ड कार्यालयमा मृत्यु दर्ता गरिएको छ ?</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/generated_note_name_32:label">
+            <value>**मृत्युको समयमा यस व्यक्तिको उमेर कति पूरा भएको थियो?**</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/generated_note_name_43:label">
+            <value>**कृपया परिवारलाई कार्यालयमा दर्ता गर्न सम्झाउनुहोस्**</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/health_facility:label">
+            <value>स्वास्थ्य सँस्था</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/home:label">
+            <value>घर</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/on_the_way:label">
+            <value>स्वास्थ्य सँस्था जाँदा बाटो मा</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death:label">
+            <value>यस व्यक्तिको मृत्यु कहाँ भएको थियो?</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/place_of_death_other:label">
+            <value>उल्लेख गर्नुहोस</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/time_of_death:hint">
+            <value>(साल/महिना/दिन)</value>
+          </text>
+          <text id="/death_and_migration_form/age_of_the_dead/time_of_death:label">
+            <value>यस व्यक्तिको मृत्यु कहिले भयो?</value>
+          </text>
+          <text id="/death_and_migration_form/complete_care_form/no:label">
+            <value>भरिसकेको छैन</value>
+          </text>
+          <text id="/death_and_migration_form/complete_care_form/yes:label">
+            <value>भरिसकेँ</value>
+          </text>
+          <text id="/death_and_migration_form/complete_care_form:label">
+            <value>के तपाईंले care delivery फारम पूरा भर्नुभयो ?</value>
+          </text>
+          <text id="/death_and_migration_form/generated_note_name_29:label">
+            <value>**कृपया पहिले हेरचाह डेलिभरी फारम भर्नुहोस्**</value>
+          </text>
+          <text id="/death_and_migration_form/migration/generated_note_name_54:label">
+            <value>तपाईं यस व्यक्तिको प्रोफाइल पुन: सक्रिय गर्न लाग्दै हुनुहुन्छ। यदि तपाईं अगाडि बढ्न चाहनुहुन्छ भने कृपया पुष्टि गर्नुहोस् ।</value>
+          </text>
+          <text id="/death_and_migration_form/migration/person_return/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/death_and_migration_form/migration/person_return/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/death_and_migration_form/migration/person_return:label">
+            <value>के यस व्यक्ती फर्किसक्नु भएको छ ?</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reactivate_profile/no:label">
+            <value>चाहन्न</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reactivate_profile/yes:label">
+            <value>चाहन्छु</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reactivate_profile:label">
+            <value>के तपाईं यस व्यक्तिको प्रोफाइल पुन: सक्रिय गर्न चाहनुहुन्छ ?</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/couldnt_identify:label">
+            <value>थाह हुन सकेन</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/job_placement:label">
+            <value>कामको कारण अन्य ठाउँमा सरेको</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/marriage:label">
+            <value>विवाह</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/others:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration/went_abroad:label">
+            <value>विदेश गएको</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration:label">
+            <value>कृपया बसाई सराई गर्नुको कारण लेख्नुहोस् ।</value>
+          </text>
+          <text id="/death_and_migration_form/migration/reason_for_migration_other:label">
+            <value>उल्लेख गर्नुहोस</value>
+          </text>
+          <text id="/death_and_migration_form/reason/maternal_death:label">
+            <value>मातृ मृत्यु भएकोले</value>
+          </text>
+          <text id="/death_and_migration_form/reason/neonatal_death:label">
+            <value>नवजात शिशुको मृत्यु भएकोले</value>
+          </text>
+          <text id="/death_and_migration_form/reason/permanent_migration:label">
+            <value>यस व्यक्तिले स्थाई रुपमा बसाईसराई गरेकोले</value>
+          </text>
+          <text id="/death_and_migration_form/reason/person_death:label">
+            <value>यस व्यक्तीको मृत्यु भएकोले</value>
+          </text>
+          <text id="/death_and_migration_form/reason:label">
+            <value>तपाईले यस फारम भर्नुको कारण के हो ?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <death_and_migration_form id="death_and_migration_form" prefix="J1!death_and_migration_form!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <reason/>
+          <complete_care_form/>
+          <generated_note_name_29/>
+          <age_of_the_dead>
+            <generated_note_name_32/>
+            <age_year/>
+            <age_month/>
+            <age_day/>
+            <age_hour/>
+            <time_of_death/>
+            <place_of_death/>
+            <place_of_death_other/>
+            <death_register/>
+            <generated_note_name_43/>
+            <cause_of_death/>
+          </age_of_the_dead>
+          <migration>
+            <reason_for_migration/>
+            <reason_for_migration_other/>
+            <person_return/>
+            <generated_note_name_54/>
+            <reactivate_profile/>
+          </migration>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </death_and_migration_form>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/death_and_migration_form/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/death_and_migration_form/inputs/source" type="string"/>
+      <bind nodeset="/death_and_migration_form/inputs/source_id" type="string"/>
+      <bind nodeset="/death_and_migration_form/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/death_and_migration_form/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/death_and_migration_form/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/death_and_migration_form/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/death_and_migration_form/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/death_and_migration_form/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/death_and_migration_form/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/death_and_migration_form/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /death_and_migration_form/reporting_today )"/>
+      <bind nodeset="/death_and_migration_form/reporting_nepali_short" type="string" calculate="substring-after( /death_and_migration_form/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/death_and_migration_form/reporting_nepali_month" type="string" calculate="substring-before( /death_and_migration_form/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/death_and_migration_form/reporting_nepali_year" type="string" calculate="substring-after( /death_and_migration_form/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/death_and_migration_form/reporting_month_today" type="string" calculate="if( /death_and_migration_form/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /death_and_migration_form/reporting_nepali_month  = 'जेठ', 'Jestha', if( /death_and_migration_form/reporting_nepali_month  = 'असार', 'Ashadh', if( /death_and_migration_form/reporting_nepali_month  = 'साउन', 'Shrawan', if( /death_and_migration_form/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /death_and_migration_form/reporting_nepali_month  = 'असोज', 'Ashwin', if( /death_and_migration_form/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /death_and_migration_form/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /death_and_migration_form/reporting_nepali_month  = 'पौष', 'Poush', if( /death_and_migration_form/reporting_nepali_month  = 'माघ', 'Magh', if( /death_and_migration_form/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /death_and_migration_form/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/death_and_migration_form/reporting_year_today" type="string" calculate="concat(if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /death_and_migration_form/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /death_and_migration_form/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /death_and_migration_form/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /death_and_migration_form/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/death_and_migration_form/reporting_today_short" type="string" calculate="concat( /death_and_migration_form/reporting_month_today , ' ',  /death_and_migration_form/reporting_year_today )"/>
+      <bind nodeset="/death_and_migration_form/reason" type="select1" required="true()"/>
+      <bind nodeset="/death_and_migration_form/complete_care_form" type="select1" relevant=" /death_and_migration_form/reason  = 'maternal_death' or  /death_and_migration_form/reason  = 'neonatal_death'" required="true()"/>
+      <bind nodeset="/death_and_migration_form/generated_note_name_29" readonly="true()" type="string" relevant=" /death_and_migration_form/complete_care_form  = 'no'"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead" relevant=" /death_and_migration_form/reason  = 'maternal_death' or  /death_and_migration_form/reason  = 'neonatal_death' or  /death_and_migration_form/reason  = 'person_death'"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/generated_note_name_32" readonly="true()" type="string"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/age_year" type="int" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/age_month" type="int" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/age_day" type="int" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/age_hour" type="int" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/time_of_death" type="date" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/place_of_death" type="select1" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/place_of_death_other" type="string" relevant=" /death_and_migration_form/age_of_the_dead/place_of_death  = 'other'" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/death_register" type="select1" required="true()"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/generated_note_name_43" readonly="true()" type="string" relevant=" /death_and_migration_form/age_of_the_dead/death_register  = 'no'"/>
+      <bind nodeset="/death_and_migration_form/age_of_the_dead/cause_of_death" type="string" constraint="string-length(.) &lt;= 200" required="true()"/>
+      <bind nodeset="/death_and_migration_form/migration" relevant=" /death_and_migration_form/reason  = 'permanent_migration'"/>
+      <bind nodeset="/death_and_migration_form/migration/reason_for_migration" type="select1" required="true()"/>
+      <bind nodeset="/death_and_migration_form/migration/reason_for_migration_other" type="string" constraint="string-length(.) &lt;= 150" relevant=" /death_and_migration_form/migration/reason_for_migration  = 'others'" required="true()"/>
+      <bind nodeset="/death_and_migration_form/migration/person_return" type="select1" required="true()"/>
+      <bind nodeset="/death_and_migration_form/migration/generated_note_name_54" readonly="true()" type="string" relevant=" /death_and_migration_form/migration/person_return  = 'yes'"/>
+      <bind nodeset="/death_and_migration_form/migration/reactivate_profile" type="select1" relevant=" /death_and_migration_form/migration/person_return  = 'yes'" required="true()"/>
+      <bind nodeset="/death_and_migration_form/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/death_and_migration_form/inputs">
+      <label ref="jr:itext('/death_and_migration_form/inputs:label')"/>
+      <group ref="/death_and_migration_form/inputs/contact">
+        <label ref="jr:itext('/death_and_migration_form/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/death_and_migration_form/inputs/contact/_id"/>
+      </group>
+    </group>
+    <select1 ref="/death_and_migration_form/reason">
+      <label ref="jr:itext('/death_and_migration_form/reason:label')"/>
+      <item>
+        <label ref="jr:itext('/death_and_migration_form/reason/permanent_migration:label')"/>
+        <value>permanent_migration</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/death_and_migration_form/reason/person_death:label')"/>
+        <value>person_death</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/death_and_migration_form/reason/maternal_death:label')"/>
+        <value>maternal_death</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/death_and_migration_form/reason/neonatal_death:label')"/>
+        <value>neonatal_death</value>
+      </item>
+    </select1>
+    <select1 ref="/death_and_migration_form/complete_care_form">
+      <label ref="jr:itext('/death_and_migration_form/complete_care_form:label')"/>
+      <item>
+        <label ref="jr:itext('/death_and_migration_form/complete_care_form/yes:label')"/>
+        <value>yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/death_and_migration_form/complete_care_form/no:label')"/>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/death_and_migration_form/generated_note_name_29">
+      <label ref="jr:itext('/death_and_migration_form/generated_note_name_29:label')"/>
+    </input>
+    <group ref="/death_and_migration_form/age_of_the_dead">
+      <input ref="/death_and_migration_form/age_of_the_dead/generated_note_name_32">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/generated_note_name_32:label')"/>
+      </input>
+      <input ref="/death_and_migration_form/age_of_the_dead/age_year">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/age_year:label')"/>
+      </input>
+      <input ref="/death_and_migration_form/age_of_the_dead/age_month">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/age_month:label')"/>
+      </input>
+      <input ref="/death_and_migration_form/age_of_the_dead/age_day">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/age_day:label')"/>
+      </input>
+      <input ref="/death_and_migration_form/age_of_the_dead/age_hour">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/age_hour:label')"/>
+      </input>
+      <input ref="/death_and_migration_form/age_of_the_dead/time_of_death">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/time_of_death:label')"/>
+        <hint ref="jr:itext('/death_and_migration_form/age_of_the_dead/time_of_death:hint')"/>
+      </input>
+      <select1 ref="/death_and_migration_form/age_of_the_dead/place_of_death">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/place_of_death:label')"/>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/place_of_death/home:label')"/>
+          <value>home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/place_of_death/health_facility:label')"/>
+          <value>health_facility</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/place_of_death/on_the_way:label')"/>
+          <value>on_the_way</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/place_of_death/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/death_and_migration_form/age_of_the_dead/place_of_death_other">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/place_of_death_other:label')"/>
+      </input>
+      <select1 ref="/death_and_migration_form/age_of_the_dead/death_register">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/death_register:label')"/>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/death_register/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/death_register/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/death_and_migration_form/age_of_the_dead/generated_note_name_43">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/generated_note_name_43:label')"/>
+      </input>
+      <input ref="/death_and_migration_form/age_of_the_dead/cause_of_death">
+        <label ref="jr:itext('/death_and_migration_form/age_of_the_dead/cause_of_death:label')"/>
+        <hint ref="jr:itext('/death_and_migration_form/age_of_the_dead/cause_of_death:hint')"/>
+      </input>
+    </group>
+    <group ref="/death_and_migration_form/migration">
+      <select1 ref="/death_and_migration_form/migration/reason_for_migration">
+        <label ref="jr:itext('/death_and_migration_form/migration/reason_for_migration:label')"/>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/reason_for_migration/couldnt_identify:label')"/>
+          <value>couldnt_identify</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/reason_for_migration/marriage:label')"/>
+          <value>marriage</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/reason_for_migration/went_abroad:label')"/>
+          <value>went_abroad</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/reason_for_migration/job_placement:label')"/>
+          <value>job_placement</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/reason_for_migration/others:label')"/>
+          <value>others</value>
+        </item>
+      </select1>
+      <input ref="/death_and_migration_form/migration/reason_for_migration_other">
+        <label ref="jr:itext('/death_and_migration_form/migration/reason_for_migration_other:label')"/>
+      </input>
+      <select1 ref="/death_and_migration_form/migration/person_return">
+        <label ref="jr:itext('/death_and_migration_form/migration/person_return:label')"/>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/person_return/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/person_return/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/death_and_migration_form/migration/generated_note_name_54">
+        <label ref="jr:itext('/death_and_migration_form/migration/generated_note_name_54:label')"/>
+      </input>
+      <select1 ref="/death_and_migration_form/migration/reactivate_profile">
+        <label ref="jr:itext('/death_and_migration_form/migration/reactivate_profile:label')"/>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/reactivate_profile/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death_and_migration_form/migration/reactivate_profile/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

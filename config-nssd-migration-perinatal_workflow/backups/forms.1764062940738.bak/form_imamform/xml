@@ -1,0 +1,1954 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>patient_assesment imam</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/imamform/group_assessment_imam/generated_note_name_181:label">
+            <value>This child should next be visited on:</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/generated_note_name_182:label">
+            <value>You are at the end of the IMAM form. Press Finish to submit and close. Thanks!</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/generated_note_name_27:label">
+            <value>This form is to track and collect IMAM related data.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/generated_note_name_69:label">
+            <value>If the child has cured his/her case will be closed and the name removed from care delivery of IMAM</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/absence_other:label">
+            <value>Please specify.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service:label">
+            <value>Does the woman agree to receive counseling from you?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/child_at_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/child_at_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/child_at_home:label">
+            <value>Is the child available at home?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_57:label">
+            <value>If this patient has died, his/her case will be closed and the name removed from care delivery.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_58:label">
+            <value>If this patient has permanently migrated, then she will be removed from care delivery forms</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/child_is_cured:label">
+            <value>Child is Cured.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/doesn_want_service:label">
+            <value>Child's mother does not want counseling service</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/family_refused_service:label">
+            <value>Family members refused service</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/patient_busy:label">
+            <value>Mother/Caretaker was busy</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason:label">
+            <value>If no, please select a reason</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/other_specify:label">
+            <value>if other, please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/back_6_month:label">
+            <value>Will be back anytime withing 6 months</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/back_in_1_year:label">
+            <value>Temporary Migration Gone for more than 6 months but less than a year</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/died:label">
+            <value>Child has died</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/location_unknown:label">
+            <value>Don't know where this person has gone to.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/migrated:label">
+            <value>Permanent Migration(gone for more than 1 year)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/mother_at_work:label">
+            <value>Child's mother has gone to work</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence:label">
+            <value>Please provide a reason for his/her absence.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_121:label">
+            <value>If yes, please ask them to bring the pitho and show.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_155:label">
+            <value>Counsel about the importance of toilets in home.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_157:label">
+            <value>Counsel on proper Hygiene and Sanitation and its benefits.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_167:label">
+            <value>Counsel Accordingly.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_84:label">
+            <value>MUAC &lt; 115, Red Zone, Severe Acute Malnutrition (SAM)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_85:label">
+            <value>MUAC between 115 and 125 mm, Yellow Zone, Moderate/ Mild Acute Malnutrition (MAM)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_86:label">
+            <value>MUAC &gt; 125 mm, Green Zone, Nurtitional Status = Good</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_87:label">
+            <value>This child's Nutritional Status has : Improved Please convey this message to the mother.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_88:label">
+            <value>This child's Nutritional Status is : Worse than before Please convey this message to the mother and refer to the hospital.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_89:label">
+            <value>This child's Nutritional Status is: Same (No Change) Please convey this message to the mother.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids:label">
+            <value>Have you given bal-vita to other kids as well?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_daily_sarbottam_intake:label">
+            <value>How many times does your child eat Sarbottam lito in a day?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/didnt_receive:label">
+            <value>Didn't receive any from the hospital</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/gap_period:label">
+            <value>Is in gap period now</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita:label">
+            <value>Is child eating balvita given from the hospital?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/mam:label">
+            <value>MAM</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/other:label">
+            <value>Other (Please specify)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/sam:label">
+            <value>SAM</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status:label">
+            <value>What is the malnutrition status of the child in the hospital EHR?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_follow_up/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_follow_up/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_follow_up:label">
+            <value>Have they called you back for a follow up?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date:label">
+            <value>When are you supposed to go for a follow up?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/dont_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed:label">
+            <value>Has the follow up date passed?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup:label">
+            <value>Will you go to the hospital for the next follow up visit?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_audio:label">
+            <value>Hand wash counsel: Audio</value>
+            <value form="audio">jr://audio/handwash_counsel_audio.mp3</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image1:label">
+            <value>Hand wash Counsel: Image 1</value>
+            <value form="image">jr://images/handwash_image1.jpg</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image2:label">
+            <value>Hand wash counsel: Image 2</value>
+            <value form="image">jr://images/handwash_image2.jpg</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_hospital_muac:label">
+            <value>What was the MUAC measurement in hospital? (in mm)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_hospital_visit_date:label">
+            <value>When is the last time the child went to the hospital?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_how_many_sachets:label">
+            <value>If yes, how many sachets in a day?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit:label">
+            <value>Is there any improvement after the child went to the hospital?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/breastfeeding_better:label">
+            <value>Child is breastfeeding better</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/eats_more:label">
+            <value>Child eats more now</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/gaining_weight:label">
+            <value>Child is gaining weight</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/healthier:label">
+            <value>Child is healthier</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements:label">
+            <value>If yes, what are the improvements?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements_other_specify:label">
+            <value>Please specify how the child has improved.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_muac_now:label">
+            <value>What is the MUAC measurement now? (mm)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_followup_other:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_other_specify:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/another_hospital:label">
+            <value>Going to another hospital</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/no_change:label">
+            <value>There is no change</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why:label">
+            <value>If no, why?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_improvement_reasons:label">
+            <value>If no improvement, please explain what could be the reasons and counsel for referral.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_other:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/didnt_know:label">
+            <value>I didn't know</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/not_important:label">
+            <value>Didn't consider it important</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/were_busy:label">
+            <value>We were busy</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why:label">
+            <value>If no, why not?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_eating_reasons:label">
+            <value>If no, why not?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/child_refuses:label">
+            <value>Child does not cooperate/ refuses to go the doctor</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/go_soon:label">
+            <value>Will go soon</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/no_improvement:label">
+            <value>There is no improvement in child</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/were_busy:label">
+            <value>We were Busy</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons:label">
+            <value>Please give a reason why you have not visited any health institution.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_nutrition_status_other_specify:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_other_specify:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/didnt_receive:label">
+            <value>Didn't receive any</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut:label">
+            <value>Is your child eating the plumpy nut given at the hospital?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpynut_daily_packs:label">
+            <value>How many packs a day?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_purify_other_specify:label">
+            <value>Please specify what you do to purify your drinking water.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet:label">
+            <value>Do you use toilet at your home each time you need to?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/cant_make:label">
+            <value>I don't know how to make it.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home:label">
+            <value>Have you made Sarbottam pitho at home?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_instruction_audio:label">
+            <value>Sarbottam Lito Instruction</value>
+            <value form="audio">jr://audio/sarbottam_instruction_audio.mp3</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids:label">
+            <value>Have you shared the plumpy nut with other children?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_caring_the_sickly:label">
+            <value>After taking care of the sick person</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_feeding_cattle:label">
+            <value>After feeding the cattle</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_toilet_use:label">
+            <value>After using the toilet</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_touching_animals:label">
+            <value>After touching animals (Cow, Buffalo, Dog, Cat, Pig, Goat etc)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_caring_the_sickly:label">
+            <value>Before caring for the sick person</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_cooking:label">
+            <value>Before cooking</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_eating:label">
+            <value>Before Eating</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_feeding_baby:label">
+            <value>Before feeding your child</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/never_use_soap:label">
+            <value>I never use soap</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/touching_cow_dung:label">
+            <value>After touching cow dung</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/washing_childs_butt:label">
+            <value>After your child uses the toilet</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/work_in_field:label">
+            <value>After working in agricultural field/garden</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands:label">
+            <value>When do you wash your hands with soap?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_other:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/dont_remember:label">
+            <value>I don't remember</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/other:label">
+            <value>other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process:label">
+            <value>Did they teach you how to make Sarbottam at the hospital?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_teach_sarbottam_other:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home:label">
+            <value>Do you have toilet at home?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_total_packs_given:label">
+            <value>How many total packets have you given to other children?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_total_plumpynut_packs_given:label">
+            <value>How many total packets have you given to other children?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp:label">
+            <value>Did you visit any other health post?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/boil:label">
+            <value>Boil Water</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/nothing:label">
+            <value>I don't do anything</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/piyush:label">
+            <value>Use Piyush</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/purify_sometimes:label">
+            <value>I purify water sometimes only</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/use_filter:label">
+            <value>Use Water filter</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter:label">
+            <value>Do you do anything to purify your drinking water?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/forest:label">
+            <value>Forest</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/natural_reservoir:label">
+            <value>Natural Reservoir</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/river:label">
+            <value>River</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/tap:label">
+            <value>Tap</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source:label">
+            <value>What is the source of water for your home?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source_other:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp:label">
+            <value>Have you been weighing your baby at the health post ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/no_improvement_at_hospital:label">
+            <value>Didn't see improvement in child from hospital treatment</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/other_place_nearby:label">
+            <value>The other health institution is nearby</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost:label">
+            <value>If yes, what are the reasons?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_no_sarbottam:label">
+            <value>Please enter why the child is not eating Sarbottam.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_not_eating:label">
+            <value>If no, why?</value>
+          </text>
+          <text id="/imamform/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/imamform/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/imamform/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/imamform/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/imamform/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/imamform/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/imamform/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/imamform/group_assessment_imam/generated_note_name_181:label">
+            <value>यो बच्चालाई फेरी भेट्न आउने मिति :</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/generated_note_name_182:label">
+            <value>तपाई यस फारमको अन्तमा हुनुहुन्छ, पेस गर्नको लागि हरियोमा थिच्नु होस्, धन्यवाद |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/generated_note_name_27:label">
+            <value>यो फारमले एकिकृत रुपमा शिघ्र कुपोषणको ब्यबस्थापनसंग सम्बन्धित तथ्यांक संकलन गर्दछ |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/generated_note_name_69:label">
+            <value>बच्चा निको भएको भए यो बच्चाको नाम स्याहार सेवाबाट आफै हटेर जाने छ |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/absence_other:label">
+            <value>कृपया खुलाउनुहोस |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service/no:label">
+            <value>हुँदैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service/yes:label">
+            <value>हुन्छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service:label">
+            <value>के बच्चाको आमाले सेवा लिन चाहनुहुन्छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/child_at_home/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/child_at_home/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/child_at_home:label">
+            <value>के बच्चा घरमा छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_57:label">
+            <value>मृत्यु भएको वा बसाइ सरेर गएको भए यो बच्चाको नाम स्याहार सेवाबाट आफै हटेर जाने छ |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_58:label">
+            <value>यदि १ बर्ष भन्दा बढीको लागि स्थाई बसाइ सरेर गएको भए यी बच्चालाई स्याहार फारमबाट हटाइने छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/child_is_cured:label">
+            <value>बच्चा निको भएको</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/doesn_want_service:label">
+            <value>महिलालाइ हाम्रो सेवा लिन मन छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/family_refused_service:label">
+            <value>परिवारका सदस्यले मानेनन्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/patient_busy:label">
+            <value>महिला ब्यस्त हुनुहुन्छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason:label">
+            <value>किन चाहनु हुन्न, कारण दिनुहोस</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/other_specify:label">
+            <value>कृपया खुलस्त पार्नुहोस</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/back_6_month:label">
+            <value>६ महिना भित्र कुनैपनि बेला फर्कने</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/back_in_1_year:label">
+            <value>६ महिना भन्दाबढी तर १ वर्ष भन्दा कामको लागि अस्थाई बसाई सरेर गएको</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/died:label">
+            <value>मृत्यु भैसकेको</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/location_unknown:label">
+            <value>बिरामी कहाँ गएको थाहा छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/migrated:label">
+            <value>स्थाई बसाई सरेर गएको (१ बर्ष भन्दा बढी को लागी)</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/mother_at_work:label">
+            <value>बच्चाको आमा काममा गएको</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/group_assessment_athome/reason_absence:label">
+            <value>बच्चा घरमा नहुनुको कारण दिनुहोस</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_121:label">
+            <value>यदि छु भने, पिठो देखाउन देखाउन भन्नुहोस र हेर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_155:label">
+            <value>घरमा शौचालयको महत्वको वारेमा बुझाउनुहोस |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_157:label">
+            <value>स्वास्थ्य सरसफाइको फाइदाका बारेमा परामर्श गर्नुहोस</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_167:label">
+            <value>त्यहि अनुशार परामर्श गर्नुहोस</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_84:label">
+            <value>यदि MUAC ११५ भन्दा कम = रातो भागमा छ भने : शिघ्र कडा किसिमको कुपोषण</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_85:label">
+            <value>यदि MUAC ११५ देखि १२५ mm = पहेलो भाग मा पर्यो भने: शिघ्र मध्यम कुपोषण.</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_86:label">
+            <value>यदि MUAC १२५ भन्दा माथि = हरीयो भाग मा पर्यो भने सामान्य. बच्चाको पोषण स्थिति : राम्रो</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_87:label">
+            <value>बच्चा को पोषण स्थिति : सुधार भयको आमा लाई जानकारी गराउनु होस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_88:label">
+            <value>बच्चा को पोषण स्थिति : पहिलेको भन्दा खराब भएको आमा लाई जानकारी गराउनु होस् र अस्पताल रेफर गर्नुहोस |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/generated_note_name_89:label">
+            <value>बच्चा को पोषण स्थिति : उस्तै भयको आमा लाई जानकारी गराउनु होस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids/no:label">
+            <value>दिन्न</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids/yes:label">
+            <value>दिन्छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids:label">
+            <value>अरु बच्चालाई पनि बालभिटा दिनुहुन्छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_daily_sarbottam_intake:label">
+            <value>तपाईको बच्चाले एक दिनमा कति पटक सर्वोत्तम लिटो खान्छ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/didnt_receive:label">
+            <value>अस्पताल/स्वास्थ्य चौकी बाट लियको छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/gap_period:label">
+            <value>अहिले gap गरिराखेको छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita:label">
+            <value>के बच्चाले अस्पताल/स्वास्थ्य चौकीबाट दिईएको बालभिटा खाईरहेको छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/mam:label">
+            <value>शिघ्र मध्यम कुपोषणको ब्यबस्थापन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/sam:label">
+            <value>शिघ्र कडा कुपोषणको ब्यबस्थापन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status:label">
+            <value>EHR अनुसार बच्चाको कुपोषण स्थिति के छ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_follow_up/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_follow_up/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_follow_up:label">
+            <value>के तपाई लाई पुन भेटका लागि बोलाए को छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date:label">
+            <value>तपाईले कहिले पुन भेट का लागि जानुपर्छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/dont_know:label">
+            <value>थाहा छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed:label">
+            <value>के पुन भेटको दिन बिती सक्यो?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup/no:label">
+            <value>जादिन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup/yes:label">
+            <value>जान्छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup:label">
+            <value>के तपाई अर्को पुन भेटका लागि जानुहुन्छ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_audio:label">
+            <value>हात धुने सम्बन्धि परामर्श</value>
+            <value form="audio">jr://audio/handwash_counsel_audio.mp3</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image1:label">
+            <value>हात धुने सम्बन्धि परामर्श: चित्र १</value>
+            <value form="image">jr://images/handwash_image1.jpg</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image2:label">
+            <value>हात धुने सम्बन्धि परामर्श: चित्र २</value>
+            <value form="image">jr://images/handwash_image2.jpg</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_hospital_muac:label">
+            <value>अस्पताल मा MUAC मापन गर्दा कति मि.मि थियो</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_hospital_visit_date:label">
+            <value>बच्चा लाई अन्तिम पल्ट कहिले अस्पताल लानु भयको थियो ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_how_many_sachets:label">
+            <value>यदि छ भने दिनको कति पाकेट खुवाउनु हुन्छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit/no:label">
+            <value>भएन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit/yes:label">
+            <value>भयो</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit:label">
+            <value>अस्पताल लगेपछि बच्चाको स्थितिमा कुनै सुधार भयो ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/breastfeeding_better:label">
+            <value>बच्चाले आमाको दुध राम्रो संग खाइरहेको छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/eats_more:label">
+            <value>बच्चाले पहिले भन्दा धेरै खाइरहेको छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/gaining_weight:label">
+            <value>बच्चाको तौल बढी रहेको छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/healthier:label">
+            <value>बच्चा पहिले भन्दा स्वस्थ्य छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements:label">
+            <value>के कस्तो सुधार भयो, कृपया खुलस्त पार्नुहोस |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_improvements_other_specify:label">
+            <value>बच्चामा कसरि सुधार भयो उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_muac_now:label">
+            <value>अहिलेको MUAC कति छ रिकर्ड गर्नुहोस (मि.मि) मा</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_followup_other:label">
+            <value>उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_other_specify:label">
+            <value>उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/another_hospital:label">
+            <value>अर्को अस्पतालमा गैरहेको</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/no_change:label">
+            <value>कुनै सुधार हुदैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why:label">
+            <value>यदि जादिन भने किन ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_improvement_reasons:label">
+            <value>सुधार नहुनुको कारण यहाँ खुलाउनुहोस् र अस्पताल जान परामर्श दिनुहोस् |</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_other:label">
+            <value>उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/didnt_know:label">
+            <value>थाहा नभएर</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/not_important:label">
+            <value>महत्वपूर्ण नठानेर</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/were_busy:label">
+            <value>कामको व्यस्तताले</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why:label">
+            <value>छैन भने किन?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_eating_reasons:label">
+            <value>यदि छैन भने किन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/child_refuses:label">
+            <value>बच्चाले जानै मान्दैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/go_soon:label">
+            <value>चाडै जाने छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/no_improvement:label">
+            <value>बच्चामा सुधार भएन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/were_busy:label">
+            <value>कामको व्यस्तताले</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons:label">
+            <value>तपाई अरु स्वास्थ्य चौकी किन जानु भएन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_nutrition_status_other_specify:label">
+            <value>अरु भए थप्नुहोस</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_other_specify:label">
+            <value>उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/didnt_receive:label">
+            <value>केही पनि पाएको छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut:label">
+            <value>के तपाई को बच्चाले अस्पताल/स्वास्थ्य चौकी बाट plumpy nut खाई रहेको छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_plumpynut_daily_packs:label">
+            <value>दिनको कति पाकेट ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_purify_other_specify:label">
+            <value>तपाई पिउने पानीलाई शुद्धीकरण गर्न के गर्नु हुन्छ, उल्लेख गर्नुहोस</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet/no:label">
+            <value>गर्दिन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet/yes:label">
+            <value>गर्छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet:label">
+            <value>के तपाई प्रत्येक चोटी शौचालय प्रयोग गर्नुहुन्छ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/cant_make:label">
+            <value>मलाई थाह छैन कसरि बनाउने हो</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/yes:label">
+            <value>छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home:label">
+            <value>के तपाई घरमा सर्वोत्तम पिठो बनाउनु हुन्छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_instruction_audio:label">
+            <value form="audio">jr://audio/sarbottam_instruction_audio.mp3</value>
+            <value>-</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids:label">
+            <value>अरु बच्चालाई पनि त्यो pulmpy not खुवाउनु हुन्छ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_caring_the_sickly:label">
+            <value>बिरामी मान्छेको स्याहार गर्नु भन्दा पछाडी</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_feeding_cattle:label">
+            <value>गाई, गोरुलाई घाँस हालेपछी</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_toilet_use:label">
+            <value>चर्पीको प्रयोग गरेपछि</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_touching_animals:label">
+            <value>जनावर छोए पछी (गाई, भैसी, कुकुर, बिरालो, सुँगुर, बाख्रा आदि )</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_caring_the_sickly:label">
+            <value>बिरामी मान्छेको स्याहार गर्नु भन्दा अगाडी</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_cooking:label">
+            <value>खाना पकाउनु भन्दा अगाडी</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_eating:label">
+            <value>खाना खानु भन्दा अगाडी</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_feeding_baby:label">
+            <value>बच्चालाई खुवाउनु भन्दा अगाडी</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/never_use_soap:label">
+            <value>मैले कहिले पनि साबुनको प्रयोग गर्ने गरेको छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/touching_cow_dung:label">
+            <value>गाई, गोरु, भैसीको गोबर चलाएपछि</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/washing_childs_butt:label">
+            <value>तपाईको बच्चाले चर्पी प्रयोग गरेपछि</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/work_in_field:label">
+            <value>खेतबारीमा काम गरेपछि</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands:label">
+            <value>साबुन लगाएर हात कतिखेर धुनु हुन्छ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_other:label">
+            <value>उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/dont_remember:label">
+            <value>मलाई याद छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process:label">
+            <value>के तपाई लाईअस्पताल/स्वास्थ्य चौकी मा सर्बोतम पिठो बनाउन सिकाईयो ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_teach_sarbottam_other:label">
+            <value>उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home:label">
+            <value>के तपाईको घरमा शौचालय छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_total_packs_given:label">
+            <value>तपाइले जम्मा कति पाकेट अरु बच्चा लाई दिनु भयो</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_total_plumpynut_packs_given:label">
+            <value>जम्मा कति पाकेट तपाईले अरु बच्चालाई दिनु भयो</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp/no:label">
+            <value>थिएन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp/yes:label">
+            <value>थियो</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp:label">
+            <value>के तपाई अरु स्वास्थ्य चौकीमा गयका थियौ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/boil:label">
+            <value>पानी उमाल्छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/nothing:label">
+            <value>केही पनि गर्दिन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/piyush:label">
+            <value>पीउष प्रयोग गर्छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/purify_sometimes:label">
+            <value>म कहिले काही मात्र पानी फिल्टर गर्छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter/use_filter:label">
+            <value>फिल्टर प्रयोग गर्छु</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_filter:label">
+            <value>तपाई के गर्नु हुन्छ पानी शुद्धीकरण गर्नका लागि ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/forest:label">
+            <value>कुवा</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/natural_reservoir:label">
+            <value>मुलको पानी</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/river:label">
+            <value>नदि</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source/tap:label">
+            <value>धारा</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source:label">
+            <value>तपाई घरको लागि कहाँ को पानी प्रयोग गर्नु हुन्छ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_water_source_other:label">
+            <value>उल्लेख गर्नुहोस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp:label">
+            <value>के तपाई ले आफ्नो बच्चालाई स्वास्थ्य चौकीमा तौलनु भएको छ ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/no_improvement_at_hospital:label">
+            <value>अस्पतालको उपचारबाट सुधार नदेखिएकोले</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/other_place_nearby:label">
+            <value>अरु स्वास्थ्य चौकी नजिक भयको ले</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost:label">
+            <value>यदि हो भने, कारणहरु के के हुन ?</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_no_sarbottam:label">
+            <value>बच्चाले सर्बोतोम लिटो किन खान मान्दैन कारण लेखनु होस्</value>
+          </text>
+          <text id="/imamform/group_assessment_imam/patient_available/patient_available_why_not_eating:label">
+            <value>यदि छैन भने किन ?</value>
+          </text>
+          <text id="/imamform/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <imamform id="imamform" prefix="J1!imamform!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <group_assessment_imam>
+            <generated_note_name_27/>
+            <child_age_months/>
+            <family_id/>
+            <child_age_days/>
+            <bh_ID/>
+            <woman_name/>
+            <date_of_registration/>
+            <reporting_imam_followup_group_imam_visit_month/>
+            <reporting_imam_followup_group_report_visit_imam/>
+            <reporting_counseling_group_imam_counseling_month/>
+            <reporting_counseling_group_report_counsel_imam/>
+            <reporting_visited_hf_group_not_visited_hf_month/>
+            <reporting_visited_hf_group_report_not_visited_hf/>
+            <reporting_improvement_reported_group_no_improvement_reported_month/>
+            <reporting_improvement_reported_group_report_no_improvement/>
+            <reporting_report_imam_death/>
+            <group_assessment_athome>
+              <child_at_home/>
+              <reason_absence/>
+              <absence_other/>
+              <generated_note_name_57/>
+              <generated_note_name_58/>
+              <agrees_for_service/>
+              <no_service_reason/>
+              <other_specify/>
+            </group_assessment_athome>
+            <remove_child/>
+            <remove_care_delivery/>
+            <generated_note_name_69/>
+            <patient_available>
+              <patient_available_ehr_nutrition_status/>
+              <patient_available_nutrition_status_other_specify/>
+              <patient_available_hospital_muac/>
+              <patient_available_muac_now/>
+              <generated_note_name_84/>
+              <generated_note_name_85/>
+              <generated_note_name_86/>
+              <generated_note_name_87/>
+              <generated_note_name_88/>
+              <generated_note_name_89/>
+              <patient_available_hospital_visit_date/>
+              <patient_available_not_visited_HF_last_3_weeks/>
+              <patient_available_improvement_after_visit/>
+              <patient_available_improvements/>
+              <patient_available_improvements_other_specify/>
+              <patient_available_no_improvement_reasons/>
+              <patient_available_eats_bal_vita/>
+              <patient_available_how_many_sachets/>
+              <patient_available_not_eating_reasons/>
+              <patient_available_balvita_other_kids/>
+              <patient_available_total_packs_given/>
+              <patient_available_plumpy_nut/>
+              <patient_available_plumpynut_daily_packs/>
+              <patient_available_why_not_eating/>
+              <patient_available_shared_with_other_kids/>
+              <patient_available_total_plumpynut_packs_given/>
+              <patient_available_taught_sarbottam_process/>
+              <patient_available_teach_sarbottam_other/>
+              <patient_available_sarbottam_at_home/>
+              <generated_note_name_121/>
+              <patient_available_sarbottam_instruction_audio/>
+              <patient_available_daily_sarbottam_intake/>
+              <patient_available_why_no_sarbottam/>
+              <patient_available_follow_up/>
+              <patient_available_followup_date/>
+              <patient_available_followup_date_passed/>
+              <patient_available_visited_hp/>
+              <patient_available_not_visited_reasons/>
+              <patient_available_no_followup_other/>
+              <patient_available_why_healthpost/>
+              <patient_available_other_specify/>
+              <patient_available_go_for_next_followup/>
+              <patient_available_no_fu_why/>
+              <patient_available_no_fu_other_specify/>
+              <patient_available_weigh_baby_at_hp/>
+              <patient_available_no_weigh_why/>
+              <patient_available_no_weigh_other/>
+              <patient_available_toilet_at_home/>
+              <generated_note_name_155/>
+              <patient_available_regular_use_toilet/>
+              <generated_note_name_157/>
+              <patient_available_water_source/>
+              <patient_available_water_source_other/>
+              <patient_available_water_filter/>
+              <patient_available_purify_other_specify/>
+              <generated_note_name_167/>
+              <patient_available_soap_wash_hands/>
+              <patient_available_soap_wash_other/>
+              <patient_available_handwash_counsel_audio/>
+              <patient_available_handwash_counsel_image1/>
+              <patient_available_handwash_counsel_image2/>
+            </patient_available>
+            <generated_note_name_181/>
+            <generated_note_name_182/>
+            <reset_imam_patient/>
+            <audit_case_list_search/>
+            <audit_case_list_fingerprint_scanner/>
+            <next_visit_last_visit/>
+            <next_visit_last_visit_nepali/>
+            <next_visit_next_visit_due/>
+            <next_visit_next_visit_due_nepali/>
+          </group_assessment_imam>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </imamform>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/imamform/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/imamform/inputs/source" type="string"/>
+      <bind nodeset="/imamform/inputs/source_id" type="string"/>
+      <bind nodeset="/imamform/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/imamform/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/imamform/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/imamform/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/imamform/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/imamform/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/imamform/reporting_today" type="string" calculate="today()"/>
+      <bind nodeset="/imamform/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /imamform/reporting_today )"/>
+      <bind nodeset="/imamform/reporting_nepali_short" type="string" calculate="substring-after( /imamform/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/imamform/reporting_nepali_month" type="string" calculate="substring-before( /imamform/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/imamform/reporting_nepali_year" type="string" calculate="substring-after( /imamform/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/imamform/reporting_month_today" type="string" calculate="if( /imamform/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /imamform/reporting_nepali_month  = 'जेठ', 'Jestha', if( /imamform/reporting_nepali_month  = 'असार', 'Ashadh', if( /imamform/reporting_nepali_month  = 'साउन', 'Shrawan', if( /imamform/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /imamform/reporting_nepali_month  = 'असोज', 'Ashwin', if( /imamform/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /imamform/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /imamform/reporting_nepali_month  = 'पौष', 'Poush', if( /imamform/reporting_nepali_month  = 'माघ', 'Magh', if( /imamform/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /imamform/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/imamform/reporting_year_today" type="string" calculate="concat(if(substr( /imamform/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /imamform/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /imamform/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /imamform/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /imamform/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /imamform/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /imamform/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /imamform/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /imamform/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /imamform/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /imamform/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /imamform/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /imamform/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /imamform/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /imamform/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /imamform/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /imamform/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /imamform/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /imamform/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /imamform/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /imamform/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /imamform/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /imamform/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /imamform/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /imamform/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /imamform/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /imamform/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /imamform/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /imamform/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /imamform/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /imamform/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /imamform/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /imamform/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /imamform/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /imamform/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /imamform/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /imamform/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /imamform/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /imamform/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /imamform/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/imamform/reporting_today_short" type="string" calculate="concat( /imamform/reporting_month_today , ' ',  /imamform/reporting_year_today )"/>
+      <bind nodeset="/imamform/group_assessment_imam/generated_note_name_27" readonly="true()" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/child_age_months" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/family_id" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/child_age_days" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/bh_ID" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/woman_name" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/date_of_registration" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_imam_followup_group_imam_visit_month" type="string" calculate=" /imamform/reporting_today_short "/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_imam_followup_group_report_visit_imam" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_counseling_group_imam_counseling_month" type="string" calculate=" /imamform/reporting_today_short " relevant=" /imamform/group_assessment_imam/group_assessment_athome/agrees_for_service  = 'yes'"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_counseling_group_report_counsel_imam" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/agrees_for_service  = 'yes'"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_visited_hf_group_not_visited_hf_month" type="string" calculate=" /imamform/reporting_today_short " relevant=" /imamform/group_assessment_imam/patient_available/patient_available_not_visited_HF_last_3_weeks  = 1"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_visited_hf_group_report_not_visited_hf" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_not_visited_HF_last_3_weeks  = 1"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_improvement_reported_group_no_improvement_reported_month" type="string" calculate=" /imamform/reporting_today_short " relevant=" /imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit  = 'no'"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_improvement_reported_group_report_no_improvement" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit  = 'no'"/>
+      <bind nodeset="/imamform/group_assessment_imam/reporting_report_imam_death" type="string" calculate="if( /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'died', '1', '0')"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/child_at_home" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/reason_absence" type="select1" relevant=" /imamform/group_assessment_imam/group_assessment_athome/child_at_home  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/absence_other" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_57" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'migrated' or  /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'died'"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_58" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'migrated'"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service" type="select1" relevant=" /imamform/group_assessment_imam/group_assessment_athome/child_at_home  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason" type="select1" relevant=" /imamform/group_assessment_imam/group_assessment_athome/agrees_for_service  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/group_assessment_athome/other_specify" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/no_service_reason  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/remove_child" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'migrated' or  /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'died' or  /imamform/group_assessment_imam/child_age_days  &gt; 1825 or  /imamform/group_assessment_imam/group_assessment_athome/no_service_reason  = 'child_is_cured'"/>
+      <bind nodeset="/imamform/group_assessment_imam/remove_care_delivery" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'migrated'"/>
+      <bind nodeset="/imamform/group_assessment_imam/generated_note_name_69" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/no_service_reason  = 'child_is_cured'"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available" relevant=" /imamform/group_assessment_imam/group_assessment_athome/child_at_home  = 'yes' and  /imamform/group_assessment_imam/group_assessment_athome/agrees_for_service  = 'yes'"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_nutrition_status_other_specify" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_hospital_muac" type="decimal" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_muac_now" type="decimal" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_84" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_muac_now  &lt; 115"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_85" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_muac_now  &lt;= 125 and  /imamform/group_assessment_imam/patient_available/patient_available_muac_now  &gt;= 115"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_86" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_muac_now  &gt; 125"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_87" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_muac_now  &gt;  /imamform/group_assessment_imam/patient_available/patient_available_hospital_muac "/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_88" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_muac_now  &lt;  /imamform/group_assessment_imam/patient_available/patient_available_hospital_muac "/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_89" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_muac_now  =  /imamform/group_assessment_imam/patient_available/patient_available_hospital_muac  and  /imamform/group_assessment_imam/patient_available/patient_available_muac_now  != ''"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_hospital_visit_date" type="date" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_HF_last_3_weeks" type="string" calculate="if(date(today()) - date( /imamform/group_assessment_imam/patient_available/patient_available_hospital_visit_date ) &gt; 21, 1, 0)"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_improvements" type="select" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_improvements_other_specify" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_improvements  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_no_improvement_reasons" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_how_many_sachets" type="int" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_not_eating_reasons" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita  = 'yes' or  /imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita  = 'no' or  /imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita  = 'gap_period'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_total_packs_given" type="int" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_plumpynut_daily_packs" type="int" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_why_not_eating" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut  = 'yes' or  /imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_total_plumpynut_packs_given" type="int" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_teach_sarbottam_other" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_121" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home  = 'yes'"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_instruction_audio" readonly="true()" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_daily_sarbottam_intake" type="int" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_why_no_sarbottam" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_daily_sarbottam_intake  = 0" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_follow_up" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_followup_date" type="date" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_follow_up  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_follow_up  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_follow_up  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_visited_hp  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_no_followup_other" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_visited_hp  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_other_specify" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_why_healthpost  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_other_specify" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_no_fu_why  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp  = 'no'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_other" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_155" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home  = 'no'"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet" type="select1" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home  = 'yes'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_157" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home  = 'no' or  /imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet  = 'no'"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_water_source" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_water_source_other" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_water_source  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_water_filter" type="select1" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_purify_other_specify" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_water_filter  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/generated_note_name_167" readonly="true()" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands" type="select" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_other" type="string" relevant=" /imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands  = 'other'" required="true()"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_audio" readonly="true()" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image1" readonly="true()" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image2" readonly="true()" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/generated_note_name_181" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/reason_absence  != '5' and  /imamform/group_assessment_imam/group_assessment_athome/reason_absence  != '6' and  /imamform/group_assessment_imam/group_assessment_athome/no_service_reason  != '4'"/>
+      <bind nodeset="/imamform/group_assessment_imam/generated_note_name_182" readonly="true()" type="string" relevant=" /imamform/group_assessment_imam/group_assessment_athome/child_at_home  = 'yes' and  /imamform/group_assessment_imam/group_assessment_athome/agrees_for_service  = '1'"/>
+      <bind nodeset="/imamform/group_assessment_imam/reset_imam_patient" type="string" calculate="if(( /imamform/group_assessment_imam/child_age_days  &gt; 1825 and  /imamform/group_assessment_imam/group_assessment_athome/child_at_home  = 'yes') or  /imamform/group_assessment_imam/remove_child  = 1, 0, 1)"/>
+      <bind nodeset="/imamform/group_assessment_imam/audit_case_list_search" type="string" calculate="1"/>
+      <bind nodeset="/imamform/group_assessment_imam/audit_case_list_fingerprint_scanner" type="string" calculate="1"/>
+      <bind nodeset="/imamform/group_assessment_imam/next_visit_last_visit" type="string" calculate="today()"/>
+      <bind nodeset="/imamform/group_assessment_imam/next_visit_last_visit_nepali" type="string"/>
+      <bind nodeset="/imamform/group_assessment_imam/next_visit_next_visit_due" type="string" calculate="if( /imamform/group_assessment_imam/group_assessment_athome/reason_absence  = 'back_in_1_year', date(today() + 90), date(today() + 30))"/>
+      <bind nodeset="/imamform/group_assessment_imam/next_visit_next_visit_due_nepali" type="string"/>
+      <bind nodeset="/imamform/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/imamform/inputs">
+      <label ref="jr:itext('/imamform/inputs:label')"/>
+      <group ref="/imamform/inputs/contact">
+        <label ref="jr:itext('/imamform/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/imamform/inputs/contact/_id">
+          <label ref="jr:itext('/imamform/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/imamform/inputs/contact/nepali_full_name">
+          <label ref="jr:itext('/imamform/inputs/contact/nepali_full_name:label')"/>
+        </input>
+        <input ref="/imamform/inputs/contact/patient_id">
+          <label ref="jr:itext('/imamform/inputs/contact/patient_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/imamform/group_assessment_imam">
+      <input ref="/imamform/group_assessment_imam/generated_note_name_27">
+        <label ref="jr:itext('/imamform/group_assessment_imam/generated_note_name_27:label')"/>
+      </input>
+      <group ref="/imamform/group_assessment_imam/group_assessment_athome">
+        <select1 ref="/imamform/group_assessment_imam/group_assessment_athome/child_at_home">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/child_at_home:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/child_at_home/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/child_at_home/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/imamform/group_assessment_imam/group_assessment_athome/reason_absence">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence/mother_at_work:label')"/>
+            <value>mother_at_work</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence/back_6_month:label')"/>
+            <value>back_6_month</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence/back_in_1_year:label')"/>
+            <value>back_in_1_year</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence/location_unknown:label')"/>
+            <value>location_unknown</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence/died:label')"/>
+            <value>died</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence/migrated:label')"/>
+            <value>migrated</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/reason_absence/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/group_assessment_athome/absence_other">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/absence_other:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_57">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_57:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_58">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/generated_note_name_58:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/agrees_for_service/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/imamform/group_assessment_imam/group_assessment_athome/no_service_reason">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/no_service_reason:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/doesn_want_service:label')"/>
+            <value>doesn_want_service</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/patient_busy:label')"/>
+            <value>patient_busy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/family_refused_service:label')"/>
+            <value>family_refused_service</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/child_is_cured:label')"/>
+            <value>child_is_cured</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/no_service_reason/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/group_assessment_athome/other_specify">
+          <label ref="jr:itext('/imamform/group_assessment_imam/group_assessment_athome/other_specify:label')"/>
+        </input>
+      </group>
+      <input ref="/imamform/group_assessment_imam/generated_note_name_69">
+        <label ref="jr:itext('/imamform/group_assessment_imam/generated_note_name_69:label')"/>
+      </input>
+      <group ref="/imamform/group_assessment_imam/patient_available">
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/sam:label')"/>
+            <value>sam</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/mam:label')"/>
+            <value>mam</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_ehr_nutrition_status/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_nutrition_status_other_specify">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_nutrition_status_other_specify:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_hospital_muac">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_hospital_muac:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_muac_now">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_muac_now:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_84">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_84:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_85">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_85:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_86">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_86:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_87">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_87:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_88">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_88:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_89">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_89:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_hospital_visit_date">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_hospital_visit_date:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvement_after_visit/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select ref="/imamform/group_assessment_imam/patient_available/patient_available_improvements">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvements:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvements/eats_more:label')"/>
+            <value>eats_more</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvements/breastfeeding_better:label')"/>
+            <value>breastfeeding_better</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvements/healthier:label')"/>
+            <value>healthier</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvements/gaining_weight:label')"/>
+            <value>gaining_weight</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvements/other:label')"/>
+            <value>other</value>
+          </item>
+        </select>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_improvements_other_specify">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_improvements_other_specify:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_no_improvement_reasons">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_improvement_reasons:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/didnt_receive:label')"/>
+            <value>didnt_receive</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_eats_bal_vita/gap_period:label')"/>
+            <value>gap_period</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_how_many_sachets">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_how_many_sachets:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_not_eating_reasons">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_not_eating_reasons:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_balvita_other_kids/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_total_packs_given">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_total_packs_given:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_plumpy_nut/didnt_receive:label')"/>
+            <value>didnt_receive</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_plumpynut_daily_packs">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_plumpynut_daily_packs:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_why_not_eating">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_why_not_eating:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_shared_with_other_kids/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_total_plumpynut_packs_given">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_total_plumpynut_packs_given:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/dont_remember:label')"/>
+            <value>dont_remember</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_taught_sarbottam_process/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_teach_sarbottam_other">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_teach_sarbottam_other:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_at_home/cant_make:label')"/>
+            <value>cant_make</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_121">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_121:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_instruction_audio">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_sarbottam_instruction_audio:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_daily_sarbottam_intake">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_daily_sarbottam_intake:label')"/>
+          <hint>If child does not eat at all, enter 0</hint>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_why_no_sarbottam">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_why_no_sarbottam:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_follow_up">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_follow_up:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_follow_up/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_follow_up/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_followup_date">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_followup_date:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_followup_date_passed/dont_know:label')"/>
+            <value>dont_know</value>
+          </item>
+        </select1>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_visited_hp">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_visited_hp:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_visited_hp/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_visited_hp/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/no_improvement:label')"/>
+            <value>no_improvement</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/were_busy:label')"/>
+            <value>were_busy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/go_soon:label')"/>
+            <value>go_soon</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/child_refuses:label')"/>
+            <value>child_refuses</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_not_visited_reasons/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_no_followup_other">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_followup_other:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/other_place_nearby:label')"/>
+            <value>other_place_nearby</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/no_improvement_at_hospital:label')"/>
+            <value>no_improvement_at_hospital</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_why_healthpost/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_other_specify">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_other_specify:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_go_for_next_followup/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/no_change:label')"/>
+            <value>no_change</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/another_hospital:label')"/>
+            <value>another_hospital</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_fu_why/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_no_fu_other_specify">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_fu_other_specify:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_weigh_baby_at_hp/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/didnt_know:label')"/>
+            <value>didnt_know</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/not_important:label')"/>
+            <value>not_important</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/were_busy:label')"/>
+            <value>were_busy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_why/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_other">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_no_weigh_other:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_toilet_at_home/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_155">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_155:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_regular_use_toilet/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_157">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_157:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_water_source">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_source:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_source/river:label')"/>
+            <value>river</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_source/tap:label')"/>
+            <value>tap</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_source/forest:label')"/>
+            <value>forest</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_source/natural_reservoir:label')"/>
+            <value>natural_reservoir</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_source/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_water_source_other">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_source_other:label')"/>
+        </input>
+        <select1 ref="/imamform/group_assessment_imam/patient_available/patient_available_water_filter">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_filter:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_filter/nothing:label')"/>
+            <value>nothing</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_filter/use_filter:label')"/>
+            <value>use_filter</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_filter/piyush:label')"/>
+            <value>piyush</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_filter/boil:label')"/>
+            <value>boil</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_filter/purify_sometimes:label')"/>
+            <value>purify_sometimes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_water_filter/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_purify_other_specify">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_purify_other_specify:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/generated_note_name_167">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/generated_note_name_167:label')"/>
+        </input>
+        <select ref="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands:label')"/>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_toilet_use:label')"/>
+            <value>after_toilet_use</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/washing_childs_butt:label')"/>
+            <value>washing_childs_butt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_cooking:label')"/>
+            <value>before_cooking</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_eating:label')"/>
+            <value>before_eating</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_feeding_baby:label')"/>
+            <value>before_feeding_baby</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/before_caring_the_sickly:label')"/>
+            <value>before_caring_the_sickly</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_caring_the_sickly:label')"/>
+            <value>after_caring_the_sickly</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_touching_animals:label')"/>
+            <value>after_touching_animals</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/touching_cow_dung:label')"/>
+            <value>touching_cow_dung</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/after_feeding_cattle:label')"/>
+            <value>after_feeding_cattle</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/work_in_field:label')"/>
+            <value>work_in_field</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/never_use_soap:label')"/>
+            <value>never_use_soap</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_hands/other:label')"/>
+            <value>other</value>
+          </item>
+        </select>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_other">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_soap_wash_other:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_audio">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_audio:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image1">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image1:label')"/>
+        </input>
+        <input ref="/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image2">
+          <label ref="jr:itext('/imamform/group_assessment_imam/patient_available/patient_available_handwash_counsel_image2:label')"/>
+        </input>
+      </group>
+      <input ref="/imamform/group_assessment_imam/generated_note_name_181">
+        <label ref="jr:itext('/imamform/group_assessment_imam/generated_note_name_181:label')"/>
+      </input>
+      <input ref="/imamform/group_assessment_imam/generated_note_name_182">
+        <label ref="jr:itext('/imamform/group_assessment_imam/generated_note_name_182:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

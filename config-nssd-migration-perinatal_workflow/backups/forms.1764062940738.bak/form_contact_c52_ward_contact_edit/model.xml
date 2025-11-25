@@ -1,0 +1,24 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c52_ward_contact:edit" prefix="J1!contact:c52_ward_contact:edit!" delimiter="#" version="2020-07-31">
+          <c52_ward_contact>
+            <type>contact</type>
+            <contact_type>chn_area_contact</contact_type>
+            <first_name/>
+            <middle_name/>
+            <last_name/>
+            <name/>
+            <gender/>
+            <age/>
+            <phone/>
+            <post/>
+            <post_other/>
+          </c52_ward_contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

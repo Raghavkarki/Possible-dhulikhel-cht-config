@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Post Partum Depression</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/post_partum_depression/individual_assessment/Question_1/as_much_as_i_always_could:label">
+            <value>As much as I always could</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1/definitely_not_so_much_now:label">
+            <value>Definitely not so much now</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1/not_at_all:label">
+            <value>Not at all</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1/not_quite_so_much_now:label">
+            <value>Not quite so much now</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/hardly_ever:label">
+            <value>Hardly ever</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/never:label">
+            <value>Never</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/sometimes:label">
+            <value>Sometimes</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/yes_quite_often:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10:label">
+            <value>The thought of harming myself has occurred to me</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1:label">
+            <value>I have been able to laugh and see the funny side of</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/as_much_as_i_ever_did:label">
+            <value>As much as I ever did</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/definitely_less_than_i_used_to:label">
+            <value>Definitely less than I used to</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/hardly_at_all:label">
+            <value>Hardly at all</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/rather_less_than_i_used_to:label">
+            <value>Rather less than I used to</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2:label">
+            <value>I have looked forward with enjoyment to things</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/no_never:label">
+            <value>No, never</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/not_very_often:label">
+            <value>Not very often</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/yes_most_of_the_time:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/yes_some_of_the_time:label">
+            <value>Yes, some of the time</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3:label">
+            <value>I have blamed myself unnecessarily when things went wrong</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/hardly_ever:label">
+            <value>Hardly ever</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/no_not_at_all:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/yes_sometimes:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/yes_very_often:label">
+            <value>Yes, very often</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4:label">
+            <value>I have been anxious or worried for no good reason</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/no_not_at_all:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/no_not_much:label">
+            <value>No, not much</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/yes_quite_a_lot:label">
+            <value>Yes, quite a lot</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/yes_sometimes:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5:label">
+            <value>I have felt scared or panicky for no good reason</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/no_i_have_been_coping_as_well_as_ever:label">
+            <value>No, I have been coping as well as ever</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/no_most_of_the_time_i_have_coped_quite_well:label">
+            <value>No, most of the time I have coped quite well</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/yes_most_of_the_time_i_havent_been_able_to_cope_at_all:label">
+            <value>Yes, most of the time I haven't been able to
+cope at all</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/yes_sometimes_i_havent_been_coping_as_well_as_usual:label">
+            <value>Yes, sometimes I haven't been coping as well
+as usual</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6:label">
+            <value>Things have been getting to me</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/no_not_at_all:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/no_not_very_often:label">
+            <value>No, not very often</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/yes_most_of_the_time:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/yes_sometimes:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7:label">
+            <value>I have been so unhappy that I have had difficulty sleeping</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/no_not_at_all:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/not_very_often:label">
+            <value>Not very often</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/yes_most_of_the_time:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/yes_quite_often:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8:label">
+            <value>I have felt sad or miserable</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/no_never:label">
+            <value>No, never</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/only_occasionally:label">
+            <value>Only occasionally</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/yes_most_of_the_time:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/yes_quite_often:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9:label">
+            <value>I have been so unhappy that I have been crying</value>
+          </text>
+          <text id="/post_partum_depression/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/post_partum_depression/inputs/contact/communityID:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/post_partum_depression/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/post_partum_depression/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/post_partum_depression/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/post_partum_depression/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/post_partum_depression/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/post_partum_depression/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/Datas_age_of_the_respondent:label">
+            <value>What is your age?</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/Datas_phone_number:label">
+            <value>Phone number</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/Datas_what_is_your_delivery_date:label">
+            <value>What is your most recent delivery date?</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/generated_note_name_32:label">
+            <value>Patient ID: <output value=" /post_partum_depression/Datas_Patient_id "/>
+Patient Name: <output value=" /post_partum_depression/Datas_patient_name "/></value></text>
+        </translation>
+        <translation lang="ne">
+          <text id="/post_partum_depression/individual_assessment/Question_1/as_much_as_i_always_could:label">
+            <value>आफूले बुझन र हास्न सके</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1/definitely_not_so_much_now:label">
+            <value>पक्कै त्यति गर्न सकिन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1/not_at_all:label">
+            <value>कहिल्यै पनि बुझन र हास्न सकिन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1/not_quite_so_much_now:label">
+            <value>अहिले त्यति गर्न सकिन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/hardly_ever:label">
+            <value>कुनै बेला मात्र</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/never:label">
+            <value>कहिल्यै पनि आएन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/sometimes:label">
+            <value>कहिलेकाही</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10/yes_quite_often:label">
+            <value>अँ, प्राय जसो</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_10:label">
+            <value>आफुलाई नोक्सान पार्ने विचार मनमा आएको छ</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_1:label">
+            <value>मैले जीवनका रमाइला क्षणहरुलाई बुझन र त्यसमाथि हास्न सके</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/as_much_as_i_ever_did:label">
+            <value>पहिले कहिल्यै पनि नहेरे झैँ</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/definitely_less_than_i_used_to:label">
+            <value>पहिले भन्दा पक्कै कम</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/hardly_at_all:label">
+            <value>कहिल्यै पनि हेरिन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2/rather_less_than_i_used_to:label">
+            <value>पहिले भन्दा अलि कम</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_2:label">
+            <value>मैले आशाबादी भएर भबिस्यलाई हेरे</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/no_never:label">
+            <value>कहिल्यै पनि दोषी ठहराईन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/not_very_often:label">
+            <value>कुनै बेला मात्र</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/yes_most_of_the_time:label">
+            <value>अँ, धेरै जसो</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3/yes_some_of_the_time:label">
+            <value>अँ, कहिलेकाही</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_3:label">
+            <value>काम बिग्रेमा मैले आफूलाई अनावस्यक रुपले दोषी ठहरयाए</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/hardly_ever:label">
+            <value>धेरै नै कम</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/no_not_at_all:label">
+            <value>कहिल्यै पनि भएको छैन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/yes_sometimes:label">
+            <value>अँ, कहिलेकाहीँ</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4/yes_very_often:label">
+            <value>अँ, प्राय जसो</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_4:label">
+            <value>विना कारण म चिन्तित भइरहेको छु</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/no_not_at_all:label">
+            <value>अहँ, कहिल्यै डराइन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/no_not_much:label">
+            <value>अहँ, त्यति डराइन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/yes_quite_a_lot:label">
+            <value>अँ, प्राय धेरै जसो बेला</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5/yes_sometimes:label">
+            <value>अँ, कहिलेकाही</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_5:label">
+            <value>विना कारण मा डराएँ वा आतिए</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/no_i_have_been_coping_as_well_as_ever:label">
+            <value>हो, सधै झैँ म झन्झटबाट मुक्त हुन सके</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/no_most_of_the_time_i_have_coped_quite_well:label">
+            <value>प्राय जसो म झन्झटबाट मुक्त हुन सके</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/yes_most_of_the_time_i_havent_been_able_to_cope_at_all:label">
+            <value>अँ, धेरै जसो झन्झटबाट मुक्त हुन सकिन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6/yes_sometimes_i_havent_been_coping_as_well_as_usual:label">
+            <value>अँ, कहिलेकाही म झन्झटबाट मुक्त हुन सकिन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_6:label">
+            <value>म धेरै जसो झन्झट फसेको छु</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/no_not_at_all:label">
+            <value>कहिल्यै पनि लाग्दैन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/no_not_very_often:label">
+            <value>कुनै बेला मात्र</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/yes_most_of_the_time:label">
+            <value>अँ, धेरै जसो</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7/yes_sometimes:label">
+            <value>अँ, कहिलेकाही</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_7:label">
+            <value>म यति दुखी छु कि मलाई निन्द्रा लाग्दैन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/no_not_at_all:label">
+            <value>कहिल्यै पनि लागेको छैन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/not_very_often:label">
+            <value>कहिलेकाही मात्र</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/yes_most_of_the_time:label">
+            <value>अँ, धेरै जसो बेला</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8/yes_quite_often:label">
+            <value>अँ, प्राय जसो</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_8:label">
+            <value>मलाई विरक्त लागेको छ</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/no_never:label">
+            <value>होइन, कहिल्यै पनि रोएको छैन</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/only_occasionally:label">
+            <value>कहिलेकाही मात्र</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/yes_most_of_the_time:label">
+            <value>अँ, धेरै जसो</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9/yes_quite_often:label">
+            <value>अँ, प्राय जसो</value>
+          </text>
+          <text id="/post_partum_depression/individual_assessment/Question_9:label">
+            <value>म यति दुखी छु कि जस कारण सधैँ रोइरहेको छु</value>
+          </text>
+          <text id="/post_partum_depression/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/Datas_age_of_the_respondent:label">
+            <value>तपाईको उमेर कति हो?</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/Datas_phone_number:label">
+            <value>फोन</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/Datas_what_is_your_delivery_date:label">
+            <value>तपाइको delivery कहिले भएको थियो?</value>
+          </text>
+          <text id="/post_partum_depression/personal_information/generated_note_name_32:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <post_partum_depression id="post_partum_depression" prefix="J1!post_partum_depression!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <communityID/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <Datas_Patient_id/>
+          <Datas_Date/>
+          <Datas_patient_name/>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <personal_information>
+            <generated_note_name_32/>
+            <Datas_age_of_the_respondent/>
+            <Datas_phone_number/>
+            <Datas_what_is_your_delivery_date/>
+          </personal_information>
+          <Datas_Postpartum_days/>
+          <individual_assessment>
+            <Question_1/>
+            <Question1_Answer/>
+            <Question_2/>
+            <Question2_Answer/>
+            <Question_3/>
+            <Question3_Answer/>
+            <Question_4/>
+            <Question4_Answer/>
+            <Question_5/>
+            <Question5_Answer/>
+            <Question_6/>
+            <Question6_Answer/>
+            <Question_7/>
+            <Question7_Answer/>
+            <Question_8/>
+            <Question8_Answer/>
+            <Question_9/>
+            <Question9_Answer/>
+            <Question_10/>
+            <Question10_Answer/>
+            <Total_Points/>
+            <Depression_Condition/>
+          </individual_assessment>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </post_partum_depression>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/post_partum_depression/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/post_partum_depression/inputs/source" type="string"/>
+      <bind nodeset="/post_partum_depression/inputs/source_id" type="string"/>
+      <bind nodeset="/post_partum_depression/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/post_partum_depression/inputs/contact/communityID" type="string"/>
+      <bind nodeset="/post_partum_depression/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/post_partum_depression/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/post_partum_depression/Datas_Patient_id" type="string" calculate="../inputs/contact/communityID"/>
+      <bind nodeset="/post_partum_depression/Datas_Date" type="string" calculate="today()"/>
+      <bind nodeset="/post_partum_depression/Datas_patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/post_partum_depression/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/post_partum_depression/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/post_partum_depression/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/post_partum_depression/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/post_partum_depression/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /post_partum_depression/reporting_today )"/>
+      <bind nodeset="/post_partum_depression/reporting_nepali_short" type="string" calculate="substring-after( /post_partum_depression/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/post_partum_depression/reporting_nepali_month" type="string" calculate="substring-before( /post_partum_depression/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/post_partum_depression/reporting_nepali_year" type="string" calculate="substring-after( /post_partum_depression/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/post_partum_depression/reporting_month_today" type="string" calculate="if( /post_partum_depression/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /post_partum_depression/reporting_nepali_month  = 'जेठ', 'Jestha', if( /post_partum_depression/reporting_nepali_month  = 'असार', 'Ashadh', if( /post_partum_depression/reporting_nepali_month  = 'साउन', 'Shrawan', if( /post_partum_depression/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /post_partum_depression/reporting_nepali_month  = 'असोज', 'Ashwin', if( /post_partum_depression/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /post_partum_depression/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /post_partum_depression/reporting_nepali_month  = 'पौष', 'Poush', if( /post_partum_depression/reporting_nepali_month  = 'माघ', 'Magh', if( /post_partum_depression/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /post_partum_depression/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/post_partum_depression/reporting_year_today" type="string" calculate="concat(if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /post_partum_depression/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /post_partum_depression/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /post_partum_depression/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /post_partum_depression/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/post_partum_depression/reporting_today_short" type="string" calculate="concat( /post_partum_depression/reporting_month_today , ' ',  /post_partum_depression/reporting_year_today )"/>
+      <bind nodeset="/post_partum_depression/personal_information/generated_note_name_32" readonly="true()" type="string"/>
+      <bind nodeset="/post_partum_depression/personal_information/Datas_age_of_the_respondent" type="int" required="true()"/>
+      <bind nodeset="/post_partum_depression/personal_information/Datas_phone_number" type="int" required="true()"/>
+      <bind nodeset="/post_partum_depression/personal_information/Datas_what_is_your_delivery_date" type="date" required="true()"/>
+      <bind nodeset="/post_partum_depression/Datas_Postpartum_days" type="string" required="false()" calculate=" /post_partum_depression/Datas_Date  -  /post_partum_depression/personal_information/Datas_what_is_your_delivery_date "/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_1" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question1_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_1  = 'not_at_all', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_1  = 'definitely_not_so_much_now', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_1  = 'not_quite_so_much_now', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_2" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question2_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_2  = 'hardly_at_all', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_2  = 'definitely_less_than_i_used_to', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_2  = 'rather_less_than_i_used_to', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_3" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question3_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_3  = 'yes_most_of_the_time', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_3  = 'Yes,_some_of_the_time', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_3  = 'Not_very_often', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_4" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question4_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_4  = 'yes_very_often', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_4  = 'yes_sometimes', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_4  = 'hardly_ever', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_5" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question5_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_5  = 'yes_quite_a_lot', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_5  = 'yes_sometimes', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_5  = 'no_not_much', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_6" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question6_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_6  = 'yes_most_of_the_time_i_havent_been_able_to_cope_at_all', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_6  = 'yes_sometimes_i_havent_been_coping_as_well_as_usual', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_6  = 'no_most_of_the_time_i_have_coped_quite_well', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_7" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question7_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_7  = 'yes_most_of_the_time', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_7  = 'yes_sometimes', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_7  = 'no_not_very_often', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_8" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question8_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_8  = 'yes_most_of_the_time', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_8  = 'yes_quite_often', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_8  = 'not_very_often', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_9" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question9_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_9  = 'yes_most_of_the_time', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_9  = 'yes_quite_often', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_9  = 'only_occasionally', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question_10" type="select1" required="true()"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Question10_Answer" type="string" calculate="if( /post_partum_depression/individual_assessment/Question_10  = 'yes_quite_often', &quot;3&quot;, if( /post_partum_depression/individual_assessment/Question_10  = 'sometimes', &quot;2&quot;, if( /post_partum_depression/individual_assessment/Question_10  = 'hardly_ever', &quot;1&quot;, &quot;0&quot;)))"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Total_Points" type="string" calculate="number( /post_partum_depression/individual_assessment/Question1_Answer ) + number( /post_partum_depression/individual_assessment/Question2_Answer ) + number( /post_partum_depression/individual_assessment/Question3_Answer ) + number( /post_partum_depression/individual_assessment/Question4_Answer ) + number( /post_partum_depression/individual_assessment/Question5_Answer ) + number( /post_partum_depression/individual_assessment/Question6_Answer ) + number( /post_partum_depression/individual_assessment/Question7_Answer ) + number( /post_partum_depression/individual_assessment/Question8_Answer ) + number( /post_partum_depression/individual_assessment/Question9_Answer ) + number( /post_partum_depression/individual_assessment/Question10_Answer )"/>
+      <bind nodeset="/post_partum_depression/individual_assessment/Depression_Condition" type="string" calculate="if( /post_partum_depression/individual_assessment/Total_Points  &gt; 13, &quot;Yes&quot;, if( /post_partum_depression/individual_assessment/Total_Points  = 13, &quot;Yes&quot;, &quot;No&quot;))"/>
+      <bind nodeset="/post_partum_depression/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/post_partum_depression/inputs">
+      <label ref="jr:itext('/post_partum_depression/inputs:label')"/>
+      <group ref="/post_partum_depression/inputs/contact">
+        <label ref="jr:itext('/post_partum_depression/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/post_partum_depression/inputs/contact/_id">
+          <label ref="jr:itext('/post_partum_depression/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/post_partum_depression/inputs/contact/communityID">
+          <label ref="jr:itext('/post_partum_depression/inputs/contact/communityID:label')"/>
+        </input>
+        <input ref="/post_partum_depression/inputs/contact/nepali_full_name">
+          <label ref="jr:itext('/post_partum_depression/inputs/contact/nepali_full_name:label')"/>
+        </input>
+        <input ref="/post_partum_depression/inputs/contact/patient_id">
+          <label ref="jr:itext('/post_partum_depression/inputs/contact/patient_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/post_partum_depression/personal_information">
+      <input ref="/post_partum_depression/personal_information/generated_note_name_32">
+        <label ref="jr:itext('/post_partum_depression/personal_information/generated_note_name_32:label')"/>
+      </input>
+      <input ref="/post_partum_depression/personal_information/Datas_age_of_the_respondent">
+        <label ref="jr:itext('/post_partum_depression/personal_information/Datas_age_of_the_respondent:label')"/>
+      </input>
+      <input ref="/post_partum_depression/personal_information/Datas_phone_number">
+        <label ref="jr:itext('/post_partum_depression/personal_information/Datas_phone_number:label')"/>
+      </input>
+      <input ref="/post_partum_depression/personal_information/Datas_what_is_your_delivery_date">
+        <label ref="jr:itext('/post_partum_depression/personal_information/Datas_what_is_your_delivery_date:label')"/>
+      </input>
+    </group>
+    <group ref="/post_partum_depression/individual_assessment">
+      <select1 ref="/post_partum_depression/individual_assessment/Question_1">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_1:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_1/as_much_as_i_always_could:label')"/>
+          <value>as_much_as_i_always_could</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_1/not_quite_so_much_now:label')"/>
+          <value>not_quite_so_much_now</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_1/definitely_not_so_much_now:label')"/>
+          <value>definitely_not_so_much_now</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_1/not_at_all:label')"/>
+          <value>not_at_all</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_2">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_2:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_2/as_much_as_i_ever_did:label')"/>
+          <value>as_much_as_i_ever_did</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_2/rather_less_than_i_used_to:label')"/>
+          <value>rather_less_than_i_used_to</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_2/definitely_less_than_i_used_to:label')"/>
+          <value>definitely_less_than_i_used_to</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_2/hardly_at_all:label')"/>
+          <value>hardly_at_all</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_3">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_3:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_3/yes_most_of_the_time:label')"/>
+          <value>yes_most_of_the_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_3/yes_some_of_the_time:label')"/>
+          <value>yes_some_of_the_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_3/not_very_often:label')"/>
+          <value>not_very_often</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_3/no_never:label')"/>
+          <value>no_never</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_4">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_4:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_4/no_not_at_all:label')"/>
+          <value>no_not_at_all</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_4/hardly_ever:label')"/>
+          <value>hardly_ever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_4/yes_sometimes:label')"/>
+          <value>yes_sometimes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_4/yes_very_often:label')"/>
+          <value>yes_very_often</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_5">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_5:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_5/yes_quite_a_lot:label')"/>
+          <value>yes_quite_a_lot</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_5/yes_sometimes:label')"/>
+          <value>yes_sometimes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_5/no_not_much:label')"/>
+          <value>no_not_much</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_5/no_not_at_all:label')"/>
+          <value>no_not_at_all</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_6">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_6:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_6/yes_most_of_the_time_i_havent_been_able_to_cope_at_all:label')"/>
+          <value>yes_most_of_the_time_i_havent_been_able_to_cope_at_all</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_6/yes_sometimes_i_havent_been_coping_as_well_as_usual:label')"/>
+          <value>yes_sometimes_i_havent_been_coping_as_well_as_usual</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_6/no_most_of_the_time_i_have_coped_quite_well:label')"/>
+          <value>no_most_of_the_time_i_have_coped_quite_well</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_6/no_i_have_been_coping_as_well_as_ever:label')"/>
+          <value>no_i_have_been_coping_as_well_as_ever</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_7">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_7:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_7/yes_most_of_the_time:label')"/>
+          <value>yes_most_of_the_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_7/yes_sometimes:label')"/>
+          <value>yes_sometimes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_7/no_not_very_often:label')"/>
+          <value>no_not_very_often</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_7/no_not_at_all:label')"/>
+          <value>no_not_at_all</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_8">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_8:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_8/yes_most_of_the_time:label')"/>
+          <value>yes_most_of_the_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_8/yes_quite_often:label')"/>
+          <value>yes_quite_often</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_8/not_very_often:label')"/>
+          <value>not_very_often</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_8/no_not_at_all:label')"/>
+          <value>no_not_at_all</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_9">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_9:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_9/yes_most_of_the_time:label')"/>
+          <value>yes_most_of_the_time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_9/yes_quite_often:label')"/>
+          <value>yes_quite_often</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_9/only_occasionally:label')"/>
+          <value>only_occasionally</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_9/no_never:label')"/>
+          <value>no_never</value>
+        </item>
+      </select1>
+      <select1 ref="/post_partum_depression/individual_assessment/Question_10">
+        <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_10:label')"/>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_10/yes_quite_often:label')"/>
+          <value>yes_quite_often</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_10/sometimes:label')"/>
+          <value>sometimes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_10/hardly_ever:label')"/>
+          <value>hardly_ever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/post_partum_depression/individual_assessment/Question_10/never:label')"/>
+          <value>never</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

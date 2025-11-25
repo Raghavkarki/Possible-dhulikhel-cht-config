@@ -1,0 +1,23 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c22_province_contact:edit" prefix="J1!contact:c22_province_contact:edit!" delimiter="#" version="2020-07-31">
+          <c22_province_contact>
+            <type/>
+            <contact_type/>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <gender/>
+            <age/>
+            <phone>+977</phone>
+            <post/>
+            <post_other/>
+          </c22_province_contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+
