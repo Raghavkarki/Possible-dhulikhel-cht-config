@@ -1596,10 +1596,10 @@ Note: If they are selected for the study, the informed consent process will only
       <bind nodeset="/epds_screening/epds/screening" relevant=" /epds_screening/epds/cnst_scrn = 'yes'"/>
       <bind nodeset="/epds_screening/epds/screening/curr_sts" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/screening/lmp_wom" type="date" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
-      <bind nodeset="/epds_screening/epds/screening/gest_wk" type="string" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/lmp_wom ))) div 7)" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/gest_wk" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/lmp_wom ))) div 7)"/>
       <bind nodeset="/epds_screening/epds/screening/gest_wk_note" readonly="true()" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
       <bind nodeset="/epds_screening/epds/screening/del_date" type="date" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
-      <bind nodeset="/epds_screening/epds/screening/pp_days" type="string" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/del_date ))))" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/pp_days" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/del_date ))))"/>
       <bind nodeset="/epds_screening/epds/screening/pp_days_note" readonly="true()" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
       <bind nodeset="/epds_screening/epds/screening/migration" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/screening/plan_birth" type="select1" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
@@ -1623,7 +1623,7 @@ Note: If they are selected for the study, the informed consent process will only
       <bind nodeset="/epds_screening/epds/ness/ness1" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
       <bind nodeset="/epds_screening/epds/ness/ness2" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
       <bind nodeset="/epds_screening/epds/ness/ness3" type="select1" required="true()" relevant="( /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1') and  /epds_screening/epds/ness/ness2 = 'yes'"/>
-      <bind nodeset="/epds_screening/epds/ness/ness_score" type="string" calculate="if( /epds_screening/epds/ness/ness2  = 'yes' or  /epds_screening/epds/ness/ness3  = 'yes', 'high', if( /epds_screening/epds/ness/ness1  = 'yes' and  /epds_screening/epds/ness/ness2  = 'no', 'moderate', 'low'))" relevant=" /epds_screening/epds/ness/ness1  != ''"/>
+      <bind nodeset="/epds_screening/epds/ness/ness_score" type="string" relevant=" /epds_screening/epds/ness/ness1  != ''" calculate="if( /epds_screening/epds/ness/ness2  = 'yes' or  /epds_screening/epds/ness/ness3  = 'yes', 'high', if( /epds_screening/epds/ness/ness1  = 'yes' and  /epds_screening/epds/ness/ness2  = 'no', 'moderate', 'low'))"/>
       <bind nodeset="/epds_screening/epds/ness/elig_ness1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and ( /epds_screening/epds/ness/ness_score = 'low' or  /epds_screening/epds/ness/ness_score = 'moderate')"/>
       <bind nodeset="/epds_screening/epds/ness/Inelig_ness1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='2' and ( /epds_screening/epds/ness/ness_score = 'low' or  /epds_screening/epds/ness/ness_score = 'moderate')"/>
       <bind nodeset="/epds_screening/epds/ness/Elig_ness3" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and
@@ -1646,7 +1646,7 @@ Note: If they are selected for the study, the informed consent process will only
       <bind nodeset="/epds_screening/epds/socidem_info/age_resp" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/age_yrs" type="int" required="true()" relevant=" /epds_screening/epds/socidem_info/age_resp  = 'comp_yrs'"/>
       <bind nodeset="/epds_screening/epds/socidem_info/age_dob" type="date" required="true()" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/age" type="string" calculate="floor( difference-in-months( /epds_screening/epds/socidem_info/age_dob , today() ) div 12)" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age" type="string" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'" calculate="floor( difference-in-months( /epds_screening/epds/socidem_info/age_dob , today() ) div 12)"/>
       <bind nodeset="/epds_screening/epds/socidem_info/age_display" readonly="true()" type="string" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'"/>
       <bind nodeset="/epds_screening/epds/socidem_info/fam_mem" type="int" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/fam_type" type="select1" required="true()"/>

@@ -326,14 +326,14 @@
       <bind nodeset="/stock_out/initial_stock_summary" readonly="true()" type="string"/>
       <bind nodeset="/stock_out/beginning_stock_summary" readonly="true()" type="string"/>
       <bind nodeset="/stock_out/item_out" type="select" required="true()"/>
-      <bind nodeset="/stock_out/zinc_10mg" type="int" required="true()" jr:constraintMsg="You do not have that many Zinc 10 mg." constraint=". &lt;= int( /stock_out/available_zinc_10mg )" relevant="selected( /stock_out/item_out , 'zinc')"/>
-      <bind nodeset="/stock_out/zinc10_distritibution_u2" type="select1" required="true()" relevant="selected( /stock_out/item_out , 'zinc')"/>
-      <bind nodeset="/stock_out/zinc_20mg" type="int" required="true()" jr:constraintMsg="You do not have that many Zinc 20 mg" constraint=". &lt;= int( /stock_out/available_zinc_20mg )" relevant="selected( /stock_out/item_out , 'zinc')"/>
-      <bind nodeset="/stock_out/zinc20_distritibution_u2" type="select1" required="true()" relevant="selected( /stock_out/item_out , 'zinc')"/>
-      <bind nodeset="/stock_out/u2_ors" type="int" required="true()" jr:constraintMsg="You do not have that many ORS packets" constraint=". &lt;= int( /stock_out/available_ors )" relevant="selected( /stock_out/item_out , 'ors')"/>
-      <bind nodeset="/stock_out/ors_distritibution_u2" type="select1" required="true()" relevant="selected( /stock_out/item_out , 'ors')"/>
-      <bind nodeset="/stock_out/upt_kit" type="int" required="true()" jr:constraintMsg="You do not have that many UPT kits." constraint=". &lt;= int( /stock_out/available_upt_kit )" relevant="selected( /stock_out/item_out , 'upt_kit')"/>
-      <bind nodeset="/stock_out/condom_used" type="int" required="true()" jr:constraintMsg="You do not have that many Condoms." constraint=". &lt;= int( /stock_out/available_condom )" relevant="selected( /stock_out/item_out , 'condom')"/>
+      <bind nodeset="/stock_out/zinc_10mg" type="int" relevant="selected( /stock_out/item_out , 'zinc')" required="true()" jr:constraintMsg="You do not have that many Zinc 10 mg." constraint=". &lt;= int( /stock_out/available_zinc_10mg )"/>
+      <bind nodeset="/stock_out/zinc10_distritibution_u2" type="select1" relevant="selected( /stock_out/item_out , 'zinc')" required="true()"/>
+      <bind nodeset="/stock_out/zinc_20mg" type="int" relevant="selected( /stock_out/item_out , 'zinc')" required="true()" jr:constraintMsg="You do not have that many Zinc 20 mg" constraint=". &lt;= int( /stock_out/available_zinc_20mg )"/>
+      <bind nodeset="/stock_out/zinc20_distritibution_u2" type="select1" relevant="selected( /stock_out/item_out , 'zinc')" required="true()"/>
+      <bind nodeset="/stock_out/u2_ors" type="int" relevant="selected( /stock_out/item_out , 'ors')" required="true()" jr:constraintMsg="You do not have that many ORS packets" constraint=". &lt;= int( /stock_out/available_ors )"/>
+      <bind nodeset="/stock_out/ors_distritibution_u2" type="select1" relevant="selected( /stock_out/item_out , 'ors')" required="true()"/>
+      <bind nodeset="/stock_out/upt_kit" type="int" relevant="selected( /stock_out/item_out , 'upt_kit')" required="true()" jr:constraintMsg="You do not have that many UPT kits." constraint=". &lt;= int( /stock_out/available_upt_kit )"/>
+      <bind nodeset="/stock_out/condom_used" type="int" relevant="selected( /stock_out/item_out , 'condom')" required="true()" jr:constraintMsg="You do not have that many Condoms." constraint=". &lt;= int( /stock_out/available_condom )"/>
       <bind nodeset="/stock_out/remaining_zinc_10mg" type="string" calculate="if( /stock_out/zinc_10mg  = '',  /stock_out/available_zinc_10mg , int( /stock_out/available_zinc_10mg ) - int( /stock_out/zinc_10mg ))"/>
       <bind nodeset="/stock_out/remaining_zinc_20mg" type="string" calculate="if( /stock_out/zinc_20mg  = '',  /stock_out/available_zinc_20mg , int( /stock_out/available_zinc_20mg ) - int( /stock_out/zinc_20mg ))"/>
       <bind nodeset="/stock_out/remaining_ors" type="string" calculate="if( /stock_out/u2_ors  = '',  /stock_out/available_ors , int( /stock_out/available_ors ) - int( /stock_out/u2_ors ))"/>

@@ -1,7 +1,7 @@
 const { addDays, getField, getMostRecentReport, isActive, getDeliveryDate, mapContent,
-  getPPDays, getMostRecentUnskippedReport, isFormArraySubmittedInWindow, isContactUnder2, getNewestReport,  isAtLeastXWeeksSinceLMP, monthsdeliverydate, getpdfContent, totalForms, compareANCAndPostDeliveryDates, validateANCisLatestAndNoEPDS } = require('./nools-extras');
+  getPPDays, getMostRecentUnskippedReport, isFormArraySubmittedInWindow, isContactUnder2, getNewestReport, totalPsuppSessions,  isAtLeastXWeeksSinceLMP, monthsdeliverydate, getpdfContent, totalForms, compareANCAndPostDeliveryDates, validateANCisLatestAndNoEPDS } = require('./nools-extras');
 
-const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY } = require('./constants');
+const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSSUP } = require('./constants');
 
 const intervals = {
   u2: {
@@ -134,7 +134,7 @@ const eventGenerators = {
 };
 
 const epds_assessmentSchedule = [
-  { start: 15, due: 90, end: 15 },
+  { start: 150, due: 90, end: 15 },
   { start: 15, due: 180, end: 15 },
   { start: 15, due: 270, end: 15 }
 ].map((event, idx) => {
@@ -879,4 +879,37 @@ module.exports = [
     ],
     events: epds_assessmentSchedule
   },
+   {
+    name: 'psuup_assessment1',
+    icon: 'icon-perinatal-module1',
+    title: 'task.psuup',
+    appliesTo: 'reports',
+    appliesToType: [PSSUP],
+    appliesIf: taskApplier((contact, report) => {
+      const consent = getField(report, 'epds.psupp');
+      // const getReport = getNewestReport(report, 'psupp_form');
+
+      const  totalform = totalPsuppSessions(contact);
+      // const allowedForms = [0, 1, 2, 3, 4];
+      console.log('logs for the task', totalform);
+      return (
+
+        ( consent ===  'yes')
+      );
+    }),
+
+    actions: [
+      {
+        type: 'report',
+        form: 'psupp_session',
+      }
+    ],
+   events: [
+      {
+        start: 30,
+        days: 30,
+        end: 90
+      },
+    ]
+  }
 ];

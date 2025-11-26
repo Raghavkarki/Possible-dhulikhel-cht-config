@@ -58,6 +58,7 @@ const INFINITY = 9999999;
 module.exports = {
     ANC,
     ANC_COUNT,
+    PSSUP,
     AGREES_KEYS,
     CHRONIC_DISEASE,
     DEATH_MIGRATION,

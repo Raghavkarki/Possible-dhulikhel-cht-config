@@ -583,23 +583,39 @@ function validateANCisLatestAndNoEPDS(contact) {
 // }
 // console.log("get the most recent psupp formdata " , totalSessionPsupp);
 
-const totalSessionPsupp = (contact) => {
+// const totalSessionPsupp = (contact) => {
+//   const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
+//   if (!latestPsuppForm){
+//     return null;
+//   }
+//   const sessionFrom = contact.reports.findIndex(report => report._id === latestPsuppForm._id);
+//   const count = contact.reports
+//     .slice(sessionFrom + 1)
+//     .filter(report => report.form === 'psupp_session_1').length;
+
+//   return count + 1;
+// };
+
+// // Example usage
+
+
+const totalPsuppSessions = (contact) => {
+  // Get the latest psupp_form
   const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
   if (!latestPsuppForm){
     return null;
   }
-  const sessionFrom = contact.reports.findIndex(report => report._id === latestPsuppForm._id);
-  const count = contact.reports
-    .slice(sessionFrom + 1)
-    .filter(report => report.form === 'psupp_session_1').length;
 
-  return count + 1;
+  // Count psupp_session_1 forms after the latest psupp_form
+  const sessionsAfterLatestForm = contact.reports.filter(
+    report => report.reported_date > latestPsuppForm.reported_date && report.form === 'psupp_session_1'
+  );
+
+  // Return 1 if none, else count + 1
+  return sessionsAfterLatestForm.length === 0
+    ? 1
+    : Math.min(sessionsAfterLatestForm.length + 1, Number.MAX_SAFE_INTEGER);
 };
-
-// Example usage
-console.log('get the most recent psupp formdata', totalSessionPsupp);
-
-
 
 
 
@@ -607,6 +623,7 @@ module.exports = {
   today,
   MS_IN_DAY,
   MAX_DAYS_IN_PREGNANCY,
+  totalPsuppSessions,
   //recurringS,
   getpdfContent,
   //comparePDFAndEPDSDates,

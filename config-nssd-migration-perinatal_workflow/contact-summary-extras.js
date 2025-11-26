@@ -722,6 +722,15 @@ function convertToISO(dateString) {
   return `${year}-${month}-${day}`; // Format as 'YYYY-MM-DD'
 }
 
+const daysSinceDelivery1 = (reports ) => {
+  const deliveryDate = getField(getNewestReport(reports, 'psupp_form'), 'psupp');
+  const deliveryDate1 = getField(getNewestReport(reports, 'psupp_form'), 'epds.psupp');
+  const deliveryDate2 =  reports; 
+
+  return { deliveryDate, deliveryDate1, deliveryDate2};
+};
+console.log('reportdata', daysSinceDelivery1(reports));
+
 
 module.exports = {
   today,
