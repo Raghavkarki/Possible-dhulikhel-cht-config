@@ -599,23 +599,40 @@ function validateANCisLatestAndNoEPDS(contact) {
 // // Example usage
 
 
-const totalPsuppSessions = (contact) => {
+// const totalPsuppSessions = (contact, formName) => {
+//   // Get the latest psupp_form
+//   const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
+//   if (!latestPsuppForm){
+//     return null;
+//   }
+
+//   // Count psupp_session_1 forms after the latest psupp_form
+//   const sessionsAfterLatestForm = contact.reports.filter(
+//     report => report.reported_date > latestPsuppForm.reported_date && report.form === formName
+//   );
+
+//   // Return 0 if none, else count + 1
+//   return sessionsAfterLatestForm.length === 0
+//     ? 1
+//     : Math.min(sessionsAfterLatestForm.length + 1, Number.MAX_SAFE_INTEGER);
+// };
+const totalPsuppSessions = (contact, formName) => {
   // Get the latest psupp_form
   const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
-  if (!latestPsuppForm){
+  if (!latestPsuppForm) {
     return null;
   }
 
-  // Count psupp_session_1 forms after the latest psupp_form
+  // Count psupp_session forms after the latest psupp_form
   const sessionsAfterLatestForm = contact.reports.filter(
-    report => report.reported_date > latestPsuppForm.reported_date && report.form === 'psupp_session_1'
+    report => report.reported_date > latestPsuppForm.reported_date && report.form === formName
   );
 
-  // Return 1 if none, else count + 1
-  return sessionsAfterLatestForm.length === 0
-    ? 1
-    : Math.min(sessionsAfterLatestForm.length + 1, Number.MAX_SAFE_INTEGER);
+  // Return the exact count (0, 1, 2, 3, ...)
+  return sessionsAfterLatestForm.length;
 };
+
+
 
 
 

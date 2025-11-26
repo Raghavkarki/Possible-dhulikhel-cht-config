@@ -882,14 +882,14 @@ module.exports = [
    {
     name: 'psuup_assessment1',
     icon: 'icon-perinatal-module1',
-    title: 'task.psuup',
+    title: 'task.psuup_home_visit',
     appliesTo: 'reports',
     appliesToType: [PSSUP],
     appliesIf: taskApplier((contact, report) => {
       const consent = getField(report, 'epds.psupp');
       // const getReport = getNewestReport(report, 'psupp_form');
 
-      const  totalform = totalPsuppSessions(contact);
+      const  totalform = totalPsuppSessions(contact, 'psupp_session');
       // const allowedForms = [0, 1, 2, 3, 4];
       console.log('logs for the task', totalform);
       return (
@@ -911,5 +911,38 @@ module.exports = [
         end: 90
       },
     ]
-  }
+  },
+  {
+    name: 'psuup_assessment2',
+    icon: 'icon-perinatal-module1',
+    title: 'task.psuup_weekly_call',
+    appliesTo: 'reports',
+    appliesToType: ['psupp_session'],
+    appliesIf: taskApplier((contact, report) => {
+      const consent = getField(report, 'epds.psupp');
+      // const getReport = getNewestReport(report, 'psupp_form');
+
+      const  totalform = totalPsuppSessions(contact, 'psupp_session_2');
+      // const allowedForms = [0, 1, 2, 3, 4];
+      console.log('logs for the task111', contact, totalform, report);
+      return (
+
+        ( consent ===  'yes')
+      );
+    }),
+
+    actions: [
+      {
+        type: 'report',
+        form: 'psupp_session_2',
+      }
+    ],
+   events: [
+      {
+        start: 30,
+        days: 30,
+        end: 90
+      },
+    ]
+  },
 ];
