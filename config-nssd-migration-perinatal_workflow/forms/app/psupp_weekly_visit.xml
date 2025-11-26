@@ -23,9 +23,6 @@
           <text id="/psupp_weekly_visit/epds/psupp_week_3:label">
             <value>this is third weekly visit</value>
           </text>
-          <text id="/psupp_weekly_visit/formatted_date:label">
-            <value>Formatted Date</value>
-          </text>
           <text id="/psupp_weekly_visit/inputs/contact/_id:label">
             <value>What is the patient's name?</value>
           </text>
@@ -67,9 +64,6 @@
           <text id="/psupp_weekly_visit/epds/psupp_week_3:label">
             <value>this is third weekly visit</value>
           </text>
-          <text id="/psupp_weekly_visit/formatted_date:label">
-            <value>-</value>
-          </text>
           <text id="/psupp_weekly_visit/inputs/contact/_id:label">
             <value>सेवा लिनेको नाम के हो?</value>
           </text>
@@ -98,13 +92,7 @@
           <patient_uuid/>
           <patient_name/>
           <patient_id/>
-          <delivery_date tag="hidden"/>
-          <updated_dd tag="hidden"/>
-          <latestlmp tag="hidden"/>
-          <lmpdays/>
-          <ddno/>
-          <up_dd/>
-          <formatted_date/>
+          <weekly_visit tag="hidden"/>
           <epds>
             <psupp_week_1/>
             <psupp_week_2/>
@@ -128,16 +116,10 @@
       <bind nodeset="/psupp_weekly_visit/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/psupp_weekly_visit/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
       <bind nodeset="/psupp_weekly_visit/patient_id" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/psupp_weekly_visit/delivery_date" type="string" calculate="if(instance('contact-summary')/context/delivery_date, instance('contact-summary')/context/delivery_date, .)"/>
-      <bind nodeset="/psupp_weekly_visit/updated_dd" type="string" calculate="if(instance('contact-summary')/context/updated_dd, instance('contact-summary')/context/updated_dd, .)"/>
-      <bind nodeset="/psupp_weekly_visit/latestlmp" type="string" calculate="if(instance('contact-summary')/context/latestlmp, instance('contact-summary')/context/latestlmp, .)"/>
-      <bind nodeset="/psupp_weekly_visit/lmpdays" type="string" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /psupp_weekly_visit/latestlmp ))) div 7)"/>
-      <bind nodeset="/psupp_weekly_visit/ddno" type="string" calculate="round(decimal-date-time(today()) - decimal-date-time( /psupp_weekly_visit/delivery_date ))"/>
-      <bind nodeset="/psupp_weekly_visit/up_dd" type="string" calculate="round(decimal-date-time(today()) - decimal-date-time( /psupp_weekly_visit/updated_dd ))"/>
-      <bind nodeset="/psupp_weekly_visit/formatted_date" type="string" calculate="format-date( /psupp_weekly_visit/delivery_date , '%d/%m/%Y')"/>
-      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_1" type="string"/>
-      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_2" type="string"/>
-      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_3" type="string"/>
+      <bind nodeset="/psupp_weekly_visit/weekly_visit" type="string" calculate="if(instance('contact-summary')/context/weekly_visit, instance('contact-summary')/context/weekly_visit, .)"/>
+      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_1" type="string" relevant=" /psupp_weekly_visit/weekly_visit  ='1'"/>
+      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_2" type="string" relevant=" /psupp_weekly_visit/weekly_visit  ='2'"/>
+      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_3" type="string" relevant=" /psupp_weekly_visit/weekly_visit  ='3'"/>
       <bind nodeset="/psupp_weekly_visit/epds/psupp" type="select1"/>
       <bind nodeset="/psupp_weekly_visit/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>

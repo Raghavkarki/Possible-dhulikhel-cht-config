@@ -913,9 +913,9 @@ module.exports = [
     ]
   },
   {
-    name: 'psuup_assessment2',
+    name: 'psuup_weekly_visit',
     icon: 'icon-perinatal-module1',
-    title: 'task.psuup_weekly_call',
+    title: 'task.psuup_weekly_visit',
     appliesTo: 'reports',
     appliesToType: [PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
@@ -923,11 +923,11 @@ module.exports = [
       // const getReport = getNewestReport(report, 'psupp_form');
 
       const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      // const allowedForms = [0, 1, 2, 3, 4];
+      const allowedForms = [1, 2, 3];
       console.log('logs for the weekly visits', contact, totalform, report, consent);
       return (
 
-        ( consent ===  'yes')
+        ( consent ===  'yes' &&  allowedForms.includes(totalform) )
       );
     }),
 
