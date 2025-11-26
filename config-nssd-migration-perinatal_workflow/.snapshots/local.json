@@ -202,5 +202,11 @@
   },
   "form:psupp_session_2": {
     "localhost/medic": "iJQL8bdVWKEyvfuwA+4aEw=="
+  },
+  "form:psupp_home_visit": {
+    "localhost/medic": "0YBAeiBHBcIVDhW45F7uaQ=="
+  },
+  "form:psupp_weekly_visit": {
+    "localhost/medic": "4kNrfpO1t+BBe5hm5pB5kw=="
   }
 }
