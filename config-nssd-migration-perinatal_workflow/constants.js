@@ -18,7 +18,9 @@ const PREGNANCY_HISTORY = 'pregnancy_history_form';
 const PREGNANCY_SCREENING = 'pregnancy_screening_form';
 const SURGICAL_FOLLOWUP = 'surgical_followup';
 const U2_REGISTRY = 'u2_registry';
-const PSSUP = 'psupp_form';
+const PSUPP = 'psupp_form';
+const PSUPP_HOME_VISIT = 'psupp_home_visit';
+const PSUPP_WEEKLY_VISIT = 'psupp_weekly_visit';
 
 // Stock Reports
 const STOCK_IN = 'stock_in';
@@ -58,7 +60,9 @@ const INFINITY = 9999999;
 module.exports = {
     ANC,
     ANC_COUNT,
-    PSSUP,
+    PSUPP,
+    PSUPP_HOME_VISIT,
+    PSUPP_WEEKLY_VISIT,
     AGREES_KEYS,
     CHRONIC_DISEASE,
     DEATH_MIGRATION,

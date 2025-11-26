@@ -629,7 +629,7 @@ const totalPsuppSessions = (contact, formName) => {
   );
 
   // Return the exact count (0, 1, 2, 3, ...)
-  return sessionsAfterLatestForm.length;
+  return sessionsAfterLatestForm.length + 1;
 };
 
 

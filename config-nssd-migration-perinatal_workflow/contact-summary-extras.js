@@ -1,8 +1,8 @@
 const moment = require('moment');
-const { 
-  ANC, ANC_COUNT, PREGNANCY_SCREENING, POST_DELIVERY, PNC, PNC2, U2_REGISTRY, 
-  PREGNANCY_HISTORY, PROCEDURE_DATE_GROUP, AGREES_KEYS, HOME_KEYS, MUAC_GROUP, 
-  MUAC_GROUP_OLD, STOCK_IN, STOCK_OUT 
+const {
+  ANC, ANC_COUNT, PREGNANCY_SCREENING, POST_DELIVERY, PNC, PNC2, U2_REGISTRY,
+  PREGNANCY_HISTORY, PROCEDURE_DATE_GROUP, AGREES_KEYS, HOME_KEYS, MUAC_GROUP,
+  MUAC_GROUP_OLD, STOCK_IN, STOCK_OUT, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT
 } = require('./constants');
 const today = moment().startOf('day');
 
@@ -79,7 +79,7 @@ function getReportsBetween(allReports, forms, after, before = Date.now()) {
 function getNewestReport(allReports, forms, before = undefined, skipCondition = undefined) {
   let result;
   allReports.forEach(function (report) {
-    if (!isReportValid(report) || !forms.includes(report.form) ) { return; }
+    if (!isReportValid(report) || !forms.includes(report.form)) { return; }
     if (before && before < report.reported_date) { return; }
     if (skipCondition && skipCondition(report)) { return; }
     if (!result || report.reported_date > result.reported_date) {
@@ -164,7 +164,7 @@ function isInitilizationComplete(thisContact, allReports, formName, extraConditi
   const previousReport = getNewestReport(allReports, [formName]);
   if (previousReport === undefined) { return false; }
 
-  return (extraConditions)? extraConditions(previousReport): true;
+  return (extraConditions) ? extraConditions(previousReport) : true;
 }
 
 function isFormClosed(report) {
@@ -192,7 +192,7 @@ function getFieldRecent(allReports, form, field, condition) {
   let value;
   let reportedDate;
 
-  allReports.forEach(function(report) {
+  allReports.forEach(function (report) {
     if (!isReportValid(report) || report.form !== form) { return; }
 
     if (reportedDate && reportedDate > report.reported_date) { return; }
@@ -226,9 +226,9 @@ function getFieldOnce(allReports, form, field, condition) {
 }
 
 function getCurrentANCReports(allReports) {
-   // Fetching all current ANC Reports
-   const ancStartTime = getNewestReport(allReports, [PREGNANCY_SCREENING]).reported_date;
-   return getReportsBetween(allReports, [ANC], ancStartTime);
+  // Fetching all current ANC Reports
+  const ancStartTime = getNewestReport(allReports, [PREGNANCY_SCREENING]).reported_date;
+  return getReportsBetween(allReports, [ANC], ancStartTime);
 }
 
 function getCurrentANCVisits(ancReports, context) {
@@ -249,7 +249,7 @@ function getCurrentANCVisits(ancReports, context) {
         }
       }
     });
-    
+
   }
 }
 
@@ -275,7 +275,7 @@ function getPSSContext(allReports, context) {
 
 function getU2Context(thisContact, allReports, context) {
   context.has_initialized_u2 = isInitilizationComplete(thisContact, allReports, U2_REGISTRY, (report) => Math.floor((new Date().getTime() - report.reported_date) / (1000 * 60 * 60 * 24)) < 38);
-    
+
   const mostRecentTriggerReport = getMostRecentUnskippedReport(allReports, U2_REGISTRY);
   if (mostRecentTriggerReport) {
     context = Object.assign(context, mapContent(mostRecentTriggerReport));
@@ -446,7 +446,7 @@ function getANCContext(allReports, context) {
   context.femur_length_weeks = getFieldRecent(ancReports, ANC, 'usg.usg_measurements.usg_measurements_femur_length_weeks', checkNotEmptyOrUndefined);
   context.femur_length_days = getFieldRecent(ancReports, ANC, 'usg.usg_measurements.usg_measurements_femur_length_days', checkNotEmptyOrUndefined);
   context.estimate_fetal_weight = getFieldRecent(ancReports, ANC, 'usg.usg_measurements.usg_measurements_estimate_fetal_weight', checkNotEmptyOrUndefined);
-  context.gestational_age_weeks   = getFieldRecent(ancReports, ANC, 'usg.usg_ultrasound_gestational_age.usg_ultrasound_gestational_age_weeks  ', checkNotEmptyOrUndefined);
+  context.gestational_age_weeks = getFieldRecent(ancReports, ANC, 'usg.usg_ultrasound_gestational_age.usg_ultrasound_gestational_age_weeks  ', checkNotEmptyOrUndefined);
   context.gestational_age_days = getFieldRecent(ancReports, ANC, 'usg.usg_ultrasound_gestational_age.usg_ultrasound_gestational_age_days', checkNotEmptyOrUndefined);
   context.usg_complete = getField(latestANCReport, ANC, 'usg.usg_usg_complete');
 
@@ -467,7 +467,7 @@ function getANCContext(allReports, context) {
 function getContext(thisContact, allReports) {
   let context = {};
 
-  if (thisContact.contact_type === 'c82_person' ) {
+  if (thisContact.contact_type === 'c82_person') {
     const hasBecomeRecord = allReports.some(report => [ANC, POST_DELIVERY, 'epds_screening'].includes(report.form));
     if (hasBecomeRecord) {
       const latestBecomeSessionForm = getNewestReport(allReports, ANC);
@@ -477,44 +477,74 @@ function getContext(thisContact, allReports) {
       const delivery_date = getField(latestBecomeForm, 'delivery_date_pdf_ctx');
       const latestEPDS_report = getNewestReport(allReports, 'epds_screening');
       const epdsEligibility = getField(latestEPDS_report, 'epds.postnatal_d_screen.fln_elig');
-      const  currentStatusWomen= getField(latestEPDS_report, 'epds.screening.curr_sts');
+      const currentStatusWomen = getField(latestEPDS_report, 'epds.screening.curr_sts');
       const totalForms = (reports, formName) => {
         const latestScreening = getNewestReport(reports, ['epds_screening']);
-      
+
         if (!latestScreening) {
           return null;
         }
-      
+
         const moduleForms = reports.filter(report => report.form === formName);
-      
+
         if (moduleForms.length === 0) {
           return 1;
         }
-      
+
         return Math.min(moduleForms.length + 1, Number.MAX_SAFE_INTEGER);
       };
       const totalFormsM_1 = totalForms(allReports, 'epds_module_1');
       const totalFormsM_2 = totalForms(allReports, 'epds_module_2');
       const totalFormsM_3 = totalForms(allReports, 'epds_module_3');
       const totalFormsM_4 = totalForms(allReports, 'epds_module_4');
-      const totalFormsM_5 = totalForms(allReports, 'epds_module_5'); 
+      const totalFormsM_5 = totalForms(allReports, 'epds_module_5');
 
       context.totalforms1 = totalFormsM_1;
-      context.totalforms2 = totalFormsM_2;  
+      context.totalforms2 = totalFormsM_2;
       context.totalforms3 = totalFormsM_3;
       context.totalforms4 = totalFormsM_4;
-      context.totalforms5 = totalFormsM_5;  
+      context.totalforms5 = totalFormsM_5;
 
       const formatDate = convertToISO(delivery_date);
       context.eligibility = epdsEligibility;
       context.women_status_ctx = currentStatusWomen;
-      
+
       context.formated_date = formatDate;
       context.delivery_date = formatDate;
-      context.updated_dd  = updatedDeliveryDate;
+      context.updated_dd = updatedDeliveryDate;
       context.latestlmp = latestlmp;
 
 
+    }
+  }
+  if (thisContact.contact_type === 'c82_person') {
+    const hasPsuppRecord = allReports.some(report => [PSUPP].includes(report.form));
+    if (hasPsuppRecord) {
+      const latestPsuppScreeningForm = getNewestReport(allReports, PSUPP);
+      // const latestPsuppHomeVisit = getNewestReport(allReports, PSUPP_HOME_VISIT);
+      // const latestPsuppWeeklyVisit = getNewestReport(allReports, PSUPP_WEEKLY_VISIT);
+
+      const totalForms = (reports, formName) => {
+        // Get the latest psupp_form
+        const latestScreening = latestPsuppScreeningForm;
+        if (!latestScreening) {
+          return null;
+        }
+
+        // Count only forms AFTER the latest psupp_form
+        const moduleForms = reports.filter(report => report.form === formName && report.reported_date > latestScreening.reported_date);
+
+        // Always return count + 1 (1, 2, 3...)
+        return moduleForms.length + 1;
+      };
+
+      const totalHomeVist = totalForms(allReports, PSUPP_HOME_VISIT);
+      const totalWeeklyVisit = totalForms(allReports, PSUPP_WEEKLY_VISIT);
+
+      context.home_visit = totalHomeVist;
+      context.weekly_visit = totalWeeklyVisit;
+
+      console.log('this the context varible data', context.home_visit, context.weekly_visit);
     }
   }
 
@@ -536,7 +566,7 @@ function getContext(thisContact, allReports) {
     ];
     const latestStockOut = getNewestReport(allReports, [STOCK_OUT]);
     const latestStockOutDate = latestStockOut ? latestStockOut.reported_date : 0;
-    
+
     let latestStockIn = getAggregatedReport(
       getReportsBetween(allReports, [STOCK_IN], latestStockOutDate),
       stockInFields
@@ -563,7 +593,7 @@ function getContext(thisContact, allReports) {
       'initial_total_condoms': latestStockIn['initial_stock.initial_stock_total_condoms'],
       'initial_upt_kits': latestStockIn['initial_stock.initial_stock_UPT_kits']
     };
-    
+
     if (latestStockOut) {
       if (latestStockOut.reported_date > latestStockIn.reported_date) {
         context = Object.assign(context, mapContent(latestStockOut, STOCK_OUT));
@@ -586,7 +616,7 @@ function getContext(thisContact, allReports) {
 
     return context;
   }
-  
+
   // Disabling muting
   context.muted = false;
 
@@ -629,8 +659,8 @@ function getContext(thisContact, allReports) {
     const latestPDF = getNewestReport(allReports, [POST_DELIVERY]);
     let deliveryDate = getField(latestPDF, 'post_delivery_assessment.delivery_date_pdf');
     if (!latestPDF || (latestPDF && !deliveryDate)) {
-      const mostRecentDeliveryReport = getNewestReport(allReports, [PREGNANCY_SCREENING], latestPDF? latestPDF.reported_date: null, (report) => getField(report, 'pdf_direct') !== '1');
-      
+      const mostRecentDeliveryReport = getNewestReport(allReports, [PREGNANCY_SCREENING], latestPDF ? latestPDF.reported_date : null, (report) => getField(report, 'pdf_direct') !== '1');
+
       if (mostRecentDeliveryReport) {
         deliveryDate = getField(mostRecentDeliveryReport, 'standard.standard_delivery_date_pdf');
       }
@@ -638,7 +668,7 @@ function getContext(thisContact, allReports) {
 
     if (!deliveryDate) {
       const latestANC = getMostRecentUnskippedReport(allReports, ANC);
-      
+
       if (latestANC && latestANC.reported_date > latestPSS.reported_date) {
         deliveryDate = getField(latestANC, 'lmp_group.lmp_group_edd');
       }
@@ -652,7 +682,7 @@ function getContext(thisContact, allReports) {
     if (getField(latestPSS, 'woman_at_home') === 'yes' && getField(latestPSS, 'agrees_for_service') === 'yes') {
       context.lmp_days_calc = getField(latestPSS, 'continue_pss.continue_pss_lmp_group.continue_pss_lmp_group_lmp_days_calc');
       context.contraceptive_current = getField(latestPSS, 'continue_pss.continue_pss_contraceptive_related.continue_pss_contraceptive_related_contraceptive_current');
-      
+
       // Checking for anc and anc escape condition
       const ancActive = isANCActive(allReports);
       context.anc_active = ancActive;
@@ -674,9 +704,9 @@ function getContext(thisContact, allReports) {
 
     if (deliveryDate) {
       const ppDays = Math.floor((new Date() - new Date(deliveryDate)) / (1000 * 60 * 60 * 24));
-      const pnc1 = (ppDays < 365 && getField(latestPDF, 'status_pnc1') === '1')? '1': '0';
-      const pnc2 = (ppDays < 60 && getField(latestPDF, 'status_pnc2') === '1')? '1': '0';
-      
+      const pnc1 = (ppDays < 365 && getField(latestPDF, 'status_pnc1') === '1') ? '1' : '0';
+      const pnc2 = (ppDays < 60 && getField(latestPDF, 'status_pnc2') === '1') ? '1' : '0';
+
       // Setting values to context
       context.delivery_date_pdf = deliveryDate;
       context.pp_days = ppDays;
@@ -699,7 +729,7 @@ function getContext(thisContact, allReports) {
           context.contraceptive_current = getField(latestPNC2, 'pnc_assessment.group_assessment_currentcontraceptive.contraceptive_current');
         }
       }
-      
+
       if (ppDays < 60 && latestPDF) {
         // Check for PNC Contexts
         if (pnc1 === '1') {
@@ -722,12 +752,12 @@ function convertToISO(dateString) {
   return `${year}-${month}-${day}`; // Format as 'YYYY-MM-DD'
 }
 
-const daysSinceDelivery1 = (reports ) => {
+const daysSinceDelivery1 = (reports) => {
   const deliveryDate = getField(getNewestReport(reports, 'psupp_form'), 'psupp');
   const deliveryDate1 = getField(getNewestReport(reports, 'psupp_form'), 'epds.psupp');
-  const deliveryDate2 =  reports; 
+  const deliveryDate2 = reports;
 
-  return { deliveryDate, deliveryDate1, deliveryDate2};
+  return { deliveryDate, deliveryDate1, deliveryDate2 };
 };
 console.log('reportdata', daysSinceDelivery1(reports));
 

@@ -1,7 +1,7 @@
 const { addDays, getField, getMostRecentReport, isActive, getDeliveryDate, mapContent,
   getPPDays, getMostRecentUnskippedReport, isFormArraySubmittedInWindow, isContactUnder2, getNewestReport, totalPsuppSessions,  isAtLeastXWeeksSinceLMP, monthsdeliverydate, getpdfContent, totalForms, compareANCAndPostDeliveryDates, validateANCisLatestAndNoEPDS } = require('./nools-extras');
 
-const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSSUP } = require('./constants');
+const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT } = require('./constants');
 
 const intervals = {
   u2: {
@@ -884,12 +884,12 @@ module.exports = [
     icon: 'icon-perinatal-module1',
     title: 'task.psuup_home_visit',
     appliesTo: 'reports',
-    appliesToType: [PSSUP],
+    appliesToType: [PSUPP],
     appliesIf: taskApplier((contact, report) => {
       const consent = getField(report, 'epds.psupp');
       // const getReport = getNewestReport(report, 'psupp_form');
 
-      const  totalform = totalPsuppSessions(contact, 'psupp_home_visit');
+      const  totalform = totalPsuppSessions(contact, PSUPP_HOME_VISIT);
       // const allowedForms = [0, 1, 2, 3, 4];
       console.log('logs for the home visit ', totalform);
       return (
@@ -901,7 +901,7 @@ module.exports = [
     actions: [
       {
         type: 'report',
-        form: 'psupp_home_visit',
+        form: PSUPP_HOME_VISIT,
       }
     ],
    events: [
@@ -917,14 +917,14 @@ module.exports = [
     icon: 'icon-perinatal-module1',
     title: 'task.psuup_weekly_call',
     appliesTo: 'reports',
-    appliesToType: ['psupp_home_visit'],
+    appliesToType: [PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
       const consent = getField(report, 'epds.psupp');
       // const getReport = getNewestReport(report, 'psupp_form');
 
-      const  totalform = totalPsuppSessions(contact, 'psupp_weekly_visit');
+      const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
       // const allowedForms = [0, 1, 2, 3, 4];
-      console.log('logs for the weekly visit', contact, totalform, report);
+      console.log('logs for the weekly visits', contact, totalform, report, consent);
       return (
 
         ( consent ===  'yes')
@@ -934,7 +934,7 @@ module.exports = [
     actions: [
       {
         type: 'report',
-        form: 'psupp_weekly_visit',
+        form: PSUPP_WEEKLY_VISIT,
       }
     ],
    events: [
