@@ -880,7 +880,7 @@ module.exports = [
     events: epds_assessmentSchedule
   },
    {
-    name: 'psuup_assessment1',
+    name: 'psuup_home_visit',
     icon: 'icon-perinatal-module1',
     title: 'task.psuup_home_visit',
     appliesTo: 'reports',
@@ -889,9 +889,9 @@ module.exports = [
       const consent = getField(report, 'epds.psupp');
       // const getReport = getNewestReport(report, 'psupp_form');
 
-      const  totalform = totalPsuppSessions(contact, 'psupp_session');
+      const  totalform = totalPsuppSessions(contact, 'psupp_home_visit');
       // const allowedForms = [0, 1, 2, 3, 4];
-      console.log('logs for the task', totalform);
+      console.log('logs for the home visit ', totalform);
       return (
 
         ( consent ===  'yes')
@@ -901,7 +901,7 @@ module.exports = [
     actions: [
       {
         type: 'report',
-        form: 'psupp_session',
+        form: 'psupp_home_visit',
       }
     ],
    events: [
@@ -917,14 +917,14 @@ module.exports = [
     icon: 'icon-perinatal-module1',
     title: 'task.psuup_weekly_call',
     appliesTo: 'reports',
-    appliesToType: ['psupp_session'],
+    appliesToType: ['psupp_home_visit'],
     appliesIf: taskApplier((contact, report) => {
       const consent = getField(report, 'epds.psupp');
       // const getReport = getNewestReport(report, 'psupp_form');
 
-      const  totalform = totalPsuppSessions(contact, 'psupp_session_2');
+      const  totalform = totalPsuppSessions(contact, 'psupp_weekly_visit');
       // const allowedForms = [0, 1, 2, 3, 4];
-      console.log('logs for the task111', contact, totalform, report);
+      console.log('logs for the weekly visit', contact, totalform, report);
       return (
 
         ( consent ===  'yes')
@@ -934,7 +934,7 @@ module.exports = [
     actions: [
       {
         type: 'report',
-        form: 'psupp_session_2',
+        form: 'psupp_weekly_visit',
       }
     ],
    events: [
