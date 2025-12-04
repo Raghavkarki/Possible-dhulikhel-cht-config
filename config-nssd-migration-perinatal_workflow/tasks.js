@@ -1,7 +1,7 @@
 const { addDays, getField, getMostRecentReport, isActive, getDeliveryDate, mapContent,
   getPPDays, getMostRecentUnskippedReport, isFormArraySubmittedInWindow, isContactUnder2, getNewestReport, totalPsuppSessions, isAtLeastXWeeksSinceLMP, monthsdeliverydate, getpdfContent, totalForms, compareANCAndPostDeliveryDates, validateANCisLatestAndNoEPDS } = require('./nools-extras');
 
-const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT, PSUPP_BI_WEEKLY_VISIT } = require('./constants');
+const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT, PSUPP_BI_WEEKLY_VISIT, PSUPP_MONTHLY_VISIT } = require('./constants');
 
 const intervals = {
   u2: {
@@ -1008,6 +1008,42 @@ module.exports = [
       {
         type: 'report',
         form: PSUPP_BI_WEEKLY_VISIT,
+      }
+    ],
+    events: [
+      {
+        start: 30,
+        days: 30,
+        end: 90
+      },
+    ]
+  },
+  {
+    name: 'psuup_monthly_visit',
+    icon: 'icon-perinatal-module1',
+    title: 'task.psuup_monthly_visit',
+    appliesTo: 'reports',
+    appliesToType: [PSUPP_MONTHLY_VISIT, PSUPP_BI_WEEKLY_VISIT],
+    appliesIf: taskApplier((contact, report) => {
+      const formName = report.form;
+
+      if (formName === PSUPP_BI_WEEKLY_VISIT) {
+        const home_visit = getField(report, 'biweekly_visit');
+        const consent = getField(report, 'fifth_biweekly_call.end_biweeklycall5');
+        return consent === 'yes' && home_visit === 'visit_5';
+      }
+
+      if (formName === PSUPP_MONTHLY_VISIT) {
+        const weekly = getField(report, 'monthly_visit');
+        const consent = getField(report, 'fifth_biweekly_call.end_biweeklycall5');
+         return (weekly === 'visit_1') && consent === 'yes';
+      }
+    }),
+
+    actions: [
+      {
+        type: 'report',
+        form: PSUPP_MONTHLY_VISIT,
       }
     ],
     events: [

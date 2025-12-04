@@ -22,6 +22,7 @@ const PSUPP = 'psupp_screening_form';
 const PSUPP_HOME_VISIT = 'psupp_home_visit';
 const PSUPP_WEEKLY_VISIT = 'psupp_weekly_visit';
 const PSUPP_BI_WEEKLY_VISIT = 'psupp_biweekly_visit';
+const PSUPP_MONTHLY_VISIT = 'psupp_monthly_visit';
 
 
 // Stock Reports
@@ -66,6 +67,7 @@ module.exports = {
     PSUPP_HOME_VISIT,
     PSUPP_WEEKLY_VISIT,
     PSUPP_BI_WEEKLY_VISIT,
+    PSUPP_MONTHLY_VISIT,
     AGREES_KEYS,
     CHRONIC_DISEASE,
     DEATH_MIGRATION,

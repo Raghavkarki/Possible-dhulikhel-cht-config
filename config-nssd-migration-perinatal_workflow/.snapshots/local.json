@@ -214,5 +214,8 @@
   },
   "form:psupp_biweekly_visit": {
     "localhost/medic": "K89PfGFTRDCg280CaNwRYQ=="
+  },
+  "form:psupp_monthly_visit": {
+    "localhost/medic": "oysnDeIFzNEcXVLz1sHZgA=="
   }
 }
