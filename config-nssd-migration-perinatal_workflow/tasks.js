@@ -942,7 +942,10 @@ module.exports = [
 
       if (formName === PSUPP_WEEKLY_VISIT) {
         const weekly = getField(report, 'weekly_visit');
-        return weekly === 'visit_1' || weekly === 'visit_2';
+        const hasConsent =
+          getField(report, 'first_home_visit.end_1stvisit') === 'yes' ||
+          getField(report, 'second_weekly_call.end_weeklycall_2') === 'yes';
+        return (weekly === 'visit_1' || weekly === 'visit_2') && hasConsent;
       }
     }),
 
