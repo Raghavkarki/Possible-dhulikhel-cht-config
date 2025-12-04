@@ -18,7 +18,7 @@ const PREGNANCY_HISTORY = 'pregnancy_history_form';
 const PREGNANCY_SCREENING = 'pregnancy_screening_form';
 const SURGICAL_FOLLOWUP = 'surgical_followup';
 const U2_REGISTRY = 'u2_registry';
-const PSUPP = 'psupp_form';
+const PSUPP = 'psupp_screening_form';
 const PSUPP_HOME_VISIT = 'psupp_home_visit';
 const PSUPP_WEEKLY_VISIT = 'psupp_weekly_visit';
 

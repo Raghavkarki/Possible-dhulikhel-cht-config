@@ -648,7 +648,7 @@ const formCapMap = {
 //   return 'visit_' + Math.min(count + 1, 5);
 // };
 const totalPsuppSessions = (contact, formName) => {
-  const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
+  const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_screening_form']);
   if (!latestPsuppForm) {
     return null;
   }
