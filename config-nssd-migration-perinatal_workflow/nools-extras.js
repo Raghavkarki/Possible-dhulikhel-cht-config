@@ -633,9 +633,9 @@ function validateANCisLatestAndNoEPDS(contact) {
 // };
 
 const formCapMap = {
-  psupp_home_visit: 2,
-  psupp_weekly_visit: 3,
-  psupp_form: 5   // default max sessions after baseline form
+  'psupp_home_visit': 3,
+  'psupp_weekly_visit': 3,
+  'psupp_form': 1   // default max sessions after baseline form
 };
 
 // const totalPsuppSessions = (contact, formName) => {
@@ -653,10 +653,7 @@ const totalPsuppSessions = (contact, formName) => {
     return null;
   }
 
-  const count = contact.reports.filter(r =>
-    r.form === formName &&
-    r.reported_date > latestPsuppForm.reported_date
-  ).length;
+  const count = contact.reports.filter(r => r.form === formName && r.reported_date > latestPsuppForm.reported_date).length;
 
   const cap = formCapMap[formName] || 5;
 
