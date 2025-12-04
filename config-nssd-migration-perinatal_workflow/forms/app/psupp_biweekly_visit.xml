@@ -1,0 +1,504 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>PSuPP Biweekly visit</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5:label">
+            <value>Goal of the session :Ongoing check-ins + encourage health</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5_st:label">
+            <value>Steps
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Choose focus topic (coping/support/reasons to live, etc).
+4. Encourage for PCP visit as regular follow up suggested by PCPs+ Offer support if needed to plan for PCP visit+ Or, if already followed up-check in as how was it?
+5. Plan for next call
+
+[Note: If they share about warning signs at any point in time, please continue as per the referral pathway as trained.]</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5:label">
+            <value>Fifth biweekly call has been completed</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call:label">
+            <value>Fifth Bi-Weekly Calls</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1:label">
+            <value>Goal of the session :Ongoing check-ins + encourage health post visits</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1_st:label">
+            <value>Steps
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Choose focus topic (coping/support/reasons to live, etc).
+4. Encourage for PCP visit as regular follow up suggested by PCPs+ Offer support if needed to plan for PCP visit+ Or, if already followed up-check in as how was it?
+5. Plan for next call
+
+[[Note: If they share about warning signs at any point in time, please continue as per the referral pathway as trained.]</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1:label">
+            <value>First biweekly call has been completed</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call:label">
+            <value>First Bi-Weekly Calls</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4:label">
+            <value>Goal of the session :Ongoing check-ins + encourage health</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4_st:label">
+            <value>Steps
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Choose focus topic (coping/support/reasons to live, etc).
+4. Encourage for PCP visit as regular follow up suggested by PCPs+ Offer support if needed to plan for PCP visit+ Or, if already followed up-check in as how was it?
+5. Plan for next call
+
+[Note: If they share about warning signs at any point in time, please continue as per the referral pathway as trained.]</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4:label">
+            <value>Forth biweekly call has been completed</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call:label">
+            <value>Fourth Bi-Weekly Calls</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2:label">
+            <value>Goal of the session :Ongoing check-ins + encourage health</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2_st:label">
+            <value>Steps
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Choose focus topic (coping/support/reasons to live, etc).
+4. Encourage for PCP visit as regular follow up suggested by PCPs+ Offer support if needed to plan for PCP visit+ Or, if already followed up-check in as how was it?
+5. Plan for next call
+
+[Note: If they share about warning signs at any point in time, please continue as per the referral pathway as trained.]</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2:label">
+            <value>Second biweekly call has been completed</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call:label">
+            <value>Second Bi-Weekly Calls</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3:label">
+            <value>Goal of the session :Ongoing check-ins + encourage health</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3_st:label">
+            <value>Steps
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Choose focus topic (coping/support/reasons to live, etc).
+4. Encourage for PCP visit as regular follow up suggested by PCPs+ Offer support if needed to plan for PCP visit+ Or, if already followed up-check in as how was it?
+5. Plan for next call
+
+[Note: If they share about warning signs at any point in time, please continue as per the referral pathway as trained.]</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3:label">
+            <value>Third biweekly call has been completed</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call:label">
+            <value>Third Bi-Weekly Calls</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5:label">
+            <value>सत्रको उद्देश्य:
+हालचाल बुझ्नु र स्वास्थ्य संस्था जाने प्रेरणा दिनु</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+३. ध्यान दिनुपर्ने विषय छनोट गर्नुहोस् (सामना गर्ने तरिका/सहयोग/बाँच्ने कारणहरू आदि)।
+४. स्वास्थ्यकर्मी भेट गर्न प्रोत्साहन दिनुहोस्। अथवा, स्वास्थ्य संस्था जाने योजना बनाउन सहयोग आवश्यक भएमा साथ दिनुहोस्। अथवा, यदि पहिले नै भेट भइसकेको छ भने — "कस्तो अनुभव रह्यो?" भनेर सोध्नुहोस|
+५. अर्को फोन कलको योजना बनाउनुहोस्। 
+
+[यदि सहभागीले कुनै पनि समयमा आत्महत्याको जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5:label">
+            <value>पाँचौ दुई हप्ताको अन्तरालमा हुने कल पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fifth_biweekly_call:label">
+            <value>दुइ हप्ताको पछिको फोन कल ५</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1:label">
+            <value>सत्रको उद्देश्य:
+हालचाल बुझ्नु र स्वास्थ्य संस्था जाने प्रेरणा दिनु</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+३. ध्यान दिनुपर्ने विषय छनोट गर्नुहोस् (सामना गर्ने तरिका/सहयोग/बाँच्ने कारणहरू आदि)।
+४. स्वास्थ्यकर्मी भेट गर्न प्रोत्साहन दिनुहोस्। अथवा, स्वास्थ्य संस्था जाने योजना बनाउन सहयोग आवश्यक भएमा साथ दिनुहोस्। अथवा, यदि पहिले नै भेट भइसकेको छ भने — "कस्तो अनुभव रह्यो?" भनेर सोध्नुहोस|
+५. अर्को फोन कलको योजना बनाउनुहोस्। 
+
+
+[यदि सहभागीले कुनै पनि समयमा आत्महत्याको जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1:label">
+            <value>पहिलो दुई हप्ताको अन्तरालमा हुने कल पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_biweekly_visit/first_biweekly_call:label">
+            <value>दुइ हप्ताको पछिको फोन कल १</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4:label">
+            <value>सत्रको उद्देश्य:
+हालचाल बुझ्नु र स्वास्थ्य संस्था जाने प्रेरणा दिनु</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+३. ध्यान दिनुपर्ने विषय छनोट गर्नुहोस् (सामना गर्ने तरिका/सहयोग/बाँच्ने कारणहरू आदि)।
+४. स्वास्थ्यकर्मी भेट गर्न प्रोत्साहन दिनुहोस्। अथवा, स्वास्थ्य संस्था जाने योजना बनाउन सहयोग आवश्यक भएमा साथ दिनुहोस्। अथवा, यदि पहिले नै भेट भइसकेको छ भने — "कस्तो अनुभव रह्यो?" भनेर सोध्नुहोस|
+५. अर्को फोन कलको योजना बनाउनुहोस्। 
+
+
+[यदि सहभागीले कुनै पनि समयमा आत्महत्याको जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला]</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4:label">
+            <value>चौथो दुई हप्ताको अन्तरालमा हुने कल पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_biweekly_visit/fourth_biweekly_call:label">
+            <value>दुइ हप्ताको पछिको फोन कल ४</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/psupp_biweekly_visit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2:label">
+            <value>सत्रको उद्देश्य:
+हालचाल बुझ्नु र स्वास्थ्य संस्था जाने प्रेरणा दिनु</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+३. ध्यान दिनुपर्ने विषय छनोट गर्नुहोस् (सामना गर्ने तरिका/सहयोग/बाँच्ने कारणहरू आदि)।
+४. स्वास्थ्यकर्मी भेट गर्न प्रोत्साहन दिनुहोस्। अथवा, स्वास्थ्य संस्था जाने योजना बनाउन सहयोग आवश्यक भएमा साथ दिनुहोस्। अथवा, यदि पहिले नै भेट भइसकेको छ भने — "कस्तो अनुभव रह्यो?" भनेर सोध्नुहोस|
+५. अर्को फोन कलको योजना बनाउनुहोस्। 
+
+
+[यदि सहभागीले कुनै पनि समयमा आत्महत्याको जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2:label">
+            <value>दोस्रो दुई हप्ताको अन्तरालमा हुने कल पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_biweekly_visit/second_biweekly_call:label">
+            <value>दुइ हप्ताको पछिको फोन कल २</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3:label">
+            <value>सत्रको उद्देश्य:
+हालचाल बुझ्नु र स्वास्थ्य संस्था जाने प्रेरणा दिनु</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+३. ध्यान दिनुपर्ने विषय छनोट गर्नुहोस् (सामना गर्ने तरिका/सहयोग/बाँच्ने कारणहरू आदि)।
+४. स्वास्थ्यकर्मी भेट गर्न प्रोत्साहन दिनुहोस्। अथवा, स्वास्थ्य संस्था जाने योजना बनाउन सहयोग आवश्यक भएमा साथ दिनुहोस्। अथवा, यदि पहिले नै भेट भइसकेको छ भने — "कस्तो अनुभव रह्यो?" भनेर सोध्नुहोस|
+५. अर्को फोन कलको योजना बनाउनुहोस्। 
+
+
+[यदि सहभागीले कुनै पनि समयमा आत्महत्याको जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3:label">
+            <value>तेस्रो दुई हप्ताको अन्तरालमा हुने कल पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_biweekly_visit/third_biweekly_call:label">
+            <value>दुइ हप्ताको पछिको फोन कल ३</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <psupp_biweekly_visit id="psupp_biweekly_visit" prefix="J1!psupp_biweekly_visit!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <patient_age/>
+          <biweekly_visit/>
+          <first_biweekly_call>
+            <biweeklycall1/>
+            <biweeklycall1_st/>
+            <end_biweeklycall1/>
+          </first_biweekly_call>
+          <second_biweekly_call>
+            <biweeklycall2/>
+            <biweeklycall2_st/>
+            <end_biweeklycall2/>
+          </second_biweekly_call>
+          <third_biweekly_call>
+            <biweeklycall3/>
+            <biweeklycall3_st/>
+            <end_biweeklycall3/>
+          </third_biweekly_call>
+          <fourth_biweekly_call>
+            <biweeklycall4/>
+            <biweeklycall4_st/>
+            <end_biweeklycall4/>
+          </fourth_biweekly_call>
+          <fifth_biweekly_call>
+            <biweeklycall5/>
+            <biweeklycall5_st/>
+            <end_biweeklycall5/>
+          </fifth_biweekly_call>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </psupp_biweekly_visit>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/psupp_biweekly_visit/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/psupp_biweekly_visit/inputs/source" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/inputs/source_id" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/psupp_biweekly_visit/inputs/contact/name" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/psupp_biweekly_visit/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/psupp_biweekly_visit/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/psupp_biweekly_visit/patient_age" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/psupp_biweekly_visit/biweekly_visit" type="string" calculate="if(instance('contact-summary')/context/biweekly_visit, instance('contact-summary')/context/biweekly_visit, .)"/>
+      <bind nodeset="/psupp_biweekly_visit/first_biweekly_call" relevant=" /psupp_biweekly_visit/biweekly_visit  ='visit_1'"/>
+      <bind nodeset="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1" type="string" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1" type="select1" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/second_biweekly_call" relevant=" /psupp_biweekly_visit/biweekly_visit  ='visit_2'"/>
+      <bind nodeset="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2" type="string" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2" type="select1" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/third_biweekly_call" relevant=" /psupp_biweekly_visit/biweekly_visit  ='visit_3'"/>
+      <bind nodeset="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3" type="string" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3" type="select1" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/fourth_biweekly_call" relevant=" /psupp_biweekly_visit/biweekly_visit  ='visit_4'"/>
+      <bind nodeset="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4" type="string" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4" type="select1" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/fifth_biweekly_call" relevant=" /psupp_biweekly_visit/biweekly_visit  ='visit_5'"/>
+      <bind nodeset="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5" type="string" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5" type="select1" required="true()"/>
+      <bind nodeset="/psupp_biweekly_visit/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/psupp_biweekly_visit/inputs">
+      <label ref="jr:itext('/psupp_biweekly_visit/inputs:label')"/>
+      <group ref="/psupp_biweekly_visit/inputs/contact">
+        <label ref="jr:itext('/psupp_biweekly_visit/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/psupp_biweekly_visit/inputs/contact/_id">
+          <label ref="jr:itext('/psupp_biweekly_visit/inputs/contact/_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/psupp_biweekly_visit/first_biweekly_call">
+      <label ref="jr:itext('/psupp_biweekly_visit/first_biweekly_call:label')"/>
+      <input ref="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1">
+        <label ref="jr:itext('/psupp_biweekly_visit/first_biweekly_call/biweeklycall1:label')"/>
+      </input>
+      <input ref="/psupp_biweekly_visit/first_biweekly_call/biweeklycall1_st">
+        <label ref="jr:itext('/psupp_biweekly_visit/first_biweekly_call/biweeklycall1_st:label')"/>
+      </input>
+      <select1 ref="/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1">
+        <label ref="jr:itext('/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/first_biweekly_call/end_biweeklycall1/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/psupp_biweekly_visit/second_biweekly_call">
+      <label ref="jr:itext('/psupp_biweekly_visit/second_biweekly_call:label')"/>
+      <input ref="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2">
+        <label ref="jr:itext('/psupp_biweekly_visit/second_biweekly_call/biweeklycall2:label')"/>
+      </input>
+      <input ref="/psupp_biweekly_visit/second_biweekly_call/biweeklycall2_st">
+        <label ref="jr:itext('/psupp_biweekly_visit/second_biweekly_call/biweeklycall2_st:label')"/>
+      </input>
+      <select1 ref="/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2">
+        <label ref="jr:itext('/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/second_biweekly_call/end_biweeklycall2/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/psupp_biweekly_visit/third_biweekly_call">
+      <label ref="jr:itext('/psupp_biweekly_visit/third_biweekly_call:label')"/>
+      <input ref="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3">
+        <label ref="jr:itext('/psupp_biweekly_visit/third_biweekly_call/biweeklycall3:label')"/>
+      </input>
+      <input ref="/psupp_biweekly_visit/third_biweekly_call/biweeklycall3_st">
+        <label ref="jr:itext('/psupp_biweekly_visit/third_biweekly_call/biweeklycall3_st:label')"/>
+      </input>
+      <select1 ref="/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3">
+        <label ref="jr:itext('/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/third_biweekly_call/end_biweeklycall3/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/psupp_biweekly_visit/fourth_biweekly_call">
+      <label ref="jr:itext('/psupp_biweekly_visit/fourth_biweekly_call:label')"/>
+      <input ref="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4">
+        <label ref="jr:itext('/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4:label')"/>
+      </input>
+      <input ref="/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4_st">
+        <label ref="jr:itext('/psupp_biweekly_visit/fourth_biweekly_call/biweeklycall4_st:label')"/>
+      </input>
+      <select1 ref="/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4">
+        <label ref="jr:itext('/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/fourth_biweekly_call/end_biweeklycall4/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/psupp_biweekly_visit/fifth_biweekly_call">
+      <label ref="jr:itext('/psupp_biweekly_visit/fifth_biweekly_call:label')"/>
+      <input ref="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5">
+        <label ref="jr:itext('/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5:label')"/>
+      </input>
+      <input ref="/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5_st">
+        <label ref="jr:itext('/psupp_biweekly_visit/fifth_biweekly_call/biweeklycall5_st:label')"/>
+      </input>
+      <select1 ref="/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5">
+        <label ref="jr:itext('/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_biweekly_visit/fifth_biweekly_call/end_biweeklycall5/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

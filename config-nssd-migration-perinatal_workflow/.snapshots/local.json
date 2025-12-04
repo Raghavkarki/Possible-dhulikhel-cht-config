@@ -207,9 +207,12 @@
     "localhost/medic": "sm6dVy8IzIvyPMD3gv2pWw=="
   },
   "form:psupp_weekly_visit": {
-    "localhost/medic": "BikKntPDXgwHqHc1sqSKLw=="
+    "localhost/medic": "2Gv9puaX7tQIOffRhOg+7Q=="
   },
   "form:psupp_screening_form": {
     "localhost/medic": "TlqEcNeYanfYHQK1x5S9cw=="
+  },
+  "form:psupp_biweekly_visit": {
+    "localhost/medic": "K89PfGFTRDCg280CaNwRYQ=="
   }
 }

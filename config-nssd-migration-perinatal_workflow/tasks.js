@@ -1,7 +1,7 @@
 const { addDays, getField, getMostRecentReport, isActive, getDeliveryDate, mapContent,
   getPPDays, getMostRecentUnskippedReport, isFormArraySubmittedInWindow, isContactUnder2, getNewestReport, totalPsuppSessions, isAtLeastXWeeksSinceLMP, monthsdeliverydate, getpdfContent, totalForms, compareANCAndPostDeliveryDates, validateANCisLatestAndNoEPDS } = require('./nools-extras');
 
-const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT } = require('./constants');
+const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT, PSUPP_BI_WEEKLY_VISIT } = require('./constants');
 
 const intervals = {
   u2: {
@@ -950,6 +950,52 @@ module.exports = [
       {
         type: 'report',
         form: PSUPP_WEEKLY_VISIT,
+      }
+    ],
+    events: [
+      {
+        start: 30,
+        days: 30,
+        end: 90
+      },
+    ]
+  },
+  {
+    name: 'psuup_bi_weekly_visit',
+    icon: 'icon-perinatal-module1',
+    title: 'task.psuup_weekly_visit',
+    appliesTo: 'reports',
+    appliesToType: [PSUPP_HOME_VISIT, PSUPP_BI_WEEKLY_VISIT],
+    appliesIf: taskApplier((contact, report) => {
+      // const consent = getField(report, 'first_home_visit.end_1stvisit');
+      // const consent1 = getField(report, 'visit.weekly_visit');
+
+      // // const getReport = getNewestReport(report, 'psupp_form');
+
+      // const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
+      // const allowedForms = ['visit_2', 'visit_3'];
+      // console.log('logs for the weekly visits', contact, totalform, report, consent);
+      // return (
+      //   ( consent1 === 'visit_2' || consent1 === 'visit_3'  || consent === 'yes')
+      // );
+      const formName = report.form;
+
+      if (formName === PSUPP_HOME_VISIT) {
+        const home_visit = getField(report, 'visit.home_visit');
+        const consent = getField(report, 'first_home_visit.end_1stvisit');
+        return consent === 'yes' && home_visit === 'visit_2' ;
+      }
+
+      if (formName === PSUPP_BI_WEEKLY_VISIT) {
+        const weekly = getField(report, 'weekly_visit');
+        return weekly === 'visit_1' || weekly === 'visit_2';
+      }
+    }),
+
+    actions: [
+      {
+        type: 'report',
+        form: PSUPP_BI_WEEKLY_VISIT,
       }
     ],
     events: [
