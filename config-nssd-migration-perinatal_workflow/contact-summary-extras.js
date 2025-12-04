@@ -2,7 +2,8 @@ const moment = require('moment');
 const {
   ANC, ANC_COUNT, PREGNANCY_SCREENING, POST_DELIVERY, PNC, PNC2, U2_REGISTRY,
   PREGNANCY_HISTORY, PROCEDURE_DATE_GROUP, AGREES_KEYS, HOME_KEYS, MUAC_GROUP,
-  MUAC_GROUP_OLD, STOCK_IN, STOCK_OUT, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT
+  MUAC_GROUP_OLD, STOCK_IN, STOCK_OUT, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT,
+  PSUPP_BI_WEEKLY_VISIT
 } = require('./constants');
 const today = moment().startOf('day');
 
@@ -542,7 +543,7 @@ function getContext(thisContact, allReports) {
 
       const totalHomeVist = totalForms(allReports, PSUPP_HOME_VISIT);
       const totalWeeklyVisit = totalForms(allReports, PSUPP_WEEKLY_VISIT);
-      const totalBiweeklyVisit = totalForms(allReports, PSUPP_WEEKLY_VISIT);
+      const totalBiweeklyVisit = totalForms(allReports, PSUPP_BI_WEEKLY_VISIT);
 
       context.home_visit = totalHomeVist;
       context.weekly_visit = totalWeeklyVisit;
