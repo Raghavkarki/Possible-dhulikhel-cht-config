@@ -523,14 +523,20 @@ function getContext(thisContact, allReports) {
       const latestPsuppScreeningForm = getNewestReport(allReports, PSUPP);
       // const latestPsuppHomeVisit = getNewestReport(allReports, PSUPP_HOME_VISIT);
       // const latestPsuppWeeklyVisit = getNewestReport(allReports, PSUPP_WEEKLY_VISIT);
-
+      const formCapMap = {
+        'psupp_home_visit': 3,
+        'psupp_weekly_visit': 3,
+        'psupp_form': 1   
+      };
       const totalForms = (reports, formName) => {
         if (!latestPsuppScreeningForm) {
           return null;
         }
         const count = reports.filter(report => report.form === formName && report.reported_date > latestPsuppScreeningForm.reported_date).length;
+        const cap = formCapMap[formName] || 5;
 
-        return 'visit_' + Math.min(count + 1, 5);
+
+        return 'visit_' + Math.min(count + 1, cap);
       };
 
 
