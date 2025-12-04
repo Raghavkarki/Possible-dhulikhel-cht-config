@@ -887,6 +887,8 @@ module.exports = [
     appliesToType: [PSUPP, PSUPP_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
       const consent = getField(report, 'psupp_form.cont_call');
+      // const consent1 = getField(report, 'psupp_form.cont_call');
+      // const consent2 = getField(report, 'psupp_form.cont_call');
       // const getReport = getNewestReport(report, 'psupp_form');
 
       const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
@@ -895,7 +897,7 @@ module.exports = [
       console.log('logs for the home visssit ', totalform, totalform1);
       return (
 
-        ( (consent ===  'yes' ) && ( totalform === 'visit_4' || totalform === 'visit_1'))
+        ( (consent ===  'yes' ) || ( totalform === 'visit_4' ))
       );
     }),
 
@@ -920,15 +922,14 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
-      const consent = getField(report, 'psupp_form.cont_call');
+      const consent = getField(report, 'first_home_visit.end_1stvisit');
       // const getReport = getNewestReport(report, 'psupp_form');
 
       const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      const allowedForms = ['visit_1', 'visit_2', 'visit_3'];
+      const allowedForms = ['visit_2', 'visit_3'];
       console.log('logs for the weekly visits', contact, totalform, report, consent);
       return (
-
-        ( allowedForms.includes(totalform) )
+        ( allowedForms.includes(totalform) || consent === 'yes')
       );
     }),
 

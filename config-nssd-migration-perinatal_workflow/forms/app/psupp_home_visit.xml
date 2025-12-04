@@ -194,11 +194,11 @@ Build trust + recall Aasha ko Diyo + practice 1166 call</value>
       <bind nodeset="/psupp_home_visit/patient_id" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/psupp_home_visit/patient_age" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
       <bind nodeset="/psupp_home_visit/home_visit" type="string" calculate="if(instance('contact-summary')/context/home_visit, instance('contact-summary')/context/home_visit, .)"/>
-      <bind nodeset="/psupp_home_visit/first_home_visit" relevant=" /psupp_home_visit/home_visit  ='1'"/>
+      <bind nodeset="/psupp_home_visit/first_home_visit" relevant=" /psupp_home_visit/home_visit  ='visit_1'"/>
       <bind nodeset="/psupp_home_visit/first_home_visit/first_homevisit" type="string"/>
       <bind nodeset="/psupp_home_visit/first_home_visit/firstvisit_st" readonly="true()" type="string"/>
       <bind nodeset="/psupp_home_visit/first_home_visit/end_1stvisit" type="select1"/>
-      <bind nodeset="/psupp_home_visit/second_home_visit" relevant=" /psupp_home_visit/home_visit  ='2'"/>
+      <bind nodeset="/psupp_home_visit/second_home_visit" relevant=" /psupp_home_visit/home_visit  ='visit_2'"/>
       <bind nodeset="/psupp_home_visit/second_home_visit/second_homevisit" type="string"/>
       <bind nodeset="/psupp_home_visit/second_home_visit/second_homevisit_st" readonly="true()" type="string"/>
       <bind nodeset="/psupp_home_visit/second_home_visit/end_2ndhomevisit" type="select1"/>

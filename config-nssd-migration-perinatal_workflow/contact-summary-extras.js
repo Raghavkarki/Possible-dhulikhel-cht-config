@@ -524,8 +524,8 @@ function getContext(thisContact, allReports) {
       // const latestPsuppHomeVisit = getNewestReport(allReports, PSUPP_HOME_VISIT);
       // const latestPsuppWeeklyVisit = getNewestReport(allReports, PSUPP_WEEKLY_VISIT);
       const formCapMap = {
-        'psupp_home_visit': 3,
-        'psupp_weekly_visit': 3,
+        'psupp_home_visit': 5,
+        'psupp_weekly_visit': 4,
         'psupp_form': 1   
       };
       const totalForms = (reports, formName) => {

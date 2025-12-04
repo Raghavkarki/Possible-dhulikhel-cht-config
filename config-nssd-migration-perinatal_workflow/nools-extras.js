@@ -634,7 +634,7 @@ function validateANCisLatestAndNoEPDS(contact) {
 
 const formCapMap = {
   'psupp_home_visit': 3,
-  'psupp_weekly_visit': 3,
+  'psupp_weekly_visit': 5,
   'psupp_form': 1   // default max sessions after baseline form
 };
 
