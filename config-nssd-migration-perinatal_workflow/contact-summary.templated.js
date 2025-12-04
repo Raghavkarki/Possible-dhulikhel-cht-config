@@ -8,6 +8,7 @@ const thisLineage = lineage.filter((parent) => parent && !HIDDEN_TYPES_FROM_LINE
 const allReports = reports;
 
 const context = getContext(thisContact, allReports);
+console.log(getContext(thisContact, allReports));
 
 const fields = [
   { appliesToType: 'c82_person', label: 'contact.person', value: thisContact.nepali_full_name, width: 4 },
