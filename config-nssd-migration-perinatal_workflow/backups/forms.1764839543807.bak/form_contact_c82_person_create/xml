@@ -1,0 +1,1287 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Add Individual Casedata</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c82_person/age_dob/age_entry:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/c82_person/age_dob/dob_entry:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/c82_person/age_dob/estimate_dob/no:label">
+            <value>No (enter date of birth)</value>
+          </text>
+          <text id="/data/c82_person/age_dob/estimate_dob/yes:label">
+            <value>Yes (calculate from age)</value>
+          </text>
+          <text id="/data/c82_person/age_dob/estimate_dob:label">
+            <value>How do you want to estimate Date of Birth?</value>
+          </text>
+          <text id="/data/c82_person/bahmniID_input:label">
+            <value>If available, please enter the patient's Bahmni ID</value>
+          </text>
+          <text id="/data/c82_person/born_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c82_person/born_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c82_person/born_today:label">
+            <value>Is this baby born today?</value>
+          </text>
+          <text id="/data/c82_person/caretakers_name:label">
+            <value>Enter Caretaker's name</value>
+          </text>
+          <text id="/data/c82_person/child_mother_alive/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c82_person/child_mother_alive/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c82_person/child_mother_alive:label">
+            <value>Is the child's mother alive?</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/district_hospital:label">
+            <value>District Hospital / Other Hospital</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/health_post:label">
+            <value>Health Post</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/home:label">
+            <value>Home</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/nyaya_health_hospital:label">
+            <value>Nyaya Health Nepal Hospital</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/primary_health_center:label">
+            <value>Primary Health Center</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/private_clinic_or_medical:label">
+            <value>Private Clinic or Medical</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/road:label">
+            <value>On the road</value>
+          </text>
+          <text id="/data/c82_person/delivery_location:label">
+            <value>Where did you give birth to <output value=" /data/c82_person/name_nepali/name_full_name "/>?</value>
+          </text>
+          <text id="/data/c82_person/delivery_location_other:label">
+            <value>Specify other delivery location:</value>
+          </text>
+          <text id="/data/c82_person/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_105:label">
+            <value>Age: <output value=" /data/c82_person/age "/>
+
+Date of Birth: <output value=" /data/c82_person/dob_display "/></value></text>
+          <text id="/data/c82_person/generated_note_name_133:label">
+            <value>This person's ID is: <output value=" /data/c82_person/communityID "/></value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_134:label">
+            <value>If they have hospital Id of Chaurpati PHC, only then enter yes other wise enter no.</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_139:label">
+            <value>Counsel this person about importance of Hospital ID.
+Counsel this person to remember house number and bring hospital card while visiting hospital</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_177:label">
+            <value>You have registered HH member <output value=" /data/c82_person/person_number "/>. 
+
+Please submit this form and then register any other people who need to be tracked.</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_178:label">
+            <value>Please submit the form to complete registration.</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_30:label">
+            <value>This form is for individual enrollment. Please enroll only those who live here at least 6 months out of a year.</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_53:label">
+            <value>This person did not consent to participate and will not be registered. 
+
+Please thank the person for their time and submit this form.</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/yes_lost:label">
+            <value>Yes, But Lost</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/yes_not_now:label">
+            <value>Yes, But not available now</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id:label">
+            <value>Do they have a hospital/PHC card with a BahmniID?</value>
+          </text>
+          <text id="/data/c82_person/healthpost_name:label">
+            <value>Please specify which health post.</value>
+          </text>
+          <text id="/data/c82_person/marital_status/divorced:label">
+            <value>Divorced</value>
+          </text>
+          <text id="/data/c82_person/marital_status/married:label">
+            <value>Married</value>
+          </text>
+          <text id="/data/c82_person/marital_status/single:label">
+            <value>Single</value>
+          </text>
+          <text id="/data/c82_person/marital_status/widowed:label">
+            <value>Widow/Widower</value>
+          </text>
+          <text id="/data/c82_person/marital_status:label">
+            <value>Marital Status</value>
+          </text>
+          <text id="/data/c82_person/mother/generated_note_name_121:label">
+            <value>This following person has been selected as the mother of <output value=" /data/c82_person/mother/mother_name "/>
+
+* Woman's Community ID: <output value=" /data/c82_person/mother/mother_case_id "/>
+
+* Woman's Name: <output value=" /data/c82_person/mother/mother_name "/>
+
+* Woman's Age: <output value=" /data/c82_person/mother/mother_age "/>
+
+Please check to make sure the information is correct. If not, go back and select the correct woman.</value>
+          </text>
+          <text id="/data/c82_person/mother/mother_case_id:label">
+            <value>Child's Mother's Name</value>
+          </text>
+          <text id="/data/c82_person/mothers_name:label">
+            <value>Child's Mother's Name</value>
+          </text>
+          <text id="/data/c82_person/name_english/name_english_family_name_english:label">
+            <value>Family Name English</value>
+          </text>
+          <text id="/data/c82_person/name_english/name_english_given_name_english:label">
+            <value>Given Name English</value>
+          </text>
+          <text id="/data/c82_person/name_english/name_english_middle_name_english:label">
+            <value>Middle Name English</value>
+          </text>
+          <text id="/data/c82_person/name_english:label">
+            <value>Name in English</value>
+          </text>
+          <text id="/data/c82_person/name_nepali/name_family_name:label">
+            <value>Family Name</value>
+          </text>
+          <text id="/data/c82_person/name_nepali/name_given_name:label">
+            <value>Given Name</value>
+          </text>
+          <text id="/data/c82_person/name_nepali/name_middle_name:label">
+            <value>Middle Name</value>
+          </text>
+          <text id="/data/c82_person/name_nepali:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/c82_person/no_consent_text:label">
+            <value>If no consent, please specify.</value>
+          </text>
+          <text id="/data/c82_person/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/c82_person/person_at_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/c82_person/person_at_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/c82_person/person_at_home:label">
+            <value>Is this person available at home?</value>
+          </text>
+          <text id="/data/c82_person/person_consent/no:label">
+            <value>No to all</value>
+          </text>
+          <text id="/data/c82_person/person_consent/yes:label">
+            <value>Yes to all</value>
+          </text>
+          <text id="/data/c82_person/person_consent/yes_to_care_delivery_only:label">
+            <value>Yes to Care Delivery only ( Cannot use my info for research)</value>
+          </text>
+          <text id="/data/c82_person/person_consent:label">
+            <value>Do you agree to participate in our program, and provide health information that we will use to provide better care, and to study the effectiveness of the program?</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/long:label">
+            <value>In 3-6 months</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/months:label">
+            <value>In 1-3 months</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/next:label">
+            <value>Next week</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/return_other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/week:label">
+            <value>This week</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/work:label">
+            <value>At work/in the field</value>
+          </text>
+          <text id="/data/c82_person/person_not_home:label">
+            <value>If no, please indicate when they will return</value>
+          </text>
+          <text id="/data/c82_person/person_suffix:label">
+            <value>Enter the individual's number</value>
+          </text>
+          <text id="/data/c82_person/relationship_specify:label">
+            <value>Please specify the relationship of <output value=" /data/init/head_of_family_hoh_name_text "/> to this person.</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/father_mother:label">
+            <value>Son/ Daughter</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/grandson_granddaughter:label">
+            <value>Grandfather/ Grandmother</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/husband_wife:label">
+            <value>Husband/Wife</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/me:label">
+            <value>Myself</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/niece_nephew:label">
+            <value>Uncle / Aunt</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/relationship_other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/sil_dil:label">
+            <value>Sister-in-law / Brother-in-Law</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/sister_brother:label">
+            <value>Sister / Brother</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/son_daughter:label">
+            <value>Father / Mother</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/son_daughter_in_law:label">
+            <value>FIL / MIL</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh:label">
+            <value>Who is <output value=" /data/init/head_of_family_hoh_name_text "/> (head of family) to <output value=" /data/c82_person/name_nepali/name_full_name "/>?</value>
+          </text>
+          <text id="/data/c82_person/return_specify:label">
+            <value>Please specify when the family will return</value>
+          </text>
+          <text id="/data/c82_person/service_type/cd_patient:label">
+            <value>Chronic Disease Follow Up</value>
+          </text>
+          <text id="/data/c82_person/service_type/htn_less_than_40yrs:label">
+            <value>Hypertension enrollment for people less than 40 years</value>
+          </text>
+          <text id="/data/c82_person/service_type/imam_patient:label">
+            <value>IMAM Follow Up</value>
+          </text>
+          <text id="/data/c82_person/service_type/not_applicable:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/data/c82_person/service_type/surgery_patient:label">
+            <value>Surgery Follow Up</value>
+          </text>
+          <text id="/data/c82_person/service_type:label">
+            <value>Please select the type of service this person is receiving.</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_152:label">
+            <value>This woman will be added to the pregnancy surveillance cohort.
+
+Please fill out the Pregnancy Surveillance Form today.</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_156:label">
+            <value>This child will be added to the Under 2 Monitoring cohort. Please fill his/her under two registry form today.</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_160:label">
+            <value>This child will be added to the IMAM group.</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_164:label">
+            <value>This person will be added to the Surgical Patient Follow Up group.</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_168:label">
+            <value>This person will be added to the Chronic Disease patient group.</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_172:label">
+            <value>This person is added to the hypertension screening group. Please screen this person today.</value>
+          </text>
+          <text id="/data/c82_person/services:label">
+            <value>Services</value>
+          </text>
+          <text id="/data/c82_person/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/c82_person/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/c82_person/sex/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c82_person/sex:label">
+            <value>Sex of person</value>
+          </text>
+          <text id="/data/c82_person/telephone_number:label">
+            <value>Telephone number
+Personal or family phone number
+If any member of family don't have telephone number, 
+Enter(000-000-0000)</value>
+          </text>
+          <text id="/data/c82_person:label">
+            <value>Person details</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/data/c82_person/age_dob/age_entry:label">
+            <value>उमेर</value>
+          </text>
+          <text id="/data/c82_person/age_dob/dob_entry:label">
+            <value>जन्म मिति बाट</value>
+          </text>
+          <text id="/data/c82_person/age_dob/estimate_dob/no:label">
+            <value>जन्म मिति बाट</value>
+          </text>
+          <text id="/data/c82_person/age_dob/estimate_dob/yes:label">
+            <value>उमेरबाट</value>
+          </text>
+          <text id="/data/c82_person/age_dob/estimate_dob:label">
+            <value>उमेर कसरि लिन चाहनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c82_person/bahmniID_input:label">
+            <value>छ भने, अस्पताल परिचय संख्या हाल्नुहोस् |</value>
+          </text>
+          <text id="/data/c82_person/born_today/no:label">
+            <value>होइन</value>
+          </text>
+          <text id="/data/c82_person/born_today/yes:label">
+            <value>हो</value>
+          </text>
+          <text id="/data/c82_person/born_today:label">
+            <value>के यो बच्चा आजै जन्मिएको हो?</value>
+          </text>
+          <text id="/data/c82_person/caretakers_name:label">
+            <value>बच्चाको स्याहार गर्ने को नाम</value>
+          </text>
+          <text id="/data/c82_person/child_mother_alive/no:label">
+            <value>हुनुहुन्न</value>
+          </text>
+          <text id="/data/c82_person/child_mother_alive/yes:label">
+            <value>हुनुहुन्छ</value>
+          </text>
+          <text id="/data/c82_person/child_mother_alive:label">
+            <value>बच्चा को आमा जीवित हुनुहुन्छ ?</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/district_hospital:label">
+            <value>जिल्ला अस्पताल/ अन्य अस्पताल</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/health_post:label">
+            <value>हेल्थ पोस्ट</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/home:label">
+            <value>घर</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/nyaya_health_hospital:label">
+            <value>न्याय हेल्थ नेपाल द्वारा संचालित अस्पताल</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/primary_health_center:label">
+            <value>प्राथमिक स्वास्थ्य केन्द्र</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/private_clinic_or_medical:label">
+            <value>मेडिकल वा कुनै निजि क्लिनिकमा</value>
+          </text>
+          <text id="/data/c82_person/delivery_location/road:label">
+            <value>बाटोमा</value>
+          </text>
+          <text id="/data/c82_person/delivery_location:label">
+            <value><output value=" /data/c82_person/name_nepali/name_full_name "/> जन्म कहाँ भयो ?</value>
+          </text>
+          <text id="/data/c82_person/delivery_location_other:label">
+            <value>अन्य ठाउँमा सुत्केरी भएमा लेख्नु होस्</value>
+          </text>
+          <text id="/data/c82_person/external_id:label">
+            <value>बाहिरी आईडी</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_105:label">
+            <value>उमेर : <output value=" /data/c82_person/age "/>
+
+जन्म मिति : <output value=" /data/c82_person/dob_display_nepali "/></value></text>
+          <text id="/data/c82_person/generated_note_name_133:label">
+            <value>यस व्यक्तिको परिचय संख्या यस प्रकार छ: <output value=" /data/c82_person/communityID "/></value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_134:label">
+            <value>यदि चौरपाटी PHC को कार्ड छ भने मात्र अस्पतालको नंबर हा्नुहोस</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_139:label">
+            <value>परामर्श
+यस ब्यक्तीलाई हस्पिटल को कार्डको महत्व को परामर्श दिनु होस
+यस ब्यक्तीलाई हस्पिटल जादा कार्ड छ भने अनिवार्य अर्को पटक जादा लैजान सुझाब दिनुहोस
+फोन नंबर र घर नंबर सम्झेर जान सुझाब दिनुहोस</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_177:label">
+            <value>तपाईंले परिवार सदस्य <output value=" /data/c82_person/person_number "/> दर्ता गर्नु भएको छ| फारम संचित गर्नको लागि हरियोमा थिच्नुहोस र अन्य व्यक्तिहरुको दर्ता प्रक्रिया सुरु गर्नुहोस |</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_178:label">
+            <value>दर्ता पुरा गर्नको लागि फारम संचित गर्नुहोस |</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_30:label">
+            <value>यो फारम व्यक्ति दर्ता गर्नको लागि हो | एक वर्षमा कम्तिमा ६ महिना यसै घरमा बसोबास गर्ने व्यक्तिलाई मात्र दर्ता गर्नुहोस |</value>
+          </text>
+          <text id="/data/c82_person/generated_note_name_53:label">
+            <value>यो व्यक्ति हाम्रो कार्यक्रममा सहभागी हुनमान्नु भएन | वहाँलाई समयको लागी धन्यबाद दिनुहोस र फारम संचित गर्नुहोस |</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/yes_lost:label">
+            <value>छ, तर हरायो</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id/yes_not_now:label">
+            <value>छ, तर अहिले संगै छेन</value>
+          </text>
+          <text id="/data/c82_person/has_bahmni_id:label">
+            <value>यस व्यक्तिसंग अस्पताल अथवा प्राथमिक स्वास्थ्य केन्द्रको कार्ड छ ?</value>
+          </text>
+          <text id="/data/c82_person/healthpost_name:label">
+            <value>कुन हेल्थ पोस्ट हो नाम लेख्नुहोस .</value>
+          </text>
+          <text id="/data/c82_person/marital_status/divorced:label">
+            <value>सम्बन्ध बिच्छेद भएको</value>
+          </text>
+          <text id="/data/c82_person/marital_status/married:label">
+            <value>बिबाहित</value>
+          </text>
+          <text id="/data/c82_person/marital_status/single:label">
+            <value>अबिबाहित</value>
+          </text>
+          <text id="/data/c82_person/marital_status/widowed:label">
+            <value>बिधवा / बिदुर</value>
+          </text>
+          <text id="/data/c82_person/marital_status:label">
+            <value>बैबाहिक अवस्था</value>
+          </text>
+          <text id="/data/c82_person/mother/generated_note_name_121:label">
+            <value>तपाईंको छनौट अनुसार को आमाको पुरा विवरण तल दिईएको छ:
+
+* महिलाको परिचय संख्या:
+
+* महिलाको नाम: 
+
+* महिलाको उमेर: 
+
+
+यो विवरण ठिक भए अगाडी जानुहोस, नभए पछाडी गएर आफ्नो उत्तर सच्च्याउनुहोस</value>
+          </text>
+          <text id="/data/c82_person/mother/mother_case_id:label">
+            <value>बच्चाको आमाको नाम</value>
+          </text>
+          <text id="/data/c82_person/mothers_name:label">
+            <value>बच्चाको आमाको नाम</value>
+          </text>
+          <text id="/data/c82_person/name_english/name_english_family_name_english:label">
+            <value>Family Name English</value>
+          </text>
+          <text id="/data/c82_person/name_english/name_english_given_name_english:label">
+            <value>Given Name English</value>
+          </text>
+          <text id="/data/c82_person/name_english/name_english_middle_name_english:label">
+            <value>Middle Name English</value>
+          </text>
+          <text id="/data/c82_person/name_english:label">
+            <value>Name in English</value>
+          </text>
+          <text id="/data/c82_person/name_nepali/name_family_name:label">
+            <value>थर</value>
+          </text>
+          <text id="/data/c82_person/name_nepali/name_given_name:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/c82_person/name_nepali/name_middle_name:label">
+            <value>बिचको नाम</value>
+          </text>
+          <text id="/data/c82_person/name_nepali:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/c82_person/no_consent_text:label">
+            <value>किन सहमत हुनुहुन्न, कारण खुलाउनु होस् |</value>
+          </text>
+          <text id="/data/c82_person/notes:label">
+            <value>नोट</value>
+          </text>
+          <text id="/data/c82_person/person_at_home/no:label">
+            <value>हुनुहुन्न</value>
+          </text>
+          <text id="/data/c82_person/person_at_home/yes:label">
+            <value>हुनुहुन्छ</value>
+          </text>
+          <text id="/data/c82_person/person_at_home:label">
+            <value>के यी व्यक्ति अहिले घरमै हुनु हुन्छ ?</value>
+          </text>
+          <text id="/data/c82_person/person_consent/no:label">
+            <value>हुँदैन</value>
+          </text>
+          <text id="/data/c82_person/person_consent/yes:label">
+            <value>हुन्छ</value>
+          </text>
+          <text id="/data/c82_person/person_consent/yes_to_care_delivery_only:label">
+            <value>घर भेट सेवा लिन चाहन्छु तर मेरो जानकारी कुनै पनि अध्ययनमा प्रयोग गर्न नपाउने शर्तमा</value>
+          </text>
+          <text id="/data/c82_person/person_consent:label">
+            <value>के तपाईं हाम्रो यस कार्यक्रममा सहभागी भई हामीलाई आफ्नो स्वास्थ्य सम्बन्धि जानकारी दिन चाहनुहुन्छ? तपाईंबाट प्राप्त जानकारीले हामीलाई हाम्रो यस कार्यक्रमलाई अझै स्तरीय बनाउंदै लैजान र यसको प्रभावकारीताको अध्ययन गर्न मदत पुर्याउदछ |</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/long:label">
+            <value>३ देखि ६ महिना भित्र फर्कन्छन</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/months:label">
+            <value>१ देखि ३ महिना भित्र फर्कन्छन</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/next:label">
+            <value>अर्को हप्ता फर्कन्छन</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/return_other:label">
+            <value>अरु केहि कारण</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/week:label">
+            <value>यहि हप्ता भित्र फर्कन्छन</value>
+          </text>
+          <text id="/data/c82_person/person_not_home/work:label">
+            <value>अहिले काममा/खेतमा, तर पछी फर्कन्छन</value>
+          </text>
+          <text id="/data/c82_person/person_not_home:label">
+            <value>घरमा हुनुहुन्न भने यौटा कारण छान्नुहोस् |</value>
+          </text>
+          <text id="/data/c82_person/person_suffix:label">
+            <value>यस व्यक्तिको ID उल्लेख गर्नुहोस</value>
+          </text>
+          <text id="/data/c82_person/relationship_specify:label">
+            <value>कृपया महिला र <output value=" /data/init/head_of_family_hoh_name_text "/> का बीचको नाता खुलाउनुहोस् |</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/father_mother:label">
+            <value>छोरा / छोरी</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/grandson_granddaughter:label">
+            <value>हजुरबुबा / हजुरआमा</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/husband_wife:label">
+            <value>श्रीमान/श्रीमती</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/me:label">
+            <value>आफू</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/niece_nephew:label">
+            <value>काका/काकी वा मामा/माइजू</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/relationship_other:label">
+            <value>अरु नै कोही</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/sil_dil:label">
+            <value>भाउजु/भाइ बुहारी वा देवर/जेठाजु</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/sister_brother:label">
+            <value>दिदि/बहिनि वा दाजु/भाई</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/son_daughter:label">
+            <value>आमा/ बुबा</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh/son_daughter_in_law:label">
+            <value>सासू/ससुरा</value>
+          </text>
+          <text id="/data/c82_person/relationship_to_hh:label">
+            <value><output value=" /data/init/head_of_family_hoh_name_text "/> नामका व्यक्ति <output value=" /data/c82_person/name_nepali/name_full_name "/> को के पर्नुहुन्छ?</value>
+          </text>
+          <text id="/data/c82_person/return_specify:label">
+            <value>कृपया कारण खुलाउनुहोस्</value>
+          </text>
+          <text id="/data/c82_person/service_type/cd_patient:label">
+            <value>दिर्घरोगी घरभेट कार्यक्रम</value>
+          </text>
+          <text id="/data/c82_person/service_type/htn_less_than_40yrs:label">
+            <value>उच्च रक्तचाप परिक्षण (४० बर्ष भन्दा कम उमेरको ब्यक्तिको लागी)</value>
+          </text>
+          <text id="/data/c82_person/service_type/imam_patient:label">
+            <value>शिघ्र कुपोषण स्याहार</value>
+          </text>
+          <text id="/data/c82_person/service_type/not_applicable:label">
+            <value>कुनै पनि होइन</value>
+          </text>
+          <text id="/data/c82_person/service_type/surgery_patient:label">
+            <value>शल्यक्रिया पछिको भेट कार्यक्रम</value>
+          </text>
+          <text id="/data/c82_person/service_type:label">
+            <value>यस व्यक्तिले थप कुन सेवा पाउँदै हुनुहुन्छ छान्नु होस् |</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_152:label">
+            <value>यस महिलालाई गर्भवती निरीक्षण समुहमा राखिनेछ | कृपया उनको गर्भवती निरीक्षण फारम आजै भर्नुहोला |</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_156:label">
+            <value>यो बच्चालाई २ वर्ष मुनिका बालबालिकाहरुको निरीक्षण समूहमा राखिनेछ | आजै यस बच्चाको २ वर्ष मुनिका बालबालिकाको निरीक्षण फारम भर्नुहोस ।</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_160:label">
+            <value>यो बच्चालाई शिघ्र कुपोषण समूहमा राखिने छ |</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_164:label">
+            <value>यस व्यक्तिलाई अपरेशन पछि भेट गरिने समुहमा राखिनेछ |</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_168:label">
+            <value>यस व्यक्तिलाई दीर्घरोगीहरुको समूहमा राखिने छ |</value>
+          </text>
+          <text id="/data/c82_person/services/generated_note_name_172:label">
+            <value>उहांलाई उच्चरक्तचाप पहिचान समुहमा राखिएको छ्
+कृपया उहांको फारम आाजै भर्नुहोस।</value>
+          </text>
+          <text id="/data/c82_person/services:label">
+            <value>सेवाहरु</value>
+          </text>
+          <text id="/data/c82_person/sex/female:label">
+            <value>महिला</value>
+          </text>
+          <text id="/data/c82_person/sex/male:label">
+            <value>पुरुष</value>
+          </text>
+          <text id="/data/c82_person/sex/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/data/c82_person/sex:label">
+            <value>लिङ्ग</value>
+          </text>
+          <text id="/data/c82_person/telephone_number:label">
+            <value>फोन नंबर
+सम्बन्धित ब्यक्ति अथवा परिवार को कुनैसदस्य को फोन नंबर हाल्नुहोस
+यदि फोन नंबर छैन भने (000-000-0000) हाल्नुहोस।</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:c82_person:create" prefix="J1!contact:c82_person:create!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <c82_person>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type>c82_person</contact_type>
+            <name/>
+            <today/>
+            <generated_note_name_30/>
+            <additional_info_ward_no/>
+            <person_suffix/>
+            <person_at_home/>
+            <person_not_home/>
+            <return_specify/>
+            <person_consent/>
+            <enrolled/>
+            <no_consent_text/>
+            <generated_note_name_53/>
+            <person_number/>
+            <name_nepali>
+              <name_given_name/>
+              <name_middle_name/>
+              <name_family_name/>
+              <person_given_name/>
+              <person_middle_name/>
+              <person_family_name/>
+              <name_full_name/>
+            </name_nepali>
+            <nepali_full_name/>
+            <name_english>
+              <name_english_given_name_english/>
+              <name_english_middle_name_english/>
+              <name_english_family_name_english/>
+              <name_english_full_name_english/>
+            </name_english>
+            <english_full_name/>
+            <telephone_number/>
+            <sex/>
+            <age_dob>
+              <estimate_dob/>
+              <age_entry/>
+              <dob_entry/>
+            </age_dob>
+            <age_calculation>
+              <age_calculate/>
+              <dob_calculate/>
+              <person_age/>
+            </age_calculation>
+            <age/>
+            <dob/>
+            <dob_display/>
+            <dob_display_nepali/>
+            <born_today/>
+            <generated_note_name_105/>
+            <marital_status/>
+            <child_mother_alive/>
+            <mothers_name/>
+            <caretakers_name/>
+            <mother>
+              <mother_case_id/>
+              <nepali_full_name/>
+              <english_full_name/>
+              <dob/>
+              <mother_name/>
+              <mother_age/>
+              <generated_note_name_121/>
+            </mother>
+            <delivery_location/>
+            <delivery_location_other/>
+            <healthpost_name/>
+            <relationship_to_hh/>
+            <relationship_specify/>
+            <communityID/>
+            <generated_note_name_133/>
+            <generated_note_name_134/>
+            <has_bahmni_id/>
+            <bahmniID_input/>
+            <generated_note_name_139/>
+            <bahmniid/>
+            <does_not_have_bahmni_id/>
+            <service_type/>
+            <services>
+              <services_pregnancy_history/>
+              <services_eligible_woman/>
+              <generated_note_name_152/>
+              <services_child_under_2/>
+              <generated_note_name_156/>
+              <services_imam_patient/>
+              <generated_note_name_160/>
+              <services_surgery_patient/>
+              <generated_note_name_164/>
+              <services_cd_patient/>
+              <generated_note_name_168/>
+              <services_hypertension_screening/>
+              <generated_note_name_172/>
+              <services_next_visit_due/>
+            </services>
+            <generated_note_name_177/>
+            <generated_note_name_178/>
+            <date_of_registration/>
+            <reporting_today/>
+            <reporting_report_eligible_women/>
+            <reporting_report_under2_children/>
+            <reporting_report_surgical_patients/>
+            <reporting_report_cd_patients/>
+            <reporting_report_imam_children/>
+            <reporting_report_hypertension_screening/>
+            <external_id/>
+            <notes/>
+          </c82_person>
+          <init>
+            <parent_id/>
+            <place_code/>
+            <name/>
+            <head_of_family_hoh_name_text/>
+            <familyID/>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="0"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/parent_id" type="string" calculate=" /data/c82_person/parent "/>
+      <bind nodeset="/data/init/place_code" type="string"/>
+      <bind nodeset="/data/init/name" type="string"/>
+      <bind nodeset="/data/init/head_of_family_hoh_name_text" type="string"/>
+      <bind nodeset="/data/init/familyID" type="string"/>
+      <bind nodeset="/data/c82_person/parent" type="string"/>
+      <bind nodeset="/data/c82_person/type" type="string"/>
+      <bind nodeset="/data/c82_person/contact_type" type="string"/>
+      <bind nodeset="/data/c82_person/name" type="string" calculate="concat( /data/c82_person/communityID , ' - ',  /data/c82_person/name_nepali/name_full_name )"/>
+      <bind nodeset="/data/c82_person/today" type="string" calculate="format-date(date(today()), &quot;%d-%m-%Y&quot;)"/>
+      <bind nodeset="/data/c82_person/generated_note_name_30" readonly="true()" type="string"/>
+      <bind nodeset="/data/c82_person/additional_info_ward_no" type="string"/>
+      <bind nodeset="/data/c82_person/person_suffix" type="int" required="true()"/>
+      <bind nodeset="/data/c82_person/person_at_home" type="select1" required="true()"/>
+      <bind nodeset="/data/c82_person/person_not_home" type="select1" relevant=" /data/c82_person/person_at_home  = 'no'" required="true()"/>
+      <bind nodeset="/data/c82_person/return_specify" type="string" relevant=" /data/c82_person/person_not_home  = 'return_other'" required="true()"/>
+      <bind nodeset="/data/c82_person/person_consent" type="select1" relevant=" /data/c82_person/person_at_home  = 'yes'" required="true()"/>
+      <bind nodeset="/data/c82_person/enrolled" type="string" calculate="if( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only', 1, if( /data/c82_person/person_at_home  = 'no', 0, ''))"/>
+      <bind nodeset="/data/c82_person/no_consent_text" type="string" relevant=" /data/c82_person/person_consent  = 'no'" required="true()"/>
+      <bind nodeset="/data/c82_person/generated_note_name_53" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'no'"/>
+      <bind nodeset="/data/c82_person/person_number" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_at_home  = 'no' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/name_nepali" relevant=" /data/c82_person/person_at_home  = 'no' or  /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/name_nepali/name_given_name" type="string" required="true()"/>
+      <bind nodeset="/data/c82_person/name_nepali/name_middle_name" type="string"/>
+      <bind nodeset="/data/c82_person/name_nepali/name_family_name" type="string" required="true()"/>
+      <bind nodeset="/data/c82_person/name_nepali/person_given_name" type="string" calculate="../name_given_name"/>
+      <bind nodeset="/data/c82_person/name_nepali/person_middle_name" type="string" calculate="../name_middle_name"/>
+      <bind nodeset="/data/c82_person/name_nepali/person_family_name" type="string" calculate="../name_family_name"/>
+      <bind nodeset="/data/c82_person/name_nepali/name_full_name" type="string" calculate="if( /data/c82_person/name_nepali/person_middle_name  != '', concat( /data/c82_person/name_nepali/person_given_name , &quot; &quot;,  /data/c82_person/name_nepali/person_middle_name , &quot; &quot;,  /data/c82_person/name_nepali/person_family_name ), concat( /data/c82_person/name_nepali/person_given_name , &quot; &quot;,  /data/c82_person/name_nepali/person_family_name ))"/>
+      <bind nodeset="/data/c82_person/nepali_full_name" type="string" calculate=" /data/c82_person/name_nepali/name_full_name "/>
+      <bind nodeset="/data/c82_person/name_english" relevant="( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_at_home  = 'no' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only')"/>
+      <bind nodeset="/data/c82_person/name_english/name_english_given_name_english" type="string"/>
+      <bind nodeset="/data/c82_person/name_english/name_english_middle_name_english" type="string"/>
+      <bind nodeset="/data/c82_person/name_english/name_english_family_name_english" type="string"/>
+      <bind nodeset="/data/c82_person/name_english/name_english_full_name_english" type="string" calculate="if( /data/c82_person/name_english/name_english_middle_name_english  != '', concat( /data/c82_person/name_english/name_english_given_name_english , &quot; &quot;,  /data/c82_person/name_english/name_english_middle_name_english , &quot; &quot;,  /data/c82_person/name_english/name_english_family_name_english ), concat( /data/c82_person/name_english/name_english_given_name_english , &quot; &quot;,  /data/c82_person/name_english/name_english_family_name_english ))"/>
+      <bind nodeset="/data/c82_person/english_full_name" type="string" calculate=" /data/c82_person/name_english/name_english_full_name_english "/>
+      <bind nodeset="/data/c82_person/telephone_number" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" constraint="string-length(.) = 10" jr:constraintMsg="Mobile Number has to be 10 digits." required="true()"/>
+      <bind nodeset="/data/c82_person/sex" type="select1" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" required="true()"/>
+      <bind nodeset="/data/c82_person/age_dob/estimate_dob" type="select1" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" required="true()"/>
+      <bind nodeset="/data/c82_person/age_dob/age_entry" type="int" relevant=" /data/c82_person/age_dob/estimate_dob  = 'yes'" required="true()"/>
+      <bind nodeset="/data/c82_person/age_dob/dob_entry" type="date" relevant=" /data/c82_person/age_dob/estimate_dob  = 'no'" constraint=". &lt;= today()" jr:constraintMsg="This date cannot be in the future." required="true()"/>
+      <bind nodeset="/data/c82_person/age_calculation/age_calculate" type="string" calculate="floor( difference-in-months( /data/c82_person/age_dob/dob_entry , today() ) div 12)"/>
+      <bind nodeset="/data/c82_person/age_calculation/dob_calculate" type="string" calculate="format-date(today() -  /data/c82_person/age_dob/age_entry  * 365.25, '%Y-%m-%d')"/>
+      <bind nodeset="/data/c82_person/age_calculation/person_age" type="string" calculate="../age_calculate"/>
+      <bind nodeset="/data/c82_person/age" type="string" calculate="if( /data/c82_person/age_dob/estimate_dob  = 'yes',  /data/c82_person/age_dob/age_entry ,  /data/c82_person/age_calculation/person_age )"/>
+      <bind nodeset="/data/c82_person/dob" type="string" calculate="if( /data/c82_person/age_dob/estimate_dob  = 'no',  /data/c82_person/age_dob/dob_entry ,  /data/c82_person/age_calculation/dob_calculate )"/>
+      <bind nodeset="/data/c82_person/dob_display" type="string" calculate="if( /data/c82_person/age_dob/estimate_dob  = 'no',  /data/c82_person/age_dob/dob_entry ,  /data/c82_person/age_calculation/dob_calculate )"/>
+      <bind nodeset="/data/c82_person/dob_display_nepali" type="string" calculate="to-bikram-sambat( /data/c82_person/dob_display )"/>
+      <bind nodeset="/data/c82_person/born_today" type="select1" relevant=" /data/c82_person/person_at_home  = 'yes' and  /data/c82_person/dob_display  = format-date(today(), '%Y-%m-%d')" constraint="not(selected(., 'no') and count-selected(.) = 1)" jr:constraintMsg="Please go back to the Date of Birth question to correct the date." required="true()"/>
+      <bind nodeset="/data/c82_person/generated_note_name_105" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/marital_status" type="select1" relevant="( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only') and  /data/c82_person/age  &gt;= 11" required="true()"/>
+      <bind nodeset="/data/c82_person/child_mother_alive" type="select1" relevant=" /data/c82_person/age  &lt;= 2" required="true()"/>
+      <bind nodeset="/data/c82_person/mothers_name" type="string" relevant=" /data/c82_person/child_mother_alive  = 'no'" required="true()"/>
+      <bind nodeset="/data/c82_person/caretakers_name" type="string" relevant=" /data/c82_person/child_mother_alive  = 'no'"/>
+      <bind nodeset="/data/c82_person/mother" relevant=" /data/c82_person/child_mother_alive  = 'yes'"/>
+      <bind nodeset="/data/c82_person/mother/mother_case_id" type="string" relevant=" /data/c82_person/age  &lt;= 2 and  /data/c82_person/child_mother_alive  = 'yes'"/>
+      <bind nodeset="/data/c82_person/mother/nepali_full_name" type="string"/>
+      <bind nodeset="/data/c82_person/mother/english_full_name" type="string"/>
+      <bind nodeset="/data/c82_person/mother/dob" type="string"/>
+      <bind nodeset="/data/c82_person/mother/mother_name" type="string" calculate="../nepali_full_name"/>
+      <bind nodeset="/data/c82_person/mother/mother_age" type="string" calculate="int((decimal-date-time(today()) - decimal-date-time(../dob)) div 365)"/>
+      <bind nodeset="/data/c82_person/mother/generated_note_name_121" readonly="true()" type="string"/>
+      <bind nodeset="/data/c82_person/delivery_location" type="select1" relevant=" /data/c82_person/age  &lt;= 2"/>
+      <bind nodeset="/data/c82_person/delivery_location_other" type="string" relevant=" /data/c82_person/delivery_location  = 'other'"/>
+      <bind nodeset="/data/c82_person/healthpost_name" type="string" relevant=" /data/c82_person/delivery_location  = 'health_post'"/>
+      <bind nodeset="/data/c82_person/relationship_to_hh" type="select1" relevant="( /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only') and  /data/c82_person/age  &gt;2"/>
+      <bind nodeset="/data/c82_person/relationship_specify" type="string" relevant=" /data/c82_person/relationship_to_hh  = 'relationship_other'"/>
+      <bind nodeset="/data/c82_person/communityID" type="string" calculate="concat( /data/init/familyID , '-',  /data/c82_person/person_suffix )" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only' or  /data/c82_person/person_at_home  = 'no'"/>
+      <bind nodeset="/data/c82_person/generated_note_name_133" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only' or  /data/c82_person/person_at_home  = 'no'"/>
+      <bind nodeset="/data/c82_person/generated_note_name_134" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/has_bahmni_id" type="select1" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/bahmniID_input" type="int" relevant=" /data/c82_person/has_bahmni_id  = 'yes'"/>
+      <bind nodeset="/data/c82_person/generated_note_name_139" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/bahmniid" type="string" relevant=" /data/c82_person/has_bahmni_id  = 'yes'"/>
+      <bind nodeset="/data/c82_person/does_not_have_bahmni_id" type="string"/>
+      <bind nodeset="/data/c82_person/service_type" type="select" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'" constraint="not(selected(., 'not_applicable') and count-selected(.) &gt; 1)" jr:constraintMsg="You cannot select 'Not Applicable' with other options."/>
+      <bind nodeset="/data/c82_person/services" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/services/services_pregnancy_history" type="string" calculate="if( /data/c82_person/services/services_eligible_woman  = 1 or ( /data/c82_person/marital_status  = 'widow' and  /data/c82_person/sex  = 'female' and  /data/c82_person/age  &gt;= 11 and  /data/c82_person/age  &lt;= 49), 1, 0)"/>
+      <bind nodeset="/data/c82_person/services/services_eligible_woman" type="string" calculate="if( /data/c82_person/age  &gt;= 11 and  /data/c82_person/age  &lt;= 49 and  /data/c82_person/sex  = 'female' and  /data/c82_person/marital_status  = 'single', 1, if( /data/c82_person/age  &gt;= 11 and  /data/c82_person/age  &lt;= 49 and  /data/c82_person/sex  = 'female' and  /data/c82_person/marital_status  = 'married', 1, 0))"/>
+      <bind nodeset="/data/c82_person/services/generated_note_name_152" readonly="true()" type="string" relevant=" /data/c82_person/services/services_eligible_woman  = 1"/>
+      <bind nodeset="/data/c82_person/services/services_child_under_2" type="string" calculate="if( /data/c82_person/age  &lt;= 2, 1, 0)"/>
+      <bind nodeset="/data/c82_person/services/generated_note_name_156" readonly="true()" type="string" relevant=" /data/c82_person/services/services_child_under_2  = 1"/>
+      <bind nodeset="/data/c82_person/services/services_imam_patient" type="string" calculate="if(selected( /data/c82_person/service_type , 'imam_patient'), 1, 0)"/>
+      <bind nodeset="/data/c82_person/services/generated_note_name_160" readonly="true()" type="string" relevant=" /data/c82_person/services/services_imam_patient  = 1"/>
+      <bind nodeset="/data/c82_person/services/services_surgery_patient" type="string" calculate="if(selected( /data/c82_person/service_type , 'surgery_patient'), 1, 0)"/>
+      <bind nodeset="/data/c82_person/services/generated_note_name_164" readonly="true()" type="string" relevant=" /data/c82_person/services/services_surgery_patient  = 1"/>
+      <bind nodeset="/data/c82_person/services/services_cd_patient" type="string" calculate="if(selected( /data/c82_person/service_type , 'cd_patient'), 1, 0)"/>
+      <bind nodeset="/data/c82_person/services/generated_note_name_168" readonly="true()" type="string" relevant=" /data/c82_person/services/services_cd_patient  = 1"/>
+      <bind nodeset="/data/c82_person/services/services_hypertension_screening" type="string" calculate="if( /data/c82_person/age  &gt;= 40 or  /data/c82_person/service_type  = 'htn_less_than_40yrs', 1, 0)"/>
+      <bind nodeset="/data/c82_person/services/generated_note_name_172" readonly="true()" type="string" relevant=" /data/c82_person/age  &gt;= 40 or  /data/c82_person/service_type  = 'htn_less_than_40yrs'"/>
+      <bind nodeset="/data/c82_person/services/services_next_visit_due" type="string" calculate="today()" relevant=" /data/c82_person/services/services_pregnancy_history  = 1 or  /data/c82_person/services/services_cd_patient  = 1 or  /data/c82_person/services/services_eligible_woman  = 1 or  /data/c82_person/services/services_child_under_2  = 1 or  /data/c82_person/services/services_imam_patient  = 1 or  /data/c82_person/services/services_surgery_patient  = 1 or  /data/c82_person/services/services_hypertension_screening  = 1"/>
+      <bind nodeset="/data/c82_person/generated_note_name_177" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'yes' or  /data/c82_person/person_consent  = 'yes_to_care_delivery_only'"/>
+      <bind nodeset="/data/c82_person/generated_note_name_178" readonly="true()" type="string" relevant=" /data/c82_person/person_consent  = 'no'"/>
+      <bind nodeset="/data/c82_person/date_of_registration" type="string" calculate="today()"/>
+      <bind nodeset="/data/c82_person/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/data/c82_person/reporting_report_eligible_women" type="string" calculate="if( /data/c82_person/services/services_eligible_woman  = 1, 1, 0)"/>
+      <bind nodeset="/data/c82_person/reporting_report_under2_children" type="string" calculate="if( /data/c82_person/services/services_child_under_2  = 1, 1, 0)"/>
+      <bind nodeset="/data/c82_person/reporting_report_surgical_patients" type="string" calculate="if( /data/c82_person/services/services_surgery_patient  = 1, 1, 0)"/>
+      <bind nodeset="/data/c82_person/reporting_report_cd_patients" type="string" calculate="if( /data/c82_person/services/services_cd_patient  = 1, 1, 0)"/>
+      <bind nodeset="/data/c82_person/reporting_report_imam_children" type="string" calculate="if( /data/c82_person/services/services_imam_patient  = 1, 1, 0)"/>
+      <bind nodeset="/data/c82_person/reporting_report_hypertension_screening" type="string" calculate="if( /data/c82_person/services/services_hypertension_screening  = 1, 1, 0)"/>
+      <bind nodeset="/data/c82_person/external_id" type="string"/>
+      <bind nodeset="/data/c82_person/notes" type="string"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <input appearance="db-object" ref="/data/init/parent_id"/>
+      <input appearance="hidden" ref="/data/init/name"/>
+    </group>
+    <group appearance="field-list" ref="/data/c82_person">
+      <label ref="jr:itext('/data/c82_person:label')"/>
+      <input ref="/data/c82_person/generated_note_name_30">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_30:label')"/>
+      </input>
+      <input ref="/data/c82_person/person_suffix">
+        <label ref="jr:itext('/data/c82_person/person_suffix:label')"/>
+      </input>
+      <select1 ref="/data/c82_person/person_at_home">
+        <label ref="jr:itext('/data/c82_person/person_at_home:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_at_home/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_at_home/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c82_person/person_not_home">
+        <label ref="jr:itext('/data/c82_person/person_not_home:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_not_home/work:label')"/>
+          <value>work</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_not_home/week:label')"/>
+          <value>week</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_not_home/next:label')"/>
+          <value>next</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_not_home/months:label')"/>
+          <value>months</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_not_home/long:label')"/>
+          <value>long</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_not_home/return_other:label')"/>
+          <value>return_other</value>
+        </item>
+      </select1>
+      <input ref="/data/c82_person/return_specify">
+        <label ref="jr:itext('/data/c82_person/return_specify:label')"/>
+      </input>
+      <select1 ref="/data/c82_person/person_consent">
+        <label ref="jr:itext('/data/c82_person/person_consent:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_consent/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_consent/yes_to_care_delivery_only:label')"/>
+          <value>yes_to_care_delivery_only</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/person_consent/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/c82_person/no_consent_text">
+        <label ref="jr:itext('/data/c82_person/no_consent_text:label')"/>
+      </input>
+      <input ref="/data/c82_person/generated_note_name_53">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_53:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/c82_person/name_nepali">
+        <label ref="jr:itext('/data/c82_person/name_nepali:label')"/>
+        <input ref="/data/c82_person/name_nepali/name_given_name">
+          <label ref="jr:itext('/data/c82_person/name_nepali/name_given_name:label')"/>
+        </input>
+        <input ref="/data/c82_person/name_nepali/name_middle_name">
+          <label ref="jr:itext('/data/c82_person/name_nepali/name_middle_name:label')"/>
+        </input>
+        <input ref="/data/c82_person/name_nepali/name_family_name">
+          <label ref="jr:itext('/data/c82_person/name_nepali/name_family_name:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/data/c82_person/name_english">
+        <label ref="jr:itext('/data/c82_person/name_english:label')"/>
+        <input ref="/data/c82_person/name_english/name_english_given_name_english">
+          <label ref="jr:itext('/data/c82_person/name_english/name_english_given_name_english:label')"/>
+        </input>
+        <input ref="/data/c82_person/name_english/name_english_middle_name_english">
+          <label ref="jr:itext('/data/c82_person/name_english/name_english_middle_name_english:label')"/>
+        </input>
+        <input ref="/data/c82_person/name_english/name_english_family_name_english">
+          <label ref="jr:itext('/data/c82_person/name_english/name_english_family_name_english:label')"/>
+        </input>
+      </group>
+      <input appearance="number" ref="/data/c82_person/telephone_number">
+        <label ref="jr:itext('/data/c82_person/telephone_number:label')"/>
+      </input>
+      <select1 ref="/data/c82_person/sex">
+        <label ref="jr:itext('/data/c82_person/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/sex/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/sex/male:label')"/>
+          <value>male</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/sex/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <group appearance="field-list" ref="/data/c82_person/age_dob">
+        <select1 ref="/data/c82_person/age_dob/estimate_dob">
+          <label ref="jr:itext('/data/c82_person/age_dob/estimate_dob:label')"/>
+          <item>
+            <label ref="jr:itext('/data/c82_person/age_dob/estimate_dob/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/c82_person/age_dob/estimate_dob/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/data/c82_person/age_dob/age_entry">
+          <label ref="jr:itext('/data/c82_person/age_dob/age_entry:label')"/>
+        </input>
+        <input ref="/data/c82_person/age_dob/dob_entry">
+          <label ref="jr:itext('/data/c82_person/age_dob/dob_entry:label')"/>
+        </input>
+      </group>
+      <group ref="/data/c82_person/age_calculation"/>
+      <select1 ref="/data/c82_person/born_today">
+        <label ref="jr:itext('/data/c82_person/born_today:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/born_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/born_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/c82_person/generated_note_name_105">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_105:label')"/>
+      </input>
+      <select1 ref="/data/c82_person/marital_status">
+        <label ref="jr:itext('/data/c82_person/marital_status:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/marital_status/married:label')"/>
+          <value>married</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/marital_status/single:label')"/>
+          <value>single</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/marital_status/widowed:label')"/>
+          <value>widowed</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/marital_status/divorced:label')"/>
+          <value>divorced</value>
+        </item>
+      </select1>
+      <select1 ref="/data/c82_person/child_mother_alive">
+        <label ref="jr:itext('/data/c82_person/child_mother_alive:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/child_mother_alive/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/child_mother_alive/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/c82_person/mothers_name">
+        <label ref="jr:itext('/data/c82_person/mothers_name:label')"/>
+      </input>
+      <input ref="/data/c82_person/caretakers_name">
+        <label ref="jr:itext('/data/c82_person/caretakers_name:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/c82_person/mother">
+        <input appearance="select-contact type-c82_person" ref="/data/c82_person/mother/mother_case_id">
+          <label ref="jr:itext('/data/c82_person/mother/mother_case_id:label')"/>
+        </input>
+        <input ref="/data/c82_person/mother/generated_note_name_121">
+          <label ref="jr:itext('/data/c82_person/mother/generated_note_name_121:label')"/>
+        </input>
+      </group>
+      <select1 ref="/data/c82_person/delivery_location">
+        <label ref="jr:itext('/data/c82_person/delivery_location:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/nyaya_health_hospital:label')"/>
+          <value>nyaya_health_hospital</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/primary_health_center:label')"/>
+          <value>primary_health_center</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/health_post:label')"/>
+          <value>health_post</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/district_hospital:label')"/>
+          <value>district_hospital</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/private_clinic_or_medical:label')"/>
+          <value>private_clinic_or_medical</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/home:label')"/>
+          <value>home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/road:label')"/>
+          <value>road</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/delivery_location/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/c82_person/delivery_location_other">
+        <label ref="jr:itext('/data/c82_person/delivery_location_other:label')"/>
+      </input>
+      <input ref="/data/c82_person/healthpost_name">
+        <label ref="jr:itext('/data/c82_person/healthpost_name:label')"/>
+      </input>
+      <select1 ref="/data/c82_person/relationship_to_hh">
+        <label ref="jr:itext('/data/c82_person/relationship_to_hh:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/me:label')"/>
+          <value>me</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/husband_wife:label')"/>
+          <value>husband_wife</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/son_daughter_in_law:label')"/>
+          <value>son_daughter_in_law</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/son_daughter:label')"/>
+          <value>son_daughter</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/grandson_granddaughter:label')"/>
+          <value>grandson_granddaughter</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/sister_brother:label')"/>
+          <value>sister_brother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/sil_dil:label')"/>
+          <value>sil_dil</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/niece_nephew:label')"/>
+          <value>niece_nephew</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/father_mother:label')"/>
+          <value>father_mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/relationship_to_hh/relationship_other:label')"/>
+          <value>relationship_other</value>
+        </item>
+      </select1>
+      <input ref="/data/c82_person/relationship_specify">
+        <label ref="jr:itext('/data/c82_person/relationship_specify:label')"/>
+      </input>
+      <input ref="/data/c82_person/generated_note_name_133">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_133:label')"/>
+      </input>
+      <input ref="/data/c82_person/generated_note_name_134">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_134:label')"/>
+      </input>
+      <select1 ref="/data/c82_person/has_bahmni_id">
+        <label ref="jr:itext('/data/c82_person/has_bahmni_id:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/has_bahmni_id/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/has_bahmni_id/yes_not_now:label')"/>
+          <value>yes_not_now</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/has_bahmni_id/yes_lost:label')"/>
+          <value>yes_lost</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/has_bahmni_id/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/c82_person/bahmniID_input">
+        <label ref="jr:itext('/data/c82_person/bahmniID_input:label')"/>
+      </input>
+      <input ref="/data/c82_person/generated_note_name_139">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_139:label')"/>
+      </input>
+      <select ref="/data/c82_person/service_type">
+        <label ref="jr:itext('/data/c82_person/service_type:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c82_person/service_type/surgery_patient:label')"/>
+          <value>surgery_patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/service_type/cd_patient:label')"/>
+          <value>cd_patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/service_type/imam_patient:label')"/>
+          <value>imam_patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/service_type/htn_less_than_40yrs:label')"/>
+          <value>htn_less_than_40yrs</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c82_person/service_type/not_applicable:label')"/>
+          <value>not_applicable</value>
+        </item>
+      </select>
+      <group ref="/data/c82_person/services">
+        <label ref="jr:itext('/data/c82_person/services:label')"/>
+        <input ref="/data/c82_person/services/generated_note_name_152">
+          <label ref="jr:itext('/data/c82_person/services/generated_note_name_152:label')"/>
+        </input>
+        <input ref="/data/c82_person/services/generated_note_name_156">
+          <label ref="jr:itext('/data/c82_person/services/generated_note_name_156:label')"/>
+        </input>
+        <input ref="/data/c82_person/services/generated_note_name_160">
+          <label ref="jr:itext('/data/c82_person/services/generated_note_name_160:label')"/>
+        </input>
+        <input ref="/data/c82_person/services/generated_note_name_164">
+          <label ref="jr:itext('/data/c82_person/services/generated_note_name_164:label')"/>
+        </input>
+        <input ref="/data/c82_person/services/generated_note_name_168">
+          <label ref="jr:itext('/data/c82_person/services/generated_note_name_168:label')"/>
+        </input>
+        <input ref="/data/c82_person/services/generated_note_name_172">
+          <label ref="jr:itext('/data/c82_person/services/generated_note_name_172:label')"/>
+        </input>
+      </group>
+      <input ref="/data/c82_person/generated_note_name_177">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_177:label')"/>
+      </input>
+      <input ref="/data/c82_person/generated_note_name_178">
+        <label ref="jr:itext('/data/c82_person/generated_note_name_178:label')"/>
+      </input>
+      <input ref="/data/c82_person/external_id">
+        <label ref="jr:itext('/data/c82_person/external_id:label')"/>
+      </input>
+      <input ref="/data/c82_person/notes">
+        <label ref="jr:itext('/data/c82_person/notes:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Menstruation Knowledge Assessment</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/menstruation_knowledge_assessment/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment/no:label">
+            <value>No</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment:label">
+            <value>If you agree to this, CHWs will ask fifteen questions about menstrual health and provide two options for each question. You will have to choose one answer you think is correct. The survey will take about 10 minutes. Are you interested to take part in the survey?</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answer_display:label">
+            <value>correct Answers**
+1. Menstruation is the lining of the uterus and blood leaving the body. It is not dirty.
+2. Since menstruation is a normal physiological process, women are not impure during menstruation.
+3. The pain is normal; it happens because the uterus is contracting.
+4. Menstruation can start between 10 and 15 years of age.
+5. Menstruation ends between 45 and 55 years old.
+6. Menstruation happens every 25 to 35 days, depending on the woman.
+7. Menstruation is normal.
+8. Menstruation is a sign that a girl can get pregnant if she has sexual relations with a man.
+9. A girl can bathe without worry if she is menstruating.
+10. You have to wash your vulva (the area around your vagina) at least once a day when you are menstruating).
+11. The inside of the vagina is self- cleaning and does not need to be washed.
+12. You have to change your sanitary pads or menstrual cloth 3 to 6 times a day
+13. If a girl uses menstrual cloth, she has to wash them with detergent and dry them in the sun.
+14. Chhaupadi is a crime. If you force your family members to stay in chhaupadi sheds, it will be punishable by law.
+15. If you are caught staying in chhau goth, family members forcing you to stay there will get punished.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/end_note:label">
+            <value>You have completed the Menstruation knowledge assessment. Please submit the form and continue her PNC care delivery.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing/is_bad:label">
+            <value>Bathing is bad for you if you are menstruating.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing/is_ok:label">
+            <value>A girl can bathe without worry if she is menstruating.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth/once_a_day:label">
+            <value>You have to change your sanitary pads or menstrual cloth once a day.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth/three_six_times_a_day:label">
+            <value>You have to change your sanitary pads or menstrual cloth 3 to 6 times a day</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process/wash_hands_only:label">
+            <value>A girl who is menstruating can wash her hands but not her genitalia.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process/wash_vulva:label">
+            <value>You have to wash your vulva (the area around your vagina) at least once a day when you are menstruating</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi/family_members_will_get_punished:label">
+            <value>If you are caught staying in chhau goth, family members forcing you to stay there will get punished.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi/you_will_be_punished:label">
+            <value>If you are caught staying in chhau goth, you will be punished.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign/can_get_pregnant:label">
+            <value>Menstruation is a sign that a girl can get pregnant if she has sexual relations with a man.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign/has_has_sex:label">
+            <value>Menstruation is a sign that a girl has already had sexual relations with a man.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok/chhaupadI_is_a_legal_tradition:label">
+            <value>Chhaupadi is a legal tradition. You can force your family members to stay in chhaupadi sheds</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok/chhaupadi_is_a_crime:label">
+            <value>Chhaupadi is a crime. If you force your family members to stay in chhaupadi sheds, it will be punishable by law.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is/illness:label">
+            <value>Menstruation is an illness</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is/normal:label">
+            <value>Menstruation is normal.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence/every_25_35_days:label">
+            <value>Menstruation happens every 25 to 35 days, depending on the woman.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence/same_date:label">
+            <value>Menstruation happens every month on the same date.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age/between_10_15:label">
+            <value>Menstruation can start between 10 and 15 years of age.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age/thirteen_years_old:label">
+            <value>Menstruation can happen as soon as you turn 13 years old.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan/between_45_55:label">
+            <value>Menstruation ends between 45 and 55 years old.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan/whole_life:label">
+            <value>Girls will menstruate their whole life.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain/is_dangerous:label">
+            <value>The pain is dangerous.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain/is_normal:label">
+            <value>The pain is normal; it happens because the uterus is contracting.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning/self_cleaning:label">
+            <value>The inside of the vagina is self- cleaning and does not need to be washed</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning/should_be_washed:label">
+            <value>Menstrual blood makes the inside of the vagina dirty and it should be washed after menstruating</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth/hide_and_wash:label">
+            <value>The menstrual cloth should never see the sun, you have to wash them under other clothes to hide them.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth/wash_and_dry:label">
+            <value>If a girl uses menstrual cloth, she has to wash them with detergent and dry them in the sun.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses/something_dirty:label">
+            <value>Menstruation is something dirty that comes out of the body.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses/uterus_lining:label">
+            <value>Menstruation is the lining of the uterus and blood leaving the body. It is not dirty.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are/impure:label">
+            <value>Women are impure during menstruation</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are/not_impure:label">
+            <value>Since menstruation is a normal physiological process, women are not impure during menstruation.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are:label">
+            <value>Select an option that you think is correct</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/family_refused_service:label">
+            <value>Family members refused service</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/patient_busy:label">
+            <value>Patient was busy</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/patient_doesn_want_to_give_info:label">
+            <value>Patient does not want to divulge this information</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason:label">
+            <value>If no, please select a reason</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/postpartum_women_mensurational_hygiene:label">
+            <value>This form is to assess the knowledge of Postpartum women, who are within 60 days of their delivery, about Menstruation Hygiene.</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment:label">
+            <value>Menstruational Related Information</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/menstruation_knowledge_assessment/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment/no:label">
+            <value>हुँदैन</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment/yes:label">
+            <value>हुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment:label">
+            <value>यदि तपाईं सहमत हुनुभयो भने, सामुदायिक स्वास्थ्य कर्ताहरुले तपाईंलाई १५ वटा प्रश्नहरु सोध्नुहुन्छ र हरेक प्रश्नको दुइवटा जवाफ भन्नुहुनेछ। तपाईंले दुईमध्ये जुन जवाफ सहि लाग्यो त्यहि छान्नुपर्छ। यो सर्वेक्षण करीब १० मिनेटको हुनेछ। यो सर्वेक्षणमा भाग लिने इच्छुक हुनुहुन्छ?</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answer_display:label">
+            <value>**सहि उत्तरहरु**
+
+१. महिनावारी हुँदा पाठेघरको भित्री छाला र रगत बाहिर निस्कन्छ l यो फोहोर हुँदैन l
+२. महिनावारी सामान्य शारीरिक प्रकृया हो त्यसैले महिलाहरु अशुद्ध हुदैनन् l
+३. महिनावारी हुँदा पाठेघर खुम्चिने भएकोले दुख्नु सामान्य हो l
+४. महिनावारी १० र १५ उमेरको बिचमा सुरु हुन्छ l
+५. महिनावारी ४५ र ५५ बर्षको बिचमा सुक्छ l
+६. महिनावारी २५ देखि ३५ दिनभित्रमा हुन्छ l
+७. महिनावारी हुनु सामान्य हो l
+८. यदि महिलाले पुरूषसंग यौन सम्पर्क राख्यो भने गर्भ रहन सक्छ भनेर महिनावारीले सङ्केत गर्छ l
+९. महिनावारी हुँदा महिलाहरुले आरामले नुहाउन हुन्छ l
+१०. महिनावारी हुँदा दिनमा एक चोटी योनीको बाहिर (भल्भा) सफा गर्नु पर्छ l
+११. योनीको भित्री भाग स्वत सफा हुने भएकोले आफुले सफा गर्नु पर्दैन l
+१२. महिनावारी हुँदा स्यानिटेरी प्याड वा कपडा दिनमा ३ देखि ६ चोटी फेर्नु पर्छ l
+१३. यदि महिनावारीमा कपडाको प्रयोग गर्नु हुन्छ भने राम्रोसंग साबुन पानीले धोएर घाममा सुकाउनु पर्छ l
+१४. छाउपड़ी प्रथा कानुनी अपराध हो l यदि तपाईंले परिवारका महिलाहरुलाई छाउ गोठमा बस्न बाध्य गराउनु भयो भने, तपाईंलाई कानुन बमोजिम सजाय हुनेछ
+१५. यदि तपाईं छाउ गोठमा बसेको बेलामा भेटिनु भयो भने, तपाईंलाई गोठमा बस्न बाध्य बनाउने घरका सदस्यलाई सजाय हुनेछ l</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/end_note:label">
+            <value>तपाईं "महिनावारीसंग सम्बन्धित ज्ञानको मुल्यांकन" फारमको अन्त्यमा हुनुहुन्छ | अगाडी गएर फारम बुझाउनुहोस र महिलाको सुत्केरी स्याहार सेवा जारी राख्नुहोस |</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing/is_bad:label">
+            <value>महिनावारी हुँदा नुहाउनु राम्रो हुदैन</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing/is_ok:label">
+            <value>महिनावारी हुँदा स्त्रीहरुले आरामले नुहाउन हुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth/once_a_day:label">
+            <value>महिनावारी हुँदा स्यानिटेरी प्याड वा कपडा दिनमा एक चोटी फेर्नु पर्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth/three_six_times_a_day:label">
+            <value>महिनावारी हुँदा स्यानिटेरी प्याड वा कपडा दिनमा ३ देखि ६ चोटी फेर्नु पर्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process/wash_hands_only:label">
+            <value>महिनावारी हुँदा स्त्रीहरुले हात धुनुहुन्छ तर योनीको बाहिर सफा गर्न हुदैन</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process/wash_vulva:label">
+            <value>महिनावारी हुँदा दिनमा एक चोटी योनीको बाहिर (भल्भा) सफा गर्नु पर्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi/family_members_will_get_punished:label">
+            <value>यदि तपाईं छाउ गोठमा बसेको बेलामा भेटिनु भयो भने, तपाईंलाई गोठमा बस्न बाध्य बनाउने घरका सदस्यलाई सजाय हुनेछ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi/you_will_be_punished:label">
+            <value>यदि तपाईं छाउ गोठमा बसेको बेलामा भेटिनु भयो भने, तपाईंलाई सजाय हुनेछ l</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign/can_get_pregnant:label">
+            <value>यदि महिलाले पुरूषसंग यौन सम्पर्क राख्यो भने गर्भ रहन सक्छ भनेर महिनावारीले सङ्केत गर्छ l</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign/has_has_sex:label">
+            <value>महिनावारी कुनै पुरूषसंग यौन सम्पर्क भइसकेपछि हुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok/chhaupadI_is_a_legal_tradition:label">
+            <value>छाउपड़ी प्रथा कानुनी हो l तपाईंले आफ्नो घरको महिलाहरुलाई गोठमा बस्न बाध्य गराउन सक्नु हुनेछ l</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok/chhaupadi_is_a_crime:label">
+            <value>छाउपड़ी प्रथा कानुनी अपराध हो l यदि तपाईंले परिवारका महिलाहरुलाई छाउ गोठमा बस्न बाध्य गराउनु भयो भने, तपाईंलाई कानुन बमोजिम सजाय हुनेछ l</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is/illness:label">
+            <value>महिनावारी एउटा रोग हो</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is/normal:label">
+            <value>महिनावारी हुनु सामान्य हो</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence/every_25_35_days:label">
+            <value>महिनावारी महिला हेरेर २५ देखि ३५ दिनभित्रमा हुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence/same_date:label">
+            <value>महिनावारी हरेक महिना यौटै मितिमा हुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age/between_10_15:label">
+            <value>महिनावारी १० र १५ उमेरको बिचमा सुरु हुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age/thirteen_years_old:label">
+            <value>१३ वर्ष पुग्ने बित्तिकै केटीहरुमा महिनावारी सुरु हुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan/between_45_55:label">
+            <value>महिनावारी ४५ र ५५ बर्षको बिचमा सुक्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan/whole_life:label">
+            <value>महिनावारी बाचुन्जेलसम्म भइरहन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain/is_dangerous:label">
+            <value>महिनावारी हुँदा दुख्नु खतरनाक हो</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain/is_normal:label">
+            <value>महिनावारी हुँदा पाठेघर खुम्चिने भएकोले दुख्नु सामान्य हो</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning/self_cleaning:label">
+            <value>योनीको भित्री भाग स्वत सफा हुने भएकोले आफुले सफा गर्नु पर्दैन</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning/should_be_washed:label">
+            <value>महिनावारी हुदा रगतले गर्दा योनीको भित्री भाग फोहोर हुने भएकोले आफुले नै सफा गर्नु पर्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth/hide_and_wash:label">
+            <value>महिनावारी हुदा प्रयोग गर्ने कपडा घाममा राख्नु हुदैन र अरु लुगाहरु भित्र नदेख्ने गरि धुनु पर्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth/wash_and_dry:label">
+            <value>यदि महिनावारीमा कपडाको प्रयोग गर्नु हुन्छ भने राम्रोसंग साबुन पानीले धोएर घाममा सुकाउनु पर्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses/something_dirty:label">
+            <value>महिनावारी हुँदा शरीर भित्रको फोहोर रगत बाहिर निस्कन्छ l</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses/uterus_lining:label">
+            <value>महिनावारी हुँदा पाठेघरको भित्री छाला र रगत बाहिर निस्कन्छ l यो फोहोर हुँदैन l</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are/impure:label">
+            <value>महिनावारी हुँदा महिलाहरु अशुद्ध हुन्छन</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are/not_impure:label">
+            <value>महिनावारी सामान्य शारीरिक प्रकृया हो त्यसैले महिलाहरु अशुद्ध हुदैनन्</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are:label">
+            <value>यी महिलालाई यी दुई मध्ये जुन भनाइ सही लाग्छ त्यो भनाइ छान्नुहोला</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/family_refused_service:label">
+            <value>परिवारका सदस्यले मानेनन्</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/patient_busy:label">
+            <value>महिला ब्यस्त हुनुहुन्छ</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason/patient_doesn_want_to_give_info:label">
+            <value>महिलालाइ हाम्रो सेवा लिन मन छैन</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/no_service_reason:label">
+            <value>किन चाहनु हुन्न, कारण दिनुहोस</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment/postpartum_women_mensurational_hygiene:label">
+            <value>यो फारम ६० दिन भित्रका सुत्केरी महिलाहरुको महिनावारीसंग सम्बन्धित ज्ञानको मुल्यांकन गर्नको लागि हो |</value>
+          </text>
+          <text id="/menstruation_knowledge_assessment/personal_assesment:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <menstruation_knowledge_assessment id="menstruation_knowledge_assessment" prefix="J1!menstruation_knowledge_assessment!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <personal_assesment>
+            <postpartum_women_mensurational_hygiene/>
+            <pp_days/>
+            <family_id/>
+            <woman_name/>
+            <menstruation_form_counter/>
+            <agrees_for_assessment/>
+            <no_service_reason/>
+            <group_assessment_agreeconsent>
+              <what_is_menses/>
+              <women_are/>
+              <menstrual_pain/>
+              <menses_start_age/>
+              <menses_timespan/>
+              <menses_occurrence/>
+              <menses_is/>
+              <is_a_sign/>
+              <bathing/>
+              <cleaning_process/>
+              <vagina_cleaning/>
+              <change_pads_or_cloth/>
+              <washing_menstrual_cloth/>
+              <is_chhaupadi_ok/>
+              <if_found_in_chhaupadi/>
+            </group_assessment_agreeconsent>
+            <correct_answer>
+              <correct_answers_what_is_menses/>
+              <correct_answers_women_are/>
+              <correct_answers_menstrual_pain/>
+              <correct_answers_menses_start_age/>
+              <correct_answers_menses_timespan/>
+              <correct_answers_menses_occurrence/>
+              <correct_answers_menses_is/>
+              <correct_answers_is_a_sign/>
+              <correct_answers_bathing/>
+              <correct_answers_cleaning_process/>
+              <correct_answers_vagina_cleaning/>
+              <correct_answers_change_pads_or_cloth/>
+              <correct_answers_washing_menstrual_cloth/>
+              <correct_answers_is_chhaupadi_ok/>
+              <correct_answers_if_found_in_chhaupadi/>
+              <correct_answers_total_score/>
+              <correct_answer_display/>
+            </correct_answer>
+            <end_note/>
+          </personal_assesment>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </menstruation_knowledge_assessment>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/menstruation_knowledge_assessment/inputs" required="field-list"/>
+      <bind nodeset="/menstruation_knowledge_assessment/inputs/source" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/inputs/source_id" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/inputs/contact/_id" type="db:person" required="db-object"/>
+      <bind nodeset="/menstruation_knowledge_assessment/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/menstruation_knowledge_assessment/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/menstruation_knowledge_assessment/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /menstruation_knowledge_assessment/reporting_today )"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_nepali_short" type="string" calculate="substring-after( /menstruation_knowledge_assessment/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_nepali_month" type="string" calculate="substring-before( /menstruation_knowledge_assessment/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_nepali_year" type="string" calculate="substring-after( /menstruation_knowledge_assessment/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_month_today" type="string" calculate="if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'जेठ', 'Jestha', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'असार', 'Ashadh', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'साउन', 'Shrawan', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'असोज', 'Ashwin', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'पौष', 'Poush', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'माघ', 'Magh', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /menstruation_knowledge_assessment/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_year_today" type="string" calculate="concat(if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /menstruation_knowledge_assessment/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/menstruation_knowledge_assessment/reporting_today_short" type="string" calculate="concat( /menstruation_knowledge_assessment/reporting_month_today , ' ',  /menstruation_knowledge_assessment/reporting_year_today )"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/postpartum_women_mensurational_hygiene" readonly="true()" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/pp_days" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/family_id" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/woman_name" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/menstruation_form_counter" type="string" calculate="0"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/no_service_reason" type="select1" required="true()" relevant=" /menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment  = 'no'"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent" relevant=" /menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment  = 'yes'"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi" type="select1" required="true()"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer" relevant=" /menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment  = 'yes'"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_what_is_menses" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses  = 'uterus_lining', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_women_are" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are  = 'not_impure', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menstrual_pain" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain  = 'is_normal', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_start_age" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age  = 'between_10_15', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_timespan" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan  = 'between_45_55', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_occurrence" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence  = 'every_25_35_days', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_is" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is  = 'normal', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_is_a_sign" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign  = 'can_get_pregnant', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_bathing" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing  = 'is_ok', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_cleaning_process" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process  = 'wash_vulva', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_vagina_cleaning" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning  = 'self_cleaning', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_change_pads_or_cloth" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth  = 'three_six_times_a_day', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_washing_menstrual_cloth" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth  = 'wash_and_dry', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_is_chhaupadi_ok" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok  = 'chhaupadi_is_a_crime', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_if_found_in_chhaupadi" type="string" calculate="if( /menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi  = 'family_members_will_get_punished', 1, 0)"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_total_score" type="string" calculate=" /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_what_is_menses  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_women_are  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menstrual_pain  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_start_age  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_timespan  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_occurrence  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_menses_is  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_is_a_sign  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_bathing  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_cleaning_process  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_vagina_cleaning  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_change_pads_or_cloth  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_washing_menstrual_cloth  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_is_chhaupadi_ok  +  /menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answers_if_found_in_chhaupadi "/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answer_display" readonly="true()" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/personal_assesment/end_note" readonly="true()" type="string"/>
+      <bind nodeset="/menstruation_knowledge_assessment/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="./source = 'user'" ref="/menstruation_knowledge_assessment/inputs">
+      <label ref="jr:itext('/menstruation_knowledge_assessment/inputs:label')"/>
+      <group ref="/menstruation_knowledge_assessment/inputs/contact">
+        <label ref="jr:itext('/menstruation_knowledge_assessment/inputs/contact:label')"/>
+        <input ref="/menstruation_knowledge_assessment/inputs/contact/_id">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/menstruation_knowledge_assessment/inputs/contact/nepali_full_name">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/inputs/contact/nepali_full_name:label')"/>
+        </input>
+        <input ref="/menstruation_knowledge_assessment/inputs/contact/patient_id">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/inputs/contact/patient_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/menstruation_knowledge_assessment/personal_assesment">
+      <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment:label')"/>
+      <input ref="/menstruation_knowledge_assessment/personal_assesment/postpartum_women_mensurational_hygiene">
+        <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/postpartum_women_mensurational_hygiene:label')"/>
+      </input>
+      <select1 ref="/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment">
+        <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment:label')"/>
+        <hint>You are invited to participate in a study conducted by Nyaya Health Nepal-Possible. We hope to learn more about how to improve reproductive, maternal, newborn, and child health through a bundled healthcare delivery intervention. We would like to invite you to participate in a menstrual health knowledge assessment survey. We want to assess the menstrual health knowledge of women in this community before implementing a specific intervention on menstrual health as part of Group ANC. At the end of the survey, we will give you the correct answers so you will have improved knowledge on menstrual health.
+You were selected as a possible participant in this study because you are a postpartum woman of reproductive age (15-49) living in this area where the intervention will be offered in the future.
+
+The purpose of this consent script is to give you the information you need to help you decide whether or not to take part in the study. When all your questions have been answered, you can decide if you want to be in the study or not. This process is called "informed consent."</hint>
+        <item>
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/agrees_for_assessment/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/menstruation_knowledge_assessment/personal_assesment/no_service_reason">
+        <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/no_service_reason:label')"/>
+        <item>
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/no_service_reason/patient_doesn_want_to_give_info:label')"/>
+          <value>patient_doesn_want_to_give_info</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/no_service_reason/patient_busy:label')"/>
+          <value>patient_busy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/no_service_reason/family_refused_service:label')"/>
+          <value>family_refused_service</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/no_service_reason/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <group ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent">
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses/something_dirty:label')"/>
+            <value>something_dirty</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/what_is_menses/uterus_lining:label')"/>
+            <value>uterus_lining</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are/impure:label')"/>
+            <value>impure</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/women_are/not_impure:label')"/>
+            <value>not_impure</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain/is_normal:label')"/>
+            <value>is_normal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menstrual_pain/is_dangerous:label')"/>
+            <value>is_dangerous</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age/thirteen_years_old:label')"/>
+            <value>thirteen_years_old</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_start_age/between_10_15:label')"/>
+            <value>between_10_15</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan/between_45_55:label')"/>
+            <value>between_45_55</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_timespan/whole_life:label')"/>
+            <value>whole_life</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence/same_date:label')"/>
+            <value>same_date</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_occurrence/every_25_35_days:label')"/>
+            <value>every_25_35_days</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is/normal:label')"/>
+            <value>normal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/menses_is/illness:label')"/>
+            <value>illness</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign/has_has_sex:label')"/>
+            <value>has_has_sex</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_a_sign/can_get_pregnant:label')"/>
+            <value>can_get_pregnant</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing/is_ok:label')"/>
+            <value>is_ok</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/bathing/is_bad:label')"/>
+            <value>is_bad</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process/wash_hands_only:label')"/>
+            <value>wash_hands_only</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/cleaning_process/wash_vulva:label')"/>
+            <value>wash_vulva</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning/self_cleaning:label')"/>
+            <value>self_cleaning</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/vagina_cleaning/should_be_washed:label')"/>
+            <value>should_be_washed</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth/once_a_day:label')"/>
+            <value>once_a_day</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/change_pads_or_cloth/three_six_times_a_day:label')"/>
+            <value>three_six_times_a_day</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth/wash_and_dry:label')"/>
+            <value>wash_and_dry</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/washing_menstrual_cloth/hide_and_wash:label')"/>
+            <value>hide_and_wash</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok/chhaupadi_is_a_crime:label')"/>
+            <value>chhaupadi_is_a_crime</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/is_chhaupadi_ok/chhaupadI_is_a_legal_tradition:label')"/>
+            <value>chhaupadI_is_a_legal_tradition</value>
+          </item>
+        </select1>
+        <select1 ref="/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi:label')"/>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi/you_will_be_punished:label')"/>
+            <value>you_will_be_punished</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/group_assessment_agreeconsent/if_found_in_chhaupadi/family_members_will_get_punished:label')"/>
+            <value>family_members_will_get_punished</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="/menstruation_knowledge_assessment/personal_assesment/correct_answer">
+        <input ref="/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answer_display">
+          <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/correct_answer/correct_answer_display:label')"/>
+        </input>
+      </group>
+      <input ref="/menstruation_knowledge_assessment/personal_assesment/end_note">
+        <label ref="jr:itext('/menstruation_knowledge_assessment/personal_assesment/end_note:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

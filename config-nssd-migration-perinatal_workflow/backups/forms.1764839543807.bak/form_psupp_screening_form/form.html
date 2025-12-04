@@ -1,0 +1,32 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix pages" dir="ltr" data-form-id="psupp_form">
+<section class="form-logo"></section><h3 dir="auto" id="form-title">PSuPP Form</h3>
+<select id="form-languages" data-default-lang=""><option value="en">en</option> <option value="ne">ne</option> </select>
+  
+  
+    <section class="or-group or-branch pre-init or-appearance-field-list " name="/psupp_screening_form/inputs" data-relevant="./source = 'user'"><h4>
+<span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/inputs:label">Patient</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/inputs:label">Patient</span>
+</h4>
+<section class="or-group " name="/psupp_screening_form/inputs/contact"><h4>
+<span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/inputs/contact:label">Contact</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/inputs/contact:label">Contact</span>
+</h4>
+<label class="question non-select or-appearance-db-object "><span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/inputs/contact/_id:label">What is the patient's name?</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/inputs/contact/_id:label">सेवा लिनेको नाम के हो?</span><input type="text" name="/psupp_screening_form/inputs/contact/_id" data-type-xml="person"></label>
+      </section>
+      </section>
+    <section class="or-group-data or-appearance-field-list " name="/psupp_screening_form/psupp_form"><label class="question non-select "><span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/psupp_form/start_intervn:label">You are going to start the 'contact follow up' with the participant. This is the part of intervention designed to support participant with suicidality.</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/psupp_form/start_intervn:label">अब तपाईं सहभागीसँग 'फलो-अप कल' सुरु गर्न लाग्नुभएको छ। यो आत्महत्या सम्बन्धी जोखिममा रहेका सहभागीलाई सहयोग गर्न बनाइएको एउटा कार्यक्रमको भाग हो ।</span><input type="text" name="/psupp_screening_form/psupp_form/start_intervn" data-type-xml="string" readonly></label><label class="question non-select "><span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/psupp_form/redcap_id:label">Please enter REDCap/ Participant ID</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/psupp_form/redcap_id:label">कृपया REDCap/ सहभागी आईडी राख्नुहोस्।</span><span class="required">*</span><input type="text" name="/psupp_screening_form/psupp_form/redcap_id" data-required="true()" data-type-xml="string"><span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span></label><fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/psupp_form/cont_call:label">Did you call the participant and confirm the home visit schedule?</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/psupp_form/cont_call:label">के तपाईंले सहभागीलाई फोन गरेर घर जाने समय मिलाउनुभयो?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class=""><input type="radio" name="/psupp_screening_form/psupp_form/cont_call" data-name="/psupp_screening_form/psupp_form/cont_call" value="yes" data-required="true()" data-type-xml="select1"><span lang="en" class="option-label active" data-itext-id="/psupp_screening_form/psupp_form/cont_call/yes:label">Yes</span><span lang="ne" class="option-label " data-itext-id="/psupp_screening_form/psupp_form/cont_call/yes:label">गरे</span></label><label class=""><input type="radio" name="/psupp_screening_form/psupp_form/cont_call" data-name="/psupp_screening_form/psupp_form/cont_call" value="no" data-required="true()" data-type-xml="select1"><span lang="en" class="option-label active" data-itext-id="/psupp_screening_form/psupp_form/cont_call/no:label">No</span><span lang="ne" class="option-label " data-itext-id="/psupp_screening_form/psupp_form/cont_call/no:label">गरिन</span></label>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<label class="question or-branch pre-init non-select "><span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/psupp_form/if_no:label">Please call the participant, and fill up the PSuPP Form again</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/psupp_form/if_no:label">कृपया आज सहभागीलाई फोन गर्नुहोस् र "PSuPP फारम " फेरी भर्नुहोस् ।</span><input type="text" name="/psupp_screening_form/psupp_form/if_no" data-relevant=" /psupp_screening_form/psupp_form/cont_call  = 'no'" data-type-xml="string" readonly></label><label class="question non-select "><span lang="en" class="question-label active" data-itext-id="/psupp_screening_form/psupp_form/end_visit:label">You have completed 1st visit</span><span lang="ne" class="question-label " data-itext-id="/psupp_screening_form/psupp_form/end_visit:label">तपाइको पहिलो भेट सकिएको छ ।</span><input type="text" name="/psupp_screening_form/psupp_form/end_visit" data-type-xml="string" readonly></label>
+      </section>
+  
+<fieldset id="or-calculated-items" style="display:none;">
+<label class="calculation non-select "><input type="hidden" name="/psupp_screening_form/patient_uuid" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/psupp_screening_form/patient_name" data-calculate="../inputs/contact/name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/psupp_screening_form/patient_id" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/psupp_screening_form/patient_age" data-calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/psupp_screening_form/meta/instanceID" data-calculate="concat('uuid:', uuid())" data-type-xml="string"></label>
+</fieldset>
+</form>

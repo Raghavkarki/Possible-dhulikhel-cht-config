@@ -1,0 +1,5 @@
+{
+  "place": false,
+  "person": true,
+  "expression": "summary.active && contact.contact_type === 'c82_person' && summary.eligible_u2 && !summary.has_initialized_u2"
+}

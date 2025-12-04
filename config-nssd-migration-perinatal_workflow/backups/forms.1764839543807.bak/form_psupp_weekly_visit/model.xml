@@ -1,0 +1,41 @@
+
+  <model>
+    <instance>
+        <psupp_weekly_visit xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="psupp_weekly_visit" prefix="J1!psupp_weekly_visit!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+              <date_of_registration/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <weekly_visit tag="hidden"/>
+          <epds>
+            <psupp_week_1/>
+            <psupp_week_2/>
+            <psupp_week_3/>
+            <psupp/>
+          </epds>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </psupp_weekly_visit>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+

@@ -1,0 +1,1158 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Surgical Followup</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/surgical_followup/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/surgical_followup/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/surgical_followup/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/surgical_followup/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/surgical_followup/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/surgical_followup/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/surgical_followup/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/end_note:label">
+            <value>Thank you for completing this survey. Please save and close the form.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup/no:label">
+            <value>No</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup:label">
+            <value>Have you been called for follow up?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/followup_date:label">
+            <value>If yes, when?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_counsel:label">
+            <value>Please counsel the patient about the importance of follow up visits.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_other_specify:label">
+            <value>Please specify why you missed the followup</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/busy:label">
+            <value>Was busy</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/forgot:label">
+            <value>Forgot to follow up</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/wound_ok:label">
+            <value>Wound is ok, so didn't consider necessary</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason:label">
+            <value>If yes, then why did you miss the follow up ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup/no:label">
+            <value>No</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup:label">
+            <value>Has the follow up date passed?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_for_fever:label">
+            <value>If fever, please check temperature: If temperature &gt; 98.7 F then the patient has fever.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_wound_for_pus:label">
+            <value>Please ask patient and verify discharge/ pus from wound.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_notes/hospital_referral:label">
+            <value>Please advise the patient to visit the hospital immediately.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems/no:label">
+            <value>No</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems:label">
+            <value>Do you have any other health problems from the surgery that you want to share?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/problems_specified:label">
+            <value>If yes, please specify the problems you have.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/absence_other:label">
+            <value>Please specify.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/family_refused_service:label">
+            <value>Family members refused service</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/in_pain:label">
+            <value>Patient is in pain</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/no_participation:label">
+            <value>Patient does not want to participate</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/patient_busy:label">
+            <value>Patient is busy</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/weakness:label">
+            <value>Patient is weak</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent:label">
+            <value>Please select a reason why.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent_other_specify:label">
+            <value>If none of the above, please specify</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home:label">
+            <value>Is the patient at home?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent/no:label">
+            <value>No</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent:label">
+            <value>Does the patient agree to participate in this survey</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/back_6_month:label">
+            <value>Will be back anytime withing 6 months.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/back_in_1_year:label">
+            <value>Temporary Migration Gone for more than 6 months but less than a year</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/died:label">
+            <value>Patient has died</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/gone_for_work:label">
+            <value>Gone to Work</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/location_unknown:label">
+            <value>Don't know where this person has gone to.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/migrated:label">
+            <value>Permanent Migration(gone for more than 1 year)</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence:label">
+            <value>Please provide a reason for his/her absence.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message:label">
+            <value>If this patient has died or permanently migrated, his/her case will be closed and name removed from care delivery.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message_migrated:label">
+            <value>If this patient has permanently migrated, then she will be removed from care delivery forms</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/other_specify:label">
+            <value>If other, please specify.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/abscess:label">
+            <value>Abscess</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/amputation:label">
+            <value>Amputation</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/appendectomy:label">
+            <value>Appendectomy</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/c_section:label">
+            <value>Caesarian Section</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cellulitis:label">
+            <value>Cellulitis</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cervical_laceration:label">
+            <value>Repair of Cervical Laceration</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cut_injury:label">
+            <value>Cut Injury</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/debridement:label">
+            <value>Debridement</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/fracture_non_operated:label">
+            <value>Fracture (Non-operated)</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hernia_repair:label">
+            <value>Hernia Repair</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hydrocele:label">
+            <value>Hydrocele</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hysterectomy:label">
+            <value>Hysterectomy</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/implant_removal:label">
+            <value>Implant Removal</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/mastectomy:label">
+            <value>Mastectomy</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/minilap:label">
+            <value>Minilap</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/ortho_lower_limb:label">
+            <value>Orthopedic Surgery Lower Limb</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/ortho_surgery_upper_limb:label">
+            <value>Orthopedic Surgery Upper Limb</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/phimosis:label">
+            <value>Phimosis</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/plating:label">
+            <value>Plating</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/shoulder_dislocation_repair:label">
+            <value>Shoulder Dislocation Repair</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/skin_grafting:label">
+            <value>Skin Grafting</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/vasectomy:label">
+            <value>Vasectomy</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type:label">
+            <value>What was the Surgery?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/dont_know:label">
+            <value>I don't know</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/followup_for_removal:label">
+            <value>Asked to followup for removal</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/removed_at_hospital:label">
+            <value>Removed already at hospital</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/self_absorbing:label">
+            <value>Self-absorbing Type</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status:label">
+            <value>If yes, what is the suture's status?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/don't_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/no:label">
+            <value>No</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied:label">
+            <value>Were sutures applied?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/intro_note:label">
+            <value>Community Health Worker (CHW) will use this checklist to follow up surgical patients during home visits. All patients that undergo major surgical procedure including Caesarean Section at Bayalpata Hospital require a follow up by a CHWL within 7 to 30 days of discharge from the In-patient department of Bayalpata Hospital.</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/difficulty_breathing:label">
+            <value>Difficulty breathing at rest</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/discharge_from_wound:label">
+            <value>Discharge, blood or pus from wound/ bandage</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/disruptive_pain:label">
+            <value>Pain affecting daily tasks/ Unable to work even after taking medications</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/high_fever:label">
+            <value>High Fever</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/movement_difficulty:label">
+            <value>Difficulty in legs movement because of swelling/ pain behind the knees</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/no_improvement:label">
+            <value>No Improvement in condition even after surgery</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/none:label">
+            <value>None of the above</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/re-admitted_to_hospital:label">
+            <value>Admitted to hospital again for complications related to the same health issue for which surgery was done</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status:label">
+            <value>Have you had any of the following problems/ after the surgery?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/remaining_medications/no:label">
+            <value>No</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/remaining_medications/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/remaining_medications:label">
+            <value>Are there any remaining medications?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/surgery_date:label">
+            <value>Date of Surgery</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/surgical_followup/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/end_note:label">
+            <value>सर्वेक्षण पुरा गर्नु भएकोमा धन्यवाद | अगाडी गएर संचित गरि फारम बन्द गर्नुहोस |</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup:label">
+            <value>के तपाईंलाइ फेरी अस्पतालमा जांचको लागि बोलाइएको छ ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_followup/followup_date:label">
+            <value>छ भने, कुन मितिमा ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_counsel:label">
+            <value>बिरामीलाई फलोअप भेटबाट हुने फाइदाको बारेमा बुझाउनुहोस</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_other_specify:label">
+            <value>कृपया कारण खुलाउनुहोस</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/busy:label">
+            <value>ब्यस्त भएर</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/forgot:label">
+            <value>बिर्सिएर</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/other:label">
+            <value>अरु कुनै कारण</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/wound_ok:label">
+            <value>घाउ ठिक छ, त्यसैले आवस्यक ठानिन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason:label">
+            <value>छुटेको भए के कारणले छुटेको हो ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup:label">
+            <value>जांच गर्न जानु पर्ने दिन छुटेको छ ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_for_fever:label">
+            <value>बिरामीको ज्वरो नाप्नुहोस, ९८.७ डिग्री भन्दा माथि भए ज्वरो छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_wound_for_pus:label">
+            <value>बिरामीलाई सोधेर अपरेसन गरेको ठाउँबाट पानी/रगत/ पिप रसाएको छ कि छैन जांच गर्नुहोस |</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_notes/hospital_referral:label">
+            <value>बिरामीलाई तुरुन्तै अस्पताल जान सल्लाह दिनुहोस</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems:label">
+            <value>अपरेसन गरेपछि तपाइँको स्वास्थ्यमा अरु नै केहि समस्या आएको छ ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/problems_specified:label">
+            <value>कस्तो समस्या हो, कृपया खुलस्त पार्नुहोस |</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/absence_other:label">
+            <value>कृपया खुलाउनुहोस |</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/family_refused_service:label">
+            <value>परिवारका सदस्यले मानेनन्</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/in_pain:label">
+            <value>बिरामीलाइ धेरै नै पिडा भैरहेको अवस्था</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/no_participation:label">
+            <value>बिरामी सर्वेक्षण गर्न चाहनु हुन्न</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/other:label">
+            <value>अरु कुनै कारण</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/patient_busy:label">
+            <value>बिरामी ब्यस्त हुनुहुन्छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/weakness:label">
+            <value>बिरामी एकदमै कमजोर अवस्थामा</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent:label">
+            <value>हुदैन भने, कारण दिनुहोस</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent_other_specify:label">
+            <value>कृपया कारण खुलाउनुहोस</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home/no:label">
+            <value>हुनुहुन्न</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home/yes:label">
+            <value>हुनुहुन्छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home:label">
+            <value>के बिरामी घरमा हुनुहुन्छ ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent/no:label">
+            <value>हुदैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent/yes:label">
+            <value>हुन्छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent:label">
+            <value>के बिरामी यो सर्वेक्षण गर्न मान्नु हुन्छ ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/back_6_month:label">
+            <value>६ महिना भित्र कुनैपनि बेला फर्कने</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/back_in_1_year:label">
+            <value>६ महिना भन्दाबढी तर १ वर्ष भन्दा कामको लागि अस्थाई बसाई सरेर गएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/died:label">
+            <value>मृत्यु भैसकेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/gone_for_work:label">
+            <value>काममा गएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/location_unknown:label">
+            <value>बिरामी कहाँ गएको थाहा छैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/migrated:label">
+            <value>स्थाई बसाई सरेर गएको (१ बर्ष भन्दा बढी को लागी)</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence:label">
+            <value>घरमा नहुनुको उपयुक्त कारण छनौट गर्नुहोस</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message:label">
+            <value>मृत्यु भएको वा बसाइ सरेर गएको भए यी बिरामीको नाम स्याहार सेवाबाट आफै हटेर जाने छ |</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message_migrated:label">
+            <value>यदि १ बर्ष भन्दा बढीको लागि स्थाई बसाइ सरेर गएको भए यी बिरामीलाई स्याहार फारमबाट हटाइने छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/other_specify:label">
+            <value>अन्य भए खुलाउनुहोस</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/abscess:label">
+            <value>पिलो</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/amputation:label">
+            <value>कुनै अंग काटेर फालेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/appendectomy:label">
+            <value>एपेन्डिक्सको अपरेसन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/c_section:label">
+            <value>शल्यक्रिया बाट बच्चा निकालेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cellulitis:label">
+            <value>छालाको संक्रमण</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cervical_laceration:label">
+            <value>महिलाको गुप्तांगको घाउ चोटको शल्यक्रिया</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cut_injury:label">
+            <value>काटिएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/debridement:label">
+            <value>घाउ सफा गरेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/fracture_non_operated:label">
+            <value>हड्डी टुट्नु</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hernia_repair:label">
+            <value>हर्नियाको अपरेशन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hydrocele:label">
+            <value>अण्डकोषमा पानि भरिएको अपरेशन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hysterectomy:label">
+            <value>पाठेघर निकालेर फालेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/implant_removal:label">
+            <value>नरप्लान्ट निकालेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/mastectomy:label">
+            <value>स्तन शल्यक्रिया</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/minilap:label">
+            <value>महिला बन्ध्याकरण</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/ortho_lower_limb:label">
+            <value>खुट्टाको शल्यक्रिया</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/ortho_surgery_upper_limb:label">
+            <value>हातको/ पाखुराको शल्यक्रिया</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/phimosis:label">
+            <value>मुत्रनलीको छालाको अपरेसन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/plating:label">
+            <value>हड्डीमा प्लेट राखेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/shoulder_dislocation_repair:label">
+            <value>Shoulder Dislocation Repair</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/skin_grafting:label">
+            <value>ठूलो घाउमा छाला लगाएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/vasectomy:label">
+            <value>पुरुष बन्ध्याकरण</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type:label">
+            <value>के को अपरेसन गरिएको हो ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/dont_know:label">
+            <value>थाहा छैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/followup_for_removal:label">
+            <value>टाँका झिक्नको लागि अस्पताल बोलाइएको छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/removed_at_hospital:label">
+            <value>अस्पतालमा टाँका झिकिसकेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/self_absorbing:label">
+            <value>टाँका आफै पग्लेर जान्छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status:label">
+            <value>थियो भने, टाँकाको अवस्था कस्तो छ ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/don't_know:label">
+            <value>थाहा छैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/no:label">
+            <value>थिएन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/yes:label">
+            <value>थियो</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied:label">
+            <value>टाँका लगाइएको थियो ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/intro_note:label">
+            <value>यो फारम बयालपाटा अस्पतालमा अपरेसन भएर डिस्चार्ज गरिएका बिरामीहरुलाई, डिस्चार्ज भएको ७ देखि ३० दिन भित्रमा उनीहरुको घरमै गएर भेट गरि उनीहरुको अवस्था बुझ्न र त्यस सम्बन्धि डाटा संकलन गर्नको लागि बनाइएको हो |</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/difficulty_breathing:label">
+            <value>सास फेर्न असजिलो भएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/discharge_from_wound:label">
+            <value>अपरेसन गरेको ठाउँबाट पानी/रगत/ पिप रसाएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/disruptive_pain:label">
+            <value>औषधि खाँदा पनि दुखाई ठिक नभएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/high_fever:label">
+            <value>हनहनी ज्वरो आएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/movement_difficulty:label">
+            <value>खुट्टा चलाउनै असजिलो हुनेगरि घुंडाको पछाडी(पुकामा) एकदमै धेरै दुखेको/ सुन्निएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/no_improvement:label">
+            <value>जे प्रयोजनका लागि अपरेसन गरिएको हो, त्यो जस्ताको तस्तै/ केहि फाइदा नभएको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/none:label">
+            <value>कुनै पनि हैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status/re-admitted_to_hospital:label">
+            <value>त्यही समस्याका लागि वा गम्भीर जटिलता आएर फेरी अस्पताल भर्ना गर्न परेको</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/post_surgery_status:label">
+            <value>अपरेशनपछि तपाईलाई यी मध्ये केहि समस्या आएको छ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/remaining_medications/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/remaining_medications/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/remaining_medications:label">
+            <value>बिरामीसंग औषधिहरु बाँकी छ ?</value>
+          </text>
+          <text id="/surgical_followup/patient_surgical_assesment/surgery_date:label">
+            <value>अपरेसन गरिएको मिति</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <surgical_followup id="surgical_followup" prefix="J1!surgical_followup!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <patient_surgical_assesment>
+            <bh_ID/>
+            <family_id/>
+            <patient_name/>
+            <date_of_registration/>
+            <date_of_registration_nepal/>
+            <reporting_followup_visit_group_surgery_followup_month/>
+            <reporting_followup_visit_group_report_visit_surgery/>
+            <reporting_counseling_group_surgery_counseling_month/>
+            <reporting_counseling_group_report_counsel_surgery/>
+            <reporting_surgical_complications_group_surgical_complications_month/>
+            <reporting_surgical_complications_group_report_surgical_complications/>
+            <reporting_report_surgical_death/>
+            <intro_note/>
+            <group_assessment_patientathome>
+              <patient_at_home/>
+              <reason_absence/>
+              <absence_other/>
+              <remove_message/>
+              <remove_message_migrated/>
+              <patient_consent/>
+              <no_consent/>
+              <no_consent_other_specify/>
+            </group_assessment_patientathome>
+            <remove_patient/>
+            <remove_care_delivery/>
+            <group_assessment_surgerytype>
+              <surgery_type/>
+              <other_specify/>
+            </group_assessment_surgerytype>
+            <surgery_date/>
+            <group_assessment_suture>
+              <sutures_applied/>
+              <suture_status/>
+            </group_assessment_suture>
+            <group_assessment_followup>
+              <called_for_followup/>
+              <followup_date/>
+            </group_assessment_followup>
+            <group_assessment_missedfollowup>
+              <missed_followup/>
+              <followup_miss_reason/>
+              <followup_miss_other_specify/>
+              <followup_miss_counsel/>
+            </group_assessment_missedfollowup>
+            <post_surgery_status/>
+            <group_assessment_otherproblems>
+              <any_other_problems/>
+              <problems_specified/>
+            </group_assessment_otherproblems>
+            <group_assessment_notes>
+              <check_wound_for_pus/>
+              <check_for_fever/>
+              <hospital_referral/>
+            </group_assessment_notes>
+            <remaining_medications/>
+            <end_note/>
+          </patient_surgical_assesment>
+          <last_visit_last_visit/>
+          <last_visit_last_visit_nepali/>
+          <reset_surgery_patient/>
+          <audit_case_list_search/>
+          <audit_case_list_fingerprint_scanner/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </surgical_followup>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/surgical_followup/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/surgical_followup/inputs/source" type="string"/>
+      <bind nodeset="/surgical_followup/inputs/source_id" type="string"/>
+      <bind nodeset="/surgical_followup/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/surgical_followup/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/surgical_followup/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/surgical_followup/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/surgical_followup/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/surgical_followup/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/surgical_followup/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/surgical_followup/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /surgical_followup/reporting_today )"/>
+      <bind nodeset="/surgical_followup/reporting_nepali_short" type="string" calculate="substring-after( /surgical_followup/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/surgical_followup/reporting_nepali_month" type="string" calculate="substring-before( /surgical_followup/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/surgical_followup/reporting_nepali_year" type="string" calculate="substring-after( /surgical_followup/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/surgical_followup/reporting_month_today" type="string" calculate="if( /surgical_followup/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /surgical_followup/reporting_nepali_month  = 'जेठ', 'Jestha', if( /surgical_followup/reporting_nepali_month  = 'असार', 'Ashadh', if( /surgical_followup/reporting_nepali_month  = 'साउन', 'Shrawan', if( /surgical_followup/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /surgical_followup/reporting_nepali_month  = 'असोज', 'Ashwin', if( /surgical_followup/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /surgical_followup/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /surgical_followup/reporting_nepali_month  = 'पौष', 'Poush', if( /surgical_followup/reporting_nepali_month  = 'माघ', 'Magh', if( /surgical_followup/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /surgical_followup/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/surgical_followup/reporting_year_today" type="string" calculate="concat(if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /surgical_followup/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /surgical_followup/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /surgical_followup/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /surgical_followup/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/surgical_followup/reporting_today_short" type="string" calculate="concat( /surgical_followup/reporting_month_today , ' ',  /surgical_followup/reporting_year_today )"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/bh_ID" type="string"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/family_id" type="string"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/patient_name" type="string"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/date_of_registration" type="string"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/date_of_registration_nepal" type="string"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/reporting_followup_visit_group_surgery_followup_month" type="string" calculate=" /surgical_followup/reporting_today_short "/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/reporting_followup_visit_group_report_visit_surgery" type="string"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/reporting_counseling_group_surgery_counseling_month" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  = 'yes'" calculate=" /surgical_followup/reporting_today_short "/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/reporting_counseling_group_report_counsel_surgery" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  = 'yes'"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/reporting_surgical_complications_group_surgical_complications_month" type="string" relevant=" /surgical_followup/patient_surgical_assesment/post_surgery_status  != ''" calculate=" /surgical_followup/reporting_today_short "/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/reporting_surgical_complications_group_report_surgical_complications" type="string" relevant=" /surgical_followup/patient_surgical_assesment/post_surgery_status  != ''"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/reporting_report_surgical_death" type="string" calculate="if( /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence  = 'died', '1', '0')"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/intro_note" readonly="true()" type="string"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home" type="select1" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home  = 'no'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/absence_other" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence  = 'other'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message" readonly="true()" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence  = 'died'"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message_migrated" readonly="true()" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence  = 'migrated'"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home  = 'yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='no'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent_other_specify" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent  = 'other'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/remove_patient" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence  = 'died' and  /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence  = 'migrated'" calculate="1"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/remove_care_delivery" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence  = 'migrated'" calculate="1"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/other_specify" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type  = 'other'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/surgery_date" type="date" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied  = 'yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_followup/followup_date" type="date" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup  = 'yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup  = 'yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup  = 'yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_other_specify" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason  = 'other'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_counsel" readonly="true()" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup  = 'yes'"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/post_surgery_status" type="select" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/problems_specified" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems  = 'yes'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_wound_for_pus" readonly="true()" type="string" relevant="selected( /surgical_followup/patient_surgical_assesment/post_surgery_status , 'discharge_from_wound')"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_for_fever" readonly="true()" type="string" relevant="selected( /surgical_followup/patient_surgical_assesment/post_surgery_status , 'high_fever')"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/group_assessment_notes/hospital_referral" readonly="true()" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes' and not(selected( /surgical_followup/patient_surgical_assesment/post_surgery_status , 'none'))"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/remaining_medications" type="select1" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup  = 'no'" required="true()"/>
+      <bind nodeset="/surgical_followup/patient_surgical_assesment/end_note" readonly="true()" type="string" relevant=" /surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent  ='yes'"/>
+      <bind nodeset="/surgical_followup/last_visit_last_visit" type="string" calculate="today()"/>
+      <bind nodeset="/surgical_followup/last_visit_last_visit_nepali" type="string"/>
+      <bind nodeset="/surgical_followup/reset_surgery_patient" type="string" calculate="if( /surgical_followup/patient_surgical_assesment/remove_patient  = 1, 0, 1)"/>
+      <bind nodeset="/surgical_followup/audit_case_list_search" type="string" calculate="1"/>
+      <bind nodeset="/surgical_followup/audit_case_list_fingerprint_scanner" type="string" calculate="1"/>
+      <bind nodeset="/surgical_followup/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/surgical_followup/inputs">
+      <label ref="jr:itext('/surgical_followup/inputs:label')"/>
+      <group ref="/surgical_followup/inputs/contact">
+        <label ref="jr:itext('/surgical_followup/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/surgical_followup/inputs/contact/_id">
+          <label ref="jr:itext('/surgical_followup/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/surgical_followup/inputs/contact/nepali_full_name">
+          <label ref="jr:itext('/surgical_followup/inputs/contact/nepali_full_name:label')"/>
+        </input>
+        <input ref="/surgical_followup/inputs/contact/patient_id">
+          <label ref="jr:itext('/surgical_followup/inputs/contact/patient_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/surgical_followup/patient_surgical_assesment">
+      <input ref="/surgical_followup/patient_surgical_assesment/intro_note">
+        <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/intro_note:label')"/>
+      </input>
+      <group ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome">
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_at_home/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/gone_for_work:label')"/>
+            <value>gone_for_work</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/back_6_month:label')"/>
+            <value>back_6_month</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/back_in_1_year:label')"/>
+            <value>back_in_1_year</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/migrated:label')"/>
+            <value>migrated</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/died:label')"/>
+            <value>died</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/location_unknown:label')"/>
+            <value>location_unknown</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/reason_absence/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/absence_other">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/absence_other:label')"/>
+        </input>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message:label')"/>
+        </input>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message_migrated">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/remove_message_migrated:label')"/>
+        </input>
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/patient_consent/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/in_pain:label')"/>
+            <value>in_pain</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/weakness:label')"/>
+            <value>weakness</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/patient_busy:label')"/>
+            <value>patient_busy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/family_refused_service:label')"/>
+            <value>family_refused_service</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/no_participation:label')"/>
+            <value>no_participation</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent_other_specify">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_patientathome/no_consent_other_specify:label')"/>
+        </input>
+      </group>
+      <group ref="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype">
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/implant_removal:label')"/>
+            <value>implant_removal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/mastectomy:label')"/>
+            <value>mastectomy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/appendectomy:label')"/>
+            <value>appendectomy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/phimosis:label')"/>
+            <value>phimosis</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/fracture_non_operated:label')"/>
+            <value>fracture_non_operated</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/ortho_surgery_upper_limb:label')"/>
+            <value>ortho_surgery_upper_limb</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/ortho_lower_limb:label')"/>
+            <value>ortho_lower_limb</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/abscess:label')"/>
+            <value>abscess</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/debridement:label')"/>
+            <value>debridement</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cut_injury:label')"/>
+            <value>cut_injury</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cellulitis:label')"/>
+            <value>cellulitis</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hernia_repair:label')"/>
+            <value>hernia_repair</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/shoulder_dislocation_repair:label')"/>
+            <value>shoulder_dislocation_repair</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/amputation:label')"/>
+            <value>amputation</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/plating:label')"/>
+            <value>plating</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hydrocele:label')"/>
+            <value>hydrocele</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/skin_grafting:label')"/>
+            <value>skin_grafting</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/c_section:label')"/>
+            <value>c_section</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/hysterectomy:label')"/>
+            <value>hysterectomy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/cervical_laceration:label')"/>
+            <value>cervical_laceration</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/minilap:label')"/>
+            <value>minilap</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/vasectomy:label')"/>
+            <value>vasectomy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/surgery_type/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/other_specify">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_surgerytype/other_specify:label')"/>
+        </input>
+      </group>
+      <input ref="/surgical_followup/patient_surgical_assesment/surgery_date">
+        <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/surgery_date:label')"/>
+      </input>
+      <group ref="/surgical_followup/patient_surgical_assesment/group_assessment_suture">
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/sutures_applied/don't_know:label')"/>
+            <value>don't_know</value>
+          </item>
+        </select1>
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/removed_at_hospital:label')"/>
+            <value>removed_at_hospital</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/followup_for_removal:label')"/>
+            <value>followup_for_removal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/self_absorbing:label')"/>
+            <value>self_absorbing</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_suture/suture_status/dont_know:label')"/>
+            <value>dont_know</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="/surgical_followup/patient_surgical_assesment/group_assessment_followup">
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_followup/called_for_followup/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_followup/followup_date">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_followup/followup_date:label')"/>
+        </input>
+      </group>
+      <group ref="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup">
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/missed_followup/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/busy:label')"/>
+            <value>busy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/forgot:label')"/>
+            <value>forgot</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/wound_ok:label')"/>
+            <value>wound_ok</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_reason/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_other_specify">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_other_specify:label')"/>
+        </input>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_counsel">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_missedfollowup/followup_miss_counsel:label')"/>
+        </input>
+      </group>
+      <select ref="/surgical_followup/patient_surgical_assesment/post_surgery_status">
+        <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status:label')"/>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/re-admitted_to_hospital:label')"/>
+          <value>re-admitted_to_hospital</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/discharge_from_wound:label')"/>
+          <value>discharge_from_wound</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/disruptive_pain:label')"/>
+          <value>disruptive_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/high_fever:label')"/>
+          <value>high_fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/movement_difficulty:label')"/>
+          <value>movement_difficulty</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/difficulty_breathing:label')"/>
+          <value>difficulty_breathing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/no_improvement:label')"/>
+          <value>no_improvement</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/post_surgery_status/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <group ref="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems">
+        <select1 ref="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems:label')"/>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/any_other_problems/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/problems_specified">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_otherproblems/problems_specified:label')"/>
+        </input>
+      </group>
+      <group ref="/surgical_followup/patient_surgical_assesment/group_assessment_notes">
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_wound_for_pus">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_wound_for_pus:label')"/>
+        </input>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_for_fever">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_notes/check_for_fever:label')"/>
+        </input>
+        <input ref="/surgical_followup/patient_surgical_assesment/group_assessment_notes/hospital_referral">
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/group_assessment_notes/hospital_referral:label')"/>
+        </input>
+      </group>
+      <select1 ref="/surgical_followup/patient_surgical_assesment/remaining_medications">
+        <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/remaining_medications:label')"/>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/remaining_medications/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/remaining_medications/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/surgical_followup/patient_surgical_assesment/end_note">
+        <label ref="jr:itext('/surgical_followup/patient_surgical_assesment/end_note:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

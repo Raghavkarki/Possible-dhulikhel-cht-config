@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Family Audio</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/family_audio/generated_note_name_23:label">
+            <value>If any adult in this family is at home, please add the audio information.</value>
+          </text>
+          <text id="/family_audio/hoh_name_audio:label">
+            <value>Head of Family Unit</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/family_audio/generated_note_name_23:label">
+            <value>यदि यो परिवारको कुनै वयस्क घरमा हुनुहुन्छ भने, कृपया अडियो जानकारी थप्नुहोस्।</value>
+          </text>
+          <text id="/family_audio/hoh_name_audio:label">
+            <value>परिवारको मूल व्यक्तिको नाम</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <family_audio id="family_audio" prefix="J1!family_audio!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+            </contact>
+          </inputs>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <place_id/>
+          <generated_note_name_23/>
+          <hoh_name_audio/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </family_audio>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/family_audio/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/family_audio/inputs/source" type="string"/>
+      <bind nodeset="/family_audio/inputs/source_id" type="string"/>
+      <bind nodeset="/family_audio/inputs/contact/_id" type="string"/>
+      <bind nodeset="/family_audio/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/family_audio/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /family_audio/reporting_today )"/>
+      <bind nodeset="/family_audio/reporting_nepali_short" type="string" calculate="substring-after( /family_audio/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/family_audio/reporting_nepali_month" type="string" calculate="substring-before( /family_audio/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/family_audio/reporting_nepali_year" type="string" calculate="substring-after( /family_audio/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/family_audio/reporting_month_today" type="string" calculate="if( /family_audio/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /family_audio/reporting_nepali_month  = 'जेठ', 'Jestha', if( /family_audio/reporting_nepali_month  = 'असार', 'Ashadh', if( /family_audio/reporting_nepali_month  = 'साउन', 'Shrawan', if( /family_audio/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /family_audio/reporting_nepali_month  = 'असोज', 'Ashwin', if( /family_audio/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /family_audio/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /family_audio/reporting_nepali_month  = 'पौष', 'Poush', if( /family_audio/reporting_nepali_month  = 'माघ', 'Magh', if( /family_audio/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /family_audio/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/family_audio/reporting_year_today" type="string" calculate="concat(if(substr( /family_audio/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /family_audio/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /family_audio/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /family_audio/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /family_audio/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /family_audio/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /family_audio/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /family_audio/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/family_audio/reporting_today_short" type="string" calculate="concat( /family_audio/reporting_month_today , ' ',  /family_audio/reporting_year_today )"/>
+      <bind nodeset="/family_audio/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/family_audio/generated_note_name_23" readonly="true()" type="string"/>
+      <bind nodeset="/family_audio/hoh_name_audio" type="binary" required="true()"/>
+      <bind nodeset="/family_audio/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/family_audio/inputs">
+      <group ref="/family_audio/inputs/contact">
+        <input ref="/family_audio/inputs/contact/_id"/>
+      </group>
+    </group>
+    <input ref="/family_audio/generated_note_name_23">
+      <label ref="jr:itext('/family_audio/generated_note_name_23:label')"/>
+    </input>
+    <upload mediatype="audio/*" ref="/family_audio/hoh_name_audio">
+      <label ref="jr:itext('/family_audio/hoh_name_audio:label')"/>
+      <hint>The eldest member who lives with the family &gt; 6 months a year</hint>
+    </upload>
+  </h:body>
+</h:html>

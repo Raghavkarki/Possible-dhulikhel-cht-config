@@ -1,0 +1,58 @@
+
+  <model>
+    <instance>
+        <stock_in xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_in" prefix="J1!stock_in!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <chw_uuid/>
+          <chw_name/>
+          <chw_id/>
+          <date_of_entry/>
+          <date_of_entry_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <items_selected/>
+          <ors_received/>
+          <zinc_10_mg/>
+          <zinc_20_mg/>
+          <upt_received/>
+          <condom_hp/>
+          <condom_phcc/>
+          <initial_stock>
+            <initial_stock_ors/>
+            <initial_stock_zinc10mg/>
+            <initial_stock_zinc20mg/>
+            <initial_stock_UPT_kits/>
+            <initial_stock_condoms_hp/>
+            <initial_stock_condoms_phc/>
+            <initial_stock_total_condoms/>
+            <condom_total/>
+            <total_number/>
+          </initial_stock>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </stock_in>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+
