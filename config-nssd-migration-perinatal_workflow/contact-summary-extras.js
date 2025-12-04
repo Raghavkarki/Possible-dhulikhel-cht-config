@@ -534,7 +534,7 @@ function getContext(thisContact, allReports) {
           return null;
         }
         const count = reports.filter(report => report.form === formName && report.reported_date > latestPsuppScreeningForm.reported_date).length;
-        const cap = formCapMap[formName] || 5;
+        const cap = formCapMap[formName] || 6;
 
 
         return 'visit_' + Math.min(count + 1, cap);

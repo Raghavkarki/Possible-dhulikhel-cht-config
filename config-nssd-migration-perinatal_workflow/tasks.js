@@ -146,6 +146,13 @@ const epds_assessmentSchedule = [
   };
 });
 
+const biweeklyVistConsent = [
+  'first_biweekly_call.end_biweeklycall1',
+  'second_biweekly_call.end_biweeklycall2',
+  'third_biweekly_call.end_biweeklycall3',
+  'fourth_biweekly_call.end_biweeklycall4',
+];
+
 
 
 module.exports = [
@@ -886,19 +893,31 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [PSUPP, PSUPP_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
-      const consent = getField(report, 'psupp_form.cont_call');
-      // const consent1 = getField(report, 'psupp_form.cont_call');
-      // const consent2 = getField(report, 'psupp_form.cont_call');
-      // const getReport = getNewestReport(report, 'psupp_form');
+      // const consent = getField(report, 'psupp_form.cont_call');
+      // // const consent1 = getField(report, 'psupp_form.cont_call');
+      // // const consent2 = getField(report, 'psupp_form.cont_call');
+      // // const getReport = getNewestReport(report, 'psupp_form');
 
-      const totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      const totalform1 = totalPsuppSessions(contact, PSUPP_HOME_VISIT);
-      // const allowedForms = ['visit_4'];
-      console.log('logs for the home visssit ', totalform, totalform1);
-      return (
+      // const totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
+      // const totalform1 = totalPsuppSessions(contact, PSUPP_HOME_VISIT);
+      // // const allowedForms = ['visit_4'];
+      // console.log('logs for the home visssit ', totalform, totalform1);
+      // return (
 
-        ((consent === 'yes') || (totalform === 'visit_4'))
-      );
+      //   ((consent === 'yes') || (totalform === 'visit_4'))
+      // );
+
+      const formName = report.form;
+      
+      if (formName === PSUPP) {
+        const consent = getField(report, 'psupp_form.cont_call');
+        return consent === 'yes';
+      }
+      if (formName === PSUPP_WEEKLY_VISIT) {
+        const weekly = getField(report, 'weekly_visit');
+        const hasConsent = getField(report, 'third_weekly_call.end_weeklycall_3');
+        return weekly === 'visit_3' && hasConsent === 'yes';
+      }
     }),
 
     actions: [
@@ -943,7 +962,7 @@ module.exports = [
       if (formName === PSUPP_WEEKLY_VISIT) {
         const weekly = getField(report, 'weekly_visit');
         const hasConsent =
-          getField(report, 'first_home_visit.end_1stvisit') === 'yes' ||
+          getField(report, 'first_weekly_call.end_1stweeklycall') === 'yes' ||
           getField(report, 'second_weekly_call.end_weeklycall_2') === 'yes';
         return (weekly === 'visit_1' || weekly === 'visit_2') && hasConsent;
       }
@@ -970,17 +989,6 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [PSUPP_HOME_VISIT, PSUPP_BI_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
-      // const consent = getField(report, 'second_home_visit.end_2ndhomevisit');
-      // const consent1 = getField(report, 'visit.weekly_visit');
-
-      // const getReport = getNewestReport(report, 'psupp_form');
-
-      // const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      // // const allowedForms = ['visit_2', 'visit_3'];
-      // console.log('logs for the weekly visits', contact, totalform, report, consent);
-      // return (
-      //   (consent === 'yes')
-      // );
       const formName = report.form;
 
       if (formName === PSUPP_HOME_VISIT) {
@@ -990,8 +998,9 @@ module.exports = [
       }
 
       if (formName === PSUPP_BI_WEEKLY_VISIT) {
-        const weekly = getField(report, 'weekly_visit');
-        return weekly === 'visit_1' || weekly === 'visit_2' || weekly === 'visit_3' || weekly === 'visit_4' || weekly === 'visit_5';
+        const weekly = getField(report, 'biweekly_visit');
+        const hasConsent = biweeklyVistConsent.some(path => getField(report, path) === 'yes');
+        return (weekly === 'visit_1' || weekly === 'visit_2' || weekly === 'visit_3' || weekly === 'visit_4') && hasConsent;
       }
     }),
 
