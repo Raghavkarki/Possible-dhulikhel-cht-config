@@ -963,32 +963,32 @@ module.exports = [
   {
     name: 'psuup_bi_weekly_visit',
     icon: 'icon-perinatal-module1',
-    title: 'task.psuup_weekly_visit',
+    title: 'task.psuup_bi_weekly_visit',
     appliesTo: 'reports',
     appliesToType: [PSUPP_HOME_VISIT, PSUPP_BI_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
-      // const consent = getField(report, 'first_home_visit.end_1stvisit');
+      // const consent = getField(report, 'second_home_visit.end_2ndhomevisit');
       // const consent1 = getField(report, 'visit.weekly_visit');
 
-      // // const getReport = getNewestReport(report, 'psupp_form');
+      // const getReport = getNewestReport(report, 'psupp_form');
 
       // const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      // const allowedForms = ['visit_2', 'visit_3'];
+      // // const allowedForms = ['visit_2', 'visit_3'];
       // console.log('logs for the weekly visits', contact, totalform, report, consent);
       // return (
-      //   ( consent1 === 'visit_2' || consent1 === 'visit_3'  || consent === 'yes')
+      //   (consent === 'yes')
       // );
       const formName = report.form;
 
       if (formName === PSUPP_HOME_VISIT) {
-        const home_visit = getField(report, 'visit.home_visit');
-        const consent = getField(report, 'first_home_visit.end_1stvisit');
-        return consent === 'yes' && home_visit === 'visit_2' ;
+        const home_visit = getField(report, 'home_visit');
+        const consent = getField(report, 'second_home_visit.end_2ndhomevisit');
+        return consent === 'yes' && home_visit === 'visit_2';
       }
 
       if (formName === PSUPP_BI_WEEKLY_VISIT) {
         const weekly = getField(report, 'weekly_visit');
-        return weekly === 'visit_1' || weekly === 'visit_2';
+        return weekly === 'visit_1' || weekly === 'visit_2' || weekly === 'visit_3' || weekly === 'visit_4' || weekly === 'visit_5';
       }
     }),
 

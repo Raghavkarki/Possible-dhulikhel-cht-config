@@ -542,9 +542,11 @@ function getContext(thisContact, allReports) {
 
       const totalHomeVist = totalForms(allReports, PSUPP_HOME_VISIT);
       const totalWeeklyVisit = totalForms(allReports, PSUPP_WEEKLY_VISIT);
+      const totalBiweeklyVisit = totalForms(allReports, PSUPP_WEEKLY_VISIT);
 
       context.home_visit = totalHomeVist;
       context.weekly_visit = totalWeeklyVisit;
+      context.biweekly_visit = totalBiweeklyVisit;
 
       console.log('this the context varible data', context.home_visit, context.weekly_visit);
     }
