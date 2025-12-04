@@ -616,25 +616,30 @@ function validateANCisLatestAndNoEPDS(contact) {
 //     ? 1
 //     : Math.min(sessionsAfterLatestForm.length + 1, Number.MAX_SAFE_INTEGER);
 // };
+// const totalPsuppSessions = (contact, formName) => {
+//   // Get the latest psupp_form
+//   const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
+//   if (!latestPsuppForm) {
+//     return null;
+//   }
+
+//   // Count psupp_session forms after the latest psupp_form
+//   const sessionsAfterLatestForm = contact.reports.filter(
+//     report => report.reported_date > latestPsuppForm.reported_date && report.form === formName
+//   );
+
+//   // Return the exact count (0, 1, 2, 3, ...)
+//   return sessionsAfterLatestForm.length + 1;
+// };
 const totalPsuppSessions = (contact, formName) => {
-  // Get the latest psupp_form
   const latestPsuppForm = getMostRecentReport(contact.reports, ['psupp_form']);
   if (!latestPsuppForm) {
     return null;
   }
+  const count = contact.reports.filter(r => r.form === formName && r.reported_date > latestPsuppForm.reported_date).length;
 
-  // Count psupp_session forms after the latest psupp_form
-  const sessionsAfterLatestForm = contact.reports.filter(
-    report => report.reported_date > latestPsuppForm.reported_date && report.form === formName
-  );
-
-  // Return the exact count (0, 1, 2, 3, ...)
-  return sessionsAfterLatestForm.length + 1;
+  return 'visit_' + Math.min(count + 1, 5);
 };
-
-
-
-
 
 module.exports = {
   today,

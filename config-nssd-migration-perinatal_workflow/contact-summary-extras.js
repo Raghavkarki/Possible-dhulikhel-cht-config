@@ -525,18 +525,14 @@ function getContext(thisContact, allReports) {
       // const latestPsuppWeeklyVisit = getNewestReport(allReports, PSUPP_WEEKLY_VISIT);
 
       const totalForms = (reports, formName) => {
-        // Get the latest psupp_form
-        const latestScreening = latestPsuppScreeningForm;
-        if (!latestScreening) {
+        if (!latestPsuppScreeningForm) {
           return null;
         }
+        const count = reports.filter(report => report.form === formName && report.reported_date > latestPsuppScreeningForm.reported_date).length;
 
-        // Count only forms AFTER the latest psupp_form
-        const moduleForms = reports.filter(report => report.form === formName && report.reported_date > latestScreening.reported_date);
-
-        // Always return count + 1 (1, 2, 3...)
-        return moduleForms.length + 1;
+        return 'visit_' + Math.min(count + 1, 5);
       };
+
 
       const totalHomeVist = totalForms(allReports, PSUPP_HOME_VISIT);
       const totalWeeklyVisit = totalForms(allReports, PSUPP_WEEKLY_VISIT);

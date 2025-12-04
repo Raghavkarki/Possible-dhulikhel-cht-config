@@ -884,17 +884,18 @@ module.exports = [
     icon: 'icon-perinatal-module1',
     title: 'task.psuup_home_visit',
     appliesTo: 'reports',
-    appliesToType: [PSUPP],
+    appliesToType: [PSUPP, PSUPP_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
       const consent = getField(report, 'epds.psupp');
       // const getReport = getNewestReport(report, 'psupp_form');
 
-      const  totalform = totalPsuppSessions(contact, PSUPP_HOME_VISIT);
-      // const allowedForms = [0, 1, 2, 3, 4];
-      console.log('logs for the home visit ', totalform);
+      const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
+      const  totalform1 = totalPsuppSessions(contact, PSUPP_HOME_VISIT);
+      // const allowedForms = ['visit_4'];
+      console.log('logs for the home visssit ', totalform, totalform1);
       return (
 
-        ( consent ===  'yes')
+        ( (consent ===  'yes' || consent ===  'no'  ) && ( totalform === 'visit_4' || totalform === 'visit_1'))
       );
     }),
 
@@ -923,11 +924,11 @@ module.exports = [
       // const getReport = getNewestReport(report, 'psupp_form');
 
       const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      const allowedForms = [1, 2, 3];
+      const allowedForms = ['visit_1', 'visit_2', 'visit_3'];
       console.log('logs for the weekly visits', contact, totalform, report, consent);
       return (
 
-        ( consent ===  'yes' &&  allowedForms.includes(totalform) )
+        ( allowedForms.includes(totalform) )
       );
     }),
 
