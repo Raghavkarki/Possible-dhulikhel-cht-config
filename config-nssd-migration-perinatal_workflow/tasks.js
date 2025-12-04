@@ -1,5 +1,5 @@
 const { addDays, getField, getMostRecentReport, isActive, getDeliveryDate, mapContent,
-  getPPDays, getMostRecentUnskippedReport, isFormArraySubmittedInWindow, isContactUnder2, getNewestReport, totalPsuppSessions,  isAtLeastXWeeksSinceLMP, monthsdeliverydate, getpdfContent, totalForms, compareANCAndPostDeliveryDates, validateANCisLatestAndNoEPDS } = require('./nools-extras');
+  getPPDays, getMostRecentUnskippedReport, isFormArraySubmittedInWindow, isContactUnder2, getNewestReport, totalPsuppSessions, isAtLeastXWeeksSinceLMP, monthsdeliverydate, getpdfContent, totalForms, compareANCAndPostDeliveryDates, validateANCisLatestAndNoEPDS } = require('./nools-extras');
 
 const { PREGNANCY_SCREENING, POST_DELIVERY, U2_REGISTRY, ANC, PNC, PNC2, INFINITY, PSUPP, PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT } = require('./constants');
 
@@ -76,7 +76,7 @@ const taskResolver = (extraConditions, targetForm = undefined) => {
     let start = Math.max(addDays(dueDate, - event.start).getTime(), report.reported_date);
     let end = addDays(dueDate, event.end).getTime();
 
-    targetForm = (targetForm !== undefined)? targetForm: report.form;
+    targetForm = (targetForm !== undefined) ? targetForm : report.form;
     if (targetForm === PREGNANCY_SCREENING) {
       start = report.reported_date + 1;
     }
@@ -86,7 +86,7 @@ const taskResolver = (extraConditions, targetForm = undefined) => {
 };
 
 const eventGenerators = {
-  pss: (interval, {start, end}) => ({
+  pss: (interval, { start, end }) => ({
     id: 'pregnancy-screening-followup',
     start,
     end,
@@ -94,12 +94,12 @@ const eventGenerators = {
       if (report && report.form) {
         if (report.form === PREGNANCY_SCREENING) {
           const urine_test_result = getField(report, 'continue_pss.continue_pss_test.continue_pss_test_urine_test');
-        
+
           if (urine_test_result && ['indetermined', 'test_malfunctioning', 'not_tested'].includes(urine_test_result)) {
             return addDays(report.reported_date, 15);
           }
         } else if (report.form === POST_DELIVERY) {
-          const pncAdjustedGap = getField(report, 'pnc2') === '1'? 60: interval;
+          const pncAdjustedGap = getField(report, 'pnc2') === '1' ? 60 : interval;
           return addDays(report.reported_date, pncAdjustedGap);
         }
       }
@@ -107,25 +107,25 @@ const eventGenerators = {
       return addDays(report.reported_date, gapCalculator(report.fields, interval));
     },
   }),
-  u2: (interval, {start, end}) => ({
+  u2: (interval, { start, end }) => ({
     id: 'u2-followup',
     start,
     end,
     dueDate: (event, contact, report) => addDays(report.reported_date, gapCalculator(report.fields, interval)),
   }),
-  anc: (interval, {start, end}) => ({
+  anc: (interval, { start, end }) => ({
     id: `anc-visit-${Math.round(interval / 30) + 1}`,
     start,
     end,
-    dueDate: (event, contact, report) =>  addDays(report.reported_date, interval),
+    dueDate: (event, contact, report) => addDays(report.reported_date, interval),
   }),
-  pnc: (interval, {start, end}) => ({
+  pnc: (interval, { start, end }) => ({
     id: `pnc-visit-${interval}-days`,
-    start: (interval <= 7)? 1: start,
-    end: (interval < 7)? 1: end,
+    start: (interval <= 7) ? 1 : start,
+    end: (interval < 7) ? 1 : end,
     dueDate: (event, contact, report) => addDays(getDeliveryDate(contact.reports, report), interval),
   }),
-  pdf: (interval, {start, end}) => ({
+  pdf: (interval, { start, end }) => ({
     id: 'post-delivery',
     start,
     end,
@@ -159,9 +159,9 @@ module.exports = [
       return isContactUnder2(contact) && getNewestReport(contact.reports, U2_REGISTRY) === undefined;
     },
     actions: [
-      { 
+      {
         type: 'report',
-        form: U2_REGISTRY 
+        form: U2_REGISTRY
       }
     ],
     events: [
@@ -188,7 +188,7 @@ module.exports = [
         if (contact && contact.contact && contact.contact.dob && Math.floor(Math.abs(new Date() - new Date(contact.contact.dob)) / (1000 * 60 * 60 * 24 * 365)) > 49) {
           return false;
         }
-        
+
         return getField(report, 'anc') !== '1' && getField(report, 'pdf_direct') !== '1' && getField(report, 'remove_woman') !== '1';
       }
 
@@ -211,7 +211,7 @@ module.exports = [
     appliesToType: [U2_REGISTRY],
     appliesIf: taskApplier((contact, report) => isContactUnder2(contact)),
     actions: [
-      { 
+      {
         type: 'report',
         form: U2_REGISTRY
       }
@@ -248,7 +248,7 @@ module.exports = [
     appliesToType: [ANC, PREGNANCY_SCREENING],
     actions: [{ form: POST_DELIVERY }],
     appliesIf: taskApplier((contact, report) => {
-      const pdfField = (report.form === PREGNANCY_SCREENING)? 'pdf_direct': 'post_delivery';
+      const pdfField = (report.form === PREGNANCY_SCREENING) ? 'pdf_direct' : 'post_delivery';
       return getField(report, pdfField) === '1';
     }),
     events: [eventGenerators.pdf(intervals.pdf.followups, intervals.pdf)],
@@ -261,7 +261,7 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [ANC],
     actions: [
-      { 
+      {
         type: 'report',
         form: PREGNANCY_SCREENING,
         modifyContent: (content, contact, report) => {
@@ -282,7 +282,7 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [POST_DELIVERY],
     actions: [
-      { 
+      {
         type: 'report',
         form: PNC,
         modifyContent: (content, contact, report) => {
@@ -303,7 +303,7 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [POST_DELIVERY],
     actions: [
-      { 
+      {
         type: 'report',
         form: PNC2,
         modifyContent: (content, contact, report) => {
@@ -326,7 +326,7 @@ module.exports = [
     appliesIf: taskApplier((contact, report) => {
       const outcome = getpdfContent(contact);
       console.log('outcome', outcome);
-      
+
       return outcome === 1 && monthsdeliverydate(contact, 10);
     }),
 
@@ -387,7 +387,7 @@ module.exports = [
   //           // && task === 'active' 
   //     );
 
-      
+
   //   }),
 
   //   actions: [
@@ -404,7 +404,7 @@ module.exports = [
   //     },
   //   ]
   // },
-  
+
   {
     name: 'perinatal_module_1',
     icon: 'icon-perinatal-module',
@@ -421,7 +421,7 @@ module.exports = [
       const outcome = compareANCAndPostDeliveryDates(contact);
 
       return (
-        ( (childstatus === 'none' || childstatus === '') && lmpdate >= 14  && eligibility === '1' && women_status === 'preg_women'  && woman_consent === 'yes' && totalforms === 1  && outcome === 1 )
+        ((childstatus === 'none' || childstatus === '') && lmpdate >= 14 && eligibility === '1' && women_status === 'preg_women' && woman_consent === 'yes' && totalforms === 1 && outcome === 1)
       );
     }),
     actions: [
@@ -470,7 +470,7 @@ module.exports = [
     ],
   },
   {
-    name: 'perinatal_module_2', 
+    name: 'perinatal_module_2',
     icon: 'icon-perinatal-module',
     title: 'task.perinatal_module_2',
     appliesTo: 'reports',
@@ -487,7 +487,7 @@ module.exports = [
 
       return (
 
-        ( deliveryDateStr >= 7 && deliveryDateStr < 34 && eligibility === '1' && women_status === 'pp_women'  && woman_consent === 'yes' && totalforms === 1  && (childstatus === 'none' || childstatus === ''))
+        (deliveryDateStr >= 7 && deliveryDateStr < 34 && eligibility === '1' && women_status === 'pp_women' && woman_consent === 'yes' && totalforms === 1 && (childstatus === 'none' || childstatus === ''))
       );
     }),
 
@@ -506,7 +506,7 @@ module.exports = [
     ]
   },
   {
-    name: 'perinatal_module_2.1', 
+    name: 'perinatal_module_2.1',
     icon: 'icon-perinatal-module',
     title: 'task.perinatal_module_2.1',
     appliesTo: 'reports',
@@ -517,7 +517,7 @@ module.exports = [
       const allowedForms = [2, 5];
       return (
 
-         (allowedForms.includes(totalforms) && (childstatus === 'no_ab' || childstatus === ''))
+        (allowedForms.includes(totalforms) && (childstatus === 'no_ab' || childstatus === ''))
       );
     }),
 
@@ -536,7 +536,7 @@ module.exports = [
     ]
   },
   {
-    name: 'perinatal_module_2.2', 
+    name: 'perinatal_module_2.2',
     icon: 'icon-perinatal-module',
     title: 'task.perinatal_module_2.2',
     appliesTo: 'reports',
@@ -549,7 +549,7 @@ module.exports = [
       const allowedForms = [3, 4];
       return (
 
-         (allowedForms.includes(totalforms) && childstatus === 'no_ab' )
+        (allowedForms.includes(totalforms) && childstatus === 'no_ab')
       );
     }),
 
@@ -585,7 +585,7 @@ module.exports = [
       // const allowedForms = [2, 3, 4, 5];
       return (
 
-        ( deliveryDateStr >= 35 && deliveryDateStr < 120 && eligibility === '1' && women_status === 'pp_women'  && woman_consent === 'yes' && totalforms === 1 && (childstatus === 'none' || childstatus === ''))
+        (deliveryDateStr >= 35 && deliveryDateStr < 120 && eligibility === '1' && women_status === 'pp_women' && woman_consent === 'yes' && totalforms === 1 && (childstatus === 'none' || childstatus === ''))
       );
     }),
 
@@ -678,7 +678,7 @@ module.exports = [
       const totalforms = totalForms(contact, 'epds_module_4');
       return (
 
-        ( deliveryDateStr >= 121 && deliveryDateStr < 210 && eligibility === '1' && women_status === 'pp_women'  && woman_consent === 'yes' && totalforms === 1  && (childstatus === 'none' || childstatus === ''))
+        (deliveryDateStr >= 121 && deliveryDateStr < 210 && eligibility === '1' && women_status === 'pp_women' && woman_consent === 'yes' && totalforms === 1 && (childstatus === 'none' || childstatus === ''))
       );
     }),
 
@@ -710,7 +710,7 @@ module.exports = [
       const allowedForms = [2, 5];
       return (
 
-         (allowedForms.includes(totalforms) && (childstatus === 'no_ab' || childstatus === ''))
+        (allowedForms.includes(totalforms) && (childstatus === 'no_ab' || childstatus === ''))
       );
     }),
 
@@ -741,7 +741,7 @@ module.exports = [
       const allowedForms = [3, 4];
       return (
 
-         (allowedForms.includes(totalforms) && childstatus === 'no_ab')
+        (allowedForms.includes(totalforms) && childstatus === 'no_ab')
       );
     }),
 
@@ -776,7 +776,7 @@ module.exports = [
       const totalforms = totalForms(contact, 'epds_module_5');
       return (
 
-        ( deliveryDateStr >= 211 && deliveryDateStr < 299 && eligibility === '1' && women_status === 'pp_women'  && woman_consent === 'yes' && totalforms === 1 && (childstatus === 'none' || childstatus === ''))
+        (deliveryDateStr >= 211 && deliveryDateStr < 299 && eligibility === '1' && women_status === 'pp_women' && woman_consent === 'yes' && totalforms === 1 && (childstatus === 'none' || childstatus === ''))
       );
     }),
 
@@ -867,7 +867,7 @@ module.exports = [
       const woman_consent = getField(report, 'epds.study_cnst.cnst_part');
       return (
 
-        ( eligibility === '1' && woman_consent === 'yes')
+        (eligibility === '1' && woman_consent === 'yes')
       );
     }),
 
@@ -879,7 +879,7 @@ module.exports = [
     ],
     events: epds_assessmentSchedule
   },
-   {
+  {
     name: 'psuup_home_visit',
     icon: 'icon-perinatal-module1',
     title: 'task.psuup_home_visit',
@@ -891,13 +891,13 @@ module.exports = [
       // const consent2 = getField(report, 'psupp_form.cont_call');
       // const getReport = getNewestReport(report, 'psupp_form');
 
-      const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      const  totalform1 = totalPsuppSessions(contact, PSUPP_HOME_VISIT);
+      const totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
+      const totalform1 = totalPsuppSessions(contact, PSUPP_HOME_VISIT);
       // const allowedForms = ['visit_4'];
       console.log('logs for the home visssit ', totalform, totalform1);
       return (
 
-        ( (consent ===  'yes' ) || ( totalform === 'visit_4' ))
+        ((consent === 'yes') || (totalform === 'visit_4'))
       );
     }),
 
@@ -907,7 +907,7 @@ module.exports = [
         form: PSUPP_HOME_VISIT,
       }
     ],
-   events: [
+    events: [
       {
         start: 30,
         days: 30,
@@ -922,15 +922,28 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [PSUPP_HOME_VISIT, PSUPP_WEEKLY_VISIT],
     appliesIf: taskApplier((contact, report) => {
-      const consent = getField(report, 'first_home_visit.end_1stvisit');
-      // const getReport = getNewestReport(report, 'psupp_form');
+      // const consent = getField(report, 'first_home_visit.end_1stvisit');
+      // const consent1 = getField(report, 'visit.weekly_visit');
 
-      const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
-      const allowedForms = ['visit_2', 'visit_3'];
-      console.log('logs for the weekly visits', contact, totalform, report, consent);
-      return (
-        ( allowedForms.includes(totalform) || consent === 'yes')
-      );
+      // // const getReport = getNewestReport(report, 'psupp_form');
+
+      // const  totalform = totalPsuppSessions(contact, PSUPP_WEEKLY_VISIT);
+      // const allowedForms = ['visit_2', 'visit_3'];
+      // console.log('logs for the weekly visits', contact, totalform, report, consent);
+      // return (
+      //   ( consent1 === 'visit_2' || consent1 === 'visit_3'  || consent === 'yes')
+      // );
+      const formName = report.form;
+
+      if (formName === PSUPP_HOME_VISIT) {
+        const consent = getField(report, 'first_home_visit.end_1stvisit');
+        return consent === 'yes';
+      }
+
+      if (formName === PSUPP_WEEKLY_VISIT) {
+        const weekly = getField(report, 'weekly_visit');
+        return weekly === 'visit_1' || weekly === 'visit_2';
+      }
     }),
 
     actions: [
@@ -939,7 +952,7 @@ module.exports = [
         form: PSUPP_WEEKLY_VISIT,
       }
     ],
-   events: [
+    events: [
       {
         start: 30,
         days: 30,

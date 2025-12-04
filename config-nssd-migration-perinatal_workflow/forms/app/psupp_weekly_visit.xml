@@ -1,36 +1,37 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
   <h:head>
-    <h:title>PSuPPs Weekly Visit</h:title>
+    <h:title>PSuPP Home visit</h:title>
     <model>
       <itext>
         <translation lang="en">
-          <text id="/psupp_weekly_visit/epds/psupp/no:label">
+          <text id="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall/no:label">
             <value>No</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp/yes:label">
+          <text id="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall/yes:label">
             <value>Yes</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp:label">
-            <value>निद्रा अनुगमन चार्ट</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall:label">
+            <value>First weekly call has been completed.</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp_week_1:label">
-            <value>this is first weekly visit</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/weeklycall1_st:label">
+            <value>Steps 
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Check in about Asako diyo and disucss if any confusion or difficulty is using its various domains [Note: Did you use Aashako diyo since last time we talked? If yes, how? Do you want to talk about it? What was helpful? How can use further next time?] 
+4. Reassure support and remind about resource card. 
+5.Plan for Next contact 
+
+[Note: If they share about warning signs at any point in time, please continue as per referral pathway as trained.]</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp_week_2:label">
-            <value>this is second weekly visit</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/weeklycall_1:label">
+            <value>Goal of session : Check-in + build trust + reinforce Aasha ko Diyo</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp_week_3:label">
-            <value>this is third weekly visit</value>
+          <text id="/psupp_weekly_visit/first_weekly_call:label">
+            <value>First weekly call</value>
           </text>
           <text id="/psupp_weekly_visit/inputs/contact/_id:label">
             <value>What is the patient's name?</value>
-          </text>
-          <text id="/psupp_weekly_visit/inputs/contact/nepali_full_name:label">
-            <value>Short Name</value>
-          </text>
-          <text id="/psupp_weekly_visit/inputs/contact/patient_id:label">
-            <value>Patient ID</value>
           </text>
           <text id="/psupp_weekly_visit/inputs/contact:label">
             <value>Contact</value>
@@ -44,33 +45,156 @@
           <text id="/psupp_weekly_visit/inputs:label">
             <value>Patient</value>
           </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2:label">
+            <value>Second weekly call has been completed</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/weeklycall2_st:label">
+            <value>Steps
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Explore reasons to live [based on asahako diyo they made]
+4. Suggest activities [like music, writing, drawing] + Appreciate effort.
+5. Schedule next contact 
+
+[Note: If they share about warning signs at any point in time, please continue as per the referral pathway as trained.]</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/weeklycall_2:label">
+            <value>Goal of session : Explore reasons to live + discuss coping</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call:label">
+            <value>Second weekly call</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3:label">
+            <value>Third weekly call has been completed</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/weeklycall3_st:label">
+            <value>Steps 
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Encourage health post visit + Explain benefits 
+4. Offer planning to health post
+5. Schedule next home visit
+
+[[Note: If they share about warning signs at any point in time, please continue as per the referral pathway as trained.]</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/weeklycall_3:label">
+            <value>Goal of session :Encourage to visit to the health post</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call:label">
+            <value>Third weekly call</value>
+          </text>
         </translation>
         <translation lang="ne">
-          <text id="/psupp_weekly_visit/epds/psupp/no:label">
-            <value>छैन</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall/no:label">
+            <value>गरिन</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp/yes:label">
-            <value>छ</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall/yes:label">
+            <value>गरे</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp:label">
-            <value>Sleep monitoring chart</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall:label">
+            <value>पहिलो साप्ताहिक कल पूरा भएको छ |</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp_week_1:label">
-            <value>this is first weekly visit</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/weeklycall1_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+३.आशाको दियोको बारेमा सोध्नुहोस र यसमा कुनै भ्रम वा कठिनाइ छ भने छलफल गर्नुहोस्।[सोध्तन सकिने नोट: तपाईले हाम्रो पछिल्लो भेट पछि आशाको दियो प्रयोग गर्नु भयो ? यदि गर्नुभयो भनि कसरी ? के तपाई यसको बारेमा कुरा गर्न चाहनुहुन्छ ? तपाइलाई के कुराले सहयोग गर्यो ? ]
+४. सहयोगको आश्वासन दिनुहोस् र स्रोत कार्डको बारेमा सम्झाइ दिनुहोस्।
+६.अर्को फोन कलको योजना बनाउनुहोस्। 
+[ यदि सहभागीले कुनै पनि समयमा आत्महत्या जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला |]</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp_week_2:label">
-            <value>this is second weekly visit</value>
+          <text id="/psupp_weekly_visit/first_weekly_call/weeklycall_1:label">
+            <value>सत्रको उद्देश्य:
+हालचाल बुझ्नु र आशाको दियोलाई पुन: सुदृढ गर्नु</value>
           </text>
-          <text id="/psupp_weekly_visit/epds/psupp_week_3:label">
-            <value>this is third weekly visit</value>
+          <text id="/psupp_weekly_visit/first_weekly_call:label">
+            <value>साप्ताहिक कल १</value>
           </text>
           <text id="/psupp_weekly_visit/inputs/contact/_id:label">
             <value>सेवा लिनेको नाम के हो?</value>
           </text>
+          <text id="/psupp_weekly_visit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/psupp_weekly_visit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/psupp_weekly_visit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/psupp_weekly_visit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2:label">
+            <value>दोस्रो साप्ताहिक कल पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/weeklycall2_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+३. सहभागीले आशाको दियोमा बनाएका आधारमा]बाँच्ने कारणहरू छलफल गर्नुहोस्|
+४.विभिन्न गतिविधिहरू [जस्तै: संगीत, लेखन, चित्रकला] बारे सुझाव दिनुहोस् र उहाको प्रयासको प्रशंसा गर्नुहोस्|
+५.अर्को फोन कलको योजना बनाउहोस्।
+
+[यदि सहभागीले कुनै पनि समयमा आत्महत्याको जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला ]</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call/weeklycall_2:label">
+            <value>सत्रको उद्देश्य:
+बाँच्नुको उदेश्य र सामना गर्ने (coping) तरिकाहरूबारे छलफल गर्नु</value>
+          </text>
+          <text id="/psupp_weekly_visit/second_weekly_call:label">
+            <value>साप्ताहिक कल २</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3:label">
+            <value>तेस्रो साप्ताहिक कल पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/weeklycall3_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+
+३. स्वास्थ्य संस्था भ्रमण गर्न र यसको लाभहरू व्याख्या गर्नुहोस्।
+
+४. स्वास्थ्य संस्था जाने योजना बनाउन सहयोग गर्नुहोस्।
+५. अर्को फोन कलको योजना बनाउनुहोस्। 
+
+[यदि सहभागीले कुनै पनि समयमा आत्महत्याको जोखिमको संकेत देखिने कुनै पनि कुराहरु गर्नुहुन्छ भने तालिम भनिएको रेफेरलको माध्यमको प्रयोग गर्नुहोला</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call/weeklycall_3:label">
+            <value>सत्रको उद्देश्य:
+स्वास्थ्य संस्था भ्रमण गर्न सल्लाह दिनुहोस |</value>
+          </text>
+          <text id="/psupp_weekly_visit/third_weekly_call:label">
+            <value>साप्ताहिक कल ३</value>
+          </text>
         </translation>
       </itext>
       <instance>
-        <psupp_weekly_visit id="psupp_weekly_visit" prefix="J1!psupp_weekly_visit!" delimiter="#" version="1">
+        <psupp_weekly_visit id="psupp_home_visit" prefix="J1!psupp_home_visit!" delimiter="#" version="1">
           <inputs>
             <meta>
               <location>
@@ -84,21 +208,31 @@
             <source_id/>
             <contact>
               <_id/>
-              <nepali_full_name/>
+              <name/>
               <patient_id/>
-              <date_of_registration/>
+              <date_of_birth/>
             </contact>
           </inputs>
           <patient_uuid/>
           <patient_name/>
           <patient_id/>
-          <weekly_visit tag="hidden"/>
-          <epds>
-            <psupp_week_1/>
-            <psupp_week_2/>
-            <psupp_week_3/>
-            <psupp/>
-          </epds>
+          <patient_age/>
+          <weekly_visit/>
+          <first_weekly_call>
+            <weeklycall_1/>
+            <weeklycall1_st/>
+            <end_1stweeklycall/>
+          </first_weekly_call>
+          <second_weekly_call>
+            <weeklycall_2/>
+            <weeklycall2_st/>
+            <end_weeklycall_2/>
+          </second_weekly_call>
+          <third_weekly_call>
+            <weeklycall_3/>
+            <weeklycall3_st/>
+            <end_weeklycall_3/>
+          </third_weekly_call>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -110,17 +244,26 @@
       <bind nodeset="/psupp_weekly_visit/inputs/source" type="string"/>
       <bind nodeset="/psupp_weekly_visit/inputs/source_id" type="string"/>
       <bind nodeset="/psupp_weekly_visit/inputs/contact/_id" type="db:person"/>
-      <bind nodeset="/psupp_weekly_visit/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/psupp_weekly_visit/inputs/contact/name" type="string"/>
       <bind nodeset="/psupp_weekly_visit/inputs/contact/patient_id" type="string"/>
-      <bind nodeset="/psupp_weekly_visit/inputs/contact/date_of_registration" type="string"/>
+      <bind nodeset="/psupp_weekly_visit/inputs/contact/date_of_birth" type="string"/>
       <bind nodeset="/psupp_weekly_visit/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/psupp_weekly_visit/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/psupp_weekly_visit/patient_name" type="string" calculate="../inputs/contact/name"/>
       <bind nodeset="/psupp_weekly_visit/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/psupp_weekly_visit/patient_age" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
       <bind nodeset="/psupp_weekly_visit/weekly_visit" type="string" calculate="if(instance('contact-summary')/context/weekly_visit, instance('contact-summary')/context/weekly_visit, .)"/>
-      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_1" type="string" relevant=" /psupp_weekly_visit/weekly_visit  ='1'"/>
-      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_2" type="string" relevant=" /psupp_weekly_visit/weekly_visit  ='2'"/>
-      <bind nodeset="/psupp_weekly_visit/epds/psupp_week_3" type="string" relevant=" /psupp_weekly_visit/weekly_visit  ='3'"/>
-      <bind nodeset="/psupp_weekly_visit/epds/psupp" type="select1"/>
+      <bind nodeset="/psupp_weekly_visit/first_weekly_call" relevant=" /psupp_weekly_visit/weekly_visit  ='visit_1'"/>
+      <bind nodeset="/psupp_weekly_visit/first_weekly_call/weeklycall_1" type="string" required="true()"/>
+      <bind nodeset="/psupp_weekly_visit/first_weekly_call/weeklycall1_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall" type="select1" required="true()"/>
+      <bind nodeset="/psupp_weekly_visit/second_weekly_call" relevant=" /psupp_weekly_visit/weekly_visit  ='visit_2'"/>
+      <bind nodeset="/psupp_weekly_visit/second_weekly_call/weeklycall_2" type="string" required="true()"/>
+      <bind nodeset="/psupp_weekly_visit/second_weekly_call/weeklycall2_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2" type="select1" required="true()"/>
+      <bind nodeset="/psupp_weekly_visit/third_weekly_call" relevant=" /psupp_weekly_visit/weekly_visit  ='visit_3'"/>
+      <bind nodeset="/psupp_weekly_visit/third_weekly_call/weeklycall_3" type="string" required="true()"/>
+      <bind nodeset="/psupp_weekly_visit/third_weekly_call/weeklycall3_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3" type="select1" required="true()"/>
       <bind nodeset="/psupp_weekly_visit/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -134,24 +277,62 @@
         </input>
       </group>
     </group>
-    <group appearance="field-list" ref="/psupp_weekly_visit/epds">
-      <input ref="/psupp_weekly_visit/epds/psupp_week_1">
-        <label ref="jr:itext('/psupp_weekly_visit/epds/psupp_week_1:label')"/>
+    <group appearance="field-list" ref="/psupp_weekly_visit/first_weekly_call">
+      <label ref="jr:itext('/psupp_weekly_visit/first_weekly_call:label')"/>
+      <input ref="/psupp_weekly_visit/first_weekly_call/weeklycall_1">
+        <label ref="jr:itext('/psupp_weekly_visit/first_weekly_call/weeklycall_1:label')"/>
       </input>
-      <input ref="/psupp_weekly_visit/epds/psupp_week_2">
-        <label ref="jr:itext('/psupp_weekly_visit/epds/psupp_week_2:label')"/>
+      <input ref="/psupp_weekly_visit/first_weekly_call/weeklycall1_st">
+        <label ref="jr:itext('/psupp_weekly_visit/first_weekly_call/weeklycall1_st:label')"/>
       </input>
-      <input ref="/psupp_weekly_visit/epds/psupp_week_3">
-        <label ref="jr:itext('/psupp_weekly_visit/epds/psupp_week_3:label')"/>
-      </input>
-      <select1 ref="/psupp_weekly_visit/epds/psupp">
-        <label ref="jr:itext('/psupp_weekly_visit/epds/psupp:label')"/>
+      <select1 ref="/psupp_weekly_visit/first_weekly_call/end_1stweeklycall">
+        <label ref="jr:itext('/psupp_weekly_visit/first_weekly_call/end_1stweeklycall:label')"/>
         <item>
-          <label ref="jr:itext('/psupp_weekly_visit/epds/psupp/yes:label')"/>
+          <label ref="jr:itext('/psupp_weekly_visit/first_weekly_call/end_1stweeklycall/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/psupp_weekly_visit/epds/psupp/no:label')"/>
+          <label ref="jr:itext('/psupp_weekly_visit/first_weekly_call/end_1stweeklycall/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/psupp_weekly_visit/second_weekly_call">
+      <label ref="jr:itext('/psupp_weekly_visit/second_weekly_call:label')"/>
+      <input ref="/psupp_weekly_visit/second_weekly_call/weeklycall_2">
+        <label ref="jr:itext('/psupp_weekly_visit/second_weekly_call/weeklycall_2:label')"/>
+      </input>
+      <input ref="/psupp_weekly_visit/second_weekly_call/weeklycall2_st">
+        <label ref="jr:itext('/psupp_weekly_visit/second_weekly_call/weeklycall2_st:label')"/>
+      </input>
+      <select1 ref="/psupp_weekly_visit/second_weekly_call/end_weeklycall_2">
+        <label ref="jr:itext('/psupp_weekly_visit/second_weekly_call/end_weeklycall_2:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_weekly_visit/second_weekly_call/end_weeklycall_2/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_weekly_visit/second_weekly_call/end_weeklycall_2/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/psupp_weekly_visit/third_weekly_call">
+      <label ref="jr:itext('/psupp_weekly_visit/third_weekly_call:label')"/>
+      <input ref="/psupp_weekly_visit/third_weekly_call/weeklycall_3">
+        <label ref="jr:itext('/psupp_weekly_visit/third_weekly_call/weeklycall_3:label')"/>
+      </input>
+      <input ref="/psupp_weekly_visit/third_weekly_call/weeklycall3_st">
+        <label ref="jr:itext('/psupp_weekly_visit/third_weekly_call/weeklycall3_st:label')"/>
+      </input>
+      <select1 ref="/psupp_weekly_visit/third_weekly_call/end_weeklycall_3">
+        <label ref="jr:itext('/psupp_weekly_visit/third_weekly_call/end_weeklycall_3:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_weekly_visit/third_weekly_call/end_weeklycall_3/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_weekly_visit/third_weekly_call/end_weeklycall_3/no:label')"/>
           <value>no</value>
         </item>
       </select1>
