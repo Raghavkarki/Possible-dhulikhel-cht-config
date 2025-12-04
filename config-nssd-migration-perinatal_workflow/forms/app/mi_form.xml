@@ -4808,8 +4808,8 @@ MI को दृष्टिकोण अनि MI का सिप प्रय
       <bind nodeset="/mi_form/ask_for_consent/reason_absence" type="select1" relevant=" /mi_form/ask_for_consent/patient_at_home  = 'no'" required="true()"/>
       <bind nodeset="/mi_form/ask_for_consent/generated_note_name_41" readonly="true()" type="string" relevant=" /mi_form/ask_for_consent/reason_absence  = 'died'"/>
       <bind nodeset="/mi_form/ask_for_consent/generated_note_name_42" readonly="true()" type="string" relevant=" /mi_form/ask_for_consent/reason_absence  = 'migrated'"/>
-      <bind nodeset="/mi_form/ask_for_consent/remove_patient" type="string" relevant=" /mi_form/ask_for_consent/reason_absence  = 'migrated' and  /mi_form/ask_for_consent/reason_absence  = 'died'" calculate="1"/>
-      <bind nodeset="/mi_form/ask_for_consent/remove_care_delivery" type="string" relevant=" /mi_form/ask_for_consent/reason_absence  = 'migrated'" calculate="1"/>
+      <bind nodeset="/mi_form/ask_for_consent/remove_patient" type="string" calculate="1" relevant=" /mi_form/ask_for_consent/reason_absence  = 'migrated' and  /mi_form/ask_for_consent/reason_absence  = 'died'"/>
+      <bind nodeset="/mi_form/ask_for_consent/remove_care_delivery" type="string" calculate="1" relevant=" /mi_form/ask_for_consent/reason_absence  = 'migrated'"/>
       <bind nodeset="/mi_form/ask_for_consent/person_consent_counselling" type="select1" relevant=" /mi_form/ask_for_consent/patient_at_home  = 'yes'" required="true()"/>
       <bind nodeset="/mi_form/ask_for_consent/no_consent_counselling" type="string" relevant=" /mi_form/ask_for_consent/person_consent_counselling  = 'no'" required="true()"/>
       <bind nodeset="/mi_form/ask_for_consent/person_consent_recording" type="select1" relevant=" /mi_form/ask_for_consent/patient_at_home  = 'yes' and  /mi_form/ask_for_consent/person_consent_counselling  = 'yes'" required="true()"/>

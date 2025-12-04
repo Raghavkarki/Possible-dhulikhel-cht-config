@@ -1,0 +1,64 @@
+
+  <model>
+    <instance>
+        <death_and_migration_form xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="death_and_migration_form" prefix="J1!death_and_migration_form!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <reason/>
+          <complete_care_form/>
+          <generated_note_name_29/>
+          <age_of_the_dead>
+            <generated_note_name_32/>
+            <age_year/>
+            <age_month/>
+            <age_day/>
+            <age_hour/>
+            <time_of_death/>
+            <place_of_death/>
+            <place_of_death_other/>
+            <death_register/>
+            <generated_note_name_43/>
+            <cause_of_death/>
+          </age_of_the_dead>
+          <migration>
+            <reason_for_migration/>
+            <reason_for_migration_other/>
+            <person_return/>
+            <generated_note_name_54/>
+            <reactivate_profile/>
+          </migration>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </death_and_migration_form>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+

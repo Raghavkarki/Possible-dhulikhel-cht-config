@@ -1588,23 +1588,23 @@ Note: If they are selected for the study, the informed consent process will only
       <bind nodeset="/epds_screening/formatted_date" type="string" calculate="format-date( /epds_screening/delivery_date , '%d/%m/%Y')"/>
       <bind nodeset="/epds_screening/epds/condit_bn" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/intro" readonly="true()" type="string" relevant=" /epds_screening/epds/condit_bn = 'none'"/>
-      <bind nodeset="/epds_screening/epds/cnst_scrn" type="select1" required="true()" relevant=" /epds_screening/epds/condit_bn = 'none'"/>
-      <bind nodeset="/epds_screening/epds/rsn_no_scrn" type="select" required="true()" relevant=" /epds_screening/epds/cnst_scrn = 'no'"/>
-      <bind nodeset="/epds_screening/epds/specify_reason" type="string" required="true()" relevant="selected( /epds_screening/epds/rsn_no_scrn , 'other')"/>
+      <bind nodeset="/epds_screening/epds/cnst_scrn" type="select1" relevant=" /epds_screening/epds/condit_bn = 'none'" required="true()"/>
+      <bind nodeset="/epds_screening/epds/rsn_no_scrn" type="select" relevant=" /epds_screening/epds/cnst_scrn = 'no'" required="true()"/>
+      <bind nodeset="/epds_screening/epds/specify_reason" type="string" relevant="selected( /epds_screening/epds/rsn_no_scrn , 'other')" required="true()"/>
       <bind nodeset="/epds_screening/epds/reprtd_date" type="string" readonly="true()" calculate="date(today())"/>
       <bind nodeset="/epds_screening/epds/s_date" readonly="true()" type="string"/>
       <bind nodeset="/epds_screening/epds/screening" relevant=" /epds_screening/epds/cnst_scrn = 'yes'"/>
       <bind nodeset="/epds_screening/epds/screening/curr_sts" type="select1" required="true()"/>
-      <bind nodeset="/epds_screening/epds/screening/lmp_wom" type="date" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/lmp_wom" type="date" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'" required="true()"/>
       <bind nodeset="/epds_screening/epds/screening/gest_wk" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/lmp_wom ))) div 7)"/>
       <bind nodeset="/epds_screening/epds/screening/gest_wk_note" readonly="true()" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
-      <bind nodeset="/epds_screening/epds/screening/del_date" type="date" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/del_date" type="date" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'" required="true()"/>
       <bind nodeset="/epds_screening/epds/screening/pp_days" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/del_date ))))"/>
       <bind nodeset="/epds_screening/epds/screening/pp_days_note" readonly="true()" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
       <bind nodeset="/epds_screening/epds/screening/migration" type="select1" required="true()"/>
-      <bind nodeset="/epds_screening/epds/screening/plan_birth" type="select1" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/plan_birth" type="select1" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'" required="true()"/>
       <bind nodeset="/epds_screening/epds/screening/prob_part" type="select1" required="true()"/>
-      <bind nodeset="/epds_screening/epds/screening/diff_prob" type="string" required="true()" relevant=" /epds_screening/epds/screening/prob_part = 'yes'"/>
+      <bind nodeset="/epds_screening/epds/screening/diff_prob" type="string" relevant=" /epds_screening/epds/screening/prob_part = 'yes'" required="true()"/>
       <bind nodeset="/epds_screening/epds/postnatal_d_screen" relevant=" /epds_screening/epds/cnst_scrn = 'yes'"/>
       <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_inst" readonly="true()" type="string"/>
       <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_1" type="select1" required="true()"/>
@@ -1620,16 +1620,16 @@ Note: If they are selected for the study, the informed consent process will only
       <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_score" type="string" calculate="int( /epds_screening/epds/postnatal_d_screen/epds_1 ) + int( /epds_screening/epds/postnatal_d_screen/epds_2 ) + int( /epds_screening/epds/postnatal_d_screen/epds_3 ) + int( /epds_screening/epds/postnatal_d_screen/epds_4 ) + int( /epds_screening/epds/postnatal_d_screen/epds_5 ) + int( /epds_screening/epds/postnatal_d_screen/epds_6 ) + int( /epds_screening/epds/postnatal_d_screen/epds_7 ) + int( /epds_screening/epds/postnatal_d_screen/epds_8 ) + int( /epds_screening/epds/postnatal_d_screen/epds_9 ) + int( /epds_screening/epds/postnatal_d_screen/epds_10 )"/>
       <bind nodeset="/epds_screening/epds/postnatal_d_screen/fln_elig" type="string" calculate="if( /epds_screening/epds/screening/migration  = 'no' and  /epds_screening/epds/screening/prob_part  = 'no' and  /epds_screening/epds/postnatal_d_screen/epds_score  &gt;= 10 and ( /epds_screening/epds/screening/plan_birth  = 'yes' or  /epds_screening/epds/screening/plan_birth  = ''), '1', '2')"/>
       <bind nodeset="/epds_screening/epds/ness/ness_inst" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
-      <bind nodeset="/epds_screening/epds/ness/ness1" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
-      <bind nodeset="/epds_screening/epds/ness/ness2" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
-      <bind nodeset="/epds_screening/epds/ness/ness3" type="select1" required="true()" relevant="( /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1') and  /epds_screening/epds/ness/ness2 = 'yes'"/>
+      <bind nodeset="/epds_screening/epds/ness/ness1" type="select1" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'" required="true()"/>
+      <bind nodeset="/epds_screening/epds/ness/ness2" type="select1" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'" required="true()"/>
+      <bind nodeset="/epds_screening/epds/ness/ness3" type="select1" relevant="( /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1') and  /epds_screening/epds/ness/ness2 = 'yes'" required="true()"/>
       <bind nodeset="/epds_screening/epds/ness/ness_score" type="string" relevant=" /epds_screening/epds/ness/ness1  != ''" calculate="if( /epds_screening/epds/ness/ness2  = 'yes' or  /epds_screening/epds/ness/ness3  = 'yes', 'high', if( /epds_screening/epds/ness/ness1  = 'yes' and  /epds_screening/epds/ness/ness2  = 'no', 'moderate', 'low'))"/>
       <bind nodeset="/epds_screening/epds/ness/elig_ness1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and ( /epds_screening/epds/ness/ness_score = 'low' or  /epds_screening/epds/ness/ness_score = 'moderate')"/>
       <bind nodeset="/epds_screening/epds/ness/Inelig_ness1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='2' and ( /epds_screening/epds/ness/ness_score = 'low' or  /epds_screening/epds/ness/ness_score = 'moderate')"/>
       <bind nodeset="/epds_screening/epds/ness/Elig_ness3" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and
  /epds_screening/epds/ness/ness_score = 'high'"/>
       <bind nodeset="/epds_screening/epds/ness/Inelig_ness3" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig  = '2' and  /epds_screening/epds/ness/ness_score  = 'high'"/>
-      <bind nodeset="/epds_screening/epds/ness/risk_suicide" type="select1" required="true()" relevant=" /epds_screening/epds/ness/ness2 ='yes' or  /epds_screening/epds/ness/ness3 ='yes'"/>
+      <bind nodeset="/epds_screening/epds/ness/risk_suicide" type="select1" relevant=" /epds_screening/epds/ness/ness2 ='yes' or  /epds_screening/epds/ness/ness3 ='yes'" required="true()"/>
       <bind nodeset="/epds_screening/epds/study_eligibility/elig_ins1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and 
 ( /epds_screening/epds/ness/ness_score !='moderate' or  /epds_screening/epds/ness/ness_score !='high' )"/>
       <bind nodeset="/epds_screening/epds/study_eligibility/inelig_ins2" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='2' and
@@ -1637,35 +1637,35 @@ Note: If they are selected for the study, the informed consent process will only
       <bind nodeset="/epds_screening/epds/study_eligibility/no_imm_risk" readonly="true()" type="string" relevant=" /epds_screening/epds/ness/risk_suicide ='yes'"/>
       <bind nodeset="/epds_screening/epds/study_eligibility/imm_risk" readonly="true()" type="string" relevant=" /epds_screening/epds/ness/risk_suicide ='no'"/>
       <bind nodeset="/epds_screening/epds/study_cnst/cnst_int" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1'"/>
-      <bind nodeset="/epds_screening/epds/study_cnst/cnst_part" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1'"/>
-      <bind nodeset="/epds_screening/epds/study_cnst/rsn_part" type="select" required="true()" relevant=" /epds_screening/epds/study_cnst/cnst_part = 'no'"/>
-      <bind nodeset="/epds_screening/epds/study_cnst/cnst_specify" type="string" required="true()" relevant="selected( /epds_screening/epds/study_cnst/rsn_part , 'other')"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/cnst_part" type="select1" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1'" required="true()"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/rsn_part" type="select" relevant=" /epds_screening/epds/study_cnst/cnst_part = 'no'" required="true()"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/cnst_specify" type="string" relevant="selected( /epds_screening/epds/study_cnst/rsn_part , 'other')" required="true()"/>
       <bind nodeset="/epds_screening/epds/study_cnst/time" readonly="true()" type="string" relevant=" /epds_screening/epds/cnst_scrn = 'no' or  /epds_screening/epds/study_cnst/cnst_part = 'no' or  /epds_screening/epds/condit_bn = 'abort' or  /epds_screening/epds/condit_bn = 'still_brth' or  /epds_screening/epds/condit_bn = 'ch_dth'"/>
       <bind nodeset="/epds_screening/epds/socidem_info" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and  /epds_screening/epds/study_cnst/cnst_part = 'yes'"/>
       <bind nodeset="/epds_screening/epds/socidem_info/instr_socidem" readonly="true()" type="string"/>
       <bind nodeset="/epds_screening/epds/socidem_info/age_resp" type="select1" required="true()"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/age_yrs" type="int" required="true()" relevant=" /epds_screening/epds/socidem_info/age_resp  = 'comp_yrs'"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/age_dob" type="date" required="true()" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age_yrs" type="int" relevant=" /epds_screening/epds/socidem_info/age_resp  = 'comp_yrs'" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age_dob" type="date" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/age" type="string" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'" calculate="floor( difference-in-months( /epds_screening/epds/socidem_info/age_dob , today() ) div 12)"/>
       <bind nodeset="/epds_screening/epds/socidem_info/age_display" readonly="true()" type="string" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'"/>
       <bind nodeset="/epds_screening/epds/socidem_info/fam_mem" type="int" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/fam_type" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/ethn" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/religion" type="select1" required="true()"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/other_religion" type="string" required="true()" relevant=" /epds_screening/epds/socidem_info/religion  = 'other'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/other_religion" type="string" relevant=" /epds_screening/epds/socidem_info/religion  = 'other'" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/edu_resp" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/edu_husb" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/occu_resp" type="select1" required="true()"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/other_occu" type="string" required="true()" relevant=" /epds_screening/epds/socidem_info/occu_resp  = 'other'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/other_occu" type="string" relevant=" /epds_screening/epds/socidem_info/occu_resp  = 'other'" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/occu_husb" type="select1" required="true()"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/other_occu_husb" type="string" required="true()" relevant=" /epds_screening/epds/socidem_info/occu_husb  = 'other'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/other_occu_husb" type="string" relevant=" /epds_screening/epds/socidem_info/occu_husb  = 'other'" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/monthly_expend" type="int" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/dur_marriage" type="int" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/gravida" type="int" required="true()"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/intend_preg" type="select1" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/intend_preg" type="select1" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/parity" type="int" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/livebirth_num" type="int" required="true()"/>
-      <bind nodeset="/epds_screening/epds/socidem_info/mode_deli" type="select1" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/mode_deli" type="select1" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'" required="true()"/>
       <bind nodeset="/epds_screening/epds/socidem_info/depress_hstry" type="select1" required="true()"/>
       <bind nodeset="/epds_screening/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>

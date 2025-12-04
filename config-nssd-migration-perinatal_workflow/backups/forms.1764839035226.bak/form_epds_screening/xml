@@ -1,0 +1,2460 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>EPDS Service</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/epds_screening/epds/cnst_scrn/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/cnst_scrn/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/cnst_scrn:label">
+            <value>Do you want to participate in the screening process?</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/abort:label">
+            <value>Already had miscarriage/abortion</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/ch_dth:label">
+            <value>Suffered neonatal/child death</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/none:label">
+            <value>None of the above</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/still_brth:label">
+            <value>Had stillbirth</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn:label">
+            <value>Please tick the appropriate option that describes the current status of this beneficiary</value>
+          </text>
+          <text id="/epds_screening/epds/intro:label">
+            <value>During the pregnancy and postpartum period, symptoms of mental health problems such as depression may occur along with physical problems. Dhulikhel Hospital and Possible (Sambhav) are working with the municipalities to identify these symptoms and provide integrated management strategies. We will ask you a few questions to determine whether you are eligible to participate in the study. If you have any questions or concerns about this, please feel free to ask. 
+
+Instructions: Read the information sheet about the study or have it read to you. Ask the participants if they have any questions or concerns.
+
+If you have any additional questions or concerns about this study, I would like to ask you questions about the selection process.</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Elig_ness3:hint">
+            <value>Connect participant with the crisis counselor</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Elig_ness3:label">
+            <value>Instructions: Women is eligible to participate in this study, but is at high risk of suicide.
+
+Please use the discussion points outlined in the referral process before proceeding with the informed consent process as outlined in the study process.
+
+-- Sit with the participant calmly, listen empathetically, and inform the family.
+
+-- Even if the participant does not want to seek your help, tell them that their safety is important to you and that you will provide support as outlined in the referral process.
+
+-- Have the participant talk to a crisis counselor and ensure that the participant is safe for the time being.</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Inelig_ness1:label">
+            <value>Instructions: Women is not eligible to participate in this study and is at low/moderate risk of suicide.
+
+Please do the following using the discussion points outlined in the referral process.
+
+-- Sit with the participant and listen carefully to what they are feeling.
+
+-- Encourage the participant to talk to their family or someone they want to talk to about what they are feeling.
+
+-- Once the participant is comfortable, inform them that they are not eligible for the study at this time. Inform them that the selection process for the study is now complete, but that this process may be repeated during a regular visit.
+
+-- Thank them for their time today by giving them a resource card before leaving.
+
+-- As soon as the conversation with the participant is complete, inform CHN.</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Inelig_ness3:hint">
+            <value>Connect participant with the crisis counselor</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Inelig_ness3:label">
+            <value>Instruction: Women is not eligible to participate in this study but is at high risk of suicide.
+
+Please follow the discussion points outlined in the referral process as outlined in the study protocol.
+
+-- Sit with the participant calmly, listen empathetically, and inform the family.
+
+-- Even if the participant does not want to seek your help, tell them that their safety is important to you and that you will provide support as outlined in the referral process.
+
+-- Have the participant talk to a crisis counselor and ensure that the participant is safe for the time being.</value>
+          </text>
+          <text id="/epds_screening/epds/ness/elig_ness1:label">
+            <value>Instructions: Women is eligible to participate in this study and is at low/moderate risk of suicide.
+
+Please use the discussion points outlined in the referral process before proceeding with the informed consent process as outlined in the study process.
+
+-- Sit with the participant and listen carefully to what they are saying.
+
+-- Encourage the participant to talk to their family or someone they want to talk to, about what they are feeling.
+
+-- After ensuring that the participant feels comfortable, proceed with obtaining informed consent to participate in the study.
+
+-- As soon as the conversation with the participant is complete, inform CHN.</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness1:label">
+            <value>1. Are you having thoughts of killing yourself right now?</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness2:label">
+            <value>2. Have you been thinking about how you might kill yourself?</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness3/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness3/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness3:label">
+            <value>3. Have you had some intention of acting on your suicidal thoughts?</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness_inst:label">
+            <value>Earlier, we talked about the thoughts you have had about harming yourself in the past week, so let's talk a little more about that.
+You are safe with me and everything we talk about will be kept confidential, so feel free to say whatever is on your mind.
+ Shall we start?</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness_score:label">
+            <value>Suicidal Risk</value>
+          </text>
+          <text id="/epds_screening/epds/ness/risk_suicide/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/ness/risk_suicide/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/ness/risk_suicide:label">
+            <value>Based on consultation with a crisis counselor, is this participant safe at this time?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/0:label">
+            <value>As much as I always could</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/1:label">
+            <value>Not quite so much now</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/2:label">
+            <value>Definitely not so much now</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/3:label">
+            <value>Not at all</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/0:label">
+            <value>Never</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/1:label">
+            <value>Hardly ever</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/2:label">
+            <value>Sometimes</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/3:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10:label">
+            <value>10. The thought of harming myself has occoured to me</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1:label">
+            <value>1. I have been able to laugh and see the funny side of things</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/0:label">
+            <value>As much as I ever did</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/1:label">
+            <value>Rather less than I used to</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/2:label">
+            <value>Definitely less than I used to</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/3:label">
+            <value>Hardly at all</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2:label">
+            <value>2. I have looked forward with enjoyment to things</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/0:label">
+            <value>No, never</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/1:label">
+            <value>Not very often</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/2:label">
+            <value>Yes, some of the time</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3:label">
+            <value>3. I have blamed myself unnecessarily when things went wrong</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/1:label">
+            <value>Hardly ever</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/2:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/3:label">
+            <value>Yes, very often</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4:label">
+            <value>4. I have been anxious or worried for no good reason</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/1:label">
+            <value>No, not much</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/2:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/3:label">
+            <value>Yes, quite a lot</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5:label">
+            <value>5. I have felt scared or panicky for no good reason</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/0:label">
+            <value>No, I have been coping as well as ever</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/1:label">
+            <value>No, most of the time I have coped quite well</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/2:label">
+            <value>Yes, sometimes I haven't been coping as well as usual</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/3:label">
+            <value>Yes, most of the time I haven't been able to cope at all</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6:label">
+            <value>6. Things have been getting to me</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/1:label">
+            <value>No, not very often</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/2:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7:label">
+            <value>7. I have been so unhappy that I have had difficulty sleeping</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/1:label">
+            <value>Not very often</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/2:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8:label">
+            <value>8. I have felt sad or miserable</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/0:label">
+            <value>No, never</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/1:label">
+            <value>Only occasionally</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/2:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9:label">
+            <value>9. I have been so unhappy that I have been crying</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_inst:label">
+            <value>As you are currently pregnant or in the postpartum period, we would like to know how you are feeling. Please tell us how you have been feeling, not just today but over the past week. I will now read out the questions, and for each question, there are 4 possible answers from which you will need to choose the best answer among them. There are no right or wrong answers here. 
+
+Instruction: Please read all 4 possible answers for each question.</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_score:label">
+            <value>EPDS Score</value>
+          </text>
+          <text id="/epds_screening/epds/reprtd_date:label">
+            <value>Reported date</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/data_security_confid:label">
+            <value>Due to fear of data insecurity and confidentiality issues.</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/harm:label">
+            <value>Fear of harm from the study</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/no_benefits:label">
+            <value>No any benefits after participating in the study.</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/time:label">
+            <value>Couldn't provide the time during the study time frame</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn:label">
+            <value>If no please select an appropriate reason</value>
+          </text>
+          <text id="/epds_screening/epds/s_date:label">
+            <value>Reported date :- <output value=" /epds_screening/epds/reprtd_date "/></value>
+          </text>
+          <text id="/epds_screening/epds/screening/curr_sts/pp_women:label">
+            <value>Postpartum mother of below 10 months</value>
+          </text>
+          <text id="/epds_screening/epds/screening/curr_sts/preg_women:label">
+            <value>Pregnant women (gestation weeks≥14 weeks)</value>
+          </text>
+          <text id="/epds_screening/epds/screening/curr_sts:label">
+            <value>Current status of women</value>
+          </text>
+          <text id="/epds_screening/epds/screening/del_date:label">
+            <value>Date of delivery of last baby</value>
+          </text>
+          <text id="/epds_screening/epds/screening/diff_prob:label">
+            <value>If yes what are they?</value>
+          </text>
+          <text id="/epds_screening/epds/screening/gest_wk_note:label">
+            <value>Gestation Week: <output value=" /epds_screening/epds/screening/gest_wk "/></value>
+          </text>
+          <text id="/epds_screening/epds/screening/lmp_wom:label">
+            <value>Last menstrual date of women</value>
+          </text>
+          <text id="/epds_screening/epds/screening/migration/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/screening/migration/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/screening/migration:label">
+            <value>Do you plan to migrate from this place [municipality/ward number] in next one year?</value>
+          </text>
+          <text id="/epds_screening/epds/screening/plan_birth/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/screening/plan_birth/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/screening/plan_birth:label">
+            <value>Do you plan to give birth to your current pregnancy?</value>
+          </text>
+          <text id="/epds_screening/epds/screening/pp_days_note:label">
+            <value>Postpartum Days: <output value=" /epds_screening/epds/screening/pp_days "/></value>
+          </text>
+          <text id="/epds_screening/epds/screening/prob_part/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/screening/prob_part/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/screening/prob_part:label">
+            <value>Do you have any health-related problems or diseases that will make it difficult for you to participate in this study?
+ Like, if you have difficulties talking, hearing, and concentrating for a long time or need any help from the caregiver to interpret and translate during the communication.</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_display:label">
+            <value>Age: <output value=" /epds_screening/epds/socidem_info/age "/></value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_dob:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_resp/comp_yrs:label">
+            <value>Completed years</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_resp/dob:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_resp:label">
+            <value>How would you like to calculate the age?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_yrs:label">
+            <value>Age in completed years</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/depress_hstry/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/depress_hstry/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/depress_hstry:label">
+            <value>History of depression</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/dur_marriage:label">
+            <value>For how long have you been married</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/bach_and_above:label">
+            <value>Bachelor level and above (completed and above bachelor)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/infor_edu:label">
+            <value>Informal education</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/int_or_+2:label">
+            <value>Intermediate or +2 level</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/no_formal_edu:label">
+            <value>No formal education</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/prim_school:label">
+            <value>Primary school (1 to 8)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/refused_answer:label">
+            <value>Refuse to answer</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/sec_school:label">
+            <value>Secondary schools (9 to 10)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb:label">
+            <value>Your husband's highest level of education completed</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/bach_and_above:label">
+            <value>Bachelor level and above (completed and above bachelor)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/infor_edu:label">
+            <value>Informal education</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/int_or_+2:label">
+            <value>Intermediate or +2 level</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/no_formal_edu:label">
+            <value>No formal education</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/prim_school:label">
+            <value>Primary school (1 to 8)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/refused_answer:label">
+            <value>Refuse to answer</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/sec_school:label">
+            <value>Secondary schools (9 to 10)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp:label">
+            <value>Your highest level of education completed</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/brahmin/chettri:label">
+            <value>Brahmin/Chettri</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/dalit:label">
+            <value>Dalit</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/janajati:label">
+            <value>Janajati</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/muslim:label">
+            <value>Muslim</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/others:label">
+            <value>Others</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn:label">
+            <value>Ethnicity</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_mem:label">
+            <value>Total number of family members</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type/extended:label">
+            <value>Extended family</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type/joint:label">
+            <value>Joint family</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type/nuclear:label">
+            <value>Nuclear family</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type:label">
+            <value>Family type</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/gravida:label">
+            <value>Number of pregnancy (Gravida)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/instr_socidem:label">
+            <value>Instruction 7: Now I am going to ask you some more few questions.</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/intend_preg/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/intend_preg/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/intend_preg:label">
+            <value>Is your pregnancy intended?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/livebirth_num:label">
+            <value>Number of live births</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli/cs:label">
+            <value>CS</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli/normal:label">
+            <value>Normal</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli/vacum:label">
+            <value>Vacum</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli:label">
+            <value>Mode of delivery of your last child</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/monthly_expend:label">
+            <value>Monthly income of your family</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/farmer:label">
+            <value>Farmer/agriculture</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/homemaker:label">
+            <value>Homemaker</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/job:label">
+            <value>Job</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/large_business:label">
+            <value>Large scale Business</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/refused_answer:label">
+            <value>Refused to answer</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/retired_pension:label">
+            <value>Retired/Pension</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/service_oriented:label">
+            <value>Service oriented</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/skilled_labor:label">
+            <value>Skilled Labor</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/small_business:label">
+            <value>Small scale business</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/student:label">
+            <value>Student</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/unemployed:label">
+            <value>Unemployed</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/unskilled_labor:label">
+            <value>Unskilled Labor</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb:label">
+            <value>Your husband's occupation</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/farmer:label">
+            <value>Farmer/agriculture</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/homemaker:label">
+            <value>Homemaker</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/job:label">
+            <value>Job</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/large_business:label">
+            <value>Large scale Business</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/refused_answer:label">
+            <value>Refused to answer</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/retired_pension:label">
+            <value>Retired/Pension</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/service_oriented:label">
+            <value>Service oriented</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/skilled_labor:label">
+            <value>Skilled Labor</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/small_business:label">
+            <value>Small scale business</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/student:label">
+            <value>Student</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/unemployed:label">
+            <value>Unemployed</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/unskilled_labor:label">
+            <value>Unskilled Labor</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp:label">
+            <value>Your Occupation</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/other_occu:label">
+            <value>Others</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/other_occu_husb:label">
+            <value>Others</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/other_religion:label">
+            <value>Others</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/parity:label">
+            <value>Number of pregnancy &gt; 28 weeks (Parity)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/buddhism:label">
+            <value>Buddhism</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/christianity:label">
+            <value>Christianity</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/hinduism:label">
+            <value>Hinduism</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/islam:label">
+            <value>Islam</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/kirant:label">
+            <value>Kirant</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/refused_answer:label">
+            <value>Refuse to answer</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion:label">
+            <value>Religion</value>
+          </text>
+          <text id="/epds_screening/epds/specify_reason:label">
+            <value>If other, please specify</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_int:label">
+            <value>Instructions: Proceed with the informed consent process to enroll this participant in the study by doing the following:
+
+1. Please read the participant information sheet aloud.
+
+2. Ask if the participant has any questions or concerns about the study or participation, and if there are any questions, answer them.
+
+3. If there are no further questions or concerns, ask the potential participant for permission with the informed consent form.</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part/not_ready:label">
+            <value>Not yet ready</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part:label">
+            <value>Do you want to participate in the study?</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_specify:label">
+            <value>If other, please specify</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/data_security_confid:label">
+            <value>Due to fear of data insecurity and confidentiality issues.</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/harm:label">
+            <value>Fear of harm from the study</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/no_benefits:label">
+            <value>No any benefits after participating in the study.</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/time:label">
+            <value>Couldn't provide the time during the study time frame</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part:label">
+            <value>If no please select an appropriate reason</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/time:label">
+            <value>Thank you for giving your valuable time</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/elig_ins1:label">
+            <value>Women is **eligible to participate** in this study. Please proceed with informed consent as per the study process.</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/imm_risk:label">
+            <value>Instructions: Since the **participant is still at high risk of suicide**, please do the following using the points below. 
+1. Please help the participant, as per the referral process.
+
+2. Inform them that you will meet again or make a phone call within **two weeks to assess their condition**.
+
+3. Before leaving the participant, give them a **resource card, thank them, and leave them in the care of a family or friend**.
+
+4. As soon as the conversation with the participant is complete, inform CHN.
+
+Note: If they are selected for the study, the informed consent process will only proceed during the follow-up visit within two weeks. As per the advice of the crisis counselor, CHN will inform you on this.</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/inelig_ins2:label">
+            <value>Women is **not eligible to participate** in this study. Although the selection process for the study is now complete, thank the participant for her time and leave by informing her that the process may be repeated during a regular visit.</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/no_imm_risk:label">
+            <value>**Instruction**: This participant is safe for the time being
+
+1. If the **women is selected for the study**, proceed with the **informed consent process**
+
+2. Regardless of whether women is selected for the study or not, before leaving, thank women with a **resource card** and leave them with their family or friend
+
+3. As soon as the conversation with the participant is complete, inform CHN.</value>
+          </text>
+          <text id="/epds_screening/formatted_date:label">
+            <value>Formatted Date</value>
+          </text>
+          <text id="/epds_screening/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/epds_screening/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/epds_screening/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/epds_screening/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/epds_screening/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/epds_screening/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/epds_screening/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/epds_screening/epds/cnst_scrn/no:label">
+            <value>चाहान्न</value>
+          </text>
+          <text id="/epds_screening/epds/cnst_scrn/yes:label">
+            <value>चहान्छु</value>
+          </text>
+          <text id="/epds_screening/epds/cnst_scrn:label">
+            <value>के तपाई यस छनोट प्रक्रियामा सहभागी हुन चाहानुहुन्छ?</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/abort:label">
+            <value>गर्भपतन भैसकेको</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/ch_dth:label">
+            <value>बच्चा बितिसकेको</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/none:label">
+            <value>माथिको कुनै पनि छैन (कृपया अगाडी बढ्नुहोस्)</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn/still_brth:label">
+            <value>मृत बच्चा जन्मिएको</value>
+          </text>
+          <text id="/epds_screening/epds/condit_bn:label">
+            <value>सेवागग्राहिको हालको अवस्था बुझेर तल दिइएका विकल्पहरु मध्ये उपयुक्त विकल्प छान्नुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/intro:label">
+            <value>गर्भवती तथा सुत्केरी अवस्थामा शारीरिक समस्या सँगसँगै दिक्दारिपन जस्ता मनको समस्या सम्बन्धि लक्षणहरु देखिन सक्छन्। ति लक्षणहरुको पहिचान गरि व्यवस्थापनका व्यवहारिक उपायहरु कसरी एकिकृत रुपमा प्रदान गर्न सकिन्छ भनेर धुलिखेल अस्पताल र सम्भव (Possible) ले यस पालिकासँगको सहकार्यमा अध्ययन गर्दैछ | सो अध्ययनमा यहाँको सहभागिता हुन सक्ने /नसक्ने भन्ने बारेमा जान्न यहाँलाई केहि प्रश्नहरु सोध्ने छौँ | यस छनोट प्रक्रिया वा अध्ययन सम्बन्धि तपाईको कुनै पनि प्रश्न वा जिज्ञासा भए निर्धक्कसँग हामीलाई सोध्न सक्नुहुने छ | 
+
+निर्देशन: अध्ययन बारे जानकारी पत्र पढेर सुनाउनुहोस् वा पढ्न दिनुहोस् | संभावित सहभागीको केहि प्रश्न वा जिज्ञासा छन् कि भनेर सोध्नुहोस् | 
+
+यदि यस अध्ययन सम्बन्धि तपाईको थप प्रश्न वा जिज्ञासा नभए, छनोट प्रक्रियाका प्रश्नहरु सोध्न चाहन्छु |</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Elig_ness3:hint">
+            <value>संकट परामर्शकर्ता सँग कुराकानी गराउने</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Elig_ness3:label">
+            <value>निर्देशन: उहाँलाई यस अध्ययनमा **सहभागी गराउन मिल्छ** तर उहाँमा &lt;span style= "color:red"&gt; **आत्महत्याको जोखिम उच्च**&lt;/span&gt; छ |
+
+कृपया अध्ययन प्रक्रिया अनुसार सुसुचित मंजुरिनामाको कार्यलाई अगाडी बढाउनु अघि रेफरल प्रक्रियामा उल्लेख गरिए बमोजिमका छलफलका बुँदा प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् ।
+
+-- शान्त भएर नआत्तिइ सहभागीसँगै बस्नुहोस्, सहानुभूति राख्दै कुराहरु ध्यान दिएर सुन्नुहोस् र उहाँको परिवारलाई जानकारी दिनुहोस् |
+
+-- सहभागीले तपाईको सहयोग लिन नखोजिरहनु भएता पनि उहाँको सुरक्षा तपाईको लागि महत्वपुर्ण भएकोले रेफरल प्रक्रिया अनुसार तपाईले उहाँलाई सहयोग गर्नु पर्ने कुरा भन्नुहोस् |
+
+-- सहभागीलाई crisis counselor (संकट परामर्शकर्ता) सँग कुराकानी गराउनुहोस् र तत्कालका लागि सहभागी सुरक्षित भएको कुरा crisis counselor (संकट परामर्शकर्ता) सँग सुनिश्चित गर्नुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Inelig_ness1:label">
+            <value>**निर्देशन** : उहाँलाई यस **अध्ययनमा सहभागी गराउन मिल्दैन** र उहाँमा **आत्महत्याको जोखिम न्यून/मध्यम खालको** छ |
+
+कृपया रेफरल प्रक्रियामा उल्लेख गरिए बमोजिमका छलफलका बुँदा प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् ।
+
+-- सहभागीसँगै बस्नुहोस् र उहाँका कुराहरु ध्यान दिएर सुन्नुहोस् |
+
+-- सहभागीले महसुस गरिरहनु भएको कुरा उहाँको परिवार वा उहाँलाई भन्न मन लागेको व्यक्तिसंग कुरा गर्न हौसला दिनुहोस् |
+
+-- यसैक्रममा सहभागीले सहज महसुस गरेको सुनिश्चित गरिसकेपछि हालको लागि उहाँलाई अध्ययनमा सहभागी गराउन नसकिने भन्ने बारेमा जानकारी दिनुहोस् | अध्ययनको छनोट प्रक्रिया हालका लागि सकिएपनि छनोट प्रक्रियाको समयावधि पर्ने नियमित भेटको क्रममा पुन: यो प्रक्रिया दोहरिने भन्ने बारेमा जानकारी दिनुहोस् |
+
+--छुट्टिनु अघि उहाँलाई **श्रोत कार्ड** दिदैं धन्यवाद दिई आजको समयको लागि उहाँलाई धन्यवाद दिनुहोस् | 
+
+-- सहभागीसँग कुराकानी सकिने बित्तिकै भने CHN लाई यो कुराको जानकारी दिनुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Inelig_ness3:hint">
+            <value>संकट परामर्शकर्ता सँग कुराकानी गराउने</value>
+          </text>
+          <text id="/epds_screening/epds/ness/Inelig_ness3:label">
+            <value>निर्देशन: उहाँलाई यस अध्ययनमा **सहभागी गराउन मिल्दैन** तर उहाँमा &lt;span style= "color:red"&gt;**आत्महत्याको जोखिम उच्च**&lt;/span&gt; छ |
+
+कृपया अध्ययन प्रक्रिया अनुसार रेफरल प्रक्रियामा उल्लेख गरिए बमोजिमका छलफलका बुँदा प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् ।
+
+-- शान्त भएर नआत्तिइ सहभागीसँगै बस्नुहोस्, सहानुभूति राख्दै कुराहरु ध्यान दिएर सुन्नुहोस् र उहाँको परिवारलाई जानकारी दिनुहोस् |
+
+-- सहभागीले तपाईको सहयोग लिन नखोजिरहनु भएता पनि उहाँको सुरक्षा तपाईको लागि महत्वपुर्ण भएकोले रेफरल प्रक्रिया अनुसार तपाईले उहाँलाई सहयोग गर्नु पर्ने कुरा भन्नुहोस् |
+
+-- सहभागीलाई crisis counselor (संकट परामर्शकर्ता) सँग कुराकानी गराउनुहोस् र तत्कालका लागि सहभागी सुरक्षित भएको कुरा crisis counselor (संकट परामर्शकर्ता) सँग सुनिश्चित गर्नुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/ness/elig_ness1:label">
+            <value>**निर्देशन** : उहाँलाई यस **अध्ययनमा सहभागी गराउन मिल्छ** र उहाँमा **आत्महत्याको जोखिम मध्यम खालको** छ |
+
+कृपया अध्ययन प्रक्रिया अनुसार सुसुचित मंजुरिनामाको कार्यलाई अगाडी बढाउनु अघि रेफरल प्रक्रियामा उल्लेख गरिए बमोजिमका छलफलका बुँदा प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् ।
+
+-- सहभागीसँगै बस्नुहोस् र उहाँका कुराहरु ध्यान दिएर सुन्नुहोस् |
+
+-- सहभागीले महसुस गरिरहनु भएको कुरा उहाँको परिवार वा उहाँलाई भन्न मन लागेको व्यक्तिसंग कुरा गर्न हौसला दिनुहोस् |
+
+-- यसैक्रममा सहभागीले सहज महसुस गरेको सुनिश्चित गरिसकेपछि अध्ययनमा सहभागी हुन सुसुचित मन्जुरीनामा लिने कार्य अघि बढाउनुहोस् |
+
+-- सहभागीसँग कुराकानी सकिने बित्तिकै CHN लाई यो कुराको जानकारी दिनुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness1/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness1/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness1:label">
+            <value>१. के तपाईलाई अहिले आफैलाई हानी पुर्‍याउने सोचाइ आइरहेको छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness2/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness2/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness2:label">
+            <value>२. के तपाईले आफैलाई मार्ने भन्ने योजना बनाउनु भएको छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness3/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness3/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness3:label">
+            <value>३. के तपाईले आफ्नो ति योजनालाई पुरा गरेरै छोड्छु भनेर सोच्नु भएको छ?</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness_inst:label">
+            <value>अघि हामीले गएको एक हप्ता भित्रमा तपाईको मनमा आफूलाई नै हानि पुर्‍याउने जस्तो सोचाईको बारेमाकुरा गरेका थियौं, अब त्यसको बारेमा अलिकती अझै कुरा गरौं है । 
+तपाईं मसँग सुरक्षित हुनुहुन्छ र हामीले गर्ने सबै कुराकानी गोप्य राखिने भएकोले तपाईंको मनमा जे छ त्यो भन्नु भए हुन्छ ।</value>
+          </text>
+          <text id="/epds_screening/epds/ness/ness_score:label">
+            <value>आत्महत्याको जोखिम</value>
+          </text>
+          <text id="/epds_screening/epds/ness/risk_suicide/no:label">
+            <value>हुनहुुन्न</value>
+          </text>
+          <text id="/epds_screening/epds/ness/risk_suicide/yes:label">
+            <value>हुनहुन्छ</value>
+          </text>
+          <text id="/epds_screening/epds/ness/risk_suicide:label">
+            <value>Crisis counselor (संकट परामर्शकर्ता) सँगको अनुसार तत्कालका लागि यस सहभागी सुरक्षित हुनुहुन्छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/0:label">
+            <value>पहिला जति नै</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/1:label">
+            <value>पहिला भन्दा अलि कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/2:label">
+            <value>पहिला भन्दा निकै नै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1/3:label">
+            <value>कत्ति पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10/3:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_10:label">
+            <value>१०. गएको ७ दिनमा, तपाईँलाई आफूलाई नै हानि पुर्‍याउने विचार आएको छ? (जस्तै: चिथोर्ने, काट्ने र मर्न मन लाग्ने)</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_1:label">
+            <value>१. गएको ७ दिनमा, तपाईँ कत्तिको हाँस्न र कुराहरूको रमाइलो पक्ष देख्न सकिरहनु भएको छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/0:label">
+            <value>पहिला जति नै</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/1:label">
+            <value>पहिला भन्दा अलि कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/2:label">
+            <value>पहिला भन्दा निकै नै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2/3:label">
+            <value>कत्ति पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_2:label">
+            <value>२. गएको ७ दिनमा, तपाईँले आशावादी भएर भविष्यलाई कत्तिको हेरिराख्नु भएको छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_3:label">
+            <value>३. गएको ७ दिनमा, कुनै पनि काम बिग्रँदा तपाईँले आफूलाई अनावश्यक रूपमा दोषी ठहर्‍याउनु भएको छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4/3:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_4:label">
+            <value>४. गएको ७ दिनमा, तपाईँ विना कारण नै कत्तिको आत्तिने वा चिन्ता मान्ने गरिरहनु भएको छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_5:label">
+            <value>५. गएको ७ दिनमा, तपाईँ विना कारण डराई रहने वा आत्तिरहने कत्तिको गरिरहनु भएको छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/0:label">
+            <value>सधैँ जसो नै सबै कुराहरु सम्हाल्न वा सामना गर्न सकेको</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/1:label">
+            <value>धेरै जसो समय कुराहरु सम्हाल्न वा सामना गर्न सकेको</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/2:label">
+            <value>कहिलेकाहीँ कुराहरु सम्हाल्न वा सामना गर्न नसकेको</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6/3:label">
+            <value>धेरै जसो समय कुराहरु सम्हाल्न वा सामना गर्न नसकेको</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_6:label">
+            <value>६. गएको ७ दिनमा, तपाईँले केही कुरा सम्हाल्न नसकेको कत्तिको भइरहेको छ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_7:label">
+            <value>७. गएको ७ दिनमा, तपाईँलाई धेरै दुख लागेर निन्द्रा नलाग्ने कत्तिको भएको छ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/2:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_8:label">
+            <value>८. गएको ७ दिनमा, तपाईँलाई दुखी वा विरक्त लाग्ने कत्तिको भएको छ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/2:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_9:label">
+            <value>९. गएको ७ दिनमा, तपाईँलाई धेरै दुख लागेर रोइराख्ने कत्तिको भएको छ?</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_inst:label">
+            <value>**तपाई हाल गर्भवती हुनुभएको / तपाईको हालसालै बच्चा भएकोले तपाईलाई अहिले कस्तो छ , त्यो हामी जान्न चाहान्छौँ | तपाईले आज मात्र नभएर विगत एक हप्ता भित्रमा कस्तो महसुस गरिरहनु भएको छ भन्ने सम्बन्धि म तपाईलाई केहि प्रश्नहरू सोध्नेछु | ति प्रश्नका ४ ओटा सम्भावित उत्तरहरू पनि पढेर सुनाउने छु | तपाईले जे-जस्तो महसुस गर्नुभयो त्यससँग सबैभन्दा मेल खाने उत्तर भनिदिनु होला । यसमा कुनै पनि उत्तर सहि या गलत भने हुदैनन् |**
+
+**निर्देशन: कृपया हरेक प्रश्न संगै ४ ओटै सम्भावित उत्तरहरु पढेर सुनाउनु होला |**</value>
+          </text>
+          <text id="/epds_screening/epds/postnatal_d_screen/epds_score:label">
+            <value>EPDS स्कोर</value>
+          </text>
+          <text id="/epds_screening/epds/reprtd_date:label">
+            <value>महिलालाई भेटेको मिति</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/data_security_confid:label">
+            <value>तथ्यांकको सुरक्षा तथा गोपनिएता बारे चिन्तित भएकोले</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/harm:label">
+            <value>अध्ययनमा सहभागी भएको अवधीमा सम्भावित हानी वा चिन्ताले</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/no_benefits:label">
+            <value>अध्ययनमा सहभागी हुँदा कुनै फाइदा नहुने देखेर</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn/time:label">
+            <value>अध्ययन अवधी भर आफ्नो समय दिन नसक्ने भएर</value>
+          </text>
+          <text id="/epds_screening/epds/rsn_no_scrn:label">
+            <value>यदि चाहानुहुन्न भने, कारण बताई दिनुहोस् ।</value>
+          </text>
+          <text id="/epds_screening/epds/s_date:label">
+            <value>महिलालाई भेटेको मिति :- <output value=" /epds_screening/epds/reprtd_date "/></value>
+          </text>
+          <text id="/epds_screening/epds/screening/curr_sts/pp_women:label">
+            <value>१० महिना भित्रको सुत्केरी महिला</value>
+          </text>
+          <text id="/epds_screening/epds/screening/curr_sts/preg_women:label">
+            <value>१४ हप्ता वा सो कटेको गर्भवती महिला</value>
+          </text>
+          <text id="/epds_screening/epds/screening/curr_sts:label">
+            <value>महिलाको हालको अवस्था छान्नुहोस</value>
+          </text>
+          <text id="/epds_screening/epds/screening/del_date:label">
+            <value>महिलाको अन्तिम पटकको सुत्केरी भएको मिति</value>
+          </text>
+          <text id="/epds_screening/epds/screening/diff_prob:label">
+            <value>यदि छ भने के समस्याहरु छन्?</value>
+          </text>
+          <text id="/epds_screening/epds/screening/gest_wk_note:label">
+            <value>गर्भावस्थाको हप्ता: <output value=" /epds_screening/epds/screening/gest_wk "/></value>
+          </text>
+          <text id="/epds_screening/epds/screening/lmp_wom:label">
+            <value>महिलाको अन्तिम महिनावारी</value>
+          </text>
+          <text id="/epds_screening/epds/screening/migration/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_screening/epds/screening/migration/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_screening/epds/screening/migration:label">
+            <value>के तपाईको आउने १ वर्ष भित्रमा अहिले बसिरहनु भएको ठाँउ [पालिका/वार्ड को नाम] छाडेर अन्यत्र बसाई सर्ने कुनै योजना छ?</value>
+          </text>
+          <text id="/epds_screening/epds/screening/plan_birth/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_screening/epds/screening/plan_birth/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_screening/epds/screening/plan_birth:label">
+            <value>के तपाईले हाल गर्भमा रहेको बच्चालाई जन्म दिने योजना बनाउनु भएको छ?</value>
+          </text>
+          <text id="/epds_screening/epds/screening/pp_days_note:label">
+            <value>सुत्केरी भएको दिन: <output value=" /epds_screening/epds/screening/pp_days "/></value>
+          </text>
+          <text id="/epds_screening/epds/screening/prob_part/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_screening/epds/screening/prob_part/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_screening/epds/screening/prob_part:label">
+            <value>यस अध्ययनमा सहभागी हुन अप्ठ्यारो/गाह्रो बनाउन तपाईलाई कुनै स्वास्थ्य सम्बन्धी समस्या वा रोगहरु छ?
+जस्तै, अहिले कुराकानी गर्न बसे जस्तै लामो समय सम्म बोल्दा अप्ठ्यारो हुने वा कुराकानीमा ध्यान दिन नसक्ने, मैले भनेको कुरा सुन्न वा बुझ्न गाह्रो हुने वा अरुको सहयोग चाहिने आदि।</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_display:label">
+            <value>उमेर: <output value=" /epds_screening/epds/socidem_info/age "/></value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_dob:label">
+            <value>जन्म मिति बाट</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_resp/comp_yrs:label">
+            <value>उमेर बाट (पूरा भएको उमेर)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_resp/dob:label">
+            <value>जन्म मिति बाट</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_resp:label">
+            <value>उमेर कसरी लिन चाहानुहुन्छ?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/age_yrs:label">
+            <value>उमेर बाट</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/depress_hstry/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/depress_hstry/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/depress_hstry:label">
+            <value>स्वास्थ्य उपचार तथा जाँचको क्रममा विगतमा अस्पतालबाट मनोचिकित्सकले तपाईलाई दिक्दारीपन छ भनेर भन्नु भएको छ?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/dur_marriage:label">
+            <value>तपाईको विवाह भएको कति वर्ष भयो?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/bach_and_above:label">
+            <value>स्नातक तह (भर्ना भएको, उतिर्ण भएको) वा सो भन्दा माथि</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/infor_edu:label">
+            <value>अनौपाचारिक शिक्षा / प्रोड शिक्षा (लेख पढ गर्न सक्ने)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/int_or_+2:label">
+            <value>इन्टरमिडिएट वा +2 सो सरह</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/no_formal_edu:label">
+            <value>कहिल्यै विधालय नगएको वा सामान्य लेख पढ गर्न नसक्ने</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/prim_school:label">
+            <value>प्राथमिक स्कूल (१ देखी ८ कक्षा सम्म)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/refused_answer:label">
+            <value>भन्न/खुलाउन नचाहेको</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb/sec_school:label">
+            <value>माध्यमिक शिक्षा (९ देखि १० सम्म)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_husb:label">
+            <value>तपाईको श्रीमानको शैक्षिक योग्यता</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/bach_and_above:label">
+            <value>स्नातक तह (भर्ना भएको, उतिर्ण भएको) वा सो भन्दा माथि</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/infor_edu:label">
+            <value>अनौपाचारिक शिक्षा / प्रोड शिक्षा (लेख पढ गर्न सक्ने)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/int_or_+2:label">
+            <value>इन्टरमिडिएट वा +2 सो सरह</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/no_formal_edu:label">
+            <value>कहिल्यै विधालय नगएको वा सामान्य लेख पढ गर्न नसक्ने</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/prim_school:label">
+            <value>प्राथमिक स्कूल (१ देखी ८ कक्षा सम्म)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/refused_answer:label">
+            <value>भन्न/खुलाउन नचाहेको</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp/sec_school:label">
+            <value>माध्यमिक शिक्षा (९ देखि १० सम्म)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/edu_resp:label">
+            <value>तपाईको शैक्षिक योग्यता</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/brahmin/chettri:label">
+            <value>ब्राहमण/क्षेत्री</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/dalit:label">
+            <value>दलित</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/janajati:label">
+            <value>जनजाती</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/muslim:label">
+            <value>मुस्लिम</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn/others:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/ethn:label">
+            <value>जात/जाती</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_mem:label">
+            <value>तपाईको परिवारमा जम्मा कति जना सदस्य हुनुहुन्छ?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type/extended:label">
+            <value>विस्तारित परिवार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type/joint:label">
+            <value>संयुक्त परिवार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type/nuclear:label">
+            <value>एकल परिवार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/fam_type:label">
+            <value>परिवारको किसिम</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/gravida:label">
+            <value>तपाई अहिले सम्म कति पटक गर्भवती हुनुभयो?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/instr_socidem:label">
+            <value>निर्देशन: अब म तपाईलाई थप केही प्रश्नहरु सोध्न गईरहेको छु</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/intend_preg/no:label">
+            <value>होइन</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/intend_preg/yes:label">
+            <value>हो</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/intend_preg:label">
+            <value>के यो गर्भधारण तपाईको इच्छा अनुसार भएको हो?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/livebirth_num:label">
+            <value>तपाईले अहिले सम्म कति वटा जिवीत बच्चा जन्माउनु भयो?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli/cs:label">
+            <value>अपरेशन गरेर</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli/normal:label">
+            <value>सामान्य तरिका बाट</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli/vacum:label">
+            <value>मेशिन वा उपकरणको प्रयोग गरेर</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/mode_deli:label">
+            <value>तपाईको अन्तिम पटकको बच्चाको डेलिभेरी कसरी भयो?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/monthly_expend:label">
+            <value>तपाईको परिवारको मासिक आम्दानि कति जति हुन्छ ?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/farmer:label">
+            <value>किसान / कृषि</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/homemaker:label">
+            <value>घराएसी काम</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/job:label">
+            <value>जागिर नियमित तलब आउने (व्यावसायिक / प्राविधिक/ व्यवस्थापकिय सम्बन्धी काम)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/large_business:label">
+            <value>ठूलो व्यापार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/other:label">
+            <value>अन्य (उल्लेख गर्नुहोस)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/refused_answer:label">
+            <value>भन्न/खुलाउन नचाहेको</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/retired_pension:label">
+            <value>अवकास प्राप्त</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/service_oriented:label">
+            <value>सेवा दिने कामदारहरु</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/skilled_labor:label">
+            <value>सिप मुलक दक्ष्य काम</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/small_business:label">
+            <value>सानो व्यापार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/student:label">
+            <value>विद्यार्थी</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/unemployed:label">
+            <value>बेरोजगार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb/unskilled_labor:label">
+            <value>अदक्ष्य / अनौपाचारिक (मजदुरी)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_husb:label">
+            <value>तपाईको श्रीमानको मुख्य पेशा</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/farmer:label">
+            <value>किसान / कृषि</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/homemaker:label">
+            <value>घराएसी काम</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/job:label">
+            <value>जागिर नियमित तलब आउने (व्यावसायिक / प्राविधिक/ व्यवस्थापकिय सम्बन्धी काम)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/large_business:label">
+            <value>ठूलो व्यापार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/other:label">
+            <value>अन्य (उल्लेख गर्नुहोस)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/refused_answer:label">
+            <value>भन्न/खुलाउन नचाहेको</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/retired_pension:label">
+            <value>अवकास प्राप्त</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/service_oriented:label">
+            <value>सेवा दिने कामदारहरु</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/skilled_labor:label">
+            <value>सिप मुलक दक्ष्य काम</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/small_business:label">
+            <value>सानो व्यापार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/student:label">
+            <value>विद्यार्थी</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/unemployed:label">
+            <value>बेरोजगार</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp/unskilled_labor:label">
+            <value>अदक्ष्य / अनौपाचारिक (मजदुरी)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/occu_resp:label">
+            <value>तपाईको मुख्य पेशा</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/other_occu:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/other_occu_husb:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/other_religion:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/parity:label">
+            <value>तपाईको अहिले सम्म २८ हप्ता कटेको गर्भ कति वटा भयो?</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/buddhism:label">
+            <value>बुद्धिष्ट</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/christianity:label">
+            <value>कृष्टिएन</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/hinduism:label">
+            <value>हिन्दु</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/islam:label">
+            <value>इस्लाम</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/kirant:label">
+            <value>किरात</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/other:label">
+            <value>अन्य (उल्लेख गर्नुहोस्)</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion/refused_answer:label">
+            <value>खुलाउन नचाहेको</value>
+          </text>
+          <text id="/epds_screening/epds/socidem_info/religion:label">
+            <value>धर्म</value>
+          </text>
+          <text id="/epds_screening/epds/specify_reason:label">
+            <value>यदि अन्य कारण भएमा, कृपया उल्लेख गर्नुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_int:label">
+            <value>निर्देशन: निम्न कार्यहरु गर्दै यस सहभागीलाई अध्ययनमा सामेल गराउन सुसुचित मंजुरिनामाको प्रक्रियालाई अगाडी बढाउनुहोस् | 
+१. कृपया सहभागी जानकारी पत्र पढेर सुनाउनुहोस् | 
+
+२. यस अध्ययन वा सहभागितालाई लिएर उहाँको केहि प्रश्न वा जिज्ञासा छन् कि भनेर सोध्नुहोस् र भएमा ति प्रश्न वा जिज्ञासाको उत्तर दिनुहोस् |
+
+३. थप प्रश्न वा जिज्ञासामा नभए सम्म्भावित सहभागीबाट सुसुचित मंजुरिनामामा हस्ताक्षर लिन अनुमति माग्नुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part/no:label">
+            <value>चाहान्न</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part/not_ready:label">
+            <value>तयार नभैसकेको (२ हप्ता भित्र पुन: भेटि प्रक्रिया पुरा गर्ने)</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part/yes:label">
+            <value>चहान्छु</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_part:label">
+            <value>के तपाई यस अध्ययनमा सहभागी हुन चहानुहुन्छ?</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/cnst_specify:label">
+            <value>यदि अन्य कारण भएमा, कृपया उल्लेख गर्नुहोस</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/data_security_confid:label">
+            <value>तथ्यांकको सुरक्षा तथा गोपनिएता बारे चिन्तित भएकोले</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/harm:label">
+            <value>अध्ययनमा सहभागी भएको अवधीमा सम्भावित हानी वा चिन्ताले</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/no_benefits:label">
+            <value>अध्ययनमा सहभागी हुँदा कुनै फाइदा नहुने देखेर</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part/time:label">
+            <value>अध्ययन अवधी भर आफ्नो समय दिन नसक्ने भएर</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/rsn_part:label">
+            <value>यदि चाहानुहुन्न भने, कारण छान्नुहोस।</value>
+          </text>
+          <text id="/epds_screening/epds/study_cnst/time:label">
+            <value>तपाईले आफ्नो अमूल्य समय दिनुभएकोमा धन्यवाद</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/elig_ins1:label">
+            <value>निर्देशन: उहाँलाई यस अध्ययनमा **सहभागी गराउन मिल्छ** | कृपया अध्ययन प्रक्रिया अनुसार सुसुचित मंजुरिनामाको कार्यलाई अगाडी बढाउनुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/imm_risk:label">
+            <value>निर्देशन: उहाँमा **अझै पनि** &lt;span style= "color:red"&gt;**आत्महत्याको जोखिम उच्च**&lt;/span&gt; भएकोले तल दिइएको बुदाँ प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् । ।
+
+१. कृपया रेफरल प्रक्रियामा अनुसार, सहभागीलाई मद्दत गर्नुहोस् ।
+२. सहभागीको अवस्था बुझ्न **दुई हप्ता पुन: भेट गर्ने वा फोन सम्पर्क** गर्ने भन्ने कुराको जानकारी दिनुहोस् | 
+३. सहभागीसँग छुट्टिनु अघि उहाँलाई **श्रोत कार्ड दिदैं** धन्यवाद दिई परिवार वा साथीको **निगरानीमा** छोड्नुहोस् |
+४.सहभागीसँग कुराकानी सकिने बित्तिकै CHN लाई यो कुराको जानकारी दिनुहोस् ।
+
+**नोट: यदि उहाँ अध्ययनका लागि छनोट हुनु भएको हो भने २ हप्तामा गरिने पुनः भेटको क्रममा फेरी छनोट प्रक्रियाको कार्य गरिने छ | यसको लागि crisis counselor को सल्लाह अनुसार CHN ले तपाईलाई जानकारी दिनु हुनेछ |**</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/inelig_ins2:label">
+            <value>निर्देशन: उहाँलाई यस अध्ययनमा **सहभागी गराउन मिल्दैन** | अध्ययनको छनोट प्रक्रिया हालका लागि सकिएपनि नियमित भेटको क्रममा **पुन: एकपटक यो प्रक्रिया दोहरिन सक्ने** भन्ने बारेमा जानकारी दिई आजको समयको लागि उहाँलाई धन्यवाद दिई छुट्टिनुहोस् |</value>
+          </text>
+          <text id="/epds_screening/epds/study_eligibility/no_imm_risk:label">
+            <value>**निर्देशन**: यस सहभागीमा तत्कालको लागि सुरक्षित हुनुहुन्छ | 
+
+१. **यदि** उहाँ अध्यययनको लागि **छनोट हुनुभएको हो** भने **सुसुचित मन्जुरीनामा**को प्रक्रियालाई अगाडी बढाउनुहोस् | 
+
+२. अध्ययनमा छनोट हुनु वा नहुनु भएपनि छुट्टिनु अघि उहाँलाई **श्रोत कार्ड दिदैं** धन्यवाद दिई परिवार वा साथीको **निगरानीमा** छोड्नुहोस् |
+ 
+३. सहभागीसँग कुराकानी सकिने बित्तिकै भने CHN लाई यो कुराको जानकारी दिनुहोस् ।</value>
+          </text>
+          <text id="/epds_screening/formatted_date:label">
+            <value>-</value>
+          </text>
+          <text id="/epds_screening/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <epds_screening id="epds_screening" prefix="J1!epds_screening!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+              <date_of_registration/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <delivery_date tag="hidden"/>
+          <updated_dd tag="hidden"/>
+          <latestlmp tag="hidden"/>
+          <lmpdays/>
+          <ddno/>
+          <up_dd/>
+          <formatted_date/>
+          <epds>
+            <condit_bn/>
+            <intro/>
+            <cnst_scrn/>
+            <rsn_no_scrn/>
+            <specify_reason/>
+            <reprtd_date>today()</reprtd_date>
+            <s_date/>
+            <screening>
+              <curr_sts/>
+              <lmp_wom/>
+              <gest_wk/>
+              <gest_wk_note/>
+              <del_date/>
+              <pp_days/>
+              <pp_days_note/>
+              <migration/>
+              <plan_birth/>
+              <prob_part/>
+              <diff_prob/>
+            </screening>
+            <postnatal_d_screen>
+              <epds_inst/>
+              <epds_1/>
+              <epds_2/>
+              <epds_3/>
+              <epds_4/>
+              <epds_5/>
+              <epds_6/>
+              <epds_7/>
+              <epds_8/>
+              <epds_9/>
+              <epds_10/>
+              <epds_score/>
+              <fln_elig/>
+            </postnatal_d_screen>
+            <ness>
+              <ness_inst/>
+              <ness1/>
+              <ness2/>
+              <ness3/>
+              <ness_score/>
+              <elig_ness1/>
+              <Inelig_ness1/>
+              <Elig_ness3/>
+              <Inelig_ness3/>
+              <risk_suicide/>
+            </ness>
+            <study_eligibility>
+              <elig_ins1/>
+              <inelig_ins2/>
+              <no_imm_risk/>
+              <imm_risk/>
+            </study_eligibility>
+            <study_cnst>
+              <cnst_int/>
+              <cnst_part/>
+              <rsn_part/>
+              <cnst_specify/>
+              <time/>
+            </study_cnst>
+            <socidem_info>
+              <instr_socidem/>
+              <age_resp/>
+              <age_yrs/>
+              <age_dob/>
+              <age/>
+              <age_display/>
+              <fam_mem/>
+              <fam_type/>
+              <ethn/>
+              <religion/>
+              <other_religion/>
+              <edu_resp/>
+              <edu_husb/>
+              <occu_resp/>
+              <other_occu/>
+              <occu_husb/>
+              <other_occu_husb/>
+              <monthly_expend/>
+              <dur_marriage/>
+              <gravida/>
+              <intend_preg/>
+              <parity/>
+              <livebirth_num/>
+              <mode_deli/>
+              <depress_hstry/>
+            </socidem_info>
+          </epds>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </epds_screening>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/epds_screening/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/epds_screening/inputs/source" type="string"/>
+      <bind nodeset="/epds_screening/inputs/source_id" type="string"/>
+      <bind nodeset="/epds_screening/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/epds_screening/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/epds_screening/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/epds_screening/inputs/contact/date_of_registration" type="string"/>
+      <bind nodeset="/epds_screening/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/epds_screening/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/epds_screening/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/epds_screening/delivery_date" type="string" calculate="if(instance('contact-summary')/context/delivery_date, instance('contact-summary')/context/delivery_date, .)"/>
+      <bind nodeset="/epds_screening/updated_dd" type="string" calculate="if(instance('contact-summary')/context/updated_dd, instance('contact-summary')/context/updated_dd, .)"/>
+      <bind nodeset="/epds_screening/latestlmp" type="string" calculate="if(instance('contact-summary')/context/latestlmp, instance('contact-summary')/context/latestlmp, .)"/>
+      <bind nodeset="/epds_screening/lmpdays" type="string" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/latestlmp ))) div 7)"/>
+      <bind nodeset="/epds_screening/ddno" type="string" calculate="round(decimal-date-time(today()) - decimal-date-time( /epds_screening/delivery_date ))"/>
+      <bind nodeset="/epds_screening/up_dd" type="string" calculate="round(decimal-date-time(today()) - decimal-date-time( /epds_screening/updated_dd ))"/>
+      <bind nodeset="/epds_screening/formatted_date" type="string" calculate="format-date( /epds_screening/delivery_date , '%d/%m/%Y')"/>
+      <bind nodeset="/epds_screening/epds/condit_bn" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/intro" readonly="true()" type="string" relevant=" /epds_screening/epds/condit_bn = 'none'"/>
+      <bind nodeset="/epds_screening/epds/cnst_scrn" type="select1" required="true()" relevant=" /epds_screening/epds/condit_bn = 'none'"/>
+      <bind nodeset="/epds_screening/epds/rsn_no_scrn" type="select" required="true()" relevant=" /epds_screening/epds/cnst_scrn = 'no'"/>
+      <bind nodeset="/epds_screening/epds/specify_reason" type="string" required="true()" relevant="selected( /epds_screening/epds/rsn_no_scrn , 'other')"/>
+      <bind nodeset="/epds_screening/epds/reprtd_date" type="string" readonly="true()" calculate="date(today())"/>
+      <bind nodeset="/epds_screening/epds/s_date" readonly="true()" type="string"/>
+      <bind nodeset="/epds_screening/epds/screening" relevant=" /epds_screening/epds/cnst_scrn = 'yes'"/>
+      <bind nodeset="/epds_screening/epds/screening/curr_sts" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/screening/lmp_wom" type="date" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/gest_wk" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/lmp_wom ))) div 7)"/>
+      <bind nodeset="/epds_screening/epds/screening/gest_wk_note" readonly="true()" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/del_date" type="date" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/pp_days" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /epds_screening/epds/screening/del_date ))))"/>
+      <bind nodeset="/epds_screening/epds/screening/pp_days_note" readonly="true()" type="string" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/migration" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/screening/plan_birth" type="select1" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/screening/prob_part" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/screening/diff_prob" type="string" required="true()" relevant=" /epds_screening/epds/screening/prob_part = 'yes'"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen" relevant=" /epds_screening/epds/cnst_scrn = 'yes'"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_inst" readonly="true()" type="string"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_1" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_2" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_3" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_4" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_5" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_6" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_7" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_8" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_9" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_10" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/epds_score" type="string" calculate="int( /epds_screening/epds/postnatal_d_screen/epds_1 ) + int( /epds_screening/epds/postnatal_d_screen/epds_2 ) + int( /epds_screening/epds/postnatal_d_screen/epds_3 ) + int( /epds_screening/epds/postnatal_d_screen/epds_4 ) + int( /epds_screening/epds/postnatal_d_screen/epds_5 ) + int( /epds_screening/epds/postnatal_d_screen/epds_6 ) + int( /epds_screening/epds/postnatal_d_screen/epds_7 ) + int( /epds_screening/epds/postnatal_d_screen/epds_8 ) + int( /epds_screening/epds/postnatal_d_screen/epds_9 ) + int( /epds_screening/epds/postnatal_d_screen/epds_10 )"/>
+      <bind nodeset="/epds_screening/epds/postnatal_d_screen/fln_elig" type="string" calculate="if( /epds_screening/epds/screening/migration  = 'no' and  /epds_screening/epds/screening/prob_part  = 'no' and  /epds_screening/epds/postnatal_d_screen/epds_score  &gt;= 10 and ( /epds_screening/epds/screening/plan_birth  = 'yes' or  /epds_screening/epds/screening/plan_birth  = ''), '1', '2')"/>
+      <bind nodeset="/epds_screening/epds/ness/ness_inst" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
+      <bind nodeset="/epds_screening/epds/ness/ness1" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
+      <bind nodeset="/epds_screening/epds/ness/ness2" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1'"/>
+      <bind nodeset="/epds_screening/epds/ness/ness3" type="select1" required="true()" relevant="( /epds_screening/epds/postnatal_d_screen/epds_10 = '3' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '2' or  /epds_screening/epds/postnatal_d_screen/epds_10 = '1') and  /epds_screening/epds/ness/ness2 = 'yes'"/>
+      <bind nodeset="/epds_screening/epds/ness/ness_score" type="string" relevant=" /epds_screening/epds/ness/ness1  != ''" calculate="if( /epds_screening/epds/ness/ness2  = 'yes' or  /epds_screening/epds/ness/ness3  = 'yes', 'high', if( /epds_screening/epds/ness/ness1  = 'yes' and  /epds_screening/epds/ness/ness2  = 'no', 'moderate', 'low'))"/>
+      <bind nodeset="/epds_screening/epds/ness/elig_ness1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and ( /epds_screening/epds/ness/ness_score = 'low' or  /epds_screening/epds/ness/ness_score = 'moderate')"/>
+      <bind nodeset="/epds_screening/epds/ness/Inelig_ness1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='2' and ( /epds_screening/epds/ness/ness_score = 'low' or  /epds_screening/epds/ness/ness_score = 'moderate')"/>
+      <bind nodeset="/epds_screening/epds/ness/Elig_ness3" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and
+ /epds_screening/epds/ness/ness_score = 'high'"/>
+      <bind nodeset="/epds_screening/epds/ness/Inelig_ness3" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig  = '2' and  /epds_screening/epds/ness/ness_score  = 'high'"/>
+      <bind nodeset="/epds_screening/epds/ness/risk_suicide" type="select1" required="true()" relevant=" /epds_screening/epds/ness/ness2 ='yes' or  /epds_screening/epds/ness/ness3 ='yes'"/>
+      <bind nodeset="/epds_screening/epds/study_eligibility/elig_ins1" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and 
+( /epds_screening/epds/ness/ness_score !='moderate' or  /epds_screening/epds/ness/ness_score !='high' )"/>
+      <bind nodeset="/epds_screening/epds/study_eligibility/inelig_ins2" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='2' and
+( /epds_screening/epds/ness/ness_score !='moderate' or  /epds_screening/epds/ness/ness_score !='high' )"/>
+      <bind nodeset="/epds_screening/epds/study_eligibility/no_imm_risk" readonly="true()" type="string" relevant=" /epds_screening/epds/ness/risk_suicide ='yes'"/>
+      <bind nodeset="/epds_screening/epds/study_eligibility/imm_risk" readonly="true()" type="string" relevant=" /epds_screening/epds/ness/risk_suicide ='no'"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/cnst_int" readonly="true()" type="string" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1'"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/cnst_part" type="select1" required="true()" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1'"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/rsn_part" type="select" required="true()" relevant=" /epds_screening/epds/study_cnst/cnst_part = 'no'"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/cnst_specify" type="string" required="true()" relevant="selected( /epds_screening/epds/study_cnst/rsn_part , 'other')"/>
+      <bind nodeset="/epds_screening/epds/study_cnst/time" readonly="true()" type="string" relevant=" /epds_screening/epds/cnst_scrn = 'no' or  /epds_screening/epds/study_cnst/cnst_part = 'no' or  /epds_screening/epds/condit_bn = 'abort' or  /epds_screening/epds/condit_bn = 'still_brth' or  /epds_screening/epds/condit_bn = 'ch_dth'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info" relevant=" /epds_screening/epds/postnatal_d_screen/fln_elig ='1' and  /epds_screening/epds/study_cnst/cnst_part = 'yes'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/instr_socidem" readonly="true()" type="string"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age_resp" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age_yrs" type="int" required="true()" relevant=" /epds_screening/epds/socidem_info/age_resp  = 'comp_yrs'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age_dob" type="date" required="true()" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age" type="string" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'" calculate="floor( difference-in-months( /epds_screening/epds/socidem_info/age_dob , today() ) div 12)"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/age_display" readonly="true()" type="string" relevant=" /epds_screening/epds/socidem_info/age_resp = 'dob'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/fam_mem" type="int" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/fam_type" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/ethn" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/religion" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/other_religion" type="string" required="true()" relevant=" /epds_screening/epds/socidem_info/religion  = 'other'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/edu_resp" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/edu_husb" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/occu_resp" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/other_occu" type="string" required="true()" relevant=" /epds_screening/epds/socidem_info/occu_resp  = 'other'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/occu_husb" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/other_occu_husb" type="string" required="true()" relevant=" /epds_screening/epds/socidem_info/occu_husb  = 'other'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/monthly_expend" type="int" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/dur_marriage" type="int" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/gravida" type="int" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/intend_preg" type="select1" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'preg_women'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/parity" type="int" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/livebirth_num" type="int" required="true()"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/mode_deli" type="select1" required="true()" relevant=" /epds_screening/epds/screening/curr_sts = 'pp_women'"/>
+      <bind nodeset="/epds_screening/epds/socidem_info/depress_hstry" type="select1" required="true()"/>
+      <bind nodeset="/epds_screening/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/epds_screening/inputs">
+      <label ref="jr:itext('/epds_screening/inputs:label')"/>
+      <group ref="/epds_screening/inputs/contact">
+        <label ref="jr:itext('/epds_screening/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/epds_screening/inputs/contact/_id">
+          <label ref="jr:itext('/epds_screening/inputs/contact/_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/epds_screening/epds">
+      <select1 ref="/epds_screening/epds/condit_bn">
+        <label ref="jr:itext('/epds_screening/epds/condit_bn:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/condit_bn/abort:label')"/>
+          <value>abort</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/condit_bn/still_brth:label')"/>
+          <value>still_brth</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/condit_bn/ch_dth:label')"/>
+          <value>ch_dth</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/condit_bn/none:label')"/>
+          <value>none</value>
+        </item>
+      </select1>
+      <input ref="/epds_screening/epds/intro">
+        <label ref="jr:itext('/epds_screening/epds/intro:label')"/>
+      </input>
+      <select1 ref="/epds_screening/epds/cnst_scrn">
+        <label ref="jr:itext('/epds_screening/epds/cnst_scrn:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/cnst_scrn/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/cnst_scrn/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/epds_screening/epds/rsn_no_scrn">
+        <label ref="jr:itext('/epds_screening/epds/rsn_no_scrn:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/rsn_no_scrn/no_benefits:label')"/>
+          <value>no_benefits</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/rsn_no_scrn/data_security_confid:label')"/>
+          <value>data_security_confid</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/rsn_no_scrn/harm:label')"/>
+          <value>harm</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/rsn_no_scrn/time:label')"/>
+          <value>time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_screening/epds/rsn_no_scrn/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/epds_screening/epds/specify_reason">
+        <label ref="jr:itext('/epds_screening/epds/specify_reason:label')"/>
+      </input>
+      <input ref="/epds_screening/epds/s_date">
+        <label ref="jr:itext('/epds_screening/epds/s_date:label')"/>
+      </input>
+      <group ref="/epds_screening/epds/screening">
+        <select1 ref="/epds_screening/epds/screening/curr_sts">
+          <label ref="jr:itext('/epds_screening/epds/screening/curr_sts:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/curr_sts/preg_women:label')"/>
+            <value>preg_women</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/curr_sts/pp_women:label')"/>
+            <value>pp_women</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/screening/lmp_wom">
+          <label ref="jr:itext('/epds_screening/epds/screening/lmp_wom:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/screening/gest_wk_note">
+          <label ref="jr:itext('/epds_screening/epds/screening/gest_wk_note:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/screening/del_date">
+          <label ref="jr:itext('/epds_screening/epds/screening/del_date:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/screening/pp_days_note">
+          <label ref="jr:itext('/epds_screening/epds/screening/pp_days_note:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/screening/migration">
+          <label ref="jr:itext('/epds_screening/epds/screening/migration:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/migration/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/migration/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/screening/plan_birth">
+          <label ref="jr:itext('/epds_screening/epds/screening/plan_birth:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/plan_birth/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/plan_birth/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/screening/prob_part">
+          <label ref="jr:itext('/epds_screening/epds/screening/prob_part:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/prob_part/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/screening/prob_part/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/screening/diff_prob">
+          <label ref="jr:itext('/epds_screening/epds/screening/diff_prob:label')"/>
+        </input>
+      </group>
+      <group ref="/epds_screening/epds/postnatal_d_screen">
+        <input ref="/epds_screening/epds/postnatal_d_screen/epds_inst">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_inst:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_1">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_1:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_1/0:label')"/>
+            <value>0</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_1/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_1/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_1/3:label')"/>
+            <value>3</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_2">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_2:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_2/0:label')"/>
+            <value>0</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_2/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_2/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_2/3:label')"/>
+            <value>3</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_3">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_3:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_3/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_3/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_3/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_3/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_4">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_4:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_4/0:label')"/>
+            <value>0</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_4/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_4/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_4/3:label')"/>
+            <value>3</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_5">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_5:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_5/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_5/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_5/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_5/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_6">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_6:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_6/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_6/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_6/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_6/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_7">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_7:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_7/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_7/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_7/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_7/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_8">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_8:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_8/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_8/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_8/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_8/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_9">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_9:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_9/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_9/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_9/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_9/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/postnatal_d_screen/epds_10">
+          <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_10:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_10/3:label')"/>
+            <value>3</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_10/2:label')"/>
+            <value>2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_10/1:label')"/>
+            <value>1</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/postnatal_d_screen/epds_10/0:label')"/>
+            <value>0</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="/epds_screening/epds/ness">
+        <input ref="/epds_screening/epds/ness/ness_inst">
+          <label ref="jr:itext('/epds_screening/epds/ness/ness_inst:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/ness/ness1">
+          <label ref="jr:itext('/epds_screening/epds/ness/ness1:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/ness1/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/ness1/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/ness/ness2">
+          <label ref="jr:itext('/epds_screening/epds/ness/ness2:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/ness2/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/ness2/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/ness/ness3">
+          <label ref="jr:itext('/epds_screening/epds/ness/ness3:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/ness3/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/ness3/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/ness/elig_ness1">
+          <label ref="jr:itext('/epds_screening/epds/ness/elig_ness1:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/ness/Inelig_ness1">
+          <label ref="jr:itext('/epds_screening/epds/ness/Inelig_ness1:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/ness/Elig_ness3">
+          <label ref="jr:itext('/epds_screening/epds/ness/Elig_ness3:label')"/>
+          <hint ref="jr:itext('/epds_screening/epds/ness/Elig_ness3:hint')"/>
+        </input>
+        <input ref="/epds_screening/epds/ness/Inelig_ness3">
+          <label ref="jr:itext('/epds_screening/epds/ness/Inelig_ness3:label')"/>
+          <hint ref="jr:itext('/epds_screening/epds/ness/Inelig_ness3:hint')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/ness/risk_suicide">
+          <label ref="jr:itext('/epds_screening/epds/ness/risk_suicide:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/risk_suicide/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/ness/risk_suicide/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+      </group>
+      <group ref="/epds_screening/epds/study_eligibility">
+        <input ref="/epds_screening/epds/study_eligibility/elig_ins1">
+          <label ref="jr:itext('/epds_screening/epds/study_eligibility/elig_ins1:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/study_eligibility/inelig_ins2">
+          <label ref="jr:itext('/epds_screening/epds/study_eligibility/inelig_ins2:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/study_eligibility/no_imm_risk">
+          <label ref="jr:itext('/epds_screening/epds/study_eligibility/no_imm_risk:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/study_eligibility/imm_risk">
+          <label ref="jr:itext('/epds_screening/epds/study_eligibility/imm_risk:label')"/>
+        </input>
+      </group>
+      <group ref="/epds_screening/epds/study_cnst">
+        <input ref="/epds_screening/epds/study_cnst/cnst_int">
+          <label ref="jr:itext('/epds_screening/epds/study_cnst/cnst_int:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/study_cnst/cnst_part">
+          <label ref="jr:itext('/epds_screening/epds/study_cnst/cnst_part:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/cnst_part/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/cnst_part/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/cnst_part/not_ready:label')"/>
+            <value>not_ready</value>
+          </item>
+        </select1>
+        <select ref="/epds_screening/epds/study_cnst/rsn_part">
+          <label ref="jr:itext('/epds_screening/epds/study_cnst/rsn_part:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/rsn_part/no_benefits:label')"/>
+            <value>no_benefits</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/rsn_part/data_security_confid:label')"/>
+            <value>data_security_confid</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/rsn_part/harm:label')"/>
+            <value>harm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/rsn_part/time:label')"/>
+            <value>time</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/study_cnst/rsn_part/other:label')"/>
+            <value>other</value>
+          </item>
+        </select>
+        <input ref="/epds_screening/epds/study_cnst/cnst_specify">
+          <label ref="jr:itext('/epds_screening/epds/study_cnst/cnst_specify:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/study_cnst/time">
+          <label ref="jr:itext('/epds_screening/epds/study_cnst/time:label')"/>
+        </input>
+      </group>
+      <group ref="/epds_screening/epds/socidem_info">
+        <input ref="/epds_screening/epds/socidem_info/instr_socidem">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/instr_socidem:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/socidem_info/age_resp">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/age_resp:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/age_resp/comp_yrs:label')"/>
+            <value>comp_yrs</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/age_resp/dob:label')"/>
+            <value>dob</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/socidem_info/age_yrs">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/age_yrs:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/socidem_info/age_dob">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/age_dob:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/socidem_info/age_display">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/age_display:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/socidem_info/fam_mem">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/fam_mem:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/socidem_info/fam_type">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/fam_type:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/fam_type/nuclear:label')"/>
+            <value>nuclear</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/fam_type/joint:label')"/>
+            <value>joint</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/fam_type/extended:label')"/>
+            <value>extended</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/socidem_info/ethn">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/ethn:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/ethn/dalit:label')"/>
+            <value>dalit</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/ethn/brahmin/chettri:label')"/>
+            <value>brahmin/chettri</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/ethn/janajati:label')"/>
+            <value>janajati</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/ethn/muslim:label')"/>
+            <value>muslim</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/ethn/others:label')"/>
+            <value>others</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/socidem_info/religion">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/religion:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/religion/hinduism:label')"/>
+            <value>hinduism</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/religion/buddhism:label')"/>
+            <value>buddhism</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/religion/kirant:label')"/>
+            <value>kirant</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/religion/islam:label')"/>
+            <value>islam</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/religion/christianity:label')"/>
+            <value>christianity</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/religion/other:label')"/>
+            <value>other</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/religion/refused_answer:label')"/>
+            <value>refused_answer</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/socidem_info/other_religion">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/other_religion:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/socidem_info/edu_resp">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp/infor_edu:label')"/>
+            <value>infor_edu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp/prim_school:label')"/>
+            <value>prim_school</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp/sec_school:label')"/>
+            <value>sec_school</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp/int_or_+2:label')"/>
+            <value>int_or_+2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp/bach_and_above:label')"/>
+            <value>bach_and_above</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp/no_formal_edu:label')"/>
+            <value>no_formal_edu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_resp/refused_answer:label')"/>
+            <value>refused_answer</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/socidem_info/edu_husb">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb/infor_edu:label')"/>
+            <value>infor_edu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb/prim_school:label')"/>
+            <value>prim_school</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb/sec_school:label')"/>
+            <value>sec_school</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb/int_or_+2:label')"/>
+            <value>int_or_+2</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb/bach_and_above:label')"/>
+            <value>bach_and_above</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb/no_formal_edu:label')"/>
+            <value>no_formal_edu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/edu_husb/refused_answer:label')"/>
+            <value>refused_answer</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/socidem_info/occu_resp">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/farmer:label')"/>
+            <value>farmer</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/homemaker:label')"/>
+            <value>homemaker</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/skilled_labor:label')"/>
+            <value>skilled_labor</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/unskilled_labor:label')"/>
+            <value>unskilled_labor</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/student:label')"/>
+            <value>student</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/job:label')"/>
+            <value>job</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/large_business:label')"/>
+            <value>large_business</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/small_business:label')"/>
+            <value>small_business</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/service_oriented:label')"/>
+            <value>service_oriented</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/retired_pension:label')"/>
+            <value>retired_pension</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/unemployed:label')"/>
+            <value>unemployed</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/refused_answer:label')"/>
+            <value>refused_answer</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_resp/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/socidem_info/other_occu">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/other_occu:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/socidem_info/occu_husb">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/farmer:label')"/>
+            <value>farmer</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/homemaker:label')"/>
+            <value>homemaker</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/skilled_labor:label')"/>
+            <value>skilled_labor</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/unskilled_labor:label')"/>
+            <value>unskilled_labor</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/student:label')"/>
+            <value>student</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/job:label')"/>
+            <value>job</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/large_business:label')"/>
+            <value>large_business</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/small_business:label')"/>
+            <value>small_business</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/service_oriented:label')"/>
+            <value>service_oriented</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/retired_pension:label')"/>
+            <value>retired_pension</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/unemployed:label')"/>
+            <value>unemployed</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/refused_answer:label')"/>
+            <value>refused_answer</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/occu_husb/other:label')"/>
+            <value>other</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/socidem_info/other_occu_husb">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/other_occu_husb:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/socidem_info/monthly_expend">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/monthly_expend:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/socidem_info/dur_marriage">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/dur_marriage:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/socidem_info/gravida">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/gravida:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/socidem_info/intend_preg">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/intend_preg:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/intend_preg/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/intend_preg/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/epds_screening/epds/socidem_info/parity">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/parity:label')"/>
+        </input>
+        <input ref="/epds_screening/epds/socidem_info/livebirth_num">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/livebirth_num:label')"/>
+        </input>
+        <select1 ref="/epds_screening/epds/socidem_info/mode_deli">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/mode_deli:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/mode_deli/normal:label')"/>
+            <value>normal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/mode_deli/cs:label')"/>
+            <value>cs</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/mode_deli/vacum:label')"/>
+            <value>vacum</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_screening/epds/socidem_info/depress_hstry">
+          <label ref="jr:itext('/epds_screening/epds/socidem_info/depress_hstry:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/depress_hstry/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_screening/epds/socidem_info/depress_hstry/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+      </group>
+    </group>
+  </h:body>
+</h:html>

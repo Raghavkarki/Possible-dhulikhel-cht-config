@@ -1,0 +1,5 @@
+{
+  "place": false,
+  "person": true,
+  "expression": "contact.contact_type === 'c52_ward_contact'"
+}

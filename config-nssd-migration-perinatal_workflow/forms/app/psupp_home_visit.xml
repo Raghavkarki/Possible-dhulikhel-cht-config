@@ -1,33 +1,37 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
   <h:head>
-    <h:title>PSuPPs Home Visit</h:title>
+    <h:title>PSuPP Form</h:title>
     <model>
       <itext>
         <translation lang="en">
-          <text id="/psupp_home_visit/epds/epds_id:label">
-            <value>pssupp form</value>
-          </text>
-          <text id="/psupp_home_visit/epds/psupp/no:label">
+          <text id="/psupp_home_visit/first_home_visit/end_1stvisit/no:label">
             <value>No</value>
           </text>
-          <text id="/psupp_home_visit/epds/psupp/yes:label">
+          <text id="/psupp_home_visit/first_home_visit/end_1stvisit/yes:label">
             <value>Yes</value>
           </text>
-          <text id="/psupp_home_visit/epds/psupp:label">
-            <value>निद्रा अनुगमन चार्ट</value>
+          <text id="/psupp_home_visit/first_home_visit/end_1stvisit:label">
+            <value>First home visit has been completed</value>
           </text>
-          <text id="/psupp_home_visit/formatted_date:label">
-            <value>Formatted Date</value>
+          <text id="/psupp_home_visit/first_home_visit/first_homevisit:label">
+            <value>Goal of session: 
+Build trust + recall Aasha ko Diyo + practice 1166 call</value>
+          </text>
+          <text id="/psupp_home_visit/first_home_visit/firstvisit_st:label">
+            <value>Steps
+1. Greet participant warmly. 
+2. Assure confidentiality. 
+3.Gently ask about their health, mood, and current challenges [do BP Checks]
+4.Remind them about Aasha ko Diyo and review/update it. [Note: If they share about suicidality, please continue as per referrel pathway]
+5. Practice calling 1166. 
+6. Plan for next contact.</value>
+          </text>
+          <text id="/psupp_home_visit/first_home_visit:label">
+            <value>First home visit</value>
           </text>
           <text id="/psupp_home_visit/inputs/contact/_id:label">
             <value>What is the patient's name?</value>
-          </text>
-          <text id="/psupp_home_visit/inputs/contact/nepali_full_name:label">
-            <value>Short Name</value>
-          </text>
-          <text id="/psupp_home_visit/inputs/contact/patient_id:label">
-            <value>Patient ID</value>
           </text>
           <text id="/psupp_home_visit/inputs/contact:label">
             <value>Contact</value>
@@ -41,30 +45,103 @@
           <text id="/psupp_home_visit/inputs:label">
             <value>Patient</value>
           </text>
+          <text id="/psupp_home_visit/second_home_visit/end_2ndhomevisit/no:label">
+            <value>No</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/end_2ndhomevisit/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/end_2ndhomevisit:label">
+            <value>Second home visit has been completed</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/second_homevisit:label">
+            <value>Goal of the session:Update safety plan + reinforce reasons for living</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/second_homevisit_st:label">
+            <value>Steps 
+1. Warm check-in. 
+2. Remind confidentiality. 
+3. Check-in about their health facility visit and reasons to visit and how was it?
+4. Discuss + Update Aashako diyo and all the domains 
+[Note. Discussion on how are they using it focussing on 'sahayogi bekti' and 'baache aadhar (reasons to live)'. Ask them anything else they would like to do to support themselves?]
+
+5. Appreciate progress and leave room to ask questions 
+6. Plan for next contact</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit:label">
+            <value>Second Home Visit</value>
+          </text>
         </translation>
         <translation lang="ne">
-          <text id="/psupp_home_visit/epds/epds_id:label">
-            <value>pssupp form</value>
+          <text id="/psupp_home_visit/first_home_visit/end_1stvisit/no:label">
+            <value>गरिन</value>
           </text>
-          <text id="/psupp_home_visit/epds/psupp/no:label">
-            <value>छैन</value>
+          <text id="/psupp_home_visit/first_home_visit/end_1stvisit/yes:label">
+            <value>गरे</value>
           </text>
-          <text id="/psupp_home_visit/epds/psupp/yes:label">
-            <value>छ</value>
+          <text id="/psupp_home_visit/first_home_visit/end_1stvisit:label">
+            <value>पहिलो घर भेट पूरा भएको छ |</value>
           </text>
-          <text id="/psupp_home_visit/epds/psupp:label">
-            <value>Sleep monitoring chart</value>
+          <text id="/psupp_home_visit/first_home_visit/first_homevisit:label">
+            <value>सत्रको उद्देश्य:
+सहभागीको विश्वास जित्ने , आशाको दियो सम्झाउने र ११६६ बारे जानकारी दिने</value>
           </text>
-          <text id="/psupp_home_visit/formatted_date:label">
-            <value>-</value>
+          <text id="/psupp_home_visit/first_home_visit/firstvisit_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता सुनिश्चित गर्नुहोस्।
+३.उनीहरूको स्वास्थ्य, मूड, र वर्तमान चुनौतीबारे सोध्नुहोस्। [रक्तचाप जाँच गर्नुहोस्] 
+४.आशाको दियो बारे सम्झाउनु होस् र आवश्यक परेमा समीक्षा गर्नुहोस्। [नोट: यदि सहभागीले आत्महत्यासँग सम्बन्धित कुरा , भने तालिममा भनिएको रेफेरल पथ अनुसार अगाडि बढ्नुहोस्]
+५.११६६ मा फोन गर्ने अभ्यास गर्नुहोस |
+६.अर्को भेटको योजना बनाउनुहोस्</value>
+          </text>
+          <text id="/psupp_home_visit/first_home_visit:label">
+            <value>घर भेट १</value>
           </text>
           <text id="/psupp_home_visit/inputs/contact/_id:label">
             <value>सेवा लिनेको नाम के हो?</value>
           </text>
+          <text id="/psupp_home_visit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/psupp_home_visit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/psupp_home_visit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/psupp_home_visit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/end_2ndhomevisit/no:label">
+            <value>गरिन</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/end_2ndhomevisit/yes:label">
+            <value>गरे</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/end_2ndhomevisit:label">
+            <value>दोस्रो घर भेट पूरा भएको छ |</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/second_homevisit:label">
+            <value>सत्रको उद्देश्य:सुरक्षा योजना बारे छलफल गर्ने र बाँच्ने कारणहरूलाई पुन: सुदृढ गर्नु</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit/second_homevisit_st:label">
+            <value>चरणहरू:
+१.सहभागीलाई न्यानो अभिवादन गर्नुहोस्।
+२.गोपनीयता बारे सम्झाउनुहोस्।
+
+३. सहभागीलाइ स्वास्थ्य चौकीमा जानु भयो वा भएन सोध्नु होस् | जानु भएमा स्थोवास्रैथ्य संस्था जानुको कारण र अनुभव बारे थोरै विवरण लिनुहोस् |
+४. आशाको दियो बारे छलफल गर्नुहोस्। [नोट: सहभागीलाई आशाको दियोमा उल्लेख गरिएको सहयोगी व्यक्ति र बाच्ने आधारहरु बारे सोध्नु होस् |साथै उहाको सहयोगको लागि अरु केहि थप्नु आवश्यक छ कि भनेर पनि सोध्नुहोस |] 
+५. प्रगतिलाई प्रशंसा गर्नुहोस् र सहभागीलाई प्रश्न सोध्ने अवसर दिनुहोस्।
+६. अर्को फोन कलको योजना बनाउनुहोस्।</value>
+          </text>
+          <text id="/psupp_home_visit/second_home_visit:label">
+            <value>घर भेट २</value>
+          </text>
         </translation>
       </itext>
       <instance>
-        <psupp_home_visit id="psupp_home_visit" prefix="J1!psupp_home_visit!" delimiter="#" version="1">
+        <psupp_home_visit id="psupp_form" prefix="J1!psupp_form!" delimiter="#" version="1">
           <inputs>
             <meta>
               <location>
@@ -78,25 +155,26 @@
             <source_id/>
             <contact>
               <_id/>
-              <nepali_full_name/>
+              <name/>
               <patient_id/>
-              <date_of_registration/>
+              <date_of_birth/>
             </contact>
           </inputs>
           <patient_uuid/>
           <patient_name/>
           <patient_id/>
-          <delivery_date tag="hidden"/>
-          <updated_dd tag="hidden"/>
-          <latestlmp tag="hidden"/>
-          <lmpdays/>
-          <ddno/>
-          <up_dd/>
-          <formatted_date/>
-          <epds>
-            <epds_id/>
-            <psupp/>
-          </epds>
+          <patient_age/>
+          <home_visit/>
+          <first_home_visit>
+            <first_homevisit/>
+            <firstvisit_st/>
+            <end_1stvisit/>
+          </first_home_visit>
+          <second_home_visit>
+            <second_homevisit/>
+            <second_homevisit_st/>
+            <end_2ndhomevisit/>
+          </second_home_visit>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -108,21 +186,22 @@
       <bind nodeset="/psupp_home_visit/inputs/source" type="string"/>
       <bind nodeset="/psupp_home_visit/inputs/source_id" type="string"/>
       <bind nodeset="/psupp_home_visit/inputs/contact/_id" type="db:person"/>
-      <bind nodeset="/psupp_home_visit/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/psupp_home_visit/inputs/contact/name" type="string"/>
       <bind nodeset="/psupp_home_visit/inputs/contact/patient_id" type="string"/>
-      <bind nodeset="/psupp_home_visit/inputs/contact/date_of_registration" type="string"/>
+      <bind nodeset="/psupp_home_visit/inputs/contact/date_of_birth" type="string"/>
       <bind nodeset="/psupp_home_visit/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/psupp_home_visit/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/psupp_home_visit/patient_name" type="string" calculate="../inputs/contact/name"/>
       <bind nodeset="/psupp_home_visit/patient_id" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/psupp_home_visit/delivery_date" type="string" calculate="if(instance('contact-summary')/context/delivery_date, instance('contact-summary')/context/delivery_date, .)"/>
-      <bind nodeset="/psupp_home_visit/updated_dd" type="string" calculate="if(instance('contact-summary')/context/updated_dd, instance('contact-summary')/context/updated_dd, .)"/>
-      <bind nodeset="/psupp_home_visit/latestlmp" type="string" calculate="if(instance('contact-summary')/context/latestlmp, instance('contact-summary')/context/latestlmp, .)"/>
-      <bind nodeset="/psupp_home_visit/lmpdays" type="string" calculate="round((decimal-date-time(today()) - decimal-date-time(date( /psupp_home_visit/latestlmp ))) div 7)"/>
-      <bind nodeset="/psupp_home_visit/ddno" type="string" calculate="round(decimal-date-time(today()) - decimal-date-time( /psupp_home_visit/delivery_date ))"/>
-      <bind nodeset="/psupp_home_visit/up_dd" type="string" calculate="round(decimal-date-time(today()) - decimal-date-time( /psupp_home_visit/updated_dd ))"/>
-      <bind nodeset="/psupp_home_visit/formatted_date" type="string" calculate="format-date( /psupp_home_visit/delivery_date , '%d/%m/%Y')"/>
-      <bind nodeset="/psupp_home_visit/epds/epds_id" type="string"/>
-      <bind nodeset="/psupp_home_visit/epds/psupp" type="select1"/>
+      <bind nodeset="/psupp_home_visit/patient_age" type="string" calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )"/>
+      <bind nodeset="/psupp_home_visit/home_visit" type="string" calculate="if(instance('contact-summary')/context/home_visit, instance('contact-summary')/context/home_visit, .)"/>
+      <bind nodeset="/psupp_home_visit/first_home_visit" relevant=" /psupp_home_visit/home_visit  ='1'"/>
+      <bind nodeset="/psupp_home_visit/first_home_visit/first_homevisit" type="string"/>
+      <bind nodeset="/psupp_home_visit/first_home_visit/firstvisit_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_home_visit/first_home_visit/end_1stvisit" type="select1"/>
+      <bind nodeset="/psupp_home_visit/second_home_visit" relevant=" /psupp_home_visit/home_visit  ='2'"/>
+      <bind nodeset="/psupp_home_visit/second_home_visit/second_homevisit" type="string"/>
+      <bind nodeset="/psupp_home_visit/second_home_visit/second_homevisit_st" readonly="true()" type="string"/>
+      <bind nodeset="/psupp_home_visit/second_home_visit/end_2ndhomevisit" type="select1"/>
       <bind nodeset="/psupp_home_visit/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -136,18 +215,42 @@
         </input>
       </group>
     </group>
-    <group appearance="field-list" ref="/psupp_home_visit/epds">
-      <input ref="/psupp_home_visit/epds/epds_id">
-        <label ref="jr:itext('/psupp_home_visit/epds/epds_id:label')"/>
+    <group appearance="field-list" ref="/psupp_home_visit/first_home_visit">
+      <label ref="jr:itext('/psupp_home_visit/first_home_visit:label')"/>
+      <input ref="/psupp_home_visit/first_home_visit/first_homevisit">
+        <label ref="jr:itext('/psupp_home_visit/first_home_visit/first_homevisit:label')"/>
       </input>
-      <select1 ref="/psupp_home_visit/epds/psupp">
-        <label ref="jr:itext('/psupp_home_visit/epds/psupp:label')"/>
+      <input ref="/psupp_home_visit/first_home_visit/firstvisit_st">
+        <label ref="jr:itext('/psupp_home_visit/first_home_visit/firstvisit_st:label')"/>
+      </input>
+      <select1 ref="/psupp_home_visit/first_home_visit/end_1stvisit">
+        <label ref="jr:itext('/psupp_home_visit/first_home_visit/end_1stvisit:label')"/>
         <item>
-          <label ref="jr:itext('/psupp_home_visit/epds/psupp/yes:label')"/>
+          <label ref="jr:itext('/psupp_home_visit/first_home_visit/end_1stvisit/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/psupp_home_visit/epds/psupp/no:label')"/>
+          <label ref="jr:itext('/psupp_home_visit/first_home_visit/end_1stvisit/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/psupp_home_visit/second_home_visit">
+      <label ref="jr:itext('/psupp_home_visit/second_home_visit:label')"/>
+      <input ref="/psupp_home_visit/second_home_visit/second_homevisit">
+        <label ref="jr:itext('/psupp_home_visit/second_home_visit/second_homevisit:label')"/>
+      </input>
+      <input ref="/psupp_home_visit/second_home_visit/second_homevisit_st">
+        <label ref="jr:itext('/psupp_home_visit/second_home_visit/second_homevisit_st:label')"/>
+      </input>
+      <select1 ref="/psupp_home_visit/second_home_visit/end_2ndhomevisit">
+        <label ref="jr:itext('/psupp_home_visit/second_home_visit/end_2ndhomevisit:label')"/>
+        <item>
+          <label ref="jr:itext('/psupp_home_visit/second_home_visit/end_2ndhomevisit/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/psupp_home_visit/second_home_visit/end_2ndhomevisit/no:label')"/>
           <value>no</value>
         </item>
       </select1>

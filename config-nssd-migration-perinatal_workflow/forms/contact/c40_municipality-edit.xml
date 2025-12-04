@@ -230,13 +230,13 @@
       <bind nodeset="/data/c40_municipality/change_primary" type="select1" required="true()"/>
       <bind nodeset="/data/c40_municipality/contact/name" type="string" readonly="true()"/>
       <bind nodeset="/data/c40_municipality/contact/contact_name" type="string" calculate="../name"/>
-      <bind nodeset="/data/c40_municipality/contact/select_center_contact" type="string" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c10_center'" required="true()"/>
-      <bind nodeset="/data/c40_municipality/contact/select_province_contact" type="string" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c20_province'" required="true()"/>
-      <bind nodeset="/data/c40_municipality/contact/select_district_contact" type="string" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c30_district'" required="true()"/>
-      <bind nodeset="/data/c40_municipality/contact/select_municipality_contact" type="string" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c40_municipality'" required="true()"/>
-      <bind nodeset="/data/c40_municipality/contact/select_ward_contact" type="string" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c50_ward'" required="true()"/>
-      <bind nodeset="/data/c40_municipality/contact/select_chn_area_contact" type="string" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c60_chn_area'" required="true()"/>
-      <bind nodeset="/data/c40_municipality/contact/select_fchv_area_contact" type="string" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c70fchv_area'" required="true()"/>
+      <bind nodeset="/data/c40_municipality/contact/select_center_contact" type="string" required="true()" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c10_center'"/>
+      <bind nodeset="/data/c40_municipality/contact/select_province_contact" type="string" required="true()" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c20_province'"/>
+      <bind nodeset="/data/c40_municipality/contact/select_district_contact" type="string" required="true()" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c30_district'"/>
+      <bind nodeset="/data/c40_municipality/contact/select_municipality_contact" type="string" required="true()" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c40_municipality'"/>
+      <bind nodeset="/data/c40_municipality/contact/select_ward_contact" type="string" required="true()" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c50_ward'"/>
+      <bind nodeset="/data/c40_municipality/contact/select_chn_area_contact" type="string" required="true()" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c60_chn_area'"/>
+      <bind nodeset="/data/c40_municipality/contact/select_fchv_area_contact" type="string" required="true()" relevant=" /data/c40_municipality/change_primary  = 'yes' and  /data/c40_municipality/place_type  = 'c70fchv_area'"/>
       <bind nodeset="/data/c40_municipality/contact/_id" type="string" calculate="if( /data/c40_municipality/change_primary  = 'yes', coalesce(../select_center_contact, ../select_province_contact, ../select_district_contact, ../select_municipality_contact, ../select_ward_contact, ../select_chn_area_contact, ../select_fchv_area_contact), .)"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>

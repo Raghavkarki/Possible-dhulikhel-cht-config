@@ -1,0 +1,23 @@
+
+  <model>
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="contact:c42_municipality_contact:create" prefix="J1!contact:c42_municipality_contact:create!" delimiter="#" version="2020-01-27">
+          <c42_municipality_contact>
+            <parent>PARENT</parent>
+            <first_name/>
+            <middle_name/>
+            <last_name/>
+            <name/>
+            <gender/>
+            <age/>
+            <phone>+977</phone>
+            <post/>
+            <post_other/>
+          </c42_municipality_contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>
+

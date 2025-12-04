@@ -1167,7 +1167,7 @@
       <bind nodeset="/data/init/create_new_person" type="select1" required="true()"/>
       <bind nodeset="/data/init/name" type="string"/>
       <bind nodeset="/data/init/contact_name" type="string" calculate="coalesce(../name, ../../contact/name)"/>
-      <bind nodeset="/data/init/custom_place_name_label_translator" type="select1" calculate="&quot;name&quot;" relevant="selected( /data/init/create_new_person ,'none')"/>
+      <bind nodeset="/data/init/custom_place_name_label_translator" type="select1" relevant="selected( /data/init/create_new_person ,'none')" calculate="&quot;name&quot;"/>
       <bind nodeset="/data/init/custom_place_name_label" type="string" calculate="jr:choice-name( /data/init/custom_place_name_label_translator ,' /data/init/custom_place_name_label_translator ')"/>
       <bind nodeset="/data/init/custom_place_name" type="string" required="true()" relevant="not( /data/init/place_type  = 'c60_chn_area' or  /data/init/place_type  = 'c70_fchv_area') or selected( /data/c50_ward/is_name_generated , 'false') or selected( /data/init/create_new_person ,'none')"/>
       <bind nodeset="/data/init/place_type" type="select1"/>
@@ -1181,16 +1181,16 @@
       <bind nodeset="/data/contact/type" type="string"/>
       <bind nodeset="/data/contact/contact_type" type="string" calculate="jr:choice-name( /data/init/person_type ,' /data/init/person_type ')"/>
       <bind nodeset="/data/contact/role" type="string" calculate="if( /data/init/place_type  = 'c70_fchv_area', 'chw', 'app_user')"/>
-      <bind nodeset="/data/contact/first_name" type="string" required="true()" jr:constraintMsg="jr:itext('/data/contact/first_name:jr:constraintMsg')" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')"/>
-      <bind nodeset="/data/contact/last_name" type="string" required="true()" jr:constraintMsg="jr:itext('/data/contact/last_name:jr:constraintMsg')" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')"/>
+      <bind nodeset="/data/contact/first_name" type="string" jr:constraintMsg="jr:itext('/data/contact/first_name:jr:constraintMsg')" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')"/>
+      <bind nodeset="/data/contact/last_name" type="string" jr:constraintMsg="jr:itext('/data/contact/last_name:jr:constraintMsg')" required="true()" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')"/>
       <bind nodeset="/data/contact/name" type="string" calculate="concat( /data/contact/first_name , ' ',  /data/contact/last_name )"/>
       <bind nodeset="/data/contact/age" type="int"/>
       <bind nodeset="/data/contact/gender" type="select1" required="true()"/>
-      <bind nodeset="/data/contact/caste_code" type="select" relevant=" /data/contact/role  = 'chw'" required="true()" jr:constraintMsg="jr:itext('/data/contact/caste_code:jr:constraintMsg')" constraint="not(selected(., 'unknown') and (selected(., 'dalit') or selected(., 'janajati') or selected(., 'madhesi')or selected(., 'muslim')or selected(., 'brahmin_chettri') or selected(., 'other') ))"/>
-      <bind nodeset="/data/contact/phone" type="tel" required="true()" jr:constraintMsg="jr:itext('/data/contact/phone:jr:constraintMsg')" constraint="true()"/>
-      <bind nodeset="/data/contact/fchv_id_number" type="string" jr:constraintMsg="jr:itext('/data/contact/fchv_id_number:jr:constraintMsg')" relevant=" /data/contact/role  = 'chw'" constraint="regex(.,'^[0-9]*$')"/>
-      <bind nodeset="/data/contact/start_date_as_fchv" type="string" relevant=" /data/contact/role  = 'chw'" required="true()" jr:constraintMsg="jr:itext('/data/contact/start_date_as_fchv:jr:constraintMsg')" constraint="regex(.,'^[0-9]{4}$') and int(.)&gt;= 2044 and int(format-date(today(),'%Y')) + 57 &gt;= int(.)"/>
-      <bind nodeset="/data/contact/start_date_as_fchv_ad" type="string" calculate="int( /data/contact/start_date_as_fchv ) - 57" relevant=" /data/contact/role  = 'chw'"/>
+      <bind nodeset="/data/contact/caste_code" type="select" constraint="not(selected(., 'unknown') and (selected(., 'dalit') or selected(., 'janajati') or selected(., 'madhesi')or selected(., 'muslim')or selected(., 'brahmin_chettri') or selected(., 'other') ))" jr:constraintMsg="jr:itext('/data/contact/caste_code:jr:constraintMsg')" required="true()" relevant=" /data/contact/role  = 'chw'"/>
+      <bind nodeset="/data/contact/phone" type="tel" jr:constraintMsg="jr:itext('/data/contact/phone:jr:constraintMsg')" required="true()" constraint="true()"/>
+      <bind nodeset="/data/contact/fchv_id_number" type="string" jr:constraintMsg="jr:itext('/data/contact/fchv_id_number:jr:constraintMsg')" constraint="regex(.,'^[0-9]*$')" relevant=" /data/contact/role  = 'chw'"/>
+      <bind nodeset="/data/contact/start_date_as_fchv" type="string" constraint="regex(.,'^[0-9]{4}$') and int(.)&gt;= 2044 and int(format-date(today(),'%Y')) + 57 &gt;= int(.)" jr:constraintMsg="jr:itext('/data/contact/start_date_as_fchv:jr:constraintMsg')" required="true()" relevant=" /data/contact/role  = 'chw'"/>
+      <bind nodeset="/data/contact/start_date_as_fchv_ad" type="string" relevant=" /data/contact/role  = 'chw'" calculate="int( /data/contact/start_date_as_fchv ) - 57"/>
       <bind nodeset="/data/contact/basic_training" type="select1" required="true()" relevant=" /data/contact/role  = 'chw'"/>
       <bind nodeset="/data/contact/post" type="select1" relevant=" /data/contact/role  = 'app_user'"/>
       <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>

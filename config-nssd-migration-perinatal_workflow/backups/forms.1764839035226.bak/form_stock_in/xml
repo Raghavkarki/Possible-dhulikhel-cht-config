@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Stock In</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/stock_in/condom_hp:hint">
+            <value>-</value>
+          </text>
+          <text id="/stock_in/condom_hp:label">
+            <value>Number of Condom Received from Health post</value>
+          </text>
+          <text id="/stock_in/condom_phcc:label">
+            <value>Number of Condom Received from PHC</value>
+          </text>
+          <text id="/stock_in/initial_stock/total_number:label">
+            <value>**You have the following quantity in stock:**
+
+**ORS received:** <output value=" /stock_in/ors_received "/>
+
+**Zinc 10 mg received:** <output value=" /stock_in/zinc_10_mg "/>
+
+**Zinc 20 mg received:** <output value=" /stock_in/zinc_20_mg "/>
+
+**UPT test kit received:** <output value=" /stock_in/upt_received "/>
+
+**Condom received from HP:** <output value=" /stock_in/condom_hp "/>
+
+**Condom received from PHCC:** <output value=" /stock_in/condom_phcc "/>
+
+**Condoms:** <output value=" /stock_in/initial_stock/condom_total "/></value></text>
+          <text id="/stock_in/initial_stock:label">
+            <value>Initial Stock</value>
+          </text>
+          <text id="/stock_in/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/stock_in/inputs/contact/name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/stock_in/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/stock_in/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/stock_in/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/stock_in/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/stock_in/items_selected/condom:label">
+            <value>Condom</value>
+          </text>
+          <text id="/stock_in/items_selected/ors:label">
+            <value>ORS</value>
+          </text>
+          <text id="/stock_in/items_selected/upt_kit:label">
+            <value>UPT Kit</value>
+          </text>
+          <text id="/stock_in/items_selected/zinc:label">
+            <value>Zinc</value>
+          </text>
+          <text id="/stock_in/items_selected:hint">
+            <value>-</value>
+          </text>
+          <text id="/stock_in/items_selected:label">
+            <value>Tick the item which you have taken</value>
+          </text>
+          <text id="/stock_in/ors_received:label">
+            <value>Number of ORS Received</value>
+          </text>
+          <text id="/stock_in/upt_received:label">
+            <value>Total number of UPT kit Received</value>
+          </text>
+          <text id="/stock_in/zinc_10_mg:label">
+            <value>Number of Zinc 10 mg Received</value>
+          </text>
+          <text id="/stock_in/zinc_20_mg:label">
+            <value>Total Number of Zinc 20 mg Received</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/stock_in/condom_hp:hint">
+            <value>If no stock please enter 0</value>
+          </text>
+          <text id="/stock_in/condom_hp:label">
+            <value>हेल्थ पोष्ट बाट प्राप्त जम्मा कण्डम संख्या</value>
+          </text>
+          <text id="/stock_in/condom_phcc:label">
+            <value>न्याय हेल्थ चरिकोट प्रा.स्वा.के.बाट प्राप्त कण्डम संख्या :</value>
+          </text>
+          <text id="/stock_in/initial_stock/total_number:label">
+            <value>**तपाइँ संग निम्न परिमाण मौज्दात छ :**
+
+**जीवनजल :** <output value=" /stock_in/ors_received "/>
+
+**जिंक १० मि.ग्रा.:** <output value=" /stock_in/zinc_10_mg "/>
+
+**जिंक २० मि.ग्रा.:** <output value=" /stock_in/zinc_20_mg "/>
+
+**गर्भ जांच किट :** <output value=" /stock_in/upt_received "/>
+
+**हेल्थ पोष्टबाट प्राप्त कण्डम :** <output value=" /stock_in/condom_hp "/>
+
+**न्याय हेल्थ चरिकोटबाट प्राप्त कण्डम :** <output value=" /stock_in/condom_phcc "/>
+
+**जम्मा कण्डम मौज्दात :** <output value=" /stock_in/initial_stock/condom_total "/></value></text>
+          <text id="/stock_in/initial_stock:label">
+            <value>प्रारम्भिक मौज्दात</value>
+          </text>
+          <text id="/stock_in/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+          <text id="/stock_in/items_selected/condom:label">
+            <value>कण्डम</value>
+          </text>
+          <text id="/stock_in/items_selected/ors:label">
+            <value>जीवनजल</value>
+          </text>
+          <text id="/stock_in/items_selected/upt_kit:label">
+            <value>गर्भवती जांच किट</value>
+          </text>
+          <text id="/stock_in/items_selected/zinc:label">
+            <value>जिंक चक्की</value>
+          </text>
+          <text id="/stock_in/items_selected:hint">
+            <value>सबै जानकारी अपडेट गर्न चाहनुहुन्छ भने सबै मा लगाउनुहोस</value>
+          </text>
+          <text id="/stock_in/items_selected:label">
+            <value>तपाईले कुन कुन सामान लिनु भएको हो छान्नुहोस्, यदि सबै जानकारी अपडेट गर्न चाहनुहुन्छ भने सबै मा √ चिन्ह लगाउनुहोस</value>
+          </text>
+          <text id="/stock_in/ors_received:label">
+            <value>जम्मा प्राप्त गरेको जीवनजल संख्या प्याकेट मा:</value>
+          </text>
+          <text id="/stock_in/upt_received:label">
+            <value>जम्मा प्राप्त गरेको गर्भवती जाँच किट संख्या(ट्याब्लेट मा)</value>
+          </text>
+          <text id="/stock_in/zinc_10_mg:label">
+            <value>जम्मा प्राप्त गरेको १० मि.ग्रा. जिंक संख्या(ट्याब्लेट मा)</value>
+          </text>
+          <text id="/stock_in/zinc_20_mg:label">
+            <value>जम्मा प्राप्त गरेको २० मि.ग्रा. जिंक संख्या(ट्याब्लेट मा)</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <stock_in id="stock_in" prefix="J1!stock_in!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <chw_uuid/>
+          <chw_name/>
+          <chw_id/>
+          <date_of_entry/>
+          <date_of_entry_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <items_selected/>
+          <ors_received/>
+          <zinc_10_mg/>
+          <zinc_20_mg/>
+          <upt_received/>
+          <condom_hp/>
+          <condom_phcc/>
+          <initial_stock>
+            <initial_stock_ors/>
+            <initial_stock_zinc10mg/>
+            <initial_stock_zinc20mg/>
+            <initial_stock_UPT_kits/>
+            <initial_stock_condoms_hp/>
+            <initial_stock_condoms_phc/>
+            <initial_stock_total_condoms/>
+            <condom_total/>
+            <total_number/>
+          </initial_stock>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </stock_in>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/stock_in/inputs" required="field-list"/>
+      <bind nodeset="/stock_in/inputs/source" type="string"/>
+      <bind nodeset="/stock_in/inputs/source_id" type="string"/>
+      <bind nodeset="/stock_in/inputs/contact/_id" type="db:person" required="db-object"/>
+      <bind nodeset="/stock_in/inputs/contact/name" type="string"/>
+      <bind nodeset="/stock_in/chw_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/stock_in/chw_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/stock_in/chw_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/stock_in/date_of_entry" type="string" calculate="date(today())"/>
+      <bind nodeset="/stock_in/date_of_entry_nepali" type="string" calculate="to-bikram-sambat( /stock_in/date_of_entry )"/>
+      <bind nodeset="/stock_in/reporting_nepali_short" type="string" calculate="substring-after( /stock_in/date_of_entry_nepali , &quot; &quot;)"/>
+      <bind nodeset="/stock_in/reporting_nepali_month" type="string" calculate="substring-before( /stock_in/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/stock_in/reporting_nepali_year" type="string" calculate="substring-after( /stock_in/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/stock_in/reporting_month_today" type="string" calculate="if( /stock_in/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /stock_in/reporting_nepali_month  = 'जेठ', 'Jestha', if( /stock_in/reporting_nepali_month  = 'असार', 'Ashadh', if( /stock_in/reporting_nepali_month  = 'साउन', 'Shrawan', if( /stock_in/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /stock_in/reporting_nepali_month  = 'असोज', 'Ashwin', if( /stock_in/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /stock_in/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /stock_in/reporting_nepali_month  = 'पौष', 'Poush', if( /stock_in/reporting_nepali_month  = 'माघ', 'Magh', if( /stock_in/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /stock_in/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/stock_in/reporting_year_today" type="string" calculate="concat(if(substr( /stock_in/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /stock_in/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /stock_in/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /stock_in/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /stock_in/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /stock_in/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /stock_in/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /stock_in/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/stock_in/reporting_today_short" type="string" calculate="concat( /stock_in/reporting_month_today , ' ',  /stock_in/reporting_year_today )"/>
+      <bind nodeset="/stock_in/items_selected" type="select" required="true()"/>
+      <bind nodeset="/stock_in/ors_received" type="int" relevant="selected( /stock_in/items_selected , 'ors')" required="true()"/>
+      <bind nodeset="/stock_in/zinc_10_mg" type="int" relevant="selected( /stock_in/items_selected , 'zinc')" required="true()"/>
+      <bind nodeset="/stock_in/zinc_20_mg" type="int" relevant="selected( /stock_in/items_selected , 'zinc')" required="true()"/>
+      <bind nodeset="/stock_in/upt_received" type="int" relevant="selected( /stock_in/items_selected , 'upt_kit')" required="true()"/>
+      <bind nodeset="/stock_in/condom_hp" type="int" relevant="selected( /stock_in/items_selected , 'condom')" required="true()"/>
+      <bind nodeset="/stock_in/condom_phcc" type="int" relevant="selected( /stock_in/items_selected , 'condom')" required="true()"/>
+      <bind nodeset="/stock_in/initial_stock/initial_stock_ors" type="string" calculate=" /stock_in/ors_received "/>
+      <bind nodeset="/stock_in/initial_stock/initial_stock_zinc10mg" type="string" calculate=" /stock_in/zinc_10_mg "/>
+      <bind nodeset="/stock_in/initial_stock/initial_stock_zinc20mg" type="string" calculate=" /stock_in/zinc_20_mg "/>
+      <bind nodeset="/stock_in/initial_stock/initial_stock_UPT_kits" type="string" calculate=" /stock_in/upt_received "/>
+      <bind nodeset="/stock_in/initial_stock/initial_stock_condoms_hp" type="string" calculate=" /stock_in/condom_hp "/>
+      <bind nodeset="/stock_in/initial_stock/initial_stock_condoms_phc" type="string" calculate=" /stock_in/condom_phcc "/>
+      <bind nodeset="/stock_in/initial_stock/initial_stock_total_condoms" type="string" calculate="number( /stock_in/condom_hp ) + number( /stock_in/condom_phcc )"/>
+      <bind nodeset="/stock_in/initial_stock/condom_total" type="string" calculate="number( /stock_in/condom_hp ) + number( /stock_in/condom_phcc )"/>
+      <bind nodeset="/stock_in/initial_stock/total_number" readonly="true()" type="string"/>
+      <bind nodeset="/stock_in/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="./source = 'user'" ref="/stock_in/inputs">
+      <label ref="jr:itext('/stock_in/inputs:label')"/>
+      <group ref="/stock_in/inputs/contact">
+        <label ref="jr:itext('/stock_in/inputs/contact:label')"/>
+        <input ref="/stock_in/inputs/contact/_id">
+          <label ref="jr:itext('/stock_in/inputs/contact/_id:label')"/>
+        </input>
+        <input ref="/stock_in/inputs/contact/name">
+          <label ref="jr:itext('/stock_in/inputs/contact/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <select ref="/stock_in/items_selected">
+      <label ref="jr:itext('/stock_in/items_selected:label')"/>
+      <hint ref="jr:itext('/stock_in/items_selected:hint')"/>
+      <item>
+        <label ref="jr:itext('/stock_in/items_selected/zinc:label')"/>
+        <value>zinc</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_in/items_selected/ors:label')"/>
+        <value>ors</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_in/items_selected/upt_kit:label')"/>
+        <value>upt_kit</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/stock_in/items_selected/condom:label')"/>
+        <value>condom</value>
+      </item>
+    </select>
+    <input ref="/stock_in/ors_received">
+      <label ref="jr:itext('/stock_in/ors_received:label')"/>
+    </input>
+    <input ref="/stock_in/zinc_10_mg">
+      <label ref="jr:itext('/stock_in/zinc_10_mg:label')"/>
+    </input>
+    <input ref="/stock_in/zinc_20_mg">
+      <label ref="jr:itext('/stock_in/zinc_20_mg:label')"/>
+    </input>
+    <input ref="/stock_in/upt_received">
+      <label ref="jr:itext('/stock_in/upt_received:label')"/>
+    </input>
+    <input ref="/stock_in/condom_hp">
+      <label ref="jr:itext('/stock_in/condom_hp:label')"/>
+      <hint ref="jr:itext('/stock_in/condom_hp:hint')"/>
+    </input>
+    <input ref="/stock_in/condom_phcc">
+      <label ref="jr:itext('/stock_in/condom_phcc:label')"/>
+    </input>
+    <group ref="/stock_in/initial_stock">
+      <label ref="jr:itext('/stock_in/initial_stock:label')"/>
+      <input ref="/stock_in/initial_stock/total_number">
+        <label ref="jr:itext('/stock_in/initial_stock/total_number:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

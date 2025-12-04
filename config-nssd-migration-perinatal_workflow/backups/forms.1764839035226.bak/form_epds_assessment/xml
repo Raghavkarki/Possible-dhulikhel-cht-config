@@ -1,0 +1,1075 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>EPDS Assessment</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/epds_assessment/epds/advrs_evnt/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_assessment/epds/advrs_evnt/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_assessment/epds/advrs_evnt:label">
+            <value>Since our last visit until now, have you experienced any unpleasant incident, faced any problem that made things difficult for you, or had a situation where you needed to be admitted to a hospital?</value>
+          </text>
+          <text id="/epds_assessment/epds/cons_followup/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_assessment/epds/cons_followup/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_assessment/epds/cons_followup:label">
+            <value>Do you agree to participate in this follow-up?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/0:label">
+            <value>As much as I always could</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/1:label">
+            <value>Not quite so much now</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/2:label">
+            <value>Definitely not so much now</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/3:label">
+            <value>Not at all</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/0:label">
+            <value>Never</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/1:label">
+            <value>Hardly ever</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/2:label">
+            <value>Sometimes</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/3:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10:label">
+            <value>10. The thought of harming myself has occoured to me</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1:label">
+            <value>1. I have been able to laugh and see the funny side of things</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/0:label">
+            <value>As much as I ever did</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/1:label">
+            <value>Rather less than I used to</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/2:label">
+            <value>Definitely less than I used to</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/3:label">
+            <value>Hardly at all</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2:label">
+            <value>2. I have looked forward with enjoyment to things</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/0:label">
+            <value>No, never</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/1:label">
+            <value>Not very often</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/2:label">
+            <value>Yes, some of the time</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3:label">
+            <value>3. I have blamed myself unnecessarily when things went wrong</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/1:label">
+            <value>Hardly ever</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/2:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/3:label">
+            <value>Yes, very often</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4:label">
+            <value>4. I have been anxious or worried for no good reason</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/1:label">
+            <value>No, not much</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/2:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/3:label">
+            <value>Yes, quite a lot</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5:label">
+            <value>5. I have felt scared or panicky for no good reason</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/0:label">
+            <value>No, I have been coping as well as ever</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/1:label">
+            <value>No, most of the time I have coped quite well</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/2:label">
+            <value>Yes, sometimes I haven't been coping as well as usual</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/3:label">
+            <value>Yes, most of the time I haven't been able to cope at all</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6:label">
+            <value>6. Things have been getting to me</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/1:label">
+            <value>No, not very often</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/2:label">
+            <value>Yes, sometimes</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7:label">
+            <value>7. I have been so unhappy that I have had difficulty sleeping</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/0:label">
+            <value>No, not at all</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/1:label">
+            <value>Not very often</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/2:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8:label">
+            <value>8. I have felt sad or miserable</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/0:label">
+            <value>No, never</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/1:label">
+            <value>Only occasionally</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/2:label">
+            <value>Yes, quite often</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/3:label">
+            <value>Yes, most of the time</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9:label">
+            <value>9. I have been so unhappy that I have been crying</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_inst:label">
+            <value>Now, tell me how you felt about your experience over the past week. I will ask you some questions and give you four possible answers for each question. Please choose the answer that best suits you. There is no right or wrong answer, it is your experience that matters. If you have any questions, you can ask me. As always, everything you say will be kept confidential. I will begin now.
+
+Instructions: Please read all four possible answers for each question.</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_score:label">
+            <value>EPDS Score</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses/3m_foll_up:label">
+            <value>First followup (3 months)</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses/6m_foll_up:label">
+            <value>Second followup (6 months)</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses/9m_foll_up:label">
+            <value>Last followup (9 months)</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses:label">
+            <value>Select follow-up assessment</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/imm_risk:label">
+            <value>Instructions: Since the **participant is still at high risk of suicide**, please do the following using the points below.
+
+1. Please help the participant, as per the referral process.
+2. Inform them that you will make a phone call within two weeks to assess their condition.
+3. Before leaving the participant, give them a resource card, thank them, and leave them in the care of a family or friend.
+4. As soon as the conversation with the participant is complete, inform CHN.</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness1:label">
+            <value>1. Are you having thoughts of killing yourself right now?</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness2:label">
+            <value>2. Have you been thinking about how you might kill yourself?</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness3/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness3/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness3:label">
+            <value>3. Have you had some intention of acting on your suicidal thoughts?</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness_high:label">
+            <value>Instruction: The participant is at **high risk** of suicide.
+
+Please carry out the following actions using the discussion points mentioned in the referral process:
+
+-- Stay calm and do not panic. Sit with the participant, listen attentively with empathy, and inform their family.
+
+-- Even if the participant does not actively seek your help, explain that their safety is important and that you must support them according to the referral process.
+
+-- Connect the participant with a crisis counselor and ensure, together with the crisis counselor, that the participant is safe for the immediate moment.</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness_inst:label">
+            <value>Earlier, we talked about the thoughts you have had about harming yourself in the past week, so let's talk a little more about that.
+You are safe with me and everything we talk about will be kept confidential, so feel free to say whatever is on your mind.
+ Shall we start?</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness_score:label">
+            <value>Suicidal Risk</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/nesslow_mod:label">
+            <value>**Instruction**: The participant is at a **low/moderate risk** of suicide.
+
+Please carry out the following actions using the discussion points mentioned in the referral process:
+
+-- Sit with the participant and listen to them attentively.
+
+-- Encourage the participant to share what they are feeling with their family or with someone they trust.
+
+-- Before leaving, provide the participant with a **resource card** and thank them for their time today.
+
+-- Inform the CHN immediately after finishing the conversation with the participant.</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/no_imm_risk:label">
+            <value>Instruction: This participant is safe for the time being</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/risk_suicide/no:label">
+            <value>No</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/risk_suicide/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/risk_suicide:label">
+            <value>Based on consultation with a crisis counselor, is this participant safe at this time?</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/data_security_confid:label">
+            <value>Due to fear of data insecurity and confidentiality issues.</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/harm:label">
+            <value>Fear of harm from the study</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/no_benefits:label">
+            <value>No any benefits after participating in the study.</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/time:label">
+            <value>Couldn't provide the time during the study time frame</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup:label">
+            <value>If not, could you please tell me the reason?</value>
+          </text>
+          <text id="/epds_assessment/epds/reprtd_date:label">
+            <value>Reported date</value>
+          </text>
+          <text id="/epds_assessment/epds/spcfy_advrs_evnt:label">
+            <value>If yes, could you please tell me what happened?</value>
+          </text>
+          <text id="/epds_assessment/epds/specify_reason:label">
+            <value>If other, please specify</value>
+          </text>
+          <text id="/epds_assessment/epds/time:label">
+            <value>Thank you for giving your valuable time</value>
+          </text>
+          <text id="/epds_assessment/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/epds_assessment/inputs/contact/nepali_full_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/epds_assessment/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/epds_assessment/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/epds_assessment/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/epds_assessment/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/epds_assessment/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/epds_assessment/epds/advrs_evnt/no:label">
+            <value>थिएन</value>
+          </text>
+          <text id="/epds_assessment/epds/advrs_evnt/yes:label">
+            <value>थियो</value>
+          </text>
+          <text id="/epds_assessment/epds/advrs_evnt:label">
+            <value>यस अध्ययनमा सहभागी भए देखि मैले तपाईसँग विभिन्न समयमा मनको स्वास्थ्य सम्बन्धि कुरा गर्दै आईरहेको छु | त्यसै सिलसिलामा अहिले तपाईलाई कस्तो लागिरहेको भन्ने कुरा फेरी पनि बुज्न र छलफल गर्न लागिरहेको छु | 
+
+त्यसमा कुरा गर्नु अघि हाम्रो पछिल्लो भेटदेखि हालसम्म तपाईंलाई कुनै समस्याले गाह्रो बनाएको, वा अस्पतालमा भर्ना हुनुपरेको वा अप्रिय घटना (जस्तै: स्वास्थ्य अवस्थाको कारणले अस्पताल भर्ना हुनु परेको, हिंसामा परेको, दुर्घटना, आत्महत्याको प्रयास, आदि ) घटेको थियो? भनिदिनुहुन्छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/cons_followup/no:label">
+            <value>हुनहुुन्न</value>
+          </text>
+          <text id="/epds_assessment/epds/cons_followup/yes:label">
+            <value>हुनहुन्छ</value>
+          </text>
+          <text id="/epds_assessment/epds/cons_followup:label">
+            <value>अब हामी मनको स्वास्थ्य सम्बन्धि छलफलमा लागौं | के तपाई यस पटकको छलफलमा सहभागी हुन मन्जुर हुनुहुन्छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/0:label">
+            <value>पहिला जति नै</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/1:label">
+            <value>पहिला भन्दा अलि कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/2:label">
+            <value>पहिला भन्दा निकै नै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1/3:label">
+            <value>कत्ति पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10/3:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_10:label">
+            <value>१०. गएको ७ दिनमा, तपाईँलाई आफूलाई नै हानि पुर्‍याउने विचार आएको छ? (जस्तै: चिथोर्ने, काट्ने र मर्न मन लाग्ने)</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_1:label">
+            <value>१. गएको ७ दिनमा, तपाईँ कत्तिको हाँस्न र कुराहरूको रमाइलो पक्ष देख्न सकिरहनु भएको छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/0:label">
+            <value>पहिला जति नै</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/1:label">
+            <value>पहिला भन्दा अलि कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/2:label">
+            <value>पहिला भन्दा निकै नै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2/3:label">
+            <value>कत्ति पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_2:label">
+            <value>२. गएको ७ दिनमा, तपाईँले आशावादी भएर भविष्यलाई कत्तिको हेरिराख्नु भएको छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_3:label">
+            <value>३. गएको ७ दिनमा, कुनै पनि काम बिग्रँदा तपाईँले आफूलाई अनावश्यक रूपमा दोषी ठहर्‍याउनु भएको छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4/3:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_4:label">
+            <value>४. गएको ७ दिनमा, तपाईँ विना कारण नै कत्तिको आत्तिने वा चिन्ता मान्ने गरिरहनु भएको छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_5:label">
+            <value>५. गएको ७ दिनमा, तपाईँ विना कारण डराई रहने वा आत्तिरहने कत्तिको गरिरहनु भएको छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/0:label">
+            <value>सधैँ जसो नै सबै कुराहरु सम्हाल्न वा सामना गर्न सकेको</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/1:label">
+            <value>धेरै जसो समय कुराहरु सम्हाल्न वा सामना गर्न सकेको</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/2:label">
+            <value>कहिलेकाहीँ कुराहरु सम्हाल्न वा सामना गर्न नसकेको</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6/3:label">
+            <value>धेरै जसो समय कुराहरु सम्हाल्न वा सामना गर्न नसकेको</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_6:label">
+            <value>६. गएको ७ दिनमा, तपाईँले केही कुरा सम्हाल्न नसकेको कत्तिको भइरहेको छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/2:label">
+            <value>कहिलेकाहीँ मात्र</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_7:label">
+            <value>७. गएको ७ दिनमा, तपाईँलाई धेरै दुख लागेर निन्द्रा नलाग्ने कत्तिको भएको छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/2:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_8:label">
+            <value>८. गएको ७ दिनमा, तपाईँलाई दुखी वा विरक्त लाग्ने कत्तिको भएको छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/0:label">
+            <value>कहिले पनि छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/1:label">
+            <value>निकै कम</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/2:label">
+            <value>प्राय जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9/3:label">
+            <value>धेरै जसो</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_9:label">
+            <value>९. गएको ७ दिनमा, तपाईँलाई धेरै दुख लागेर रोइराख्ने कत्तिको भएको छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_inst:label">
+            <value>अब विगत एक हप्ताको आफ्नो अनुभवलाई सम्झेर कस्तो महसुस गर्नु भयो भन्नु होला | यसका लागि म केहि प्रश्न गर्नेछु र प्रत्येक चोटी प्रश्नसँगै चारवटा सम्भावित उत्तरहरु पनि भन्नेछु । तपाईंलाई सबैभन्दा धेरै मेल खाने उत्तर भन्नुहोला । यसमा कुनै पनि उत्तर सही वा गलत हुँदैन, तपाईंको अनुभव नै महत्त्वपूर्ण छ । कुनै पनि कुरा बुझ्न गाह्रो भएमा मलाई सोध्न सक्नुहुन्छ । सधैंझैं, तपाईंले भन्नु हुने सम्पूर्ण कुरा गोप्य रहनेछ । अब म सुरु गर्छु है ।
+
+निर्देशन: कृपया हरेक प्रश्न संगै ४ ओटै सम्भावित उत्तरहरु पढेर सुनाउनु होला |</value>
+          </text>
+          <text id="/epds_assessment/epds/epds_score:label">
+            <value>EPDS स्कोर</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses/3m_foll_up:label">
+            <value>पहिलो फलोअप (3 महिना)</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses/6m_foll_up:label">
+            <value>दोस्रो फलोअप (6 महिना)</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses/9m_foll_up:label">
+            <value>अन्तिम फलोअप (9 महिना)</value>
+          </text>
+          <text id="/epds_assessment/epds/followup_asses:label">
+            <value>कृपया फोलोअप मूल्यांकनको अवधि छान्नुहोस्</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/imm_risk:label">
+            <value>निर्देशन: उहाँमा **अझै पनि आत्महत्याको जोखिम उच्च** भएकोले तल दिइएको बुदाँ प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् ।
+ 
+१. कृपया रेफरल प्रक्रियामा अनुसार, सहभागीलाई मद्दत गर्नुहोस् ।
+२. सहभागीको अवस्था बुझ्न दुई हप्तामा फोन सम्पर्क गर्ने भन्ने कुराको जानकारी दिनुहोस् | 
+३. सहभागीसँग छुट्टिनु अघि उहाँलाई श्रोत कार्ड दिदैं धन्यवाद दिई परिवार वा साथीको निगरानीमा छोड्नुहोस् |
+४. सहभागीसँग कुराकानी सकिने बित्तिकै CHN लाई यो कुराको जानकारी दिनुहोस् ।</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness1/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness1/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness1:label">
+            <value>१. के तपाईलाई अहिले आफैलाई हानी पुर्‍याउने सोचाइ आइरहेको छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness2/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness2/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness2:label">
+            <value>२. के तपाईले आफैलाई मार्ने भन्ने योजना बनाउनु भएको छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness3/no:label">
+            <value>छैन</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness3/yes:label">
+            <value>छ</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness3:label">
+            <value>३. के तपाईले आफ्नो ति योजनालाई पुरा गरेरै छोड्छु भनेर सोच्नु भएको छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness_high:label">
+            <value>निर्देशन: उहाँमा **आत्महत्याको जोखिम उच्च** छ |
+
+कृपया रेफरल प्रक्रियामा उल्लेख गरिए बमोजिमका छलफलका बुँदा प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् ।
+
+-- शान्त भएर नआत्तिइ सहभागीसँगै बस्नुहोस्, सहानुभूति राख्दै कुराहरु ध्यान दिएर सुन्नुहोस् र उहाँको परिवारलाई जानकारी दिनुहोस् |
+
+-- सहभागीले तपाईको सहयोग लिन नखोजिरहनु भएता पनि उहाँको सुरक्षा तपाईको लागि महत्वपुर्ण भएकोले रेफरल प्रक्रिया अनुसार तपाईले उहाँलाई सहयोग गर्नु पर्ने कुरा भन्नुहोस् |
+
+-- सहभागीलाई crisis counselor (संकट परामर्शकर्ता) सँग कुराकानी गराउनुहोस् र तत्कालका लागि सहभागी सुरक्षित भएको कुरा crisis counselor (संकट परामर्शकर्ता) सँग सुनिश्चित गर्नुहोस् |</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness_inst:label">
+            <value>अघि हामीले गएको एक हप्ता भित्रमा तपाईको मनमा आफूलाई नै हानि पुर्‍याउने जस्तो सोचाईको बारेमा कुरा गरेका थियौं, अब त्यसको बारेमा अलिकती अझै कुरा गरौं है । 
+तपाई मसँग सुरक्षित हुनुहुन्छ र हामीले गर्ने सबै कुराकानी गोप्य राखिने भएकोले तपाईको मनमा जे छ त्यो भन्नु भए हुन्छ ।</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/ness_score:label">
+            <value>आत्महत्याको जोखिम</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/nesslow_mod:label">
+            <value>**निर्देशन **: उहाँमा **आत्महत्याको जोखिम न्यून/मध्यम खालको **छ |
+
+कृपया रेफरल प्रक्रियामा उल्लेख गरिए बमोजिमका छलफलका बुँदा प्रयोग गर्दै निम्न कार्यहरु गर्नुहोस् ।
+
+-- सहभागीसँगै बस्नुहोस् र उहाँका कुराहरु ध्यान दिएर सुन्नुहोस् |
+
+-- सहभागीले महसुस गरिरहनु भएको कुरा उहाँको परिवार वा उहाँलाई भन्न मन लागेको व्यक्तिसंग कुरा गर्न हौसला दिनुहोस् |
+
+--छुट्टिनु अघि **श्रोत कार्ड** दिदैं धन्यवाद दिई आजको समयको लागि उहाँलाई धन्यवाद दिनुहोस् | 
+
+-- सहभागीसँग कुराकानी सकिने बित्तिकै भने CHN लाई यो कुराको जानकारी दिनुहोस् |</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/no_imm_risk:label">
+            <value>निर्देशन: यस सहभागीमा तत्कालको लागि सुरक्षित हुनुहुन्छ |</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/risk_suicide/no:label">
+            <value>हुनहुुन्न</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/risk_suicide/yes:label">
+            <value>हुनहुन्छ</value>
+          </text>
+          <text id="/epds_assessment/epds/ness/risk_suicide:label">
+            <value>Crisis counselor (संकट परामर्शकर्ता) सँगको अनुसार तत्कालका लागि यस सहभागी सुरक्षित हुनुहुन्छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/data_security_confid:label">
+            <value>तथ्यांकको सुरक्षा तथा गोपनिएता बारे चिन्तित भएकोले</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/harm:label">
+            <value>अध्ययनमा सहभागी भएको अवधीमा सम्भावित हानी वा चिन्ताले</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/no_benefits:label">
+            <value>अध्ययनमा सहभागी हुँदा कुनै फाइदा नहुने देखेर</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup/time:label">
+            <value>अध्ययन अवधी भर आफ्नो समय दिन नसक्ने भएर</value>
+          </text>
+          <text id="/epds_assessment/epds/no_cons_followup:label">
+            <value>यदि हुनुहुन्न भने, कारण बताई दिनुहुन्छ?</value>
+          </text>
+          <text id="/epds_assessment/epds/reprtd_date:label">
+            <value>महिलालाई भेटेको मिति</value>
+          </text>
+          <text id="/epds_assessment/epds/spcfy_advrs_evnt:label">
+            <value>यदि भएको थियो भने, के भएको थियो भन्न सक्नु हुन्छ ?</value>
+          </text>
+          <text id="/epds_assessment/epds/specify_reason:label">
+            <value>यदि अन्य कारण भएमा, कृपया उल्लेख गर्नुहोस् |</value>
+          </text>
+          <text id="/epds_assessment/epds/time:label">
+            <value>तपाईले आफ्नो अमूल्य समय दिनुभएकोमा धन्यवाद</value>
+          </text>
+          <text id="/epds_assessment/inputs/contact/_id:label">
+            <value>सेवा लिनेको नाम के हो?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <epds_assessment id="epds_assessment" prefix="J1!epds_assessment!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+              <date_of_registration/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <epds>
+            <reprtd_date>today()</reprtd_date>
+            <followup_asses/>
+            <advrs_evnt/>
+            <spcfy_advrs_evnt/>
+            <cons_followup/>
+            <no_cons_followup/>
+            <specify_reason/>
+            <epds_inst/>
+            <epds_1/>
+            <epds_2/>
+            <epds_3/>
+            <epds_4/>
+            <epds_5/>
+            <epds_6/>
+            <epds_7/>
+            <epds_8/>
+            <epds_9/>
+            <epds_10/>
+            <epds_score/>
+            <ness>
+              <ness_inst/>
+              <ness1/>
+              <ness2/>
+              <ness3/>
+              <ness_score/>
+              <nesslow_mod/>
+              <ness_high/>
+              <risk_suicide/>
+              <no_imm_risk/>
+              <imm_risk/>
+            </ness>
+            <time/>
+          </epds>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </epds_assessment>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/epds_assessment/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/epds_assessment/inputs/source" type="string"/>
+      <bind nodeset="/epds_assessment/inputs/source_id" type="string"/>
+      <bind nodeset="/epds_assessment/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/epds_assessment/inputs/contact/nepali_full_name" type="string"/>
+      <bind nodeset="/epds_assessment/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/epds_assessment/inputs/contact/date_of_registration" type="string"/>
+      <bind nodeset="/epds_assessment/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/epds_assessment/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
+      <bind nodeset="/epds_assessment/patient_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/epds_assessment/epds/reprtd_date" type="string" readonly="true()" calculate="date(today())"/>
+      <bind nodeset="/epds_assessment/epds/followup_asses" type="select1" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/advrs_evnt" type="select1" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/spcfy_advrs_evnt" type="string" relevant=" /epds_assessment/epds/advrs_evnt = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/cons_followup" type="select1" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/no_cons_followup" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'no'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/specify_reason" type="string" relevant=" /epds_assessment/epds/no_cons_followup = 'other'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_inst" readonly="true()" type="string" relevant=" /epds_assessment/epds/cons_followup = 'yes'"/>
+      <bind nodeset="/epds_assessment/epds/epds_1" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_2" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_3" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_4" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_5" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_6" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_7" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_8" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_9" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_10" type="select1" relevant=" /epds_assessment/epds/cons_followup = 'yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/epds_score" type="string" calculate="int( /epds_assessment/epds/epds_1 ) + int( /epds_assessment/epds/epds_2 ) + int( /epds_assessment/epds/epds_3 ) + int( /epds_assessment/epds/epds_4 ) + int( /epds_assessment/epds/epds_5 ) + int( /epds_assessment/epds/epds_6 ) + int( /epds_assessment/epds/epds_7 ) + int( /epds_assessment/epds/epds_8 ) + int( /epds_assessment/epds/epds_9 ) + int( /epds_assessment/epds/epds_10 )"/>
+      <bind nodeset="/epds_assessment/epds/ness" relevant=" /epds_assessment/epds/epds_10 = '3' or  /epds_assessment/epds/epds_10 = '2' or  /epds_assessment/epds/epds_10 = '1'"/>
+      <bind nodeset="/epds_assessment/epds/ness/ness_inst" readonly="true()" type="string"/>
+      <bind nodeset="/epds_assessment/epds/ness/ness1" type="select1"/>
+      <bind nodeset="/epds_assessment/epds/ness/ness2" type="select1"/>
+      <bind nodeset="/epds_assessment/epds/ness/ness3" type="select1" relevant=" /epds_assessment/epds/ness/ness2  = 'yes'"/>
+      <bind nodeset="/epds_assessment/epds/ness/ness_score" type="string" relevant=" /epds_assessment/epds/ness/ness1  != ''" calculate="if( /epds_assessment/epds/ness/ness2  = 'yes' or  /epds_assessment/epds/ness/ness3  = 'yes', 'high', if( /epds_assessment/epds/ness/ness1  = 'yes' and  /epds_assessment/epds/ness/ness2  = 'no', 'moderate', 'low'))"/>
+      <bind nodeset="/epds_assessment/epds/ness/nesslow_mod" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/ness_score  = 'moderate' or  /epds_assessment/epds/ness/ness_score  = 'low'"/>
+      <bind nodeset="/epds_assessment/epds/ness/ness_high" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/ness_score  = 'high'"/>
+      <bind nodeset="/epds_assessment/epds/ness/risk_suicide" type="select1" relevant=" /epds_assessment/epds/ness/ness2 ='yes' or  /epds_assessment/epds/ness/ness3 ='yes'" required="true()"/>
+      <bind nodeset="/epds_assessment/epds/ness/no_imm_risk" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/risk_suicide ='yes'"/>
+      <bind nodeset="/epds_assessment/epds/ness/imm_risk" readonly="true()" type="string" relevant=" /epds_assessment/epds/ness/risk_suicide ='no'"/>
+      <bind nodeset="/epds_assessment/epds/time" readonly="true()" type="string" relevant=" /epds_assessment/epds/cons_followup = 'no' or  /epds_assessment/epds/cons_followup = 'yes'"/>
+      <bind nodeset="/epds_assessment/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/epds_assessment/inputs">
+      <label ref="jr:itext('/epds_assessment/inputs:label')"/>
+      <group ref="/epds_assessment/inputs/contact">
+        <label ref="jr:itext('/epds_assessment/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/epds_assessment/inputs/contact/_id">
+          <label ref="jr:itext('/epds_assessment/inputs/contact/_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/epds_assessment/epds">
+      <select1 ref="/epds_assessment/epds/followup_asses">
+        <label ref="jr:itext('/epds_assessment/epds/followup_asses:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/followup_asses/3m_foll_up:label')"/>
+          <value>3m_foll_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/followup_asses/6m_foll_up:label')"/>
+          <value>6m_foll_up</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/followup_asses/9m_foll_up:label')"/>
+          <value>9m_foll_up</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/advrs_evnt">
+        <label ref="jr:itext('/epds_assessment/epds/advrs_evnt:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/advrs_evnt/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/advrs_evnt/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/epds_assessment/epds/spcfy_advrs_evnt">
+        <label ref="jr:itext('/epds_assessment/epds/spcfy_advrs_evnt:label')"/>
+      </input>
+      <select1 ref="/epds_assessment/epds/cons_followup">
+        <label ref="jr:itext('/epds_assessment/epds/cons_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/cons_followup/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/cons_followup/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/no_cons_followup">
+        <label ref="jr:itext('/epds_assessment/epds/no_cons_followup:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/no_cons_followup/no_benefits:label')"/>
+          <value>no_benefits</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/no_cons_followup/data_security_confid:label')"/>
+          <value>data_security_confid</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/no_cons_followup/harm:label')"/>
+          <value>harm</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/no_cons_followup/time:label')"/>
+          <value>time</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/no_cons_followup/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/epds_assessment/epds/specify_reason">
+        <label ref="jr:itext('/epds_assessment/epds/specify_reason:label')"/>
+      </input>
+      <input ref="/epds_assessment/epds/epds_inst">
+        <label ref="jr:itext('/epds_assessment/epds/epds_inst:label')"/>
+      </input>
+      <select1 ref="/epds_assessment/epds/epds_1">
+        <label ref="jr:itext('/epds_assessment/epds/epds_1:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_1/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_1/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_1/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_1/3:label')"/>
+          <value>3</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_2">
+        <label ref="jr:itext('/epds_assessment/epds/epds_2:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_2/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_2/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_2/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_2/3:label')"/>
+          <value>3</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_3">
+        <label ref="jr:itext('/epds_assessment/epds/epds_3:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_3/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_3/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_3/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_3/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_4">
+        <label ref="jr:itext('/epds_assessment/epds/epds_4:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_4/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_4/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_4/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_4/3:label')"/>
+          <value>3</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_5">
+        <label ref="jr:itext('/epds_assessment/epds/epds_5:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_5/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_5/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_5/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_5/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_6">
+        <label ref="jr:itext('/epds_assessment/epds/epds_6:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_6/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_6/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_6/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_6/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_7">
+        <label ref="jr:itext('/epds_assessment/epds/epds_7:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_7/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_7/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_7/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_7/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_8">
+        <label ref="jr:itext('/epds_assessment/epds/epds_8:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_8/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_8/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_8/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_8/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_9">
+        <label ref="jr:itext('/epds_assessment/epds/epds_9:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_9/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_9/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_9/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_9/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/epds_assessment/epds/epds_10">
+        <label ref="jr:itext('/epds_assessment/epds/epds_10:label')"/>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_10/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_10/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_10/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/epds_assessment/epds/epds_10/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <group ref="/epds_assessment/epds/ness">
+        <input ref="/epds_assessment/epds/ness/ness_inst">
+          <label ref="jr:itext('/epds_assessment/epds/ness/ness_inst:label')"/>
+        </input>
+        <select1 ref="/epds_assessment/epds/ness/ness1">
+          <label ref="jr:itext('/epds_assessment/epds/ness/ness1:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/ness1/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/ness1/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_assessment/epds/ness/ness2">
+          <label ref="jr:itext('/epds_assessment/epds/ness/ness2:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/ness2/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/ness2/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <select1 ref="/epds_assessment/epds/ness/ness3">
+          <label ref="jr:itext('/epds_assessment/epds/ness/ness3:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/ness3/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/ness3/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/epds_assessment/epds/ness/nesslow_mod">
+          <label ref="jr:itext('/epds_assessment/epds/ness/nesslow_mod:label')"/>
+        </input>
+        <input ref="/epds_assessment/epds/ness/ness_high">
+          <label ref="jr:itext('/epds_assessment/epds/ness/ness_high:label')"/>
+        </input>
+        <select1 ref="/epds_assessment/epds/ness/risk_suicide">
+          <label ref="jr:itext('/epds_assessment/epds/ness/risk_suicide:label')"/>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/risk_suicide/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/epds_assessment/epds/ness/risk_suicide/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/epds_assessment/epds/ness/no_imm_risk">
+          <label ref="jr:itext('/epds_assessment/epds/ness/no_imm_risk:label')"/>
+        </input>
+        <input ref="/epds_assessment/epds/ness/imm_risk">
+          <label ref="jr:itext('/epds_assessment/epds/ness/imm_risk:label')"/>
+        </input>
+      </group>
+      <input ref="/epds_assessment/epds/time">
+        <label ref="jr:itext('/epds_assessment/epds/time:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

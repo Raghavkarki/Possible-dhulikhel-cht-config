@@ -916,8 +916,8 @@ Please make sure this is correct. If not, go back and change it.</value>
       <bind nodeset="/data/c81_family/ward1" type="select1" required="true()" relevant="selected( /data/c81_family/dolakha_other_residence_vdc , 'bt') or selected( /data/c81_family/dolakha_other_residence_vdc , 'bg') or selected( /data/c81_family/dolakha_other_residence_vdc , 'bm') or selected( /data/c81_family/dolakha_other_residence_vdc , 'gs') or selected( /data/c81_family/dolakha_other_residence_vdc , 'jr') or selected( /data/c81_family/dolakha_other_residence_vdc , 'kc') or selected( /data/c81_family/dolakha_other_residence_vdc , 'ml') or selected( /data/c81_family/dolakha_other_residence_vdc , 'sl') or selected( /data/c81_family/dolakha_other_residence_vdc , 'tm')"/>
       <bind nodeset="/data/c81_family/ses" relevant=" /data/c81_family/family_home  = 'yes'"/>
       <bind nodeset="/data/c81_family/ses/ses_caste" type="select1" required="true()"/>
-      <bind nodeset="/data/c81_family/ses/ses_family_male_residents" type="int" required="true()" jr:constraintMsg="Number of males cannot exceed 15" constraint=". &lt;= 15 and . &gt;= 0"/>
-      <bind nodeset="/data/c81_family/ses/ses_family_male_non_residents" type="int" required="true()" jr:constraintMsg="Number of males cannot exceed 15" constraint=". &lt;= 15 and . &gt;= 0"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_male_residents" type="int" required="true()" constraint=". &lt;= 15 and . &gt;= 0" jr:constraintMsg="Number of males cannot exceed 15"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_male_non_residents" type="int" required="true()" constraint=". &lt;= 15 and . &gt;= 0" jr:constraintMsg="Number of males cannot exceed 15"/>
       <bind nodeset="/data/c81_family/ses/ses_total_male_members" type="string" calculate="number( /data/c81_family/ses/ses_family_male_residents ) + number( /data/c81_family/ses/ses_family_male_non_residents )"/>
       <bind nodeset="/data/c81_family/ses/ses_male_members_display" readonly="true()" type="string"/>
       <bind nodeset="/data/c81_family/ses/ses_family_female_residents" type="int" required="true()"/>
@@ -926,18 +926,18 @@ Please make sure this is correct. If not, go back and change it.</value>
       <bind nodeset="/data/c81_family/ses/ses_female_members_display" readonly="true()" type="string"/>
       <bind nodeset="/data/c81_family/ses/ses_total_family_members" type="string" calculate="number( /data/c81_family/ses/ses_family_female_residents ) + number( /data/c81_family/ses/ses_family_female_non_residents ) + number( /data/c81_family/ses/ses_family_male_residents ) + number( /data/c81_family/ses/ses_family_male_non_residents )"/>
       <bind nodeset="/data/c81_family/ses/ses_total_family_members_display" readonly="true()" type="string"/>
-      <bind nodeset="/data/c81_family/ses/ses_family_members_over40" type="int" required="true()" jr:constraintMsg="Cannot exceed the total members of this family" constraint=". &lt;= ( /data/c81_family/ses/ses_total_female_members  +  /data/c81_family/ses/ses_total_male_members )"/>
-      <bind nodeset="/data/c81_family/ses/ses_expenses" type="int" required="true()" jr:constraintMsg="If this is your primary residence, expenditure cannot be less than 100 or cannot be less than 0" constraint="if( /data/c81_family/residence_type  = 'yes_single' or  /data/c81_family/residence_type  = 'no_primary', . &gt;= 100, . &gt;= 0)"/>
+      <bind nodeset="/data/c81_family/ses/ses_family_members_over40" type="int" required="true()" constraint=". &lt;= ( /data/c81_family/ses/ses_total_female_members  +  /data/c81_family/ses/ses_total_male_members )" jr:constraintMsg="Cannot exceed the total members of this family"/>
+      <bind nodeset="/data/c81_family/ses/ses_expenses" type="int" required="true()" constraint="if( /data/c81_family/residence_type  = 'yes_single' or  /data/c81_family/residence_type  = 'no_primary', . &gt;= 100, . &gt;= 0)" jr:constraintMsg="If this is your primary residence, expenditure cannot be less than 100 or cannot be less than 0"/>
       <bind nodeset="/data/c81_family/ses/ses_household_fuel_type" type="select1" required="true()" relevant="false()"/>
       <bind nodeset="/data/c81_family/ses/ses_animals_owned" relevant="false()"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_cows_bulls_buffaloes" type="int" required="true()" jr:constraintMsg="This answer cannot exceed 95" constraint=". &lt;= 95"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_chickens_poultry" type="int" required="true()" jr:constraintMsg="This answer cannot exceed 95" constraint=". &lt;= 95"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_goats" type="int" required="true()" jr:constraintMsg="This answer cannot exceed 95" constraint=". &lt;= 95"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_sheep" type="int" required="true()" jr:constraintMsg="This answer cannot exceed 95" constraint=". &lt;= 95"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_horses_donkeys_mules" type="int" required="true()" jr:constraintMsg="This answer cannot exceed 95" constraint=". &lt;= 95"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_other_cattle" type="int" required="true()" jr:constraintMsg="This answer cannot exceed 95" constraint=". &lt;= 95"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_ropani" type="int" required="true()" jr:constraintMsg="Cannot be less than 0 or greater than 998" constraint=". &gt;= 0 and . &lt;= 998"/>
-      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_pathi" type="int" required="true()" jr:constraintMsg="Cannot be less than 0 or greater than 998" constraint=". &gt;= 0 and . &lt;= 998"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_cows_bulls_buffaloes" type="int" required="true()" constraint=". &lt;= 95" jr:constraintMsg="This answer cannot exceed 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_chickens_poultry" type="int" required="true()" constraint=". &lt;= 95" jr:constraintMsg="This answer cannot exceed 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_goats" type="int" required="true()" constraint=". &lt;= 95" jr:constraintMsg="This answer cannot exceed 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_sheep" type="int" required="true()" constraint=". &lt;= 95" jr:constraintMsg="This answer cannot exceed 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_horses_donkeys_mules" type="int" required="true()" constraint=". &lt;= 95" jr:constraintMsg="This answer cannot exceed 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_animals_owned_other_cattle" type="int" required="true()" constraint=". &lt;= 95" jr:constraintMsg="This answer cannot exceed 95"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_ropani" type="int" required="true()" constraint=". &gt;= 0 and . &lt;= 998" jr:constraintMsg="Cannot be less than 0 or greater than 998"/>
+      <bind nodeset="/data/c81_family/ses/ses_animals_owned/ses_agricultural_land_pathi" type="int" required="true()" constraint=". &gt;= 0 and . &lt;= 998" jr:constraintMsg="Cannot be less than 0 or greater than 998"/>
       <bind nodeset="/data/c81_family/ses/ses_electronic_devices" relevant="false()"/>
       <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_label" type="select1"/>
       <bind nodeset="/data/c81_family/ses/ses_electronic_devices/ses_electronic_devices_owns_radio" type="select1" required="true()"/>

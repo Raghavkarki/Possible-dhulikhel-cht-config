@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Plaque Distribution</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/household_plaque/household_plaque:label">
+            <value>Photo of the Plaque</value>
+          </text>
+          <text id="/household_plaque/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/household_plaque/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/household_plaque/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_consent:label">
+            <value>No, they did not give consent</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_other:label">
+            <value>No, another reason</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_plaque:label">
+            <value>No, the plaque was missing</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_tools:label">
+            <value>No, I had no tools / did not work</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/yes_distributed:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed:label">
+            <value>Were you able to post plaque number onto the house?</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/household_plaque/household_plaque:label">
+            <value>प्लेकको फोटो</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_consent:label">
+            <value>घरका मान्छेले लगाउन मानेनन्</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_other:label">
+            <value>अन्य कुनै कारणले गर्दा लगाइन</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_plaque:label">
+            <value>लगाइन, नम्बरप्लेट छैन</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/not_distributed_tools:label">
+            <value>लगाइन, मसंग औजार छैन</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed/yes_distributed:label">
+            <value>लगाएँ</value>
+          </text>
+          <text id="/household_plaque/plaque_distributed:label">
+            <value>प्लेट नम्बर घरमा लगाउनु भयो ?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <household_plaque id="household_plaque" prefix="J1!household_plaque!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+            </contact>
+          </inputs>
+          <reporting_today/>
+          <reporting_today_nepali/>
+          <reporting_nepali_short/>
+          <reporting_nepali_month/>
+          <reporting_nepali_year/>
+          <reporting_month_today/>
+          <reporting_year_today/>
+          <reporting_today_short/>
+          <place_id/>
+          <plaque_distributed/>
+          <household_plaque/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </household_plaque>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/household_plaque/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/household_plaque/inputs/source" type="string"/>
+      <bind nodeset="/household_plaque/inputs/source_id" type="string"/>
+      <bind nodeset="/household_plaque/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/household_plaque/reporting_today" type="string" calculate="date(today())"/>
+      <bind nodeset="/household_plaque/reporting_today_nepali" type="string" calculate="to-bikram-sambat( /household_plaque/reporting_today )"/>
+      <bind nodeset="/household_plaque/reporting_nepali_short" type="string" calculate="substring-after( /household_plaque/reporting_today_nepali , &quot; &quot;)"/>
+      <bind nodeset="/household_plaque/reporting_nepali_month" type="string" calculate="substring-before( /household_plaque/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/household_plaque/reporting_nepali_year" type="string" calculate="substring-after( /household_plaque/reporting_nepali_short , &quot; &quot;)"/>
+      <bind nodeset="/household_plaque/reporting_month_today" type="string" calculate="if( /household_plaque/reporting_nepali_month  = 'बैशाख', 'Baishakh', if( /household_plaque/reporting_nepali_month  = 'जेठ', 'Jestha', if( /household_plaque/reporting_nepali_month  = 'असार', 'Ashadh', if( /household_plaque/reporting_nepali_month  = 'साउन', 'Shrawan', if( /household_plaque/reporting_nepali_month  = 'भदौ', 'Bhadra', if( /household_plaque/reporting_nepali_month  = 'असोज', 'Ashwin', if( /household_plaque/reporting_nepali_month  = 'कार्तिक', 'Kartik', if( /household_plaque/reporting_nepali_month  = 'मंसिर', 'Mangsir', if( /household_plaque/reporting_nepali_month  = 'पौष', 'Poush', if( /household_plaque/reporting_nepali_month  = 'माघ', 'Magh', if( /household_plaque/reporting_nepali_month  = 'फाल्गुन', 'Falgun', if( /household_plaque/reporting_nepali_month  = 'चैत', 'Chaitra', ''))))))))))))"/>
+      <bind nodeset="/household_plaque/reporting_year_today" type="string" calculate="concat(if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '०', '0', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '१', '1', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '२', '2', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '३', '3', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '४', '4', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '५', '5', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '६', '6', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '७', '7', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '८', '8', if(substr( /household_plaque/reporting_nepali_year , 0, 1) = '९', '9', '')))))))))), if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '०', '0', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '१', '1', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '२', '2', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '३', '3', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '४', '4', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '५', '5', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '६', '6', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '७', '7', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '८', '8', if(substr( /household_plaque/reporting_nepali_year , 1, 2) = '९', '9', '')))))))))), if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '०', '0', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '१', '1', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '२', '2', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '३', '3', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '४', '4', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '५', '5', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '६', '6', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '७', '7', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '८', '8', if(substr( /household_plaque/reporting_nepali_year , 2, 3) = '९', '9', '')))))))))), if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '०', '0', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '१', '1', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '२', '2', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '३', '3', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '४', '4', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '५', '5', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '६', '6', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '७', '7', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '८', '8', if(substr( /household_plaque/reporting_nepali_year , 3, 4) = '९', '9', '')))))))))))"/>
+      <bind nodeset="/household_plaque/reporting_today_short" type="string" calculate="concat( /household_plaque/reporting_month_today , ' ',  /household_plaque/reporting_year_today )"/>
+      <bind nodeset="/household_plaque/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/household_plaque/plaque_distributed" type="select1" required="true()"/>
+      <bind nodeset="/household_plaque/household_plaque" type="binary" relevant=" /household_plaque/plaque_distributed  = 'yes_distributed'" required="true()"/>
+      <bind nodeset="/household_plaque/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/household_plaque/inputs">
+      <label ref="jr:itext('/household_plaque/inputs:label')"/>
+      <group ref="/household_plaque/inputs/contact">
+        <input appearance="db-object" ref="/household_plaque/inputs/contact/_id"/>
+      </group>
+    </group>
+    <select1 ref="/household_plaque/plaque_distributed">
+      <label ref="jr:itext('/household_plaque/plaque_distributed:label')"/>
+      <item>
+        <label ref="jr:itext('/household_plaque/plaque_distributed/yes_distributed:label')"/>
+        <value>yes_distributed</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/household_plaque/plaque_distributed/not_distributed_consent:label')"/>
+        <value>not_distributed_consent</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/household_plaque/plaque_distributed/not_distributed_tools:label')"/>
+        <value>not_distributed_tools</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/household_plaque/plaque_distributed/not_distributed_plaque:label')"/>
+        <value>not_distributed_plaque</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/household_plaque/plaque_distributed/not_distributed_other:label')"/>
+        <value>not_distributed_other</value>
+      </item>
+    </select1>
+    <upload mediatype="image/*" appearance="none" ref="/household_plaque/household_plaque">
+      <label ref="jr:itext('/household_plaque/household_plaque:label')"/>
+      <hint>Please take a picture of the plaque installed in front of the house</hint>
+    </upload>
+  </h:body>
+</h:html>

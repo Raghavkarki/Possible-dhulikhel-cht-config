@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Edit Person</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/c42_municipality_contact/age:jr:constraintMsg">
+            <value>Must be less than 100</value>
+          </text>
+          <text id="/data/c42_municipality_contact/age:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/c42_municipality_contact/first_name:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/c42_municipality_contact/first_name:jr:constraintMsg">
+            <value>Must be 30 letters or less</value>
+          </text>
+          <text id="/data/c42_municipality_contact/first_name:label">
+            <value>First Name</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender:label">
+            <value>Gender</value>
+          </text>
+          <text id="/data/c42_municipality_contact/last_name:jr:constraintMsg">
+            <value>Must be 30 letters or less</value>
+          </text>
+          <text id="/data/c42_municipality_contact/last_name:label">
+            <value>Last Name</value>
+          </text>
+          <text id="/data/c42_municipality_contact/phone:hint">
+            <value>Include Nepali country code (+977) before phone number.</value>
+          </text>
+          <text id="/data/c42_municipality_contact/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +9779841239876</value>
+          </text>
+          <text id="/data/c42_municipality_contact/phone:label">
+            <value>mHealth Phone Number</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/community_health_nurse:label">
+            <value>Community Health Nurse</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/community_health_officer:label">
+            <value>Community Health Officer</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/community_health_worker:label">
+            <value>Community Health Worker</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/other:label">
+            <value>Others</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/program_coordinator:label">
+            <value>Program Co-ordinator</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post:label">
+            <value>Post</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post_other:label">
+            <value>Other</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/data/c42_municipality_contact/age:jr:constraintMsg">
+            <value>१०० भन्दा कम हुनुपर्छ</value>
+          </text>
+          <text id="/data/c42_municipality_contact/age:label">
+            <value>उमेर</value>
+          </text>
+          <text id="/data/c42_municipality_contact/first_name:hint">
+            <value>(सम्पर्क व्यक्ति)</value>
+          </text>
+          <text id="/data/c42_municipality_contact/first_name:jr:constraintMsg">
+            <value>नाम ३० अक्षर वा सो भन्दा कम हुनुपर्छ।</value>
+          </text>
+          <text id="/data/c42_municipality_contact/first_name:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender/female:label">
+            <value>महिला</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender/male:label">
+            <value>पुरुष</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/data/c42_municipality_contact/gender:label">
+            <value>लिङ्ग</value>
+          </text>
+          <text id="/data/c42_municipality_contact/last_name:jr:constraintMsg">
+            <value>थर ३० अक्षर वा सो भन्दा कम हुनुपर्छ।</value>
+          </text>
+          <text id="/data/c42_municipality_contact/last_name:label">
+            <value>थर</value>
+          </text>
+          <text id="/data/c42_municipality_contact/phone:hint">
+            <value>फोन नम्बरको अगाडि नेपालको राष्ट्रिय कोड (+977) राख्नुहोस् ।</value>
+          </text>
+          <text id="/data/c42_municipality_contact/phone:jr:constraintMsg">
+            <value>कृपया वैधानिक स्थानीय नम्बर वा अन्तर्राष्ट्रिय नमुना अनुसार (+) र देशको कोड समेत लेख्नुहोस् I उदाहरणको लागि +9779841239876</value>
+          </text>
+          <text id="/data/c42_municipality_contact/phone:label">
+            <value>फोन नम्बर</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/community_health_nurse:label">
+            <value>सामुदायिक स्वास्थ्य नर्स</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/community_health_officer:label">
+            <value>सामुदायिक स्वास्थ्य अधिकृत</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/community_health_worker:label">
+            <value>सामुदायिक स्वास्थ्य कार्यकर्ता</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post/program_coordinator:label">
+            <value>कार्यक्रम संयोजक</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post:label">
+            <value>पद</value>
+          </text>
+          <text id="/data/c42_municipality_contact/post_other:label">
+            <value>अन्य</value>
+          </text>
+          <text id="/data/c42_municipality_contact:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:c42_municipality_contact:edit" prefix="J1!contact:c42_municipality_contact:edit!" delimiter="#" version="2020-07-31">
+          <c42_municipality_contact>
+            <type/>
+            <contact_type/>
+            <first_name/>
+            <last_name/>
+            <name/>
+            <gender/>
+            <age/>
+            <phone/>
+            <post/>
+            <post_other/>
+          </c42_municipality_contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/c42_municipality_contact/type" type="string"/>
+      <bind nodeset="/data/c42_municipality_contact/contact_type" type="string"/>
+      <bind nodeset="/data/c42_municipality_contact/first_name" type="string" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/first_name:jr:constraintMsg')"/>
+      <bind nodeset="/data/c42_municipality_contact/last_name" type="string" constraint="string-length(.)&lt;=30 and regex(.,'^([^0-9]*)$')" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/last_name:jr:constraintMsg')"/>
+      <bind nodeset="/data/c42_municipality_contact/name" type="string" calculate="concat( /data/c42_municipality_contact/first_name , ' ',  /data/c42_municipality_contact/last_name )"/>
+      <bind nodeset="/data/c42_municipality_contact/gender" type="select1" required="true()"/>
+      <bind nodeset="/data/c42_municipality_contact/age" type="int" constraint=".&lt;=100" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/age:jr:constraintMsg')"/>
+      <bind nodeset="/data/c42_municipality_contact/phone" type="tel" required="true()" jr:constraintMsg="jr:itext('/data/c42_municipality_contact/phone:jr:constraintMsg')"/>
+      <bind nodeset="/data/c42_municipality_contact/post" type="select1" required="true()"/>
+      <bind nodeset="/data/c42_municipality_contact/post_other" type="string" relevant=" /data/c42_municipality_contact/post  = 'other'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/c42_municipality_contact">
+      <input ref="/data/c42_municipality_contact/first_name">
+        <label ref="jr:itext('/data/c42_municipality_contact/first_name:label')"/>
+        <hint ref="jr:itext('/data/c42_municipality_contact/first_name:hint')"/>
+      </input>
+      <input ref="/data/c42_municipality_contact/last_name">
+        <label ref="jr:itext('/data/c42_municipality_contact/last_name:label')"/>
+      </input>
+      <select1 ref="/data/c42_municipality_contact/gender">
+        <label ref="jr:itext('/data/c42_municipality_contact/gender:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/gender/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/gender/male:label')"/>
+          <value>male</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/gender/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/c42_municipality_contact/age">
+        <label ref="jr:itext('/data/c42_municipality_contact/age:label')"/>
+      </input>
+      <input ref="/data/c42_municipality_contact/phone">
+        <label ref="jr:itext('/data/c42_municipality_contact/phone:label')"/>
+        <hint ref="jr:itext('/data/c42_municipality_contact/phone:hint')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/data/c42_municipality_contact/post">
+        <label ref="jr:itext('/data/c42_municipality_contact/post:label')"/>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/post/community_health_worker:label')"/>
+          <value>community_health_worker</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/post/community_health_nurse:label')"/>
+          <value>community_health_nurse</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/post/community_health_officer:label')"/>
+          <value>community_health_officer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/post/program_coordinator:label')"/>
+          <value>program_coordinator</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/c42_municipality_contact/post/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/c42_municipality_contact/post_other">
+        <label ref="jr:itext('/data/c42_municipality_contact/post_other:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

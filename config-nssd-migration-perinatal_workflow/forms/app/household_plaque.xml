@@ -109,7 +109,7 @@
       <bind nodeset="/household_plaque/reporting_today_short" type="string" calculate="concat( /household_plaque/reporting_month_today , ' ',  /household_plaque/reporting_year_today )"/>
       <bind nodeset="/household_plaque/place_id" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/household_plaque/plaque_distributed" type="select1" required="true()"/>
-      <bind nodeset="/household_plaque/household_plaque" type="binary" relevant=" /household_plaque/plaque_distributed  = 'yes_distributed'" required="true()"/>
+      <bind nodeset="/household_plaque/household_plaque" type="binary" required="true()" relevant=" /household_plaque/plaque_distributed  = 'yes_distributed'"/>
       <bind nodeset="/household_plaque/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

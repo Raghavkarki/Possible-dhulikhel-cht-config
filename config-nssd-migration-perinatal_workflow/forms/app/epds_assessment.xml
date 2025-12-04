@@ -702,7 +702,7 @@ Please carry out the following actions using the discussion points mentioned in 
       <bind nodeset="/epds_assessment/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/epds_assessment/patient_name" type="string" calculate="../inputs/contact/nepali_full_name"/>
       <bind nodeset="/epds_assessment/patient_id" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/epds_assessment/epds/reprtd_date" type="string" readonly="true()" calculate="date(today())"/>
+      <bind nodeset="/epds_assessment/epds/reprtd_date" type="string" calculate="date(today())" readonly="true()"/>
       <bind nodeset="/epds_assessment/epds/followup_asses" type="select1" required="true()"/>
       <bind nodeset="/epds_assessment/epds/advrs_evnt" type="select1" required="true()"/>
       <bind nodeset="/epds_assessment/epds/spcfy_advrs_evnt" type="string" relevant=" /epds_assessment/epds/advrs_evnt = 'yes'" required="true()"/>

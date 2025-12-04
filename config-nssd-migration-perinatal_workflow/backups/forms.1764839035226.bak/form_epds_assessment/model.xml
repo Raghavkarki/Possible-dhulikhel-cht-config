@@ -1,0 +1,68 @@
+
+  <model>
+    <instance>
+        <epds_assessment xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="epds_assessment" prefix="J1!epds_assessment!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <nepali_full_name/>
+              <patient_id/>
+              <date_of_registration/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_name/>
+          <patient_id/>
+          <epds>
+            <reprtd_date>today()</reprtd_date>
+            <followup_asses/>
+            <advrs_evnt/>
+            <spcfy_advrs_evnt/>
+            <cons_followup/>
+            <no_cons_followup/>
+            <specify_reason/>
+            <epds_inst/>
+            <epds_1/>
+            <epds_2/>
+            <epds_3/>
+            <epds_4/>
+            <epds_5/>
+            <epds_6/>
+            <epds_7/>
+            <epds_8/>
+            <epds_9/>
+            <epds_10/>
+            <epds_score/>
+            <ness>
+              <ness_inst/>
+              <ness1/>
+              <ness2/>
+              <ness3/>
+              <ness_score/>
+              <nesslow_mod/>
+              <ness_high/>
+              <risk_suicide/>
+              <no_imm_risk/>
+              <imm_risk/>
+            </ness>
+            <time/>
+          </epds>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </epds_assessment>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+
